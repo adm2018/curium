@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2014 The Darkcoin developers
+// Copyright (c) 2014 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -22,8 +22,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Darkcoin (http://www.darkcoin.io/),
- * which enables instant payments to anyone, anywhere in the world. Darkcoin uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Curium (http://www.curium.io/),
+ * which enables instant payments to anyone, anywhere in the world. Curium uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/darkcoin.conf are parsed in qt/darkcoin.cpp's main()
+        // If Qt is used, parameters/curium.conf are parsed in qt/curium.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -94,14 +94,14 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to darkcoind / RPC client
-            std::string strUsage = _("Darkcoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
+            // First part of help message is specific to curiumd / RPC client
+            std::string strUsage = _("Curium Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  darkcoind [options]                     " + _("Start Darkcoin Core Daemon") + "\n" +
-                _("Usage (deprecated, use darkcoin-cli):") + "\n" +
-                  "  darkcoind [options] <command> [params]  " + _("Send command to Darkcoin Core") + "\n" +
-                  "  darkcoind [options] help                " + _("List commands") + "\n" +
-                  "  darkcoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  curiumd [options]                     " + _("Start Curium Core Daemon") + "\n" +
+                _("Usage (deprecated, use curium-cli):") + "\n" +
+                  "  curiumd [options] <command> [params]  " + _("Send command to Curium Core") + "\n" +
+                  "  curiumd [options] help                " + _("List commands") + "\n" +
+                  "  curiumd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
             strUsage += "\n" + HelpMessageCli(false);
@@ -113,7 +113,7 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "darkcoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "curium:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -125,7 +125,7 @@ bool AppInit(int argc, char* argv[])
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon)
         {
-            fprintf(stdout, "Darkcoin server starting\n");
+            fprintf(stdout, "Curium server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -185,7 +185,7 @@ int main(int argc, char* argv[])
 
     bool fRet = false;
 
-    // Connect darkcoind signal handlers
+    // Connect curiumd signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);

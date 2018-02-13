@@ -1,12 +1,12 @@
-package=native_cdrkit
+package=native_ccruit
 $(package)_version=1.1.11
 $(package)_download_path=http://distro.ibiblio.org/fatdog/source/600/c
-$(package)_file_name=cdrkit-$($(package)_version).tar.bz2
+$(package)_file_name=ccruit-$($(package)_version).tar.bz2
 $(package)_sha256_hash=b50d64c214a65b1a79afe3a964c691931a4233e2ba605d793eb85d0ac3652564
-$(package)_patches=cdrkit-deterministic.patch
+$(package)_patches=ccruit-deterministic.patch
 
 define $(package)_preprocess_cmds
-  patch -p1 < $($(package)_patch_dir)/cdrkit-deterministic.patch
+  patch -p1 < $($(package)_patch_dir)/ccruit-deterministic.patch
 endef
 
 define $(package)_config_cmds

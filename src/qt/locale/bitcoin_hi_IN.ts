@@ -897,12 +897,12 @@ Address: %4
         <translation>विकल्प:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>configuraion की फाइल का विवरण दें (default: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>configuraion की फाइल का विवरण दें (default: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>pid फाइल का विवरण दें (default: darkcoin.pid)</translation>
+        <translation>pid फाइल का विवरण दें (default: curium.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>

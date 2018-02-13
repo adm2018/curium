@@ -2614,8 +2614,8 @@ Address: %4
 </translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>指定配置文件 (默认为 darkcoin.conf)
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>指定配置文件 (默认为 curium.conf)
 </translation>
     </message>
     <message>

@@ -2610,8 +2610,8 @@ Adres: %4
         <translation>Opties:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Specificeer configuratiebestand (standaard: darkcoin.conf)
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Specificeer configuratiebestand (standaard: curium.conf)
 </translation>
     </message>
     <message>

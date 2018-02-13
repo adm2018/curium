@@ -1912,12 +1912,12 @@ Naslov: %4
         <translation>Možnosti:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Določi datoteko z nastavitvami (privzeta: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Določi datoteko z nastavitvami (privzeta: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Določi pid datoteko (privzeta: darkcoin.pid)</translation>
+        <translation>Določi pid datoteko (privzeta: curium.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>

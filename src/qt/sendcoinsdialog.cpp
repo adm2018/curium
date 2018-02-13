@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
-// Copyright (c) 2014 The Darkcoin developers
+// Copyright (c) 2014 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -148,7 +148,7 @@ void SendCoinsDialog::on_sendButton_clicked()
     if(ui->checkUseDarksend->isChecked()) {
         recipients[0].inputType = "ONLY_DENOMINATED";
         strFunds = "Using <b>Anonymous Funds</b>";
-        strFee = "(Darksend requires this amount to be rounded up to the nearest 0.1DRK)";
+        strFee = "(Darksend requires this amount to be rounded up to the nearest 0.1CRU)";
     } else {
         recipients[0].inputType = "ALL_COINS";
         strFunds = "Using <b>ANY AVAILABLE Funds</b>";
@@ -617,7 +617,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Darkcoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Curium address"));
         }
         else // Valid address
         {

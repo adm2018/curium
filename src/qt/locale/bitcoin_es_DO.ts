@@ -2432,13 +2432,13 @@ Dirección: %4
 </translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Especificar archivo de configuración (predeterminado: darkcoin.conf)
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Especificar archivo de configuración (predeterminado: curium.conf)
 </translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Especificar archivo pid (predeterminado: darkcoin.pid)
+        <translation>Especificar archivo pid (predeterminado: curium.pid)
 </translation>
     </message>
     <message>

@@ -5,7 +5,7 @@
 #include <boost/lexical_cast.hpp>
 
 //
-// Bootup the masternode, look for a 10000DRK input and register on the network
+// Bootup the masternode, look for a 10000CRU input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

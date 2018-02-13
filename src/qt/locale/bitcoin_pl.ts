@@ -2478,12 +2478,12 @@ Adres: %4
         <translation>Opcje:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Wskaż plik konfiguracyjny (domyślnie: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Wskaż plik konfiguracyjny (domyślnie: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Wskaż plik pid (domyślnie: darkcoin.pid)</translation>
+        <translation>Wskaż plik pid (domyślnie: curium.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>

@@ -1585,12 +1585,12 @@ Aadress: %4⏎</translation>
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Täpsusta sätete fail (vaikimisi: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Täpsusta sätete fail (vaikimisi: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Täpsusta PID fail (vaikimisi: darkcoin.pid)</translation>
+        <translation>Täpsusta PID fail (vaikimisi: curium.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>

@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
-// Copyright (c) 2014 The Darkcoin developers
+// Copyright (c) 2014 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -29,7 +29,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::DRK)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::CRU)
     {
 
     }
@@ -215,7 +215,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(ui->toggleDarksend, SIGNAL(clicked()), this, SLOT(toggleDarksend()));
     }
 
-    // update the display unit, to not use the default ("DRK")
+    // update the display unit, to not use the default ("CRU")
     updateDisplayUnit();
 }
 
@@ -273,7 +273,7 @@ void OverviewPage::updateDarksendProgress(){
     //Get average rounds of inputs
     double a = (double)pwalletMain->GetAverageAnonymizedRounds() / (double)nDarksendRounds;
     //Get the anon threshold
-    double max = nAnonymizeDarkcoinAmount*100;
+    double max = nAnonymizeCuriumAmount*100;
     //If it's more than the wallet amount, limit to that.
     if(max > (double)nTotalValue) max = (double)nTotalValue;
     //denominated balance / anon threshold -- the percentage that we've completed
@@ -299,7 +299,7 @@ void OverviewPage::darkSendStatus()
         updateDarksendProgress();
 
         std::ostringstream convert2;
-        convert2 << nAnonymizeDarkcoinAmount << " DRK / " << nDarksendRounds << " Rounds";
+        convert2 << nAnonymizeCuriumAmount << " CRU / " << nDarksendRounds << " Rounds";
         QString s2(convert2.str().c_str());
         ui->labelAmountRounds->setText(s2);
     }
@@ -325,7 +325,7 @@ void OverviewPage::darkSendStatus()
 
         if (pwalletMain->GetBalance() - pwalletMain->GetAnonymizedBalance() > 2*COIN){
             if (walletModel->getEncryptionStatus() != WalletModel::Unencrypted){
-                if((nAnonymizeDarkcoinAmount*COIN)-pwalletMain->GetAnonymizedBalance() > 1.1*COIN &&
+                if((nAnonymizeCuriumAmount*COIN)-pwalletMain->GetAnonymizedBalance() > 1.1*COIN &&
                     walletModel->getEncryptionStatus() == WalletModel::Locked){
 
                     WalletModel::UnlockContext ctx(walletModel->requestUnlock(false));
@@ -336,7 +336,7 @@ void OverviewPage::darkSendStatus()
                         LogPrintf("Wallet is locked and user declined to unlock. Disabling Darksend.\n");
                     }
                 }
-                if((nAnonymizeDarkcoinAmount*COIN)-pwalletMain->GetAnonymizedBalance() <= 1.1*COIN &&
+                if((nAnonymizeCuriumAmount*COIN)-pwalletMain->GetAnonymizedBalance() <= 1.1*COIN &&
                     walletModel->getEncryptionStatus() == WalletModel::Unlocked &&
                     darkSendPool.GetMyTransactionCount() == 0){
 
@@ -442,7 +442,7 @@ void OverviewPage::toggleDarksend(){
         int64_t balance = pwalletMain->GetBalance();
         if(balance < 1.49*COIN){
             QMessageBox::warning(this, tr("Darksend"),
-                tr("Darksend requires at least 1.5 DRK to use."),
+                tr("Darksend requires at least 1.5 CRU to use."),
                 QMessageBox::Ok, QMessageBox::Ok);
             return;
         }
@@ -458,7 +458,7 @@ void OverviewPage::toggleDarksend(){
 
         /* show darksend configuration if client has defaults set */
 
-        if(nAnonymizeDarkcoinAmount == 0){
+        if(nAnonymizeCuriumAmount == 0){
             DarksendConfig dlg(this);
             dlg.setModel(walletModel);
             dlg.exec();

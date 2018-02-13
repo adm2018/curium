@@ -2607,12 +2607,12 @@ Address: %4
         <translation>Опции:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Задать pid-файл (по умолчанию: darkcoin.pid)</translation>
+        <translation>Задать pid-файл (по умолчанию: curium.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>

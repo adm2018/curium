@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2014 The Darkcoin developers
+// Copyright (c) 2014 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -92,12 +92,12 @@ inline void MilliSleep(int64_t n)
 #endif
 }
 
-//Darkcoin only features
+//Curium only features
 
 extern bool fMasterNode;
 extern int nInstantXDepth;
 extern int nDarksendRounds;
-extern int nAnonymizeDarkcoinAmount;
+extern int nAnonymizeCuriumAmount;
 extern int nLiquidityProvider;
 extern bool fEnableDarksend;
 extern int64_t enforceMasternodePaymentsTime;
@@ -536,7 +536,7 @@ inline uint32_t ByteReverse(uint32_t value)
 //    threadGroup.create_thread(boost::bind(&LoopForever<boost::function<void()> >, "nothing", f, milliseconds));
 template <typename Callable> void LoopForever(const char* name,  Callable func, int64_t msecs)
 {
-    std::string s = strprintf("darkcoin-%s", name);
+    std::string s = strprintf("curium-%s", name);
     RenameThread(s.c_str());
     LogPrintf("%s thread start\n", name);
     try
@@ -564,7 +564,7 @@ template <typename Callable> void LoopForever(const char* name,  Callable func, 
 // .. and a wrapper that just calls func once
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
-    std::string s = strprintf("darkcoin-%s", name);
+    std::string s = strprintf("curium-%s", name);
     RenameThread(s.c_str());
     try
     {
