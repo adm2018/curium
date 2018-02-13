@@ -32,39 +32,38 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xbf;
-        pchMessageStart[1] = 0x0c;
-        pchMessageStart[2] = 0x6b;
-        pchMessageStart[3] = 0xbd;
-        vAlertPubKey = ParseHex("048240a8748a80a286b270ba126705ced4f2ce5a7847b3610ea3c06513150dade2a8512ed5ea86320824683fc0818f0ac019214973e677acd1244f6d0571fc5103");
-        nDefaultPort = 9999;
-        nRPCPort = 9998;
+        pchMessageStart[0] = 0x7d;
+        pchMessageStart[1] = 0x5d;
+        pchMessageStart[2] = 0xa1;
+        pchMessageStart[3] = 0xea;
+        vAlertPubKey = ParseHex("048240a8748a80a286b270ba1abc25ced4f2ce5a7847b3610ea3c065131abe3de2a8512ed5ea86320824683fc081835ba019214973e677acd1244f6d0571fc5103");
+        nDefaultPort = 9644;
+        nRPCPort = 9645;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);  // Darkcoin starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
 
         // Genesis block
-        const char* pszTimestamp = "Wired 09/Jan/2014 The Grand Experiment Goes Live: Overstock.com Is Now Accepting Bitcoins";
+        const char* pszTimestamp = "Wired 12/Jan/2018 The Grand Experiment Goes Live: I ate my first yam";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("043384710fa689ad5023690c80f3addf8f13f8d45b8c8ab357c96ddae9fac46bd8996b10f4d4604fa08dce601aac4997abcedf92f1fabc21b179c45070ac7b03a9") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1390095618;
+        genesis.nTime    = 1515982333;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 28917698;
+        genesis.nNonce   = 113992;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6"));
-        assert(genesis.hashMerkleRoot == uint256("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
+        assert(hashGenesisBlock == uint256("0x00000e784f88ffd07483e5e2786e002a780d35dfd4142c8e70c43fb7bb2af937"));
+        assert(genesis.hashMerkleRoot == uint256("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
-        vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
-        vSeeds.push_back(CDNSSeedData("darkcoin.qa", "dnsseed.darkcoin.qa"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
+        vSeeds.push_back(CDNSSeedData("curium", "45.32.214.107"));
+        vSeeds.push_back(CDNSSeedData("curium2", "207.246.120.137"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Darkcoin addresses start with 'X'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // Darkcoin script addresses start with '7'
@@ -121,11 +120,11 @@ public:
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1390666206;
-        genesis.nNonce = 3861367235;
+        genesis.nTime = 1515982333;
+        genesis.nNonce = 113992;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c"));
+        assert(hashGenesisBlock == uint256("0x00000e784f88ffd07483e5e2786e002a780d35dfd4142c8e70c43fb7bb2af937"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -156,14 +155,14 @@ public:
         pchMessageStart[3] = 0xdc;
         nSubsidyHalvingInterval = 150;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1417713337;
-        genesis.nBits = 0x207fffff;
-        genesis.nNonce = 1096447;
+        genesis.nTime = 1515982333;
+        genesis.nBits = 0x1e0ffff0;
+        genesis.nNonce = 113992;
         nDefaultPort = 19994;
         strDataDir = "regtest";
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e"));
+        assert(hashGenesisBlock == uint256("0x00000e784f88ffd07483e5e2786e002a780d35dfd4142c8e70c43fb7bb2af937"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
