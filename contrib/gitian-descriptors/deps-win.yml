@@ -1,5 +1,5 @@
 ---
-name: "darkcoin-deps"
+name: "curium-deps"
 suites:
 - "precise"
 architectures:
@@ -124,5 +124,5 @@ script: |
     done
     #
     cd $INSTALLPREFIX
-    find include lib | sort | zip -X@ $OUTDIR/darkcoin-deps-win$BITS-gitian-r15.zip
+    find include lib | sort | zip -X@ $OUTDIR/curium-deps-win$BITS-gitian-r15.zip
   done # for BITS in

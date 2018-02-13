@@ -2607,8 +2607,8 @@ Adress: %4
         <translation>Inställningar:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Ange konfigurationsfil (förvalt: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Ange konfigurationsfil (förvalt: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>

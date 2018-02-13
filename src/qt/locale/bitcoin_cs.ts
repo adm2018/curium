@@ -2578,8 +2578,8 @@ Adresa: %4
         <translation>Možnosti:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Konfigurační soubor (výchozí: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Konfigurační soubor (výchozí: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>

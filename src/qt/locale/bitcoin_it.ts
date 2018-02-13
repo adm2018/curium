@@ -2608,8 +2608,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Opzioni:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Specifica il file di configurazione (predefinito: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Specifica il file di configurazione (predefinito: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>

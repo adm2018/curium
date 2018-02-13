@@ -2102,8 +2102,8 @@ Cím: %4
 </translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Konfigurációs fájl (alapértelmezett: darkcoin.conf)
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Konfigurációs fájl (alapértelmezett: curium.conf)
 </translation>
     </message>
     <message>

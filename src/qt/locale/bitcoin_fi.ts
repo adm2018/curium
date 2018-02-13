@@ -2610,12 +2610,12 @@ Osoite: %4</translation>
         <translation>Asetukset:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Määritä pid-tiedosto (oletus: darkcoin.pid)</translation>
+        <translation>Määritä pid-tiedosto (oletus: curium.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>

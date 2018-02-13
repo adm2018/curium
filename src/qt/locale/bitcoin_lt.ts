@@ -1488,8 +1488,8 @@ Adresas: %4</translation>
         <translation>Parinktys:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Nurodyti konfigūracijos failą (pagal nutylėjimąt: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Nurodyti konfigūracijos failą (pagal nutylėjimąt: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>

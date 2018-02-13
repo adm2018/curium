@@ -991,8 +991,8 @@ Address: %4
         <translation>انتخابها:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>فایل پیکربندیِ را مشخص کنید (پیش فرض: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>فایل پیکربندیِ را مشخص کنید (پیش فرض: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>

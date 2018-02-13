@@ -2430,8 +2430,8 @@ Adresa: %4
         <translation>Setări:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Specifică fișierul de configurare (implicit: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Specifică fișierul de configurare (implicit: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>

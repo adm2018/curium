@@ -724,7 +724,7 @@ Address: %4
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../darkcoin.cpp" line="+447"/>
+        <location filename="../curium.cpp" line="+447"/>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
         <translation>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</translation>
     </message>
@@ -1706,7 +1706,7 @@ Address: %4
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../darkcoin.cpp" line="+71"/>
+        <location filename="../curium.cpp" line="+71"/>
         <location line="+7"/>
         <location line="+13"/>
         <source>Bitcoin</source>
@@ -3341,8 +3341,8 @@ Address: %4
     </message>
     <message>
         <location line="+32"/>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Specify configuration file (default: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Specify configuration file (default: curium.conf)</translation>
     </message>
     <message>
         <location line="+3"/>

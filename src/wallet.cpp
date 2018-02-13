@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2014 The Darkcoin developers
+// Copyright (c) 2014 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1402,7 +1402,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, set<pair<const CWalletTx*,unsign
     vector<COutput> vCoins;
     AvailableCoins(vCoins, true, coinControl);
 
-    //if we're doing only denominated, we need to round up to the nearest .1DRK
+    //if we're doing only denominated, we need to round up to the nearest .1CRU
     if(coin_type == ONLY_DENOMINATED){
         // denominate our funds
         std::vector<CTxOut> vOut;
@@ -1414,7 +1414,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, set<pair<const CWalletTx*,unsign
             BOOST_FOREACH(const COutput& out, vCoins)
             {
                 if(out.tx->vout[out.i].nValue == v                                          //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+1 //round the amount up to .1DRK over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+1 //round the amount up to .1CRU over
                     && added <= 50){                                                        //don't add more than 50 of one denom type
                         nValueRet += out.tx->vout[out.i].nValue;
                         setCoinsRet.insert(make_pair(out.tx, out.i));
@@ -1500,10 +1500,10 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
 
             // Function returns as follows:
             //
-            // bit 0 - 100DRK+1 ( bit on if present )
-            // bit 1 - 10DRK+1
-            // bit 2 - 1DRK+1
-            // bit 3 - .1DRK+1
+            // bit 0 - 100CRU+1 ( bit on if present )
+            // bit 1 - 10CRU+1
+            // bit 2 - 1CRU+1
+            // bit 3 - .1CRU+1
             // bit 4 - non-denom
 
             CTxIn vin = CTxIn(out.tx->GetHash(),out.i);
@@ -1830,7 +1830,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend,
                 // The following if statement should be removed once enough miners
                 // have upgraded to the 0.9 GetMinFee() rules. Until then, this avoids
                 // creating free transactions that have change outputs less than
-                // CENT darkcoins.
+                // CENT curiums.
                 if (nFeeRet < CTransaction::nMinTxFee && nChange > 0 && nChange < CENT)
                 {
                     int64_t nMoveToFee = min(nChange, CTransaction::nMinTxFee - nFeeRet);
@@ -1842,7 +1842,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend,
                 {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-darkcoin-address
+                    // change transaction isn't always pay-to-curium-address
                     CScript scriptChange;
 
                     // coin control: send change to custom address
@@ -2034,7 +2034,7 @@ string CWallet::SendMoneyToDestination(const CTxDestination& address, int64_t nV
     if (nValue + nTransactionFee > GetBalance())
         return _("Insufficient funds");
 
-    // Parse Darkcoin address
+    // Parse Curium address
     CScript scriptPubKey;
     scriptPubKey.SetDestination(address);
 

@@ -1336,12 +1336,12 @@ Adresa:%4
         <translation>Postavke:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: darkcoin.conf)</source>
-        <translation>Odredi konfiguracijsku datoteku (ugrađeni izbor: darkcoin.conf)</translation>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Odredi konfiguracijsku datoteku (ugrađeni izbor: curium.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Odredi proces ID datoteku (ugrađeni izbor: darkcoin.pid)</translation>
+        <translation>Odredi proces ID datoteku (ugrađeni izbor: curium.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>

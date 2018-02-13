@@ -35,9 +35,9 @@ CActiveMasternode activeMasternode;
 // count peers we've requested the list from
 int RequestedMasterNodeList = 0;
 
-/* *** BEGIN DARKSEND MAGIC - DARKCOIN **********
-    Copyright 2014, Darkcoin Developers
-        eduffield - evan@darkcoin.io
+/* *** BEGIN DARKSEND MAGIC - CURIUM **********
+    Copyright 2014, Curium Developers
+        eduffield - evan@curium.io
 */
 
 void ProcessMessageDarksend(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
@@ -1443,7 +1443,7 @@ bool CDarkSendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
         sessionMaxRounds = nDarksendRounds;
     }
     //if we're set to less than a thousand, don't submit for than that to the pool
-    if(nAnonymizeDarkcoinAmount < DARKSEND_POOL_MAX/COIN) maxAmount = nAnonymizeDarkcoinAmount;
+    if(nAnonymizeCuriumAmount < DARKSEND_POOL_MAX/COIN) maxAmount = nAnonymizeCuriumAmount;
 
     int64_t balanceNeedsAnonymized = pwalletMain->GetBalance() - pwalletMain->GetAnonymizedBalance();
     if(balanceNeedsAnonymized > maxAmount*COIN) balanceNeedsAnonymized= maxAmount*COIN;
@@ -1477,7 +1477,7 @@ bool CDarkSendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
         return false;
     }
 
-    // the darksend pool can only take 2.5DRK minimum
+    // the darksend pool can only take 2.5CRU minimum
     if(nValueIn < lowestDenom ||
         (vecDisabledDenominations.size() > 0 && nValueIn < COIN*10)
     ){
@@ -1501,7 +1501,7 @@ bool CDarkSendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
     if(fDryRun) return true;
 
     if(vecDisabledDenominations.size() == 0){
-        //if we have 20x 0.1DRk and 1DRK inputs, we can start just anonymizing 10DRK inputs.
+        //if we have 20x 0.1DRk and 1CRU inputs, we can start just anonymizing 10CRU inputs.
         if(pwalletMain->CountInputsWithAmount((1     * COIN)+1) >= 20 &&
             pwalletMain->CountInputsWithAmount((.1     * COIN)+1) >= 20){
             vecDisabledDenominations.push_back((1     * COIN)+1);
@@ -1518,8 +1518,8 @@ bool CDarkSendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
         //randomize the amounts we mix
         if(sessionTotalValue > maxAmount*COIN) sessionTotalValue = maxAmount*COIN;
 
-        double fDarkcoinSubmitted = (sessionTotalValue / CENT);
-        LogPrintf("Submiting Darksend for %f DRK CENT\n", fDarkcoinSubmitted);
+        double fCuriumSubmitted = (sessionTotalValue / CENT);
+        LogPrintf("Submiting Darksend for %f CRU CENT\n", fCuriumSubmitted);
 
         if(pwalletMain->GetDenominatedBalance(true, true) > 0){ //get denominated unconfirmed inputs
             LogPrintf("DoAutomaticDenominating -- Found unconfirmed denominated outputs, will wait till they confirm to continue.\n");
@@ -1728,7 +1728,7 @@ bool CDarkSendPool::SplitUpMoney(bool justCollateral)
     }
 
     if(splitUpInARow >= 2){
-        LogPrintf("Error: Darksend SplitUpMoney was called multiple times in a row. This should not happen. Please submit a detailed explanation of the steps it took to create this error and submit to evan@darkcoin.io. \n");
+        LogPrintf("Error: Darksend SplitUpMoney was called multiple times in a row. This should not happen. Please submit a detailed explanation of the steps it took to create this error and submit to evan@curium.io. \n");
         fEnableDarksend = false;
         return false;
     }
@@ -1763,7 +1763,7 @@ bool CDarkSendPool::SplitUpMoney(bool justCollateral)
     vecSend.push_back(make_pair(scriptChange, (DARKSEND_COLLATERAL*2)+DARKSEND_FEE));
     nTotalOut += (DARKSEND_COLLATERAL*2)+DARKSEND_FEE;
 
-    // ****** Add outputs in bases of two from 1 darkcoin *** /
+    // ****** Add outputs in bases of two from 1 curium *** /
     if(!justCollateral){
         bool continuing = true;
 
@@ -1881,10 +1881,10 @@ bool CDarkSendPool::IsCompatibleWithSession(int64_t nDenom, CTransaction txColla
 void CDarkSendPool::GetDenominationsToString(int nDenom, std::string& strDenom){
     // Function returns as follows:
     //
-    // bit 0 - 100DRK+1 ( bit on if present )
-    // bit 1 - 10DRK+1
-    // bit 2 - 1DRK+1
-    // bit 3 - .1DRK+1
+    // bit 0 - 100CRU+1 ( bit on if present )
+    // bit 1 - 10CRU+1
+    // bit 2 - 1CRU+1
+    // bit 3 - .1CRU+1
     // bit 3 - non-denom
 
 
@@ -1951,10 +1951,10 @@ int CDarkSendPool::GetDenominations(const std::vector<CTxOut>& vout){
 
     // Function returns as follows:
     //
-    // bit 0 - 100DRK+1 ( bit on if present )
-    // bit 1 - 10DRK+1
-    // bit 2 - 1DRK+1
-    // bit 3 - .1DRK+1
+    // bit 0 - 100CRU+1 ( bit on if present )
+    // bit 1 - 10CRU+1
+    // bit 2 - 1CRU+1
+    // bit 3 - .1CRU+1
     // bit 4 - non-denom
 
     return denom;
@@ -2213,7 +2213,7 @@ void ThreadCheckDarkSendPool()
                     darkSendPool.SendRandomPaymentToSelf();
                     int nLeftToAnon = ((pwalletMain->GetBalance() - pwalletMain->GetAnonymizedBalance())/COIN)-3;
                     if(nLeftToAnon > 999) nLeftToAnon = 999;
-                    nAnonymizeDarkcoinAmount = (rand() % nLeftToAnon)+3;
+                    nAnonymizeCuriumAmount = (rand() % nLeftToAnon)+3;
                 } else {
                     darkSendPool.DoAutomaticDenominating();
                 }
