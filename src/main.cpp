@@ -1453,8 +1453,8 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
     return ret;
 }
 
-static const int64_t nTargetTimespan = 24 * 60 * 60; // Curium: 1 day
-static const int64_t nTargetSpacing = 2.5 * 60; // Curium: 2.5 minutes
+static const int64_t nTargetTimespan = 10 * 30; // Curium: 1 day
+static const int64_t nTargetSpacing = 1 * 60; // Curium: 2.5 minutes
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing; // 576 blocks
 
 //
@@ -1684,7 +1684,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         // Retarget using Kimoto Gravity Wave
         else if (retarget == DIFF_KGW)
         {
-            static const uint64_t blocksTargetSpacing = 2.5 * 60; // 2.5 minutes
+            static const uint64_t blocksTargetSpacing = 1 * 60; // 2.5 minutes
             static const unsigned int timeDaySeconds = 60 * 60 * 24;
             uint64_t pastSecondsMin = timeDaySeconds * 0.025;
             uint64_t pastSecondsMax = timeDaySeconds * 7;
