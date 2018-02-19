@@ -1603,7 +1603,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
         if (!TestNet()) {
             if (pindexLast->nHeight + 1 >= 34140) retarget = DIFF_DGW;
-            else if (pindexLast->nHeight + 1 >= 15200) retarget = DIFF_KGW;
+            
             else retarget = DIFF_BTC;
         } else {
             if (pindexLast->nHeight + 1 >= 256) retarget = DIFF_DGW;
