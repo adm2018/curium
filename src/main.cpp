@@ -2993,14 +2993,14 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
             return state.DoS(10, error("AcceptBlock() : prev block not found"), 0, "bad-prevblk");
         pindexPrev = (*mi).second;
         nHeight = pindexPrev->nHeight+1;
-/*
+
         if(TestNet()) {
             if (block.nBits != GetNextWorkRequired(pindexPrev, &block))
                 return state.DoS(100, error("AcceptBlock() : incorrect proof of work"),
                                  REJECT_INVALID, "bad-diffbits");
         } else {
             // Check proof of work (Here for the architecture issues with DGW v1 and v2)
-            if(nHeight <= 27399){
+            if(nHeight <= 69399){
                 unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, &block);
                 double n1 = ConvertBitsToDouble(block.nBits);
                 double n2 = ConvertBitsToDouble(nBitsNext);
@@ -3013,7 +3013,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
                     return state.DoS(100, error("AcceptBlock() : incorrect proof of work"),
                                     REJECT_INVALID, "bad-diffbits");
             }
-        } */
+        } 
 
         // Check timestamp against prev
         if (block.GetBlockTime() <= pindexPrev->GetMedianTimePast())
