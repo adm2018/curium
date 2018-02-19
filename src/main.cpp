@@ -1384,7 +1384,7 @@ int64_t GetBlockValue(int nBits, int nHeight, int64_t nFees)
 		if(nHeight <= 10) {
 			nSubsidy = 1;
 		}
-		else if(nHeight >= 11)	{
+		else if(nHeight <= 11)	{
 				nSubsidy = 1100000;
 			
 		}
