@@ -1604,6 +1604,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         if (!TestNet()) {
             if (pindexLast->nHeight + 1 >= 34140) retarget = DIFF_DGW;
             
+            
             else retarget = DIFF_BTC;
         } else {
             if (pindexLast->nHeight + 1 >= 256) retarget = DIFF_DGW;
@@ -2993,7 +2994,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
             return state.DoS(10, error("AcceptBlock() : prev block not found"), 0, "bad-prevblk");
         pindexPrev = (*mi).second;
         nHeight = pindexPrev->nHeight+1;
-
+	/*
         if(TestNet()) {
             if (block.nBits != GetNextWorkRequired(pindexPrev, &block))
                 return state.DoS(100, error("AcceptBlock() : incorrect proof of work"),
@@ -3014,7 +3015,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
                                     REJECT_INVALID, "bad-diffbits");
             }
         } 
-
+	*/
         // Check timestamp against prev
         if (block.GetBlockTime() <= pindexPrev->GetMedianTimePast())
             return state.Invalid(error("AcceptBlock() : block's timestamp is too early"),
