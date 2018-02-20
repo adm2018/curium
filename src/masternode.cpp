@@ -673,7 +673,7 @@ bool CMasternodePayments::GetBlockPayee(int nBlockHeight, CScript& payee)
             uint256 hash;
             if(GetTransaction(winner.vin.prevout.hash, tx, hash, true)){
                 BOOST_FOREACH(CTxOut out, tx.vout){
-                    if(out.nValue == 10000*COIN){
+                    if(out.nValue == 1000*COIN){
                         payee = out.scriptPubKey;
                         return true;
                     }
@@ -734,7 +734,7 @@ void CMasternodePayments::CleanPaymentList()
 {
     if(chainActive.Tip() == NULL) return;
 
-    int nLimit = std::max(((int)vecMasternodes.size())*2, 10000);
+    int nLimit = std::max(((int)vecMasternodes.size())*2, 1000);
 
     vector<CMasternodePaymentWinner>::iterator it;
     for(it=vWinning.begin();it<vWinning.end();it++){
