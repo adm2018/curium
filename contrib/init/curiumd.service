@@ -1,15 +1,15 @@
 [Unit]
-Description=Dash's distributed currency daemon
+Description=Curium's distributed currency daemon
 After=network.target
 
 [Service]
-User=dashcore
-Group=dashcore
+User=curium
+Group=curium
 
 Type=forking
-PIDFile=/var/lib/dashd/dashd.pid
-ExecStart=/usr/bin/dashd -daemon -pid=/var/lib/dashd/dashd.pid \
--conf=/etc/dashcore/dash.conf -datadir=/var/lib/dashd -disablewallet
+PIDFile=/var/lib/curiumd/curiumd.pid
+ExecStart=/usr/bin/curiumd -daemon -pid=/var/lib/curiumd/curiumd.pid \
+-conf=/etc/curium/curium.conf -datadir=/var/lib/curiumd -disablewallet
 
 Restart=always
 PrivateTmp=true
