@@ -1,42 +1,68 @@
+*.sublime-project
+*.sublime-workspace
+todo.txt
+reset-files.bash
+
 *.tar.gz
 
 *.exe
-src/darkcoin
-src/darkcoind
-src/darkcoin-cli
-src/test/test_darkcoin
-src/qt/test/test_darkcoin-qt
+src/dash
+src/dashd
+src/dash-cli
+src/dash-tx
+src/test/test_dash
+src/qt/test/test_dash-qt
+src/bench/bench_dash
 
+# autoreconf
 Makefile.in
 aclocal.m4
 autom4te.cache/
+build-aux/config.guess
+build-aux/config.sub
+build-aux/depcomp
+build-aux/install-sh
+build-aux/ltmain.sh
+build-aux/m4/libtool.m4
+build-aux/m4/lt~obsolete.m4
+build-aux/m4/ltoptions.m4
+build-aux/m4/ltsugar.m4
+build-aux/m4/ltversion.m4
+build-aux/missing
+build-aux/compile
+build-aux/test-driver
 config.log
 config.status
 configure
-src/bitcoin-config.h
-src/bitcoin-config.h.in
-src/build-aux/
-src/stamp-h1
+libtool
+src/config/dash-config.h
+src/config/dash-config.h.in
+src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
+
+src/univalue/gen
 
 src/qt/*.moc
 src/qt/moc_*.cpp
 src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
+libconftest.dylib*
 
 .deps
 .dirstamp
+.libs
 .*.swp
 *.*~*
 *.bak
 *.rej
 *.orig
+*.pyc
 *.o
 *.o-*
 *.patch
-.darkcoin
+.dash
 *.a
 *.pb.cc
 *.pb.h
@@ -48,21 +74,23 @@ src/qt/test/moc*.cpp
 *.json.h
 *.raw.h
 
+#libtool object files
+*.lo
+*.la
+
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-darkcoin-qt
-Darkcoin-Qt.app
+dash-qt
+Dash-Qt.app
 
 # Unit-tests
 Makefile.test
-darkcoin-qt_test
+dash-qt_test
+src/test/buildenv.py
 
 # Resources cpp
 qrc_*.cpp
-
-# Qt creator
-*.pro.user
 
 # Mac specific
 .DS_Store
@@ -70,8 +98,9 @@ build
 
 #lcov
 *.gcno
+*.gcda
 /*.info
-test_darkcoin.coverage/
+test_dash.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -80,9 +109,26 @@ linux-coverage-build
 linux-build
 win32-build
 qa/pull-tester/run-bitcoind-for-test.sh
-qa/pull-tester/build-tests.sh
+qa/pull-tester/tests_config.py
+qa/pull-tester/cache/*
+qa/pull-tester/test.*/*
+qa/tmp
+cache/
+share/BitcoindComparisonTool.jar
 
 !src/leveldb*/Makefile
 
 .cproject
 .project
+.autotools
+/doc/doxygen/
+
+libdashconsensus.pc
+src/qt/dash-qt.bash
+qa/pull-tester/tests-config.sh
+
+#development symlinks
+dash-cli
+dashd
+dash-qt
+make

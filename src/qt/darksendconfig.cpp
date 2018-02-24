@@ -1,9 +1,11 @@
 #include "darksendconfig.h"
 #include "ui_darksendconfig.h"
 
+#include "bitcoinunits.h"
 #include "guiconstants.h"
+#include "optionsmodel.h"
+#include "privatesend-client.h"
 #include "walletmodel.h"
-#include "init.h"
 
 #include <QMessageBox>
 #include <QPushButton>
@@ -36,28 +38,43 @@ void DarksendConfig::clickBasic()
 {
     configure(true, 1000, 2);
 
-    QMessageBox::information(this, tr("Darksend Configuration"),
-                         tr("Darksend was successfully set to basic (1000 CRU and 2 rounds). You can change this at any time by opening Curium's configuration screen."));
+    QString strAmount(BitcoinUnits::formatWithUnit(
+        model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
+    QMessageBox::information(this, tr("PrivateSend Configuration"),
+        tr(
+            "PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Dash's configuration screen."
+        ).arg(strAmount)
+    );
 
     close();
 }
 
 void DarksendConfig::clickHigh()
 {
-    configure(true, 1000, 4);
+    configure(true, 1000, 8);
 
-    QMessageBox::information(this, tr("Darksend Configuration"),
-                         tr("Darksend was successfully set to high (1000 CRU and 4 rounds). You can change this at any time by opening Curium's configuration screen."));
+    QString strAmount(BitcoinUnits::formatWithUnit(
+        model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
+    QMessageBox::information(this, tr("PrivateSend Configuration"),
+        tr(
+            "PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Dash's configuration screen."
+        ).arg(strAmount)
+    );
 
     close();
 }
 
 void DarksendConfig::clickMax()
 {
-    configure(true, 1000, 8);
+    configure(true, 1000, 16);
 
-    QMessageBox::information(this, tr("Darksend Configuration"),
-                         tr("Darksend was successfully set to maximum (1000 CRU and 8 rounds). You can change this at any time by opening Curium's configuration screen."));
+    QString strAmount(BitcoinUnits::formatWithUnit(
+        model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
+    QMessageBox::information(this, tr("PrivateSend Configuration"),
+        tr(
+            "PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Dash's configuration screen."
+        ).arg(strAmount)
+    );
 
     close();
 }
@@ -66,9 +83,9 @@ void DarksendConfig::configure(bool enabled, int coins, int rounds) {
 
     QSettings settings;
 
-    settings.setValue("nDarksendRounds", rounds);
-    settings.setValue("nAnonymizeCuriumAmount", coins);
+    settings.setValue("nPrivateSendRounds", rounds);
+    settings.setValue("nPrivateSendAmount", coins);
 
-    nDarksendRounds = rounds;
-    nAnonymizeCuriumAmount = coins;    
+    privateSendClient.nPrivateSendRounds = rounds;
+    privateSendClient.nPrivateSendAmount = coins;
 }
