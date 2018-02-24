@@ -264,8 +264,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("curiumdot.io",  "testnet-seed.curiumdot.io"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
+        vSeeds.push_back(CDNSSeedData("curium1", "45.32.214.107"));
+        vSeeds.push_back(CDNSSeedData("curium2", "207.246.120.137"));
 
         // Testnet Curium addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
