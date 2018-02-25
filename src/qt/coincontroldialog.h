@@ -1,11 +1,9 @@
-// Copyright (c) 2011-2015 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_COINCONTROLDIALOG_H
-#define BITCOIN_QT_COINCONTROLDIALOG_H
-
-#include "amount.h"
+#ifndef COINCONTROLDIALOG_H
+#define COINCONTROLDIALOG_H
 
 #include <QAbstractButton>
 #include <QAction>
@@ -16,34 +14,28 @@
 #include <QString>
 #include <QTreeWidgetItem>
 
-class PlatformStyle;
-class WalletModel;
-
-class CCoinControl;
-class CTxMemPool;
-
 namespace Ui {
     class CoinControlDialog;
 }
-
-#define ASYMP_UTF8 "\xE2\x89\x88"
+class WalletModel;
+class CCoinControl;
 
 class CoinControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit CoinControlDialog(const PlatformStyle *platformStyle, QWidget *parent = 0);
+    explicit CoinControlDialog(QWidget *parent = 0);
     ~CoinControlDialog();
 
     void setModel(WalletModel *model);
 
     // static because also called from sendcoinsdialog
     static void updateLabels(WalletModel*, QDialog*);
+    static QString getPriorityLabel(double);
 
-    static QList<CAmount> payAmounts;
+    static QList<qint64> payAmounts;
     static CCoinControl *coinControl;
-    static bool fSubtractFeeFromAmount;
 
 private:
     Ui::CoinControlDialog *ui;
@@ -57,8 +49,6 @@ private:
     QAction *lockAction;
     QAction *unlockAction;
 
-    const PlatformStyle *platformStyle;
-
     QString strPad(QString, int, QString);
     void sortView(int, Qt::SortOrder);
     void updateView();
@@ -69,12 +59,14 @@ private:
         COLUMN_AMOUNT,
         COLUMN_LABEL,
         COLUMN_ADDRESS,
-        COLUMN_PRIVATESEND_ROUNDS,
+        COLUMN_DARKSEND_ROUNDS,
         COLUMN_DATE,
         COLUMN_CONFIRMATIONS,
+        COLUMN_PRIORITY,
         COLUMN_TXHASH,
         COLUMN_VOUT_INDEX,
         COLUMN_AMOUNT_INT64,
+        COLUMN_PRIORITY_INT64,
         COLUMN_DATE_INT64
     };
 
@@ -85,6 +77,8 @@ private:
         {
             if (column == COLUMN_AMOUNT_INT64)
                 return COLUMN_AMOUNT;
+            else if (column == COLUMN_PRIORITY_INT64)
+                return COLUMN_PRIORITY;
             else if (column == COLUMN_DATE_INT64)
                 return COLUMN_DATE;
         }
@@ -92,6 +86,8 @@ private:
         {
             if (column == COLUMN_AMOUNT)
                 return COLUMN_AMOUNT_INT64;
+            else if (column == COLUMN_PRIORITY)
+                return COLUMN_PRIORITY_INT64;
             else if (column == COLUMN_DATE)
                 return COLUMN_DATE_INT64;
         }
@@ -99,7 +95,7 @@ private:
         return column;
     }
 
-private Q_SLOTS:
+private slots:
     void showMenu(const QPoint &);
     void copyAmount();
     void copyLabel();
@@ -112,6 +108,7 @@ private Q_SLOTS:
     void clipboardFee();
     void clipboardAfterFee();
     void clipboardBytes();
+    void clipboardPriority();
     void clipboardLowOutput();
     void clipboardChange();
     void radioTreeMode(bool);
@@ -120,8 +117,7 @@ private Q_SLOTS:
     void headerSectionClicked(int);
     void buttonBoxClicked(QAbstractButton*);
     void buttonSelectAllClicked();
-    void buttonToggleLockClicked();
     void updateLabelLocked();
 };
 
-#endif // BITCOIN_QT_COINCONTROLDIALOG_H
+#endif // COINCONTROLDIALOG_H
