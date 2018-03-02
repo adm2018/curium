@@ -156,20 +156,20 @@ static CTestNetParams testNetParams;
 class CRegTestParams : public CTestNetParams {
 public:
     CRegTestParams() {
-        pchMessageStart[0] = 0xfc;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
+        pchMessageStart[0] = 0xcc;
+        pchMessageStart[1] = 0xb5;
+        pchMessageStart[2] = 0xe9;
+        pchMessageStart[3] = 0xfe;
         nSubsidyHalvingInterval = 150;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1417713337;
+        genesis.nTime = 1520026653;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 1096447;
+        genesis.nNonce = 0;
         nDefaultPort = 19994;
         strDataDir = "regtest";
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e"));
+        assert(hashGenesisBlock == uint256("0x1c39e4202d18fe0b8841e9282837378ae9b5e92711a5e942eb2f4b621c8c6253"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
