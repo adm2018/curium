@@ -9,10 +9,10 @@
 //
 
 // These need to be macros, as version.cpp's and curium-qt.rc's voodoo requires it
-#define CLIENT_VERSION_MAJOR       0
+#define CLIENT_VERSION_MAJOR       1
 #define CLIENT_VERSION_MINOR       11
 #define CLIENT_VERSION_REVISION    2
-#define CLIENT_VERSION_BUILD       23
+#define CLIENT_VERSION_BUILD       1
 
 
 
