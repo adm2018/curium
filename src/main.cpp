@@ -1497,8 +1497,8 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
     return ret;
 }
 
-static const int64_t nTargetTimespan = 24 * 60 * 60; // Curium: 1 day
-static const int64_t nTargetSpacing = 2.5 * 60; // Curium: 2.5 minutes
+static const int64_t nTargetTimespan = 10 * 30; // Curium: 5 m
+static const int64_t nTargetSpacing = 1 * 60; // Curium: 1 minutes
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing; // 576 blocks
 
 //
