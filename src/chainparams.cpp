@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2014-2015 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -39,7 +39,7 @@ public:
         vAlertPubKey = ParseHex("048240a8748a80a286b270ba126705ced4f2ce5a7847b3610ea3c06513150dade2a8512ed5ea86320824683fc0818f0ac019214973e677acd1244f6d0571fc5103");
         nDefaultPort = 9999;
         nRPCPort = 9998;
-        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);  // Dash starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);  // Curium starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
 
         // Genesis block
@@ -65,14 +65,14 @@ public:
         vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
         vSeeds.push_back(CDNSSeedData("darkcoin.qa", "dnsseed.darkcoin.qa"));
         vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        vSeeds.push_back(CDNSSeedData("dashpay.io", "dnsseed.dashpay.io"));
+        vSeeds.push_back(CDNSSeedData("curiumpay.io", "dnsseed.curiumpay.io"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Dash addresses start with 'X'
-        base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // Dash script addresses start with '7'
-        base58Prefixes[SECRET_KEY] =     list_of(204);                    // Dash private keys start with '7' or 'X'
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x02)(0xFE)(0x52)(0xF8); // Dash BIP32 pubkeys start with 'drkv'
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x02)(0xFE)(0x52)(0xCC); // Dash BIP32 prvkeys start with 'drkp'
-        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000005);             // Dash BIP44 coin type is '5'
+        base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Curium addresses start with 'X'
+        base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // Curium script addresses start with '7'
+        base58Prefixes[SECRET_KEY] =     list_of(204);                    // Curium private keys start with '7' or 'X'
+        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x02)(0xFE)(0x52)(0xF8); // Curium BIP32 pubkeys start with 'drkv'
+        base58Prefixes[EXT_SECRET_KEY] = list_of(0x02)(0xFE)(0x52)(0xCC); // Curium BIP32 prvkeys start with 'drkp'
+        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000005);             // Curium BIP44 coin type is '5'
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
@@ -131,19 +131,19 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        /*vSeeds.push_back(CDNSSeedData("dashpay.io", "testnet-seed.dashpay.io"));
-        vSeeds.push_back(CDNSSeedData("dash.qa", "testnet-seed.dash.qa"));
+        /*vSeeds.push_back(CDNSSeedData("curiumpay.io", "testnet-seed.curiumpay.io"));
+        vSeeds.push_back(CDNSSeedData("curium.qa", "testnet-seed.curium.qa"));
         *///legacy seeders
         vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.darkcoin.io"));
         vSeeds.push_back(CDNSSeedData("darkcoin.qa", "testnet-seed.darkcoin.qa"));
         vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet dash addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet dash script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet curium addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet curium script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY]     = list_of(239);                    // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x3a)(0x80)(0x61)(0xa0); // Testnet dash BIP32 pubkeys start with 'DRKV'
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x3a)(0x80)(0x58)(0x37); // Testnet dash BIP32 prvkeys start with 'DRKP'
-        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000001);             // Testnet dash BIP44 coin type is '5' (All coin's testnet default)
+        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x3a)(0x80)(0x61)(0xa0); // Testnet curium BIP32 pubkeys start with 'DRKV'
+        base58Prefixes[EXT_SECRET_KEY] = list_of(0x3a)(0x80)(0x58)(0x37); // Testnet curium BIP32 prvkeys start with 'DRKP'
+        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000001);             // Testnet curium BIP44 coin type is '5' (All coin's testnet default)
     }
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
 };

@@ -104,7 +104,7 @@ namespace GUIUtil
     // Open debug.log
     void openDebugLogfile();
 	
-    // Open dash.conf
+    // Open curium.conf
     void openConfigfile();	
     
     // Browse backup folder

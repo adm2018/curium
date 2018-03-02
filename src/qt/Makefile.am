@@ -5,41 +5,41 @@ AM_CPPFLAGS += -I$(top_srcdir)/src \
   -I$(top_builddir)/src/qt/forms \
   $(PROTOBUF_CFLAGS) \
   $(QR_CFLAGS)
-bin_PROGRAMS = dash-qt
-noinst_LIBRARIES = libdashqt.a
+bin_PROGRAMS = curium-qt
+noinst_LIBRARIES = libcuriumqt.a
 SUBDIRS = . $(BUILD_TEST_QT)
 DIST_SUBDIRS = . test
 
-# dash qt core #
+# curium qt core #
 QT_TS = \
-  locale/dash_bar.ts \
-  locale/dash_bg.ts \
-  locale/dash_ca.ts \
-  locale/dash_cmn.ts \
-  locale/dash_cs.ts \
-  locale/dash_da.ts \
-  locale/dash_de.ts \
-  locale/dash_el.ts \
-  locale/dash_en.ts \
-  locale/dash_eo.ts \
-  locale/dash_es.ts \
-  locale/dash_fi.ts \
-  locale/dash_fr.ts \
-  locale/dash_hu_HU.ts \
-  locale/dash_it.ts \
-  locale/dash_lv_LV.ts \
-  locale/dash_nb.ts \
-  locale/dash_nl.ts \
-  locale/dash_pl.ts \
-  locale/dash_pt.ts \
-  locale/dash_pt_BR.ts \
-  locale/dash_ru.ts \
-  locale/dash_sk.ts \
-  locale/dash_sv.ts \
-  locale/dash_tr.ts \
-  locale/dash_vi.ts \
-  locale/dash_zh_CN.ts \
-  locale/dash_zh_HK.ts
+  locale/curium_bar.ts \
+  locale/curium_bg.ts \
+  locale/curium_ca.ts \
+  locale/curium_cmn.ts \
+  locale/curium_cs.ts \
+  locale/curium_da.ts \
+  locale/curium_de.ts \
+  locale/curium_el.ts \
+  locale/curium_en.ts \
+  locale/curium_eo.ts \
+  locale/curium_es.ts \
+  locale/curium_fi.ts \
+  locale/curium_fr.ts \
+  locale/curium_hu_HU.ts \
+  locale/curium_it.ts \
+  locale/curium_lv_LV.ts \
+  locale/curium_nb.ts \
+  locale/curium_nl.ts \
+  locale/curium_pl.ts \
+  locale/curium_pt.ts \
+  locale/curium_pt_BR.ts \
+  locale/curium_ru.ts \
+  locale/curium_sk.ts \
+  locale/curium_sv.ts \
+  locale/curium_tr.ts \
+  locale/curium_vi.ts \
+  locale/curium_zh_CN.ts \
+  locale/curium_zh_HK.ts
 
 QT_FORMS_UI = \
   forms/aboutdialog.ui \
@@ -112,13 +112,13 @@ BITCOIN_MM = \
   macnotificationhandler.mm
 
 QT_MOC = \
-  dash.moc \
+  curium.moc \
   intro.moc \
   overviewpage.moc \
   rpcconsole.moc
 
-QT_QRC_CPP = qrc_dash.cpp
-QT_QRC = dash.qrc
+QT_QRC_CPP = qrc_curium.cpp
+QT_QRC = curium.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
@@ -227,7 +227,7 @@ RES_ICONS = \
 
 
 BITCOIN_QT_CPP = \
-  dash.cpp \
+  curium.cpp \
   bitcoinaddressvalidator.cpp \
   bitcoinamountfield.cpp \
   bitcoingui.cpp \
@@ -284,7 +284,7 @@ RES_IMAGES = \
   res/images/about.png \
   res/images/splash.png \
   res/images/splash_testnet.png \
-  res/images/dash_logo_horizontal.png \
+  res/images/curium_logo_horizontal.png \
   res/images/drkblue_downArrow.png \
   res/images/drkblue_downArrow_small.png \
   res/images/drkblue_upArrow_small.png \
@@ -299,40 +299,40 @@ RES_CSS = \
   
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-DASH_RC = res/dash-qt-res.rc
+CURIUM_RC = res/curium-qt-res.rc
 
-libdashqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+libcuriumqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
-libdashqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+libcuriumqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_CSS)
 
-nodist_libdashqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_libcuriumqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP)
 
-BUILT_SOURCES = $(nodist_libdashqt_a_SOURCES)
+BUILT_SOURCES = $(nodist_libcuriumqt_a_SOURCES)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# dash-qt binary #
-dash_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+# curium-qt binary #
+curium_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
-dash_qt_SOURCES = dash.cpp
+curium_qt_SOURCES = curium.cpp
 if TARGET_DARWIN
-  dash_qt_SOURCES += $(BITCOIN_MM)
+  curium_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  dash_qt_SOURCES += $(DASH_RC)
+  curium_qt_SOURCES += $(CURIUM_RC)
 endif
-dash_qt_LDADD = libdashqt.a $(LIBBITCOIN_SERVER)
+curium_qt_LDADD = libcuriumqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-dash_qt_LDADD += $(LIBBITCOIN_WALLET)
+curium_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
-dash_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+curium_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
-dash_qt_LDFLAGS = $(QT_LDFLAGS)
+curium_qt_LDFLAGS = $(QT_LDFLAGS)
 
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
@@ -343,15 +343,15 @@ QT_QM=$(QT_TS:.ts=.qm)
 .PHONY: FORCE
 .SECONDARY: $(QT_QM)
 
-dashstrings.cpp: FORCE
-	$(MAKE) -C $(top_srcdir)/src qt/dashstrings.cpp
+curiumstrings.cpp: FORCE
+	$(MAKE) -C $(top_srcdir)/src qt/curiumstrings.cpp
 
-translate: dashstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: curiumstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/dash_en.ts
+	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/curium_en.ts
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_CSS) $(PROTOBUF_H)
-	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name dash -o $(abs_builddir)/$@ $< || \
+	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name curium -o $(abs_builddir)/$@ $< || \
 	  echo error: could not build $@
 	$(SED) -e '/^\*\*.*Created:/d' $@ > $@.n && mv $@{.n,}
 	$(SED) -e '/^\*\*.*by:/d' $@  > $@.n && mv $@{.n,}

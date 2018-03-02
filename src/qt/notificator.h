@@ -6,7 +6,7 @@
 #define NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "dash-config.h"
+#include "curium-config.h"
 #endif
 
 #include <QIcon>

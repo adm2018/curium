@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2014-2015 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -38,10 +38,10 @@ CActiveMasternode activeMasternode;
 // Count peers we've requested the list from
 int RequestedMasterNodeList = 0;
 
-/* *** BEGIN DARKSEND MAGIC - DASH **********
-    Copyright (c) 2014-2015, Dash Developers
-        eduffield - evan@dashpay.io
-        udjinm6   - udjinm6@dashpay.io
+/* *** BEGIN DARKSEND MAGIC - CURIUM **********
+    Copyright (c) 2014-2015, Curium Developers
+        eduffield - evan@curiumpay.io
+        udjinm6   - udjinm6@curiumpay.io
 */
 
 void CDarksendPool::ProcessMessageDarksend(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
@@ -800,7 +800,7 @@ void CDarksendPool::ChargeRandomFees(){
 
                 Being that Darksend has "no fees" we need to have some kind of cost associated
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
-                allow endless transaction that would bloat Dash and make it unusable. To
+                allow endless transaction that would bloat Curium and make it unusable. To
                 stop these kinds of attacks 1 in 10 successful transactions are charged. This
                 adds up to a cost of 0.001DRK per transaction on average.
             */
@@ -1484,7 +1484,7 @@ bool CDarksendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
         if(sessionTotalValue > nBalanceNeedsAnonymized) sessionTotalValue = nBalanceNeedsAnonymized;
 
         double fDarkcoinSubmitted = (sessionTotalValue / CENT);
-        LogPrintf("Submitting Darksend for %f DASH CENT - sessionTotalValue %d\n", fDarkcoinSubmitted, sessionTotalValue);
+        LogPrintf("Submitting Darksend for %f CURIUM CENT - sessionTotalValue %d\n", fDarkcoinSubmitted, sessionTotalValue);
 
         if(pwalletMain->GetDenominatedBalance(true, true) > 0){ //get denominated unconfirmed inputs
             LogPrintf("DoAutomaticDenominating -- Found unconfirmed denominated outputs, will wait till they confirm to continue.\n");
@@ -2194,7 +2194,7 @@ void ThreadCheckDarkSendPool()
     if(fLiteMode) return; //disable all Darksend/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("dash-darksend");
+    RenameThread("curium-darksend");
 
     unsigned int c = 0;
     std::string errorMessage;

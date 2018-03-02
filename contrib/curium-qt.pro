@@ -1,4 +1,4 @@
-# lupdate-qt4 ./dash-qt.pro -ts ../src/qt/locale/dash_en.ts
+# lupdate-qt4 ./curium-qt.pro -ts ../src/qt/locale/curium_en.ts
 
 HEADERS += \
     ../src/activemasternode.h \
@@ -7,7 +7,7 @@ HEADERS += \
     ../src/allocators.h \
     ../src/base58.h \
     ../src/bignum.h \
-    ../src/dash-config.h \
+    ../src/curium-config.h \
     ../src/bloom.h \
     ../src/chainparams.h \
     ../src/checkpoints.h \
@@ -135,8 +135,8 @@ SOURCES += \
     ../src/core.cpp \
     ../src/crypter.cpp \
     ../src/cubehash.c \
-    ../src/dash-cli.cpp \
-    ../src/dashd.cpp \
+    ../src/curium-cli.cpp \
+    ../src/curiumd.cpp \
     ../src/darksend.cpp \
     ../src/db.cpp \
     ../src/echo.c \
@@ -213,7 +213,7 @@ SOURCES += \
     ../src/test/serialize_tests.cpp \
     ../src/test/sighash_tests.cpp \
     ../src/test/sigopcount_tests.cpp \
-    ../src/test/test_dash.cpp \
+    ../src/test/test_curium.cpp \
     ../src/test/transaction_tests.cpp \
     ../src/test/uint256_tests.cpp \
     ../src/test/util_tests.cpp \
@@ -224,13 +224,13 @@ SOURCES += \
     ../src/qt/bitcoinaddressvalidator.cpp \
     ../src/qt/bitcoinamountfield.cpp \
     ../src/qt/bitcoingui.cpp \
-    ../src/qt/dashstrings.cpp \
+    ../src/qt/curiumstrings.cpp \
     ../src/qt/bitcoinunits.cpp \
     ../src/qt/clientmodel.cpp \
     ../src/qt/coincontroldialog.cpp \
     ../src/qt/coincontroltreewidget.cpp \
     ../src/qt/csvmodelwriter.cpp \
-    ../src/qt/dash.cpp \
+    ../src/qt/curium.cpp \
     ../src/qt/darksendconfig.cpp \
     ../src/qt/editaddressdialog.cpp \
     ../src/qt/guiutil.cpp \
@@ -288,7 +288,7 @@ SOURCES += \
     ../src/qt/paymentrequest.pb.cc \
     ../src/qt/paymentrequestplus.cpp \
     ../src/qt/paymentserver.cpp \
-    ../src/qt/qrc_dash.cpp \
+    ../src/qt/qrc_curium.cpp \
     ../src/qt/qvalidatedlineedit.cpp \
     ../src/qt/qvaluecombobox.cpp \
     ../src/qt/receivecoinsdialog.cpp \
@@ -339,4 +339,4 @@ FORMS += \
     ../src/qt/forms/transactiondescdialog.ui
 
 RESOURCES += \
-    ../src/qt/dash.qrc
+    ../src/qt/curium.qrc
