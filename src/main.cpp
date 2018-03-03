@@ -1434,7 +1434,7 @@ int64_t GetBlockValue(int nBits, int nHeight, int64_t nFees)
     /* fixed bug caused diff to not be correctly calculated */
     if(nHeight > 4500 || TestNet()) dDiff = ConvertBitsToDouble(nBits);
 
-      int64_t nSubsidy = 0;
+    int64_t nSubsidy = 0;
 	
 		if(nHeight <= 10) {
 			nSubsidy = 1;
@@ -1461,7 +1461,7 @@ int64_t GetBlockValue(int nBits, int nHeight, int64_t nFees)
         nSubsidy = (1111.0 / (pow((dDiff+1.0),2.0)));
         if (nSubsidy > 500) nSubsidy = 500;
         if (nSubsidy < 1) nSubsidy = 1;
-}}
+    }
 
     // LogPrintf("height %u diff %4.2f reward %i \n", nHeight, dDiff, nSubsidy);
     nSubsidy *= COIN;
