@@ -62,10 +62,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000e784f88ffd07483e5e2786e002a780d35dfd4142c8e70c43fb7bb2af937"));
         assert(genesis.hashMerkleRoot == uint256("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
-        vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
-        vSeeds.push_back(CDNSSeedData("darkcoin.qa", "dnsseed.darkcoin.qa"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        vSeeds.push_back(CDNSSeedData("curiumpay.io", "dnsseed.curiumpay.io"));
+        vSeeds.push_back(CDNSSeedData("curium1", "207.246.120.137"));
+        vSeeds.push_back(CDNSSeedData("curium2", "45.32.214.107"));
+        vSeeds.push_back(CDNSSeedData("1stdnsseedforcurium", "dnsseed.mrmetech.me"));
+        
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 28);                    // Curium addresses start with 'X'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // Curium script addresses start with '7'
@@ -134,9 +134,8 @@ public:
         /*vSeeds.push_back(CDNSSeedData("curiumpay.io", "testnet-seed.curiumpay.io"));
         vSeeds.push_back(CDNSSeedData("curium.qa", "testnet-seed.curium.qa"));
         *///legacy seeders
-        vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.darkcoin.io"));
-        vSeeds.push_back(CDNSSeedData("darkcoin.qa", "testnet-seed.darkcoin.qa"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
+        vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.mrmetech.me"));
+        
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet curium addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet curium script addresses start with '8' or '9'
