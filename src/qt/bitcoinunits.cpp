@@ -57,7 +57,7 @@ QString BitcoinUnits::name(int unit)
             case CRU: return QString("tCRU");
             case mCRU: return QString("mtCRU");
             case uCRU: return QString::fromUtf8("μtCRU");
-            case duffs: return QString::fromUtf8("tduffs");
+            case crus: return QString::fromUtf8("tcrus");
             default: return QString("???");
         }
     }
@@ -72,7 +72,7 @@ QString BitcoinUnits::description(int unit)
             case CRU: return QString("CRU");
             case mCRU: return QString("Milli-CRU (1 / 1,000)");
             case uCRU: return QString("Micro-CRU (1 / 1,000,000)");
-            case duffs: return QString("Ten Nano-CRU (1 / 100,000,000)");
+            case crus: return QString("Ten Nano-CRU (1 / 100,000,000)");
             default: return QString("???");
         }
     }
@@ -83,7 +83,7 @@ QString BitcoinUnits::description(int unit)
             case CRU: return QString("TestCRUs");
             case mCRU: return QString("Milli-TestCRU (1 / 1,000)");
             case uCRU: return QString("Micro-TestCRU (1 / 1,000,000)");
-            case duffs: return QString("Ten Nano-TestCRU (1 / 100,000,000)");
+            case crus: return QString("Ten Nano-TestCRU (1 / 100,000,000)");
             default: return QString("???");
         }
     }
@@ -96,7 +96,7 @@ qint64 BitcoinUnits::factor(int unit)
     case CRU:  return 100000000;
     case mCRU: return 100000;
     case uCRU: return 100;
-    case duffs: return 1;
+    case crus: return 1;
     default:   return 100000000;
     }
 }
@@ -108,7 +108,7 @@ qint64 BitcoinUnits::maxAmount(int unit)
     case CRU:  return Q_INT64_C(21000000);
     case mCRU: return Q_INT64_C(21000000000);
     case uCRU: return Q_INT64_C(21000000000000);
-    case duffs: return Q_INT64_C(2100000000000000);
+    case crus: return Q_INT64_C(2100000000000000);
     default:   return 0;
     }
 }
@@ -120,7 +120,7 @@ int BitcoinUnits::amountDigits(int unit)
     case CRU: return 8; // 21,000,000 (# digits, without commas)
     case mCRU: return 11; // 21,000,000,000
     case uCRU: return 14; // 21,000,000,000,000
-    case duffs: return 16; // 2,100,000,000,000,000
+    case crus: return 16; // 2,100,000,000,000,000
     default: return 0;
     }
 }
@@ -132,7 +132,7 @@ int BitcoinUnits::decimals(int unit)
     case CRU: return 8;
     case mCRU: return 5;
     case uCRU: return 2;
-    case duffs: return 0;
+    case crus: return 0;
     default: return 0;
     }
 }
