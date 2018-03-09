@@ -18,7 +18,7 @@ are carried out collectively by the network. Curium Core is the name of open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Curium Core software, see http://www.curiumpay.io/downloads.
+the Curium Core software
 
 
 License
