@@ -1,7 +1,7 @@
 Curium Core staging tree 0.11
 ===============================
 
-http://www.curiumpay.io
+http://curiumofficial.com
 
 Copyright (c) 2009-2015 Bitcoin Core Developers
 
