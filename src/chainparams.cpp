@@ -143,8 +143,8 @@ public:
         genesis.nNonce   = 113992;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6"));
-        assert(genesis.hashMerkleRoot == uint256("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
+        assert(hashGenesisBlock == uint256("0x00000e784f88ffd07483e5e2786e002a780d35dfd4142c8e70c43fb7bb2af937"));
+        assert(genesis.hashMerkleRoot == uint256("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
         vSeeds.push_back(CDNSSeedData("curium1", "207.246.120.137"));
         vSeeds.push_back(CDNSSeedData("curium2", "45.32.214.107"));
