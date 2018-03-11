@@ -127,7 +127,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/dash-config.h \
+           src/config/curium-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -329,7 +329,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/dash.moc \
+           src/qt/curium.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -370,9 +370,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/darksend-relay.cpp \
            src/darksend.cpp \
-           src/dash-cli.cpp \
-           src/dash-tx.cpp \
-           src/dashd.cpp \
+           src/curium-cli.cpp \
+           src/curium-tx.cpp \
+           src/curiumd.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -465,8 +465,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/darksendconfig.cpp \
-           src/qt/dash.cpp \
-           src/qt/dashstrings.cpp \
+           src/qt/curium.cpp \
+           src/qt/curiumstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -544,7 +544,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_dash.cpp \
+           src/test/test_curium.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -635,32 +635,32 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/dash.qrc src/qt/dash_locale.qrc
-TRANSLATIONS += src/qt/locale/dash_bar.ts \
-                src/qt/locale/dash_bg.ts \
-                src/qt/locale/dash_ca.ts \
-                src/qt/locale/dash_cmn.ts \
-                src/qt/locale/dash_cs.ts \
-                src/qt/locale/dash_da.ts \
-                src/qt/locale/dash_de.ts \
-                src/qt/locale/dash_el.ts \
-                src/qt/locale/dash_en.ts \
-                src/qt/locale/dash_eo.ts \
-                src/qt/locale/dash_es.ts \
-                src/qt/locale/dash_fi.ts \
-                src/qt/locale/dash_fr.ts \
-                src/qt/locale/dash_hu_HU.ts \
-                src/qt/locale/dash_it.ts \
-                src/qt/locale/dash_lv_LV.ts \
-                src/qt/locale/dash_nb.ts \
-                src/qt/locale/dash_nl.ts \
-                src/qt/locale/dash_pl.ts \
-                src/qt/locale/dash_pt.ts \
-                src/qt/locale/dash_pt_BR.ts \
-                src/qt/locale/dash_ru.ts \
-                src/qt/locale/dash_sk.ts \
-                src/qt/locale/dash_sv.ts \
-                src/qt/locale/dash_tr.ts \
-                src/qt/locale/dash_vi.ts \
-                src/qt/locale/dash_zh_CN.ts \
-                src/qt/locale/dash_zh_HK.ts
+RESOURCES += src/qt/curium.qrc src/qt/curium_locale.qrc
+TRANSLATIONS += src/qt/locale/curium_bar.ts \
+                src/qt/locale/curium_bg.ts \
+                src/qt/locale/curium_ca.ts \
+                src/qt/locale/curium_cmn.ts \
+                src/qt/locale/curium_cs.ts \
+                src/qt/locale/curium_da.ts \
+                src/qt/locale/curium_de.ts \
+                src/qt/locale/curium_el.ts \
+                src/qt/locale/curium_en.ts \
+                src/qt/locale/curium_eo.ts \
+                src/qt/locale/curium_es.ts \
+                src/qt/locale/curium_fi.ts \
+                src/qt/locale/curium_fr.ts \
+                src/qt/locale/curium_hu_HU.ts \
+                src/qt/locale/curium_it.ts \
+                src/qt/locale/curium_lv_LV.ts \
+                src/qt/locale/curium_nb.ts \
+                src/qt/locale/curium_nl.ts \
+                src/qt/locale/curium_pl.ts \
+                src/qt/locale/curium_pt.ts \
+                src/qt/locale/curium_pt_BR.ts \
+                src/qt/locale/curium_ru.ts \
+                src/qt/locale/curium_sk.ts \
+                src/qt/locale/curium_sv.ts \
+                src/qt/locale/curium_tr.ts \
+                src/qt/locale/curium_vi.ts \
+                src/qt/locale/curium_zh_CN.ts \
+                src/qt/locale/curium_zh_HK.ts

@@ -4,13 +4,13 @@
 ====================
 
 
-Dash Core version 0.11.2 is now available from:
+Curium Core version 0.11.2 is now available from:
 
-  https://dashpay.io/downloads
+  https://curiumpay.io/downloads
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/dashpay/dash/issues
+  https://github.com/curiumpay/curium/issues
 
 
 How to Upgrade
@@ -18,15 +18,15 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
-dashd/dash-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Curium-Qt (on Mac) or
+curiumd/curium-qt (on Linux).
 
 Downgrade warning
 ------------------
 
 Because release 0.12.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.12 versions of Dash Core or other software:
+backwards-compatible with pre-0.12 versions of Curium Core or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -58,4 +58,4 @@ Thanks to who contributed to this release, at least:
 
 - *to do ..*
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/dash/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/curium/).

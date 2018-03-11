@@ -5,20 +5,20 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/ui_aboutdialog.h" line="129"/>
-        <source>About Dash Core</source>
-        <translation>O Dash Core</translation>
+        <source>About Curium Core</source>
+        <translation>O Curium Core</translation>
     </message>
     <message>
         <location filename="../forms/ui_aboutdialog.h" line="130"/>
-        <source>&lt;b&gt;Dash Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Dash Core&lt;b&gt; wersja</translation>
+        <source>&lt;b&gt;Curium Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Curium Core&lt;b&gt; wersja</translation>
     </message>
     <message>
         <location filename="../forms/ui_aboutdialog.h" line="131"/>
         <source>Copyright &amp;copy; 2009-2014 The Bitcoin Core developers.
-Copyright &amp;copy; 2014-YYYY The Dash Core developers.</source>
+Copyright &amp;copy; 2014-YYYY The Curium Core developers.</source>
         <translation>Prawa autorskie %copy; 2009-2014 deweloperzy Bitcoin Core
-Prawa autorskie %copy; 2014-YYYY deweloperzy Dash Core </translation>
+Prawa autorskie %copy; 2014-YYYY deweloperzy Curium Core </translation>
     </message>
     <message>
         <location filename="../forms/ui_aboutdialog.h" line="133"/>
@@ -44,8 +44,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
         <translation type="vanished">Deweloperzy Bitcoin Core</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation type="vanished">Deweloperzy Dash Core</translation>
+        <source>The Curium Core developers</source>
+        <translation type="vanished">Deweloperzy Curium Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -135,13 +135,13 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="65"/>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To są twoje adresy Dash z których wysyłasz Darkcoiny. Zawsze upewnij się, że kwota i adres do ktoórego wysyłasz Dash są prawidłowe. </translation>
+        <source>These are your Curium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To są twoje adresy Curium z których wysyłasz Darkcoiny. Zawsze upewnij się, że kwota i adres do ktoórego wysyłasz Curium są prawidłowe. </translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="69"/>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To są twoje adresy do otrzymywania Dashów. Zaleca się aby tworzyć nowy adres dla każdej transakcji</translation>
+        <source>These are your Curium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To są twoje adresy do otrzymywania Curiumów. Zaleca się aby tworzyć nowy adres dla każdej transakcji</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="75"/>
@@ -284,8 +284,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="116"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DASH&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeśli zaszyfrujesz swój portfel i zgubisz swoje hasło, &lt;b&gt;STRACISZ WSZYSTKIE DASHY&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CURIUM&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeśli zaszyfrujesz swój portfel i zgubisz swoje hasło, &lt;b&gt;STRACISZ WSZYSTKIE CURIUMY&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="116"/>
@@ -300,8 +300,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="127"/>
-        <source>Dash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>Dash zostanie teraz zamknięty aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie gwarantuje pełnej ochrony przed kradzieżą twoich monet przez złośliwe oprogramowanie.</translation>
+        <source>Curium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your curiums from being stolen by malware infecting your computer.</source>
+        <translation>Curium zostanie teraz zamknięty aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie gwarantuje pełnej ochrony przed kradzieżą twoich monet przez złośliwe oprogramowanie.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="131"/>
@@ -360,8 +360,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="107"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Curium Core</source>
+        <translation>Curium Core</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="116"/>
@@ -394,7 +394,7 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="261"/>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a Curium address</source>
         <translation>Wyślij monety na adres Darkcoina</translation>
     </message>
     <message>
@@ -404,8 +404,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="272"/>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
-        <translation>Poproś o płatności (tworzy kod QR oraz dash: link)</translation>
+        <source>Request payments (generates QR codes and curium: URIs)</source>
+        <translation>Poproś o płatności (tworzy kod QR oraz curium: link)</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="282"/>
@@ -429,16 +429,16 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="310"/>
-        <source>&amp;About Dash Core</source>
-        <translation>&amp;O Dash Core</translation>
+        <source>&amp;About Curium Core</source>
+        <translation>&amp;O Curium Core</translation>
     </message>
     <message>
-        <source>Show information about Dash</source>
-        <translation type="vanished">Pokaż informacje na temat Dash</translation>
+        <source>Show information about Curium</source>
+        <translation type="vanished">Pokaż informacje na temat Curium</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="311"/>
-        <source>Show information about Dash Core</source>
+        <source>Show information about Curium Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -459,8 +459,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="321"/>
-        <source>Modify configuration options for Dash</source>
-        <translation>Zmień opcje konfiguracji dla Dash</translation>
+        <source>Modify configuration options for Curium</source>
+        <translation>Zmień opcje konfiguracji dla Curium</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="323"/>
@@ -524,8 +524,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="337"/>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
-        <translation>Podpisz wiadomości swoim adresem Dash aby udowodnić, że jesteś ich właścicielem. </translation>
+        <source>Sign messages with your Curium addresses to prove you own them</source>
+        <translation>Podpisz wiadomości swoim adresem Curium aby udowodnić, że jesteś ich właścicielem. </translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="338"/>
@@ -534,8 +534,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="339"/>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
-        <translation>Zweryfikuj wiadomości aby upewnić się, że zostały one podpisane wybranym adresem Dash</translation>
+        <source>Verify messages to ensure they were signed with specified Curium addresses</source>
+        <translation>Zweryfikuj wiadomości aby upewnić się, że zostały one podpisane wybranym adresem Curium</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="341"/>
@@ -604,8 +604,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="356"/>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Otwórz dash: Link lub żądanie zapłaty</translation>
+        <source>Open a curium: URI or payment request</source>
+        <translation>Otwórz curium: Link lub żądanie zapłaty</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="358"/>
@@ -614,12 +614,12 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="360"/>
-        <source>Show the Bitcoin Core help message to get a list with possible Dash command-line options</source>
+        <source>Show the Bitcoin Core help message to get a list with possible Curium command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="550"/>
-        <source>Dash Core client</source>
+        <source>Curium Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -632,8 +632,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
         </translation>
     </message>
     <message>
-        <source>Show the Dash Core help message to get a list with possible Dash command-line options</source>
-        <translation type="vanished">Pokaż wiadomość pomocy Dash Core aby otrzymać listę z dostępnymi opcjami linii komend.</translation>
+        <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
+        <translation type="vanished">Pokaż wiadomość pomocy Curium Core aby otrzymać listę z dostępnymi opcjami linii komend.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="396"/>
@@ -661,16 +661,16 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
         <translation>Pasek zakładek</translation>
     </message>
     <message>
-        <source>Dash client</source>
-        <translation type="vanished">Klient Dash</translation>
+        <source>Curium client</source>
+        <translation type="vanished">Klient Curium</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="692"/>
-        <source>%n active connection(s) to Dash network</source>
+        <source>%n active connection(s) to Curium network</source>
         <translation>
-            <numerusform>%n aktywne połączenie do sieci Dash</numerusform>
-            <numerusform>%n aktywne połączenia do sieci Dash</numerusform>
-            <numerusform>%n aktywnych połączeń do sieci Dash</numerusform>
+            <numerusform>%n aktywne połączenie do sieci Curium</numerusform>
+            <numerusform>%n aktywne połączenia do sieci Curium</numerusform>
+            <numerusform>%n aktywnych połączeń do sieci Curium</numerusform>
         </translation>
     </message>
     <message>
@@ -766,8 +766,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="807"/>
-        <source>Dash</source>
-        <translation>Dash</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="821"/>
@@ -823,9 +823,9 @@ Adres: %4
         <translation>Portfel jest &lt;b&gt;zaszyfrowany&lt;/b&gt; i obecnie &lt;b&gt;zablokowany&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../dash.cpp" line="478"/>
-        <source>A fatal error occurred. Dash can no longer continue safely and will quit.</source>
-        <translation>Wystąpił poważny błąd. Dash zostanie zamknięty.</translation>
+        <location filename="../curium.cpp" line="478"/>
+        <source>A fatal error occurred. Curium can no longer continue safely and will quit.</source>
+        <translation>Wystąpił poważny błąd. Curium zostanie zamknięty.</translation>
     </message>
 </context>
 <context>
@@ -1199,13 +1199,13 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/darksendconfig.ui" line="78"/>
-        <source>Use 2 separate masternodes to mix funds up to 1000 DASH</source>
-        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 DASH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 CURIUM</source>
+        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 CURIUM</translation>
     </message>
     <message>
         <location filename="../forms/darksendconfig.ui" line="91"/>
-        <source>Use 8 separate masternodes to mix funds up to 1000 DASH</source>
-        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 DASH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 CURIUM</source>
+        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 CURIUM</translation>
     </message>
     <message>
         <location filename="../forms/darksendconfig.ui" line="104"/>
@@ -1214,18 +1214,18 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/darksendconfig.ui" line="117"/>
-        <source>This option is the quickest and will cost about ~0.025 DASH to anonymize 1000 DASH</source>
-        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 DASH za zanonimizowanie 1000 DASH</translation>
+        <source>This option is the quickest and will cost about ~0.025 CURIUM to anonymize 1000 CURIUM</source>
+        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 CURIUM za zanonimizowanie 1000 CURIUM</translation>
     </message>
     <message>
         <location filename="../forms/darksendconfig.ui" line="130"/>
-        <source>This option is moderately fast and will cost about 0.05 DASH to anonymize 1000 DASH</source>
-        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 DASH za zanonimizowanie 1000 DASH</translation>
+        <source>This option is moderately fast and will cost about 0.05 CURIUM to anonymize 1000 CURIUM</source>
+        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 CURIUM za zanonimizowanie 1000 CURIUM</translation>
     </message>
     <message>
         <location filename="../forms/darksendconfig.ui" line="156"/>
-        <source>0.1 DASH per 1000 DASH you anonymize.</source>
-        <translation>0.1 DASH za każde 1000 DASH które zanonimizujesz.</translation>
+        <source>0.1 CURIUM per 1000 CURIUM you anonymize.</source>
+        <translation>0.1 CURIUM za każde 1000 CURIUM które zanonimizujesz.</translation>
     </message>
     <message>
         <location filename="../forms/darksendconfig.ui" line="143"/>
@@ -1241,18 +1241,18 @@ Adres: %4
     </message>
     <message>
         <location filename="../darksendconfig.cpp" line="44"/>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Dash&apos;s configuration screen.</source>
-        <translation>Darksend został pomyślnie ustawiony na poziom podstawowy (%1 oraz 2 rundy). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją Dash.</translation>
+        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Curium&apos;s configuration screen.</source>
+        <translation>Darksend został pomyślnie ustawiony na poziom podstawowy (%1 oraz 2 rundy). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją Curium.</translation>
     </message>
     <message>
         <location filename="../darksendconfig.cpp" line="59"/>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Dash&apos;s configuration screen.</source>
-        <translation>Darksend został pomyślnie ustawiony na poziom wysoki (%1 oraz 8 rund). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją Dash.</translation>
+        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Curium&apos;s configuration screen.</source>
+        <translation>Darksend został pomyślnie ustawiony na poziom wysoki (%1 oraz 8 rund). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją Curium.</translation>
     </message>
     <message>
         <location filename="../darksendconfig.cpp" line="74"/>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Dash&apos;s configuration screen.</source>
-        <translation>Darksend został pomyślnie ustawiony na poziom maksymalny (%1 oraz 16 rund). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją Dash.</translation>
+        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Curium&apos;s configuration screen.</source>
+        <translation>Darksend został pomyślnie ustawiony na poziom maksymalny (%1 oraz 16 rund). Możesz to zmienić kiedy chcesz, otwierając ekran z konfiguracją Curium.</translation>
     </message>
 </context>
 <context>
@@ -1304,8 +1304,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="111"/>
-        <source>The entered address &quot;%1&quot; is not a valid Dash address.</source>
-        <translation>Wprowadzony adres &quot;%1&quot; nie jest właściwym adresem Dash.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Curium address.</source>
+        <translation>Wprowadzony adres &quot;%1&quot; nie jest właściwym adresem Curium.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="116"/>
@@ -1354,13 +1354,13 @@ Adres: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Dash Core - Command-line options</source>
-        <translation type="vanished">Dash Core - Opcje wiersza poleceń</translation>
+        <source>Curium Core - Command-line options</source>
+        <translation type="vanished">Curium Core - Opcje wiersza poleceń</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="32"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Curium Core</source>
+        <translation>Curium Core</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="32"/>
@@ -1375,8 +1375,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="44"/>
-        <source>About Dash Core</source>
-        <translation type="unfinished">O Dash Core</translation>
+        <source>About Curium Core</source>
+        <translation type="unfinished">O Curium Core</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="62"/>
@@ -1433,18 +1433,18 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/intro.ui" line="23"/>
-        <source>Welcome to Dash Core.</source>
-        <translation>Witaj w Dash Core</translation>
+        <source>Welcome to Curium Core.</source>
+        <translation>Witaj w Curium Core</translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="49"/>
-        <source>As this is the first time the program is launched, you can choose where Dash Core will store its data.</source>
-        <translation>Ponieważ uruchomiłeś ten program po raz pierwszy, możesz wybrać gdzie Dash Core będzie przechowywał dane.</translation>
+        <source>As this is the first time the program is launched, you can choose where Curium Core will store its data.</source>
+        <translation>Ponieważ uruchomiłeś ten program po raz pierwszy, możesz wybrać gdzie Curium Core będzie przechowywał dane.</translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="59"/>
-        <source>Dash Core will download and store a copy of the Dash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dash Core ściągnie i przechowa  kopię blockchain na twoim dysku. Co najmniej 1GB danych zostanie zapisanych w tym katalogu, a wraz z upływem czasu blockchain będzie stopniowo wymagał coraz więcej miejsca. Twój portfel również zostanie zapisany w tym katalogu.</translation>
+        <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium Core ściągnie i przechowa  kopię blockchain na twoim dysku. Co najmniej 1GB danych zostanie zapisanych w tym katalogu, a wraz z upływem czasu blockchain będzie stopniowo wymagał coraz więcej miejsca. Twój portfel również zostanie zapisany w tym katalogu.</translation>
     </message>
     <message>
         <location filename="../forms/intro.ui" line="69"/>
@@ -1457,8 +1457,8 @@ Adres: %4
         <translation>Użyj wybranego folderu dla danych</translation>
     </message>
     <message>
-        <source>Dash</source>
-        <translation type="vanished">Dash</translation>
+        <source>Curium</source>
+        <translation type="vanished">Curium</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1466,8 +1466,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="185"/>
-        <source>Dash Core</source>
-        <translation type="unfinished">Dash Core</translation>
+        <source>Curium Core</source>
+        <translation type="unfinished">Curium Core</translation>
     </message>
     <message>
         <location filename="../intro.cpp" line="186"/>
@@ -1548,13 +1548,13 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="33"/>
-        <source>Automatically start Dash after logging in to the system.</source>
-        <translation>Automatycznie uruchom Dash po zalogowaniu się do systemu.</translation>
+        <source>Automatically start Curium after logging in to the system.</source>
+        <translation>Automatycznie uruchom Curium po zalogowaniu się do systemu.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="36"/>
-        <source>&amp;Start Dash on system login</source>
-        <translation>&amp;Uruchom Dash po zalogowaniu się do systemu</translation>
+        <source>&amp;Start Curium on system login</source>
+        <translation>&amp;Uruchom Curium po zalogowaniu się do systemu</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="45"/>
@@ -1593,8 +1593,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="180"/>
-        <source>Amount of Dash to keep anonymized</source>
-        <translation>Ilość Dashów, które mają pozostać anonimowe.</translation>
+        <source>Amount of Curium to keep anonymized</source>
+        <translation>Ilość Curiumów, które mają pozostać anonimowe.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="206"/>
@@ -1613,7 +1613,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="281"/>
-        <source>Connect to the Dash network through a SOCKS5 proxy.</source>
+        <source>Connect to the Curium network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1661,7 +1661,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="261"/>
-        <source>Automatically open the Dash client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Curium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automatycznie uruchamiaj port klienta Darkcoina na ruterze. To działa tylko jeśli twój ruter wspiera  i ma włączone UPnP.</translation>
     </message>
     <message>
@@ -1670,7 +1670,7 @@ Adres: %4
         <translation>Mapuj port używając &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a SOCKS proxy.</source>
+        <source>Connect to the Curium network through a SOCKS proxy.</source>
         <translation type="vanished">Połącz się z siecią Darkcoina przez proxy SOCKS</translation>
     </message>
     <message>
@@ -1742,15 +1742,15 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="447"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dash.</source>
-        <translation>Tutaj można ustawić język interfejsu użytkownika. To ustawienie zostanie zapisane po ponownym uruchomieniu Dash.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Curium.</source>
+        <translation>Tutaj można ustawić język interfejsu użytkownika. To ustawienie zostanie zapisane po ponownym uruchomieniu Curium.</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="468"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/dash/</source>
-        <translation>Dash Core nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
-https://www.transifex.com/projects/p/dash/</translation>
+https://www.transifex.com/projects/p/curium/</source>
+        <translation>Curium Core nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
+https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <location filename="../forms/optionsdialog.ui" line="487"/>
@@ -1768,8 +1768,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Wybierz podział jednostki pokazywany w interfejsie  oraz podczas wysyłania monet</translation>
     </message>
     <message>
-        <source>Whether to show Dash addresses in the transaction list or not.</source>
-        <translation type="vanished">Czy wyświetlić adres Dash w liście transakcji czy nie</translation>
+        <source>Whether to show Curium addresses in the transaction list or not.</source>
+        <translation type="vanished">Czy wyświetlić adres Curium w liście transakcji czy nie</translation>
     </message>
     <message>
         <source>&amp;Display addresses in transaction list</source>
@@ -1863,8 +1863,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <location filename="../forms/overviewpage.ui" line="73"/>
         <location filename="../forms/overviewpage.ui" line="1088"/>
         <location filename="../forms/overviewpage.ui" line="1165"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
-        <translation>Wyświetlona informacja może być przedawniona. Twój portfel automatycznie zsynchronizuje sie z siecią Dash jak tylko zostanie ustanowione połączenie, jednakże proces ten jeszcze się nie zakończył.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Curium network after a connection is established, but this process has not completed yet.</source>
+        <translation>Wyświetlona informacja może być przedawniona. Twój portfel automatycznie zsynchronizuje sie z siecią Curium jak tylko zostanie ustanowione połączenie, jednakże proces ten jeszcze się nie zakończył.</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="322"/>
@@ -1963,8 +1963,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="484"/>
-        <source>0 DASH</source>
-        <translation>0 DASH</translation>
+        <source>0 CURIUM</source>
+        <translation>0 CURIUM</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="491"/>
@@ -1973,8 +1973,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="498"/>
-        <source>0 DASH / 0 Rounds</source>
-        <translation>0 DASH / 0 Rund</translation>
+        <source>0 CURIUM / 0 Rounds</source>
+        <translation>0 CURIUM / 0 Rund</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="505"/>
@@ -2231,8 +2231,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../paymentserver.cpp" line="319"/>
-        <source>Cannot start dash: click-to-pay handler</source>
-        <translation>Nie można włączyć dash: kliknij-aby-zapłacić ubsługującemu.</translation>
+        <source>Cannot start curium: click-to-pay handler</source>
+        <translation>Nie można włączyć curium: kliknij-aby-zapłacić ubsługującemu.</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -2255,8 +2255,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Żądanie płatności podowduje że URL jest niewłaściwy: %1</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
-        <translation type="vanished">URI nie może zostać przeanalizowany! Mogło to być spowodowane przez niewłaściwy adres Dash lub niewłaściwe parametry URI</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Curium address or malformed URI parameters.</source>
+        <translation type="vanished">URI nie może zostać przeanalizowany! Mogło to być spowodowane przez niewłaściwy adres Curium lub niewłaściwe parametry URI</translation>
     </message>
     <message>
         <location filename="../paymentserver.cpp" line="458"/>
@@ -2274,7 +2274,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../paymentserver.cpp" line="445"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Curium address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2380,45 +2380,45 @@ https://www.transifex.com/projects/p/dash/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../dash.cpp" line="596"/>
-        <source>Dash</source>
-        <translation>Dash</translation>
+        <location filename="../curium.cpp" line="596"/>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
-        <location filename="../dash.cpp" line="558"/>
+        <location filename="../curium.cpp" line="558"/>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
         <translation>Błąd: Określony folder danych &quot;%1&quot; nie istnieje.</translation>
     </message>
     <message>
-        <location filename="../dash.cpp" line="557"/>
-        <location filename="../dash.cpp" line="564"/>
-        <location filename="../dash.cpp" line="577"/>
-        <source>Dash Core</source>
-        <translation type="unfinished">Dash Core</translation>
+        <location filename="../curium.cpp" line="557"/>
+        <location filename="../curium.cpp" line="564"/>
+        <location filename="../curium.cpp" line="577"/>
+        <source>Curium Core</source>
+        <translation type="unfinished">Curium Core</translation>
     </message>
     <message>
-        <location filename="../dash.cpp" line="565"/>
+        <location filename="../curium.cpp" line="565"/>
         <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
         <translation>Błąd: Nie można przetworzyć pliku konfiguracyjnego: %1. Używaj tylko składni klucz=wartość.</translation>
     </message>
     <message>
-        <location filename="../dash.cpp" line="597"/>
+        <location filename="../curium.cpp" line="597"/>
         <source>Error reading masternode configuration file: %1</source>
         <translation>Błąd podczas wczytywania pliku z konfiguracją masternoda: %1</translation>
     </message>
     <message>
-        <location filename="../dash.cpp" line="577"/>
+        <location filename="../curium.cpp" line="577"/>
         <source>Error: Invalid combination of -regtest and -testnet.</source>
         <translation>Błąd: Niepoprawna kombinacja -regtest i -testnet.</translation>
     </message>
     <message>
-        <location filename="../dash.cpp" line="643"/>
-        <source>Dash Core didn&apos;t yet exit safely...</source>
-        <translation>Dash Core jeszcze się nie wyłaczył...</translation>
+        <location filename="../curium.cpp" line="643"/>
+        <source>Curium Core didn&apos;t yet exit safely...</source>
+        <translation>Curium Core jeszcze się nie wyłaczył...</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</source>
-        <translation type="vanished">Wpisz adres Dash (np. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</translation>
+        <source>Enter a Curium address (e.g. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</source>
+        <translation type="vanished">Wpisz adres Curium (np. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</translation>
     </message>
     <message>
         <location filename="../bitcoinunits.cpp" line="256"/>
@@ -2427,7 +2427,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="110"/>
-        <source>Enter a Dash address (e.g. %1)</source>
+        <source>Enter a Curium address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2566,7 +2566,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="348"/>
-        <source>Open the Dash debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Curium debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Otwiera plik z zapisami debugowania Darkcoina z obecnego katalogu. Może to potrfać kilka sekund w zależności od rozmiaru pliku.</translation>
     </message>
     <message>
@@ -2748,7 +2748,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="368"/>
-        <source>Welcome to the Dash RPC console.</source>
+        <source>Welcome to the Curium RPC console.</source>
         <translation>Witaj w konsoli RPC Darkcoina</translation>
     </message>
     <message>
@@ -2839,8 +2839,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>O&amp;drzuć istniejący adres odbiorczy (nie zalecane)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
-        <translation type="vanished">Opcjonalna wiadomość do żądania płatności. Wiadomość wyświetli się po otwarciu żądania. Pamiętaj: Wiadomość nie zostanie wysłana razem z płatnością poprzez sieć Dash.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Curium network.</source>
+        <translation type="vanished">Opcjonalna wiadomość do żądania płatności. Wiadomość wyświetli się po otwarciu żądania. Pamiętaj: Wiadomość nie zostanie wysłana razem z płatnością poprzez sieć Curium.</translation>
     </message>
     <message>
         <location filename="../forms/receivecoinsdialog.ui" line="51"/>
@@ -3157,7 +3157,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="858"/>
-        <source>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 duffs in fee, while &quot;at least&quot; pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 crus in fee, while &quot;at least&quot; pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3167,7 +3167,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="874"/>
-        <source>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 duffs in fee, while &quot;total at least&quot; pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 crus in fee, while &quot;total at least&quot; pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3441,8 +3441,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="810"/>
-        <source>Warning: Invalid Dash address</source>
-        <translation>Ostrzeżenie: adres Dash jest nieprawidlowy </translation>
+        <source>Warning: Invalid Curium address</source>
+        <translation>Ostrzeżenie: adres Curium jest nieprawidlowy </translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="819"/>
@@ -3473,7 +3473,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="54"/>
-        <source>The Dash address to send the payment to</source>
+        <source>The Curium address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3527,8 +3527,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="157"/>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
-        <translation>Wiadomość, która została dołączona do dash: Link, który zostanie zapisany wraz z transakcją do wglądu w przyszłości. Zauważ. że sama wiadomość nie zostanie wysłana przez sieć Darkcoina.</translation>
+        <source>A message that was attached to the curium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Curium network.</source>
+        <translation>Wiadomość, która została dołączona do curium: Link, który zostanie zapisany wraz z transakcją do wglądu w przyszłości. Zauważ. że sama wiadomość nie zostanie wysłana przez sieć Darkcoina.</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="583"/>
@@ -3562,8 +3562,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="116"/>
-        <source>Dash Core is shutting down...</source>
-        <translation>Trwa zamykanie Dash Core</translation>
+        <source>Curium Core is shutting down...</source>
+        <translation>Trwa zamykanie Curium Core</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="117"/>
@@ -3594,7 +3594,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="51"/>
-        <source>The Dash address to sign the message with</source>
+        <source>The Curium address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3636,8 +3636,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="155"/>
-        <source>Sign the message to prove you own this Dash address</source>
-        <translation>Podpisz wiadomość aby udowodnić, że jesteś właścicielem adresu Dash.</translation>
+        <source>Sign the message to prove you own this Curium address</source>
+        <translation>Podpisz wiadomość aby udowodnić, że jesteś właścicielem adresu Curium.</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="158"/>
@@ -3667,7 +3667,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="261"/>
-        <source>The Dash address the message was signed with</source>
+        <source>The Curium address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3676,8 +3676,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="298"/>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
-        <translation>Zweryfikuj wiadomość aby upewnić się, że została zapisana przez konkretny adres Dash</translation>
+        <source>Verify the message to ensure it was signed with the specified Curium address</source>
+        <translation>Zweryfikuj wiadomość aby upewnić się, że została zapisana przez konkretny adres Curium</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="301"/>
@@ -3695,8 +3695,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Kliknij &quot;Podpisz Wiadomość&quot; żeby uzyskać podpis</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</source>
-        <translation type="vanished">Wpisz adres Dash (np. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</translation>
+        <source>Enter a Curium address (e.g. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</source>
+        <translation type="vanished">Wpisz adres Curium (np. XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg)</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="113"/>
@@ -3769,8 +3769,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="36"/>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Curium Core</source>
+        <translation>Curium Core</translation>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="37"/>
@@ -3784,8 +3784,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location filename="../splashscreen.cpp" line="39"/>
-        <source>The Dash Core developers</source>
-        <translation>Deweloperzy Dash Core</translation>
+        <source>The Curium Core developers</source>
+        <translation>Deweloperzy Curium Core</translation>
     </message>
     <message>
         <location filename="../networkstyle.cpp" line="19"/>
@@ -4477,11 +4477,11 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message numerus="yes">
         <location filename="../walletmodel.cpp" line="289"/>
-        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %n DASH.</source>
+        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %n CURIUM.</source>
         <translation>
-            <numerusform>InstantX nie obsługuje jeszcze tak wysokiej ilości. Transakcja jest obecnie ograniczona do %n DASH</numerusform>
-            <numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n DASH</numerusform>
-            <numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n DASH</numerusform>
+            <numerusform>InstantX nie obsługuje jeszcze tak wysokiej ilości. Transakcja jest obecnie ograniczona do %n CURIUM</numerusform>
+            <numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n CURIUM</numerusform>
+            <numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n CURIUM</numerusform>
         </translation>
     </message>
 </context>
@@ -4529,273 +4529,273 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
 </context>
 <context>
-    <name>dash-core</name>
+    <name>curium-core</name>
     <message>
-        <location filename="../dashstrings.cpp" line="16"/>
+        <location filename="../curiumstrings.cpp" line="16"/>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=dashrpc
+rpcuser=curiumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Dash Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.com
 </source>
         <translation>%s, musisz ustawić hasło rpc w pliku konfiguracji:
 %s
 Zalecane jest abyś użył te o to losowo stworzone hasło
-rpcuser=dashrpc
+rpcuser=curiumrpc
 rpcpassword=%s
 (Nie musisz pamiętać tego hasła)
 Twoje hasło NIE MOŻE być takie samo jak twój login.
 Jeśli plik ten nie istnieje, stwórz go z uprawnieniami do odczytu tylko przez właściciela.
-Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać ci znać w razie wystąpienia jekiegoś problemu, na przykład: alertnotify=echo %%s I -s &quot;Dash Alert&quot; admin@foo.com
+Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać ci znać w razie wystąpienia jekiegoś problemu, na przykład: alertnotify=echo %%s I -s &quot;Curium Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="29"/>
+        <location filename="../curiumstrings.cpp" line="29"/>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
         <translation>Akceptowane szyfry (domyślny: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH))</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="32"/>
+        <location filename="../curiumstrings.cpp" line="32"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Wystąpił błąd podczas zakładania portu %u RPC służącego do nasłuchu na IPv4: %s</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="34"/>
+        <location filename="../curiumstrings.cpp" line="34"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>Wystąpił błąd podczas ustawiania portu %u służącego do nasłuchu na IPv6 przez co nastąpił powrót do do IPv4: s%</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="37"/>
+        <location filename="../curiumstrings.cpp" line="37"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Związany z danym adresem oraz zawsze prowadzący na nim nasłuch.  Użyj [host]:oznaczenie dla IPv6</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="40"/>
-        <source>Cannot obtain a lock on data directory %s. Dash Core is probably already running.</source>
-        <translation>Nie można zablokować katalogu danych %s. Prawdopodobnie Dash jest już uruchomiony. </translation>
+        <location filename="../curiumstrings.cpp" line="40"/>
+        <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
+        <translation>Nie można zablokować katalogu danych %s. Prawdopodobnie Curium jest już uruchomiony. </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="43"/>
+        <location filename="../curiumstrings.cpp" line="43"/>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:15)</source>
         <translation>Utrzymuj limit tempa darmowych transakcji do &lt;n&gt;*1000 bitów na minutę (domyślnie: 15)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="46"/>
+        <location filename="../curiumstrings.cpp" line="46"/>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
         <translation>Darksend używa dokładnych denominowanych kwot do przesyłania środków, możliwe że musisz zanonimizować trochę więcej monet.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="49"/>
+        <location filename="../curiumstrings.cpp" line="49"/>
         <source>Disable all Masternode and Darksend related functionality (0-1, default: 0)</source>
         <translation>Wyłącz wszystkie funkcje związane z Masternode i Darksend</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="51"/>
+        <location filename="../curiumstrings.cpp" line="51"/>
         <source>Enable instantx, show confirmations for locked transactions (bool, default: true)</source>
         <translation>Włącz instantx, pokaż potwierdzenia dla zamkniętych transakcji (bool, domyślnie: true)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="54"/>
+        <location filename="../curiumstrings.cpp" line="54"/>
         <source>Enable use of automated darksend for funds stored in this wallet (0-1, default: 0)</source>
         <translation>Włącz możliwość automatyzacji Darksend dla środków zgromadzonych w  tym portfelu (0-1, domyślnie: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="57"/>
+        <location filename="../curiumstrings.cpp" line="57"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
         <translation>Wejdź w regresyjny tryb testowy, który używa specjalnego łańcucha, w którym bloki mogą być rozwiązywane natychmiastowo. Tryb ten został stworzony dla narzędzi do testowania regresyjnego oraz dla tworzenia aplikacji.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="61"/>
+        <location filename="../curiumstrings.cpp" line="61"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
         <translation>Wejdź w regresyjny tryb testowy, który używa specjalnego łańcucha, w którym bloki mogą być rozwiązywane natychmiastowo. </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="64"/>
+        <location filename="../curiumstrings.cpp" line="64"/>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Błąd: Nie powiodło się nasłuchiwanie połączeń przychodzących (nasłuch zwrócił błąd %s)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="66"/>
+        <location filename="../curiumstrings.cpp" line="66"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Transakcja została odrzucona! Może się to zdarzyć jeśli część monet z portfela została już wydana używając kopii pliku wallet.dat i nie zostało to tutaj uwzględnione.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="70"/>
+        <location filename="../curiumstrings.cpp" line="70"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
         <translation>Błąd: Z powodu wielkości kwoty, swojego skomplikowania, lub użycia niedawno otrzymanych monet, transakcja ta wymaga uiszczenia opłaty o wysokości co najmniej %s </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="73"/>
+        <location filename="../curiumstrings.cpp" line="73"/>
         <source>Error: Wallet unlocked for anonymization only, unable to create transaction.</source>
         <translation>Błąd: Portfel jest odblokowany tylko dla celu anonimizacji, nie możliwe jest przeprowadzenie transakcji.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="75"/>
+        <location filename="../curiumstrings.cpp" line="75"/>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Wykonaj komendę po otrzymaniu odpowiedniego zawiadomienia lub po obserwacji bardzo długiego rozszczepienia (%s w konsoli jest zastąpiony przez wiadomość)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="78"/>
+        <location filename="../curiumstrings.cpp" line="78"/>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Wykonaj komendę kiedy zmienia się transakcja portfela (%s w konsoli jest zastąpione przez TxID)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="81"/>
+        <location filename="../curiumstrings.cpp" line="81"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Wykonaj komendę przy zmianie najlepszego bloku (%s w konsoli jest zastąpione przez hasz bloku)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="84"/>
+        <location filename="../curiumstrings.cpp" line="84"/>
         <source>Fees smaller than this are considered zero fee (for transaction creation) (default:</source>
         <translation>Opłaty mniejsze niż ta, są uważane są za równoznaczne z brakiem opłat (dla przeprowadzenia transakcji) (domyślnie:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="87"/>
+        <location filename="../curiumstrings.cpp" line="87"/>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: 100)</source>
         <translation>Zrzuć zapisy aktywności bazy danych z pamięci na dysk co &lt;n&gt; megabajtów (domyślnie: 100)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="90"/>
+        <location filename="../curiumstrings.cpp" line="90"/>
         <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
         <translation>Znaleziono niepotwierdzone denominowane transakcje wyjściowe, poczekam aż zostaną one potwierdzone aby móc kontynuować dalej.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="93"/>
+        <location filename="../curiumstrings.cpp" line="93"/>
         <source>How thorough the block verification of -checkblocks is (0-4, default: 3)</source>
         <translation>Jak szczegółowa jest weryfikacja bloków (0-4, domyślnie: 3)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="95"/>
+        <location filename="../curiumstrings.cpp" line="95"/>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
         <translation>W tym trybie -genproclimit kontroluje ile bloków jest generowanych natychmiastowo.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="98"/>
+        <location filename="../curiumstrings.cpp" line="98"/>
         <source>InstantX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation>InstantX potrzebuje aby transakcja wejściowa miała co najmniej 6 potwierdzeń. Poczekaj kilka minut i spróbuj ponownie.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="101"/>
+        <location filename="../curiumstrings.cpp" line="101"/>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9998 or testnet: 19998)</source>
         <translation>Prowadź nasłuch połączeń JSON-RPC na &lt;port&gt; (domyślnie: 9998 lub testnet: 19998)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="103"/>
+        <location filename="../curiumstrings.cpp" line="103"/>
         <source>Name to construct url for KeePass entry that stores the wallet passphrase</source>
         <translation>Nazwa służąca do stworzenia linka do KeePass w którym trzymane jest hasło portfela</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="105"/>
+        <location filename="../curiumstrings.cpp" line="105"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Ilość czasu liczonego w sekundach jaki musi upłynąć zanim wadliwy peer znowu może spróbować nawiązać połączenie (domyślnie 86400)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="108"/>
+        <location filename="../curiumstrings.cpp" line="108"/>
         <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
         <translation>.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="110"/>
+        <location filename="../curiumstrings.cpp" line="110"/>
         <source>Provide liquidity to Darksend by infrequently mixing coins on a continual basis (0-100, default: 0, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
         <translation>Dostarcz Darksend płynności przez rzadkie ale ciągłe mieszanie monet (0-100, domyślnie: 0, 1=bardzo często, wysokie opłaty, 100=bardzo rzadko, małe opłaty)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="114"/>
+        <location filename="../curiumstrings.cpp" line="114"/>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation>Jeśli pula adresów jest niska, pytaj o adresy peer przez podgląd DNS (domyślnie: 1 chyba że -connect)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="117"/>
+        <location filename="../curiumstrings.cpp" line="117"/>
         <source>Set external address:port to get to this masternode (example: address:port)</source>
         <translation>Ustaw zewnętrzny adres:port aby połączyć się z tym masternodem (na przykład: adres:port)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="119"/>
+        <location filename="../curiumstrings.cpp" line="119"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Ustaw maksymalny rozmiar transakcji o wysokim/niskim priorytecie w bajtach (domyślny: %d)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="121"/>
+        <location filename="../curiumstrings.cpp" line="121"/>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Ustaw liczbę wątków weryfikacji skryptu (%u do %d, 0 = auto, &lt;0 = zostaw tyle rdzeni wolnych, domyślnie: %d)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="124"/>
+        <location filename="../curiumstrings.cpp" line="124"/>
         <source>Set the processor limit for when generation is on (-1 = unlimited, default: -1)</source>
         <translation>Ustaw limit na pracę procesora kiedy generowanie jest włączone (-1 = brak limitu, domyślnie: -1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="127"/>
+        <location filename="../curiumstrings.cpp" line="127"/>
         <source>Show N confirmations for a successfully locked transaction (0-9999, default: 1)</source>
         <translation>Pokaż N potwierdzeń dla skutecznie zamkniętej transakcji (0-9999, domyślnie: 1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="130"/>
+        <location filename="../curiumstrings.cpp" line="130"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Ta wersja nie jest jeszcze gotowa na oficjalne wydanie - używaj jej na własne ryzyko - nie używaj tej wersji do kopania monet lub do świadczenia usług komercyjnych.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="133"/>
-        <source>Unable to bind to %s on this computer. Dash Core is probably already running.</source>
-        <translation>Niezdolny do związania z %s na tym komputerze. Prawdopodobnie Dash jest już uruchomiony. </translation>
+        <location filename="../curiumstrings.cpp" line="133"/>
+        <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
+        <translation>Niezdolny do związania z %s na tym komputerze. Prawdopodobnie Curium jest już uruchomiony. </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="136"/>
+        <location filename="../curiumstrings.cpp" line="136"/>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
         <translation>Nie znaleziono wystarczających denominowanych środków Darksend do wykonania tej transakcji.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="138"/>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 DASH.</source>
-        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 DASH</translation>
+        <location filename="../curiumstrings.cpp" line="138"/>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 CURIUM.</source>
+        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 CURIUM</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="141"/>
+        <location filename="../curiumstrings.cpp" line="141"/>
         <source>Unable to locate enough Darksend non-denominated funds for this transaction.</source>
         <translation>Nie znaleziono wystarczającej ilości zdenominowanych środków Darksend dla tej transakcji.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="143"/>
+        <location filename="../curiumstrings.cpp" line="143"/>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
         <translation>Użyj osobnego proxy SOCK5 aby połączyć się z peerami przez sieć Tor (domyślnie: -proxy)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="146"/>
+        <location filename="../curiumstrings.cpp" line="146"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Uwaga: -paytxfee jest bardzo wysoka! To jest opłata którą będziesz musiał uiścić jeśli dokonasz transakcji.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="149"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dash will not work properly.</source>
-        <translation>Uwaga: Proszę sprawdzić czy data i czas na twoim komputerze są poprawne! Jeśli twój zegar nie pokazuje prawidłowej godziny to Dash może nie działać poprawnie.</translation>
+        <location filename="../curiumstrings.cpp" line="149"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium will not work properly.</source>
+        <translation>Uwaga: Proszę sprawdzić czy data i czas na twoim komputerze są poprawne! Jeśli twój zegar nie pokazuje prawidłowej godziny to Curium może nie działać poprawnie.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="152"/>
+        <location filename="../curiumstrings.cpp" line="152"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Uwaga: Wygląda na to, że istnieją pewne rozbieżności w sieci! Możliwe, że niektórzy kopacze doświadczają problemów technicznych. </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="155"/>
+        <location filename="../curiumstrings.cpp" line="155"/>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>dadf</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="158"/>
+        <location filename="../curiumstrings.cpp" line="158"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Uwaga: wystąpił błąd podczas odczytu pliku wallet.dat! Wszystkie klucze są odczytywane poprawnie ale dane transakcji lub wpis w bazie adresów jest niepoprawny lub nie istnieje. </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="161"/>
+        <location filename="../curiumstrings.cpp" line="161"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Uwaga: plik wallet.dat jest uszkodzony, ale dane zostały odzyskane! Oryginalny plik wallet.dat został zapisany jako wallet.{timestamp}.bak w %s; jeżeli twoje saldo lub transakcje są nieprawidłowe powinieneś przwyrócić ten plik z kopi zapasowej.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="165"/>
+        <location filename="../curiumstrings.cpp" line="165"/>
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
@@ -4804,542 +4804,542 @@ If the file does not exist, create it with owner-readable-only file permissions.
 Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez właściciela.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="170"/>
+        <location filename="../curiumstrings.cpp" line="170"/>
         <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
         <translation>Musisz sprecyzować masternodeprivkey w konfiguracji. Proszę przeglądnij dokumentacje w celu pomocy.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="173"/>
+        <location filename="../curiumstrings.cpp" line="173"/>
         <source>(default: 1)</source>
         <translation>(standardowo: 1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="174"/>
+        <location filename="../curiumstrings.cpp" line="174"/>
         <source>(default: wallet.dat)</source>
         <translation>(standardowo: wallet.dat)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="175"/>
+        <location filename="../curiumstrings.cpp" line="175"/>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; może być:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="176"/>
+        <location filename="../curiumstrings.cpp" line="176"/>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Zaakceptuj linie poleceń oraz polecenia JSON-RPC </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="177"/>
+        <location filename="../curiumstrings.cpp" line="177"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Pozwól na połączenia z zewnątrz (domyślnie: 1 jeśli nie -proxy lub -connect)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="178"/>
+        <location filename="../curiumstrings.cpp" line="178"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Dodaj węzeł do połączenia się oraz spróbuj utrzymać połączenie otwarte</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="179"/>
+        <location filename="../curiumstrings.cpp" line="179"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Pozwól na wyszukiwanie DNS dla -addnode, -seednode oraz -connect</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="180"/>
+        <location filename="../curiumstrings.cpp" line="180"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Pozwól na połączenia JSON-RPC  z określonego adresu IP</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="181"/>
+        <location filename="../curiumstrings.cpp" line="181"/>
         <source>Already have that input.</source>
         <translation>Ta wartość wejściowa już istnieje</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="182"/>
+        <location filename="../curiumstrings.cpp" line="182"/>
         <source>Always query for peer addresses via DNS lookup (default: 0)</source>
         <translation>Zawsze wysyłaj zapytanie o adres peera przez podgląd DNS (domyślnie: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="183"/>
+        <location filename="../curiumstrings.cpp" line="183"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Spróbuj odzyskać prywatne klucze z uszkodzonego wallet.dat</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="184"/>
+        <location filename="../curiumstrings.cpp" line="184"/>
         <source>Block creation options:</source>
         <translation>Opcje tworzenia bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="185"/>
+        <location filename="../curiumstrings.cpp" line="185"/>
         <source>Can&apos;t denominate: no compatible inputs left.</source>
         <translation>Niemożna denominować: Nie ma kompatybilnych transakcji wejściowych.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="186"/>
+        <location filename="../curiumstrings.cpp" line="186"/>
         <source>Cannot downgrade wallet</source>
         <translation>Nie można obniżyć wersji portfela</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="187"/>
+        <location filename="../curiumstrings.cpp" line="187"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Nie można rozwiązać -bind dla adresu adresu: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="188"/>
+        <location filename="../curiumstrings.cpp" line="188"/>
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
         <translation>Nie można rozwiązać -externalip dla adresu: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="189"/>
+        <location filename="../curiumstrings.cpp" line="189"/>
         <source>Cannot write default address</source>
         <translation>Nie można zapisać domyślnych adresów</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="190"/>
+        <location filename="../curiumstrings.cpp" line="190"/>
         <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
         <translation>Wyczyść listę transakcji w portfelu (opcja diagnostyczna; oznacza -rescan)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="191"/>
+        <location filename="../curiumstrings.cpp" line="191"/>
         <source>Collateral is not valid.</source>
         <translation>Transakcja pod zastaw jest nie niewłaściwa.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="192"/>
+        <location filename="../curiumstrings.cpp" line="192"/>
         <source>Collateral not valid.</source>
         <translation>Transakcja pod zastaw jest nie niewłaściwa.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="193"/>
+        <location filename="../curiumstrings.cpp" line="193"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Podłącz tylko do wyszczególnionych węzła(ów)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="194"/>
+        <location filename="../curiumstrings.cpp" line="194"/>
         <source>Connect through SOCKS proxy</source>
         <translation>Połączenie poprzez SOCKS proxy</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="195"/>
+        <location filename="../curiumstrings.cpp" line="195"/>
         <source>Connect to JSON-RPC on &lt;port&gt; (default: 9998 or testnet: 19998)</source>
         <translation>Podłącz do JSON-RPC na porcie &lt;port&gt; (domyślny: 9998 lub sieć testowa: 19998)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="196"/>
+        <location filename="../curiumstrings.cpp" line="196"/>
         <source>Connect to KeePassHttp on port &lt;port&gt; (default: 19455)</source>
         <translation>Podłącz do KeePassHttp na porcie &lt;port&gt; (domyślny: 19455)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="197"/>
+        <location filename="../curiumstrings.cpp" line="197"/>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation>Podłącz do węzła aby odzyskać adresy peerów, a potem odłącz</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="198"/>
+        <location filename="../curiumstrings.cpp" line="198"/>
         <source>Connection options:</source>
         <translation>Opcje połączenia:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="199"/>
+        <location filename="../curiumstrings.cpp" line="199"/>
         <source>Corrupted block database detected</source>
         <translation>Wykryto uszkodzoną bazę danych bloków</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="200"/>
-        <source>Dash Core Daemon</source>
-        <translation>Dash Core Daemon</translation>
+        <location filename="../curiumstrings.cpp" line="200"/>
+        <source>Curium Core Daemon</source>
+        <translation>Curium Core Daemon</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="201"/>
-        <source>Dash Core RPC client version</source>
-        <translation>Wersja klienta Dash Core RPC</translation>
+        <location filename="../curiumstrings.cpp" line="201"/>
+        <source>Curium Core RPC client version</source>
+        <translation>Wersja klienta Curium Core RPC</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="202"/>
+        <location filename="../curiumstrings.cpp" line="202"/>
         <source>Darksend is disabled.</source>
         <translation>Darksend jest wyłączony.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="203"/>
+        <location filename="../curiumstrings.cpp" line="203"/>
         <source>Darksend options:</source>
         <translation>Opcje Darksend:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="204"/>
+        <location filename="../curiumstrings.cpp" line="204"/>
         <source>Debugging/Testing options:</source>
         <translation>Opcje debugowania/testowania:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="205"/>
+        <location filename="../curiumstrings.cpp" line="205"/>
         <source>Disable safemode, override a real safe mode event (default: 0)</source>
         <translation>Wyłącz tryb awaryjny, nadpisz przawdziwy tryb awaryjny (domyślny:0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="206"/>
+        <location filename="../curiumstrings.cpp" line="206"/>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Wykryj własny adres IP (domyślny:1 kiedy nasłuchuje oraz nie ma -externalip)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="207"/>
+        <location filename="../curiumstrings.cpp" line="207"/>
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation>Nie wczytuj portfela oraz wyłącz połączenia RPC</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="208"/>
+        <location filename="../curiumstrings.cpp" line="208"/>
         <source>Do you want to rebuild the block database now?</source>
         <translation>Czy chcesz teraz przebudować bazę danych bloków?</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="209"/>
+        <location filename="../curiumstrings.cpp" line="209"/>
         <source>Done loading</source>
         <translation>Wczytywanie zakończone</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="210"/>
+        <location filename="../curiumstrings.cpp" line="210"/>
         <source>Downgrading and trying again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="211"/>
+        <location filename="../curiumstrings.cpp" line="211"/>
         <source>Enable the client to act as a masternode (0-1, default: 0)</source>
         <translation>Upoważnia klienta aby działał jako masternode (0-1, domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="212"/>
+        <location filename="../curiumstrings.cpp" line="212"/>
         <source>Entries are full.</source>
         <translation>Wpisy są pełne.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="213"/>
+        <location filename="../curiumstrings.cpp" line="213"/>
         <source>Error connecting to masternode.</source>
         <translation>Błąd podłączania do masternoda.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="214"/>
+        <location filename="../curiumstrings.cpp" line="214"/>
         <source>Error initializing block database</source>
         <translation>Błąd podczas inicjowania bazy dancyh bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="215"/>
+        <location filename="../curiumstrings.cpp" line="215"/>
         <source>Error initializing wallet database environment %s!</source>
         <translation>Błąd podczas inicjowania środowiska bazy danych portfela</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="216"/>
+        <location filename="../curiumstrings.cpp" line="216"/>
         <source>Error loading block database</source>
         <translation>Błąd wczytywania bloku bazy danych</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="217"/>
+        <location filename="../curiumstrings.cpp" line="217"/>
         <source>Error loading wallet.dat</source>
         <translation>Błąd wczytywania wallet.dat</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="218"/>
+        <location filename="../curiumstrings.cpp" line="218"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Błąd wczytywania wallet.dat: Portfel uszkodzony</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="219"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dash</source>
-        <translation>Błą wczytywania wallet.dat: Portfel wymaga nowszej wersji Dash</translation>
+        <location filename="../curiumstrings.cpp" line="219"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+        <translation>Błą wczytywania wallet.dat: Portfel wymaga nowszej wersji Curium</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="220"/>
+        <location filename="../curiumstrings.cpp" line="220"/>
         <source>Error opening block database</source>
         <translation>Błąd otwarcia bloku bazy danych</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="221"/>
+        <location filename="../curiumstrings.cpp" line="221"/>
         <source>Error reading from database, shutting down.</source>
         <translation>Błąd odczytu bazy danych, następuje zamknięcie.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="222"/>
+        <location filename="../curiumstrings.cpp" line="222"/>
         <source>Error recovering public key.</source>
         <translation>Błąd odzyskiwania klucza publicznego.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="223"/>
+        <location filename="../curiumstrings.cpp" line="223"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="224"/>
+        <location filename="../curiumstrings.cpp" line="224"/>
         <source>Error: Disk space is low!</source>
         <translation>Błąd: Przestrzeń dyskowa jest niska!</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="225"/>
+        <location filename="../curiumstrings.cpp" line="225"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
         <translation>Błąd: Portfel zamknięty, stworzenie transakcji jest niemożliwe!</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="226"/>
+        <location filename="../curiumstrings.cpp" line="226"/>
         <source>Error: You already have pending entries in the Darksend pool</source>
         <translation>Błąd: Już masz oczekujące wejścia do puli Darksend</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="227"/>
+        <location filename="../curiumstrings.cpp" line="227"/>
         <source>Error: system error: </source>
         <translation>Błąd systemu</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="228"/>
+        <location filename="../curiumstrings.cpp" line="228"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Nie powiódł się nasłuch żadnego z portów. Użyj -listen=0 jeśli chcesz.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="229"/>
+        <location filename="../curiumstrings.cpp" line="229"/>
         <source>Failed to read block info</source>
         <translation>Niepowodzenie przy odczycie informacji o bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="230"/>
+        <location filename="../curiumstrings.cpp" line="230"/>
         <source>Failed to read block</source>
         <translation>Niepowodzenie przy odczycie bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="231"/>
+        <location filename="../curiumstrings.cpp" line="231"/>
         <source>Failed to sync block index</source>
         <translation>Niepowodzenie przy synchronizacji indeksu bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="232"/>
+        <location filename="../curiumstrings.cpp" line="232"/>
         <source>Failed to write block index</source>
         <translation>Niepowodzenie przy próbie zapisu indeksu bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="233"/>
+        <location filename="../curiumstrings.cpp" line="233"/>
         <source>Failed to write block info</source>
         <translation>Niepowodzenie przy zapisie informacji o bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="234"/>
+        <location filename="../curiumstrings.cpp" line="234"/>
         <source>Failed to write block</source>
         <translation>Niepowodzenie przy próbie zapisu bloku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="235"/>
+        <location filename="../curiumstrings.cpp" line="235"/>
         <source>Failed to write file info</source>
         <translation>Niepowodzenie przy zapisie informacji o pliku</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="236"/>
+        <location filename="../curiumstrings.cpp" line="236"/>
         <source>Failed to write to coin database</source>
         <translation>Niepowodzenie przy zapisie do bazy danych monet</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="237"/>
+        <location filename="../curiumstrings.cpp" line="237"/>
         <source>Failed to write transaction index</source>
         <translation>NIepowodzenie przy zapisie indeksu transakcji</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="238"/>
+        <location filename="../curiumstrings.cpp" line="238"/>
         <source>Failed to write undo data</source>
         <translation>NIepowodzenie przy zapisie cofniętych danych</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="239"/>
+        <location filename="../curiumstrings.cpp" line="239"/>
         <source>Fee per kB to add to transactions you send</source>
         <translation>Opłata za kB do dodania do transakcji, którą wysyłasz</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="240"/>
+        <location filename="../curiumstrings.cpp" line="240"/>
         <source>Fees smaller than this are considered zero fee (for relaying) (default:</source>
         <translation>Opłaty mniejsze niż te, są uważane za zerowe opłaty (dla przekazywania) (domyślny:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="241"/>
+        <location filename="../curiumstrings.cpp" line="241"/>
         <source>Force safe mode (default: 0)</source>
         <translation>Wymuś tryb bezpieczny (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="242"/>
+        <location filename="../curiumstrings.cpp" line="242"/>
         <source>Generate coins (default: 0)</source>
         <translation>Generuj monety (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="243"/>
+        <location filename="../curiumstrings.cpp" line="243"/>
         <source>Get help for a command</source>
         <translation>Poproś o pomoc dla polecenia</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="244"/>
+        <location filename="../curiumstrings.cpp" line="244"/>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
         <translation>Ile bloków do sprawdzenia podczas uruchomienia (domyślny: 280, 0 = wszystkie)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="245"/>
+        <location filename="../curiumstrings.cpp" line="245"/>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
         <translation>Jeśli &lt;kategoria&gt; nie jest dostarczona, utwórz informacje o debugowaniu.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="246"/>
+        <location filename="../curiumstrings.cpp" line="246"/>
         <source>Ignore masternodes less than version (example: 70050; default : 0)</source>
         <translation>Ignoruj masternody niższe wersją od (przykład: 70050; domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="247"/>
+        <location filename="../curiumstrings.cpp" line="247"/>
         <source>Importing...</source>
         <translation>Importuje...</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="248"/>
+        <location filename="../curiumstrings.cpp" line="248"/>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Importuje bloki z zewnętrznego pliku blk000??.dat</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="249"/>
+        <location filename="../curiumstrings.cpp" line="249"/>
         <source>Incompatible mode.</source>
         <translation>Niekompatybilny tryb.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="250"/>
+        <location filename="../curiumstrings.cpp" line="250"/>
         <source>Incompatible version.</source>
         <translation>Niekompatybilna wersja.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="251"/>
+        <location filename="../curiumstrings.cpp" line="251"/>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Znaleziono nieprawidłowy blok lub brak bloku początkowego. Nieprawidłowy katalog danych dla sieci</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="252"/>
+        <location filename="../curiumstrings.cpp" line="252"/>
         <source>Information</source>
         <translation>Informacja</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="253"/>
-        <source>Initialization sanity check failed. Dash Core is shutting down.</source>
-        <translation>Inicjalizacja kontroli poprawności nie powiodła się. Trwa zamykanie Dash Core</translation>
+        <location filename="../curiumstrings.cpp" line="253"/>
+        <source>Initialization sanity check failed. Curium Core is shutting down.</source>
+        <translation>Inicjalizacja kontroli poprawności nie powiodła się. Trwa zamykanie Curium Core</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="254"/>
+        <location filename="../curiumstrings.cpp" line="254"/>
         <source>Input is not valid.</source>
         <translation>Transakcja wejściowa jest niewłaściwa.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="255"/>
+        <location filename="../curiumstrings.cpp" line="255"/>
         <source>InstantX options:</source>
         <translation>Opcje InstantX:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="256"/>
+        <location filename="../curiumstrings.cpp" line="256"/>
         <source>Insufficient funds</source>
         <translation>Niewystarczające środki</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="257"/>
+        <location filename="../curiumstrings.cpp" line="257"/>
         <source>Insufficient funds.</source>
         <translation>Niewystarczające środki</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="258"/>
+        <location filename="../curiumstrings.cpp" line="258"/>
         <source>Invalid -onion address: &apos;%s&apos;</source>
         <translation>Nieprawidłowy adres -onion: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="259"/>
+        <location filename="../curiumstrings.cpp" line="259"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Nieprawidłowy adres -proxy: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="260"/>
+        <location filename="../curiumstrings.cpp" line="260"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Nieprawidłowa kwota dla -minrelaytxfee=&lt;kwota&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="261"/>
+        <location filename="../curiumstrings.cpp" line="261"/>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Nieprawidłowa kwota dla -mintxfee=&lt;kwota&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="262"/>
+        <location filename="../curiumstrings.cpp" line="262"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Nieprawidłowa kwota dla -paytxfee=&lt;kwota&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="263"/>
+        <location filename="../curiumstrings.cpp" line="263"/>
         <source>Invalid amount</source>
         <translation>Niewłaściwa ilość</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="264"/>
+        <location filename="../curiumstrings.cpp" line="264"/>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
         <translation>Nieprawidłowy klucz prywatny masternoda. Przeczytaj dokumentację.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="265"/>
+        <location filename="../curiumstrings.cpp" line="265"/>
         <source>Invalid private key.</source>
         <translation>Nieprawidłowy klucz prywatny.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="266"/>
+        <location filename="../curiumstrings.cpp" line="266"/>
         <source>Invalid script detected.</source>
         <translation>Wykryto nieprawidłowy skrypt.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="267"/>
+        <location filename="../curiumstrings.cpp" line="267"/>
         <source>KeePassHttp id for the established association</source>
         <translation>ID KeePassHttp dla ustanowionego skojażenia</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="268"/>
+        <location filename="../curiumstrings.cpp" line="268"/>
         <source>KeePassHttp key for AES encrypted communication with KeePass</source>
         <translation>Klucz KeePassHttp dla zaszyfrowanego metodą AES połączenia z KeePass</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="269"/>
-        <source>Keep N dash anonymized (default: 0)</source>
-        <translation>Utrzymuj N zanonimizowanych dash (domyślny: 0)</translation>
+        <location filename="../curiumstrings.cpp" line="269"/>
+        <source>Keep N curium anonymized (default: 0)</source>
+        <translation>Utrzymuj N zanonimizowanych curium (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="270"/>
+        <location filename="../curiumstrings.cpp" line="270"/>
         <source>Keep at most &lt;n&gt; unconnectable blocks in memory (default: %u)</source>
         <translation>Utrzymuj najwyżej &lt;n&gt; niepodłączalnych bloków w pamięci (domyślny: %u)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="271"/>
+        <location filename="../curiumstrings.cpp" line="271"/>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Utrzymuj najwyżej &lt;n&gt; niepodłączalnych transakcji w pamięci (domyślny: %u)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="272"/>
+        <location filename="../curiumstrings.cpp" line="272"/>
         <source>Last Darksend was too recent.</source>
         <translation>Za mało czasu upłynęło od ostatniej transakcji Darksend.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="273"/>
+        <location filename="../curiumstrings.cpp" line="273"/>
         <source>Last successful darksend action was too recent.</source>
         <translation>Za mało czasu upłynęło od ostatniej udanej transakcji Darksend.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="274"/>
+        <location filename="../curiumstrings.cpp" line="274"/>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: 50000)</source>
         <translation>Ogranicz rozmiar pamięci podrecznej podpisu do &lt;n&gt; wejść (domyślny: 50000)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="275"/>
+        <location filename="../curiumstrings.cpp" line="275"/>
         <source>List commands</source>
         <translation>Lista poleceń</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="276"/>
+        <location filename="../curiumstrings.cpp" line="276"/>
         <source>Listen for connections on &lt;port&gt; (default: 9999 or testnet: 19999)</source>
         <translation>Nasłuchuj połączeń na &lt;port&gt; (domyślny: 9999 lub sieć testowa: 19999)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="277"/>
+        <location filename="../curiumstrings.cpp" line="277"/>
         <source>Loading addresses...</source>
         <translation>Ładuje adresy...</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="278"/>
+        <location filename="../curiumstrings.cpp" line="278"/>
         <source>Loading block index...</source>
         <translation>Ładuje indeks bloków</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="279"/>
+        <location filename="../curiumstrings.cpp" line="279"/>
         <source>Loading masternode cache...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5348,552 +5348,552 @@ Jeżeli plik ten nie istnieje, stwórz go z uprawnieniami tylko do odczytu przez
         <translation type="vanished">Ładuję listę masternodów...</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="280"/>
+        <location filename="../curiumstrings.cpp" line="280"/>
         <source>Loading wallet... (%3.2f %%)</source>
         <translation>Ładuje portfel... (%3.2f %%)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="281"/>
+        <location filename="../curiumstrings.cpp" line="281"/>
         <source>Loading wallet...</source>
         <translation>Ładuje portfel...</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="282"/>
+        <location filename="../curiumstrings.cpp" line="282"/>
         <source>Log transaction priority and fee per kB when mining blocks (default: 0)</source>
         <translation>Rejestruj priorytet transakcji oraz opłatę za kB podczas wykopywania bloków (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="283"/>
+        <location filename="../curiumstrings.cpp" line="283"/>
         <source>Maintain a full transaction index (default: 0)</source>
         <translation>Utrzymuj indeks pełnych transakcji (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="284"/>
+        <location filename="../curiumstrings.cpp" line="284"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
         <translation>Utrzymuj najwyżej &lt;n&gt; połączeń do peerów (domyślny: 125)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="285"/>
+        <location filename="../curiumstrings.cpp" line="285"/>
         <source>Masternode options:</source>
         <translation>Opcje masternodów:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="286"/>
+        <location filename="../curiumstrings.cpp" line="286"/>
         <source>Masternode queue is full.</source>
         <translation>Kolejka masternodów jest pełna.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="287"/>
+        <location filename="../curiumstrings.cpp" line="287"/>
         <source>Masternode:</source>
         <translation>Masternod:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="288"/>
+        <location filename="../curiumstrings.cpp" line="288"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Maksymalny bufor odbierający na każde połączenie, &lt;n&gt;*1000 bajtów (domyślny: 5000)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="289"/>
+        <location filename="../curiumstrings.cpp" line="289"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
         <translation>Maksymalny bufor wysyłania na każde połączenie, &lt;n&gt;*1000 bajtów (domyślny: 1000)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="290"/>
+        <location filename="../curiumstrings.cpp" line="290"/>
         <source>Missing input transaction information.</source>
         <translation>Brak informacji o transakcji wejściowej.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="291"/>
+        <location filename="../curiumstrings.cpp" line="291"/>
         <source>No compatible masternode found.</source>
         <translation>Nie znaleziono kompatybilnego masternoda.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="292"/>
+        <location filename="../curiumstrings.cpp" line="292"/>
         <source>No funds detected in need of denominating.</source>
         <translation>Nie odnaleziono środków w celu denominacji.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="293"/>
+        <location filename="../curiumstrings.cpp" line="293"/>
         <source>No masternodes detected.</source>
         <translation>Nie wykryto żadnych masternodów.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="294"/>
+        <location filename="../curiumstrings.cpp" line="294"/>
         <source>No matching denominations found for mixing.</source>
         <translation>Nie znaleziono pasujących denominacji w celu miksowania.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="295"/>
+        <location filename="../curiumstrings.cpp" line="295"/>
         <source>Non-standard public key detected.</source>
         <translation>Wykryto niestandardowy klucz publiczny.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="296"/>
+        <location filename="../curiumstrings.cpp" line="296"/>
         <source>Not compatible with existing transactions.</source>
         <translation>Nie kompatybilny z istniejącymi transakcjami.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="297"/>
+        <location filename="../curiumstrings.cpp" line="297"/>
         <source>Not enough file descriptors available.</source>
         <translation>Dostępny niewystarczający opis pliku.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="298"/>
+        <location filename="../curiumstrings.cpp" line="298"/>
         <source>Not in the masternode list.</source>
         <translation>Nieobecny na liście masternodów.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="299"/>
+        <location filename="../curiumstrings.cpp" line="299"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
         <translation>Akceptuj tylko łańcuch bloków pasujący do wbudowanych punktów kontrolnych (domyślny: 1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="300"/>
+        <location filename="../curiumstrings.cpp" line="300"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Połącz tylko do węzłów (node) w sieci &lt;net&gt; (IPv4, IPv6 lub Tor)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="301"/>
+        <location filename="../curiumstrings.cpp" line="301"/>
         <source>Options:</source>
         <translation>Opcje:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="302"/>
+        <location filename="../curiumstrings.cpp" line="302"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Hasło dla połączeń JSON-RPC</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="303"/>
+        <location filename="../curiumstrings.cpp" line="303"/>
         <source>Prepend debug output with timestamp (default: 1)</source>
         <translation>Wyjście debugowania poprzedzone znacznikiem czasu (domyślny: 1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="304"/>
+        <location filename="../curiumstrings.cpp" line="304"/>
         <source>Print block on startup, if found in block index</source>
         <translation>Pokaż blok podczas startu, jeśli istnieje w indeksie bloków</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="305"/>
+        <location filename="../curiumstrings.cpp" line="305"/>
         <source>Print block tree on startup (default: 0)</source>
         <translation>Pokaż drzewo bloków podczas startu (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="306"/>
+        <location filename="../curiumstrings.cpp" line="306"/>
         <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>Opcje RPC SSL: (przeglądnij Bitcoin Wiki po instrukcje ustawień SSL)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="307"/>
+        <location filename="../curiumstrings.cpp" line="307"/>
         <source>RPC client options:</source>
         <translation>Opcje klienta RPC:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="308"/>
+        <location filename="../curiumstrings.cpp" line="308"/>
         <source>RPC server options:</source>
         <translation>Opcje serwera RPC:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="309"/>
+        <location filename="../curiumstrings.cpp" line="309"/>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
         <translation>Losowo odrzuć 1 co każde &lt;n&gt; komunikatów sieciowych</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="310"/>
+        <location filename="../curiumstrings.cpp" line="310"/>
         <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
         <translation>Rozmyj losowo 1 co każde &lt;n&gt; komunikatów sieciowych </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="311"/>
+        <location filename="../curiumstrings.cpp" line="311"/>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Odbuduj łańcuch bloków (block chain) od bieżącego pliku blk000??.dat</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="312"/>
+        <location filename="../curiumstrings.cpp" line="312"/>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Skanuj ponownie łańcuch bloków (block chain) dla brakujących transakcji w portfelu</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="313"/>
+        <location filename="../curiumstrings.cpp" line="313"/>
         <source>Rescanning...</source>
         <translation>Ponowne skanowanie...</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="314"/>
+        <location filename="../curiumstrings.cpp" line="314"/>
         <source>Run a thread to flush wallet periodically (default: 1)</source>
         <translation>Włącz wątek aby od czasu do czasu wyrównać portfel (domyślny: 1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="315"/>
+        <location filename="../curiumstrings.cpp" line="315"/>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Działaj w tle jako daemon i akceptuj polecenia</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="316"/>
+        <location filename="../curiumstrings.cpp" line="316"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>Opcje SSL: (przeglądnij Bitcoin Wiki po instrukcje ustawień SSL)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="317"/>
+        <location filename="../curiumstrings.cpp" line="317"/>
         <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
         <translation>Wybierz wersję SOCKS dla -proxy (4 lub 5, domyślny: 5)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="318"/>
-        <source>Send command to Dash Core</source>
-        <translation>Wyślij polecenie do Dash Core</translation>
+        <location filename="../curiumstrings.cpp" line="318"/>
+        <source>Send command to Curium Core</source>
+        <translation>Wyślij polecenie do Curium Core</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="319"/>
+        <location filename="../curiumstrings.cpp" line="319"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation>Wyślij polecenie do węzła (node) działającego na &lt;ip&gt; (domyślny: 127.0.0.1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="320"/>
+        <location filename="../curiumstrings.cpp" line="320"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Wyślij informacje o debugowaniu/śladach do konsoli zamiast do pliku debug.log</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="321"/>
+        <location filename="../curiumstrings.cpp" line="321"/>
         <source>Server certificate file (default: server.cert)</source>
         <translation>Serwer pliku certyfikatu (domyślny: server.cert)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="322"/>
+        <location filename="../curiumstrings.cpp" line="322"/>
         <source>Server private key (default: server.pem)</source>
         <translation>Serwer klucza prywatnego (domyślny: server.pem)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="323"/>
+        <location filename="../curiumstrings.cpp" line="323"/>
         <source>Session not complete!</source>
         <translation>Sesja nie została ukończona!</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="324"/>
+        <location filename="../curiumstrings.cpp" line="324"/>
         <source>Session timed out (30 seconds), please resubmit.</source>
         <translation>Sesja wygasła (30 sekund), proszę spróbuj ponownie.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="325"/>
+        <location filename="../curiumstrings.cpp" line="325"/>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>Ustaw pamięć podręczną bazy danych w megabajtach (%d to %d, domyślny: %d)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="326"/>
+        <location filename="../curiumstrings.cpp" line="326"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>Ustaw ilość kluczy w key pool do &lt;n&gt; (domyślny: 100)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="327"/>
+        <location filename="../curiumstrings.cpp" line="327"/>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>Ustaw maksymalny rozmiar bloku w bajtach (domyślny: %d)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="328"/>
+        <location filename="../curiumstrings.cpp" line="328"/>
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>Ustaw minimalny rozmiar bloku w bajtach (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="329"/>
+        <location filename="../curiumstrings.cpp" line="329"/>
         <source>Set the masternode private key</source>
         <translation>Ustaw klucz prywatny masternoda</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="330"/>
+        <location filename="../curiumstrings.cpp" line="330"/>
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation>Ustaw liczbę wątków dla usługi połączen RPC (domyślny: 4)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="331"/>
+        <location filename="../curiumstrings.cpp" line="331"/>
         <source>Sets the DB_PRIVATE flag in the wallet db environment (default: 1)</source>
         <translation>Ustaw flagę DB_PRIVATE w środowisku db portfela (domyślny: 1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="332"/>
+        <location filename="../curiumstrings.cpp" line="332"/>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Pokaż wszystkie opcje debugowania (użyj: --help -help-debug)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="333"/>
+        <location filename="../curiumstrings.cpp" line="333"/>
         <source>Show benchmark information (default: 0)</source>
         <translation>Pokaż nformacje o benchmarku (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="334"/>
+        <location filename="../curiumstrings.cpp" line="334"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Zmniejsz plik debug.log podczas włączania klienta (domyślny: 1 kiedy nie ma -debug)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="335"/>
+        <location filename="../curiumstrings.cpp" line="335"/>
         <source>Signing failed.</source>
         <translation>Przypisywanie nie powiodło się.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="336"/>
+        <location filename="../curiumstrings.cpp" line="336"/>
         <source>Signing timed out, please resubmit.</source>
         <translation>Sesja logowania wygasła, proszę spróbować ponownie.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="337"/>
+        <location filename="../curiumstrings.cpp" line="337"/>
         <source>Signing transaction failed</source>
         <translation>Podpisywanie transakcji nie powiodło się</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="338"/>
-        <source>Specify configuration file (default: dash.conf)</source>
-        <translation>Sprecyzuj plik konfiguracyjny (domyślny: dash.conf)</translation>
+        <location filename="../curiumstrings.cpp" line="338"/>
+        <source>Specify configuration file (default: curium.conf)</source>
+        <translation>Sprecyzuj plik konfiguracyjny (domyślny: curium.conf)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="339"/>
+        <location filename="../curiumstrings.cpp" line="339"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Sprecyzuj limit czasu połączenia w milisekundach (domyślny: 5000)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="340"/>
+        <location filename="../curiumstrings.cpp" line="340"/>
         <source>Specify data directory</source>
         <translation>Sprecyzuj katalog danych</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="341"/>
+        <location filename="../curiumstrings.cpp" line="341"/>
         <source>Specify masternode configuration file (default: masternode.conf)</source>
         <translation>Sprecyzuj plik konfiguracji masternoda (domyślny: masternode.conf)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="342"/>
-        <source>Specify pid file (default: dashd.pid)</source>
-        <translation>Sprecyjzuj plik pid (domyślny: dashd.pid)</translation>
+        <location filename="../curiumstrings.cpp" line="342"/>
+        <source>Specify pid file (default: curiumd.pid)</source>
+        <translation>Sprecyjzuj plik pid (domyślny: curiumd.pid)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="343"/>
+        <location filename="../curiumstrings.cpp" line="343"/>
         <source>Specify wallet file (within data directory)</source>
         <translation>Sprecyzuj plik wallet (w katalogu danych)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="344"/>
+        <location filename="../curiumstrings.cpp" line="344"/>
         <source>Specify your own public address</source>
         <translation>Sprecyzuj swój adres publiczny</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="345"/>
+        <location filename="../curiumstrings.cpp" line="345"/>
         <source>Spend unconfirmed change when sending transactions (default: 1)</source>
         <translation>Zużyj niepotwierdzoną resztę podczas wysyłania transakcji (domuślny: 1)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="346"/>
-        <source>Start Dash Core Daemon</source>
-        <translation>Włącz Dash Core Daemon</translation>
+        <location filename="../curiumstrings.cpp" line="346"/>
+        <source>Start Curium Core Daemon</source>
+        <translation>Włącz Curium Core Daemon</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="347"/>
+        <location filename="../curiumstrings.cpp" line="347"/>
         <source>System error: </source>
         <translation>Błąd systemu:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="348"/>
+        <location filename="../curiumstrings.cpp" line="348"/>
         <source>This help message</source>
         <translation>Ten komunikat pomocny</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="349"/>
+        <location filename="../curiumstrings.cpp" line="349"/>
         <source>This is intended for regression testing tools and app development.</source>
         <translation>Używa się tego dla regresywnego testowania narzędzi (opcji) oraz rozwoju aplikacji.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="350"/>
+        <location filename="../curiumstrings.cpp" line="350"/>
         <source>This is not a masternode.</source>
         <translation>To nie jest masternod.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="351"/>
+        <location filename="../curiumstrings.cpp" line="351"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Próg dla niewłaściwie działających, odłączających sie peerów (domyślny: 100)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="352"/>
+        <location filename="../curiumstrings.cpp" line="352"/>
         <source>To use the %s option</source>
         <translation>Aby użyć opcję %s</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="353"/>
+        <location filename="../curiumstrings.cpp" line="353"/>
         <source>Transaction amount too small</source>
         <translation>Zbyt mała kwota</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="354"/>
+        <location filename="../curiumstrings.cpp" line="354"/>
         <source>Transaction amounts must be positive</source>
         <translation>Kwota musi być dodatnia</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="355"/>
+        <location filename="../curiumstrings.cpp" line="355"/>
         <source>Transaction created successfully.</source>
         <translation>Skutecznie utworzono transakcję.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="356"/>
+        <location filename="../curiumstrings.cpp" line="356"/>
         <source>Transaction fees are too high.</source>
         <translation>Opłaty za transakcję są zbyt wysokie.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="357"/>
+        <location filename="../curiumstrings.cpp" line="357"/>
         <source>Transaction not valid.</source>
         <translation>Transakcja niewłaściwa.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="358"/>
+        <location filename="../curiumstrings.cpp" line="358"/>
         <source>Transaction too large</source>
         <translation>Za duża transakcja</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="359"/>
+        <location filename="../curiumstrings.cpp" line="359"/>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Nie udało się powiązać do %s na tym komputerze (powiązanie zwróciło błąd %s)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="360"/>
+        <location filename="../curiumstrings.cpp" line="360"/>
         <source>Unable to sign masternode payment winner, wrong key?</source>
         <translation>Nie można podpisać zwyciezcy płatności masternoda, nieprawidłowy klucz?</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="361"/>
+        <location filename="../curiumstrings.cpp" line="361"/>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Niemożliwe podpisanie wiadomości spork, nieprawidłowy klucz?</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="362"/>
+        <location filename="../curiumstrings.cpp" line="362"/>
         <source>Unknown -socks proxy version requested: %i</source>
         <translation>Nieznana wersja -socks proxy zażądana: %i</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="363"/>
+        <location filename="../curiumstrings.cpp" line="363"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation>Nieznana sieć określona w -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="364"/>
+        <location filename="../curiumstrings.cpp" line="364"/>
         <source>Upgrade wallet to latest format</source>
         <translation>Ulepsz plik wallet.dat do nowego formatu</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="365"/>
-        <source>Usage (deprecated, use dash-cli):</source>
-        <translation>Użycie (niewłaściwy, użyj dash-cli):</translation>
+        <location filename="../curiumstrings.cpp" line="365"/>
+        <source>Usage (deprecated, use curium-cli):</source>
+        <translation>Użycie (niewłaściwy, użyj curium-cli):</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="366"/>
+        <location filename="../curiumstrings.cpp" line="366"/>
         <source>Usage:</source>
         <translation>Użycie:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="367"/>
+        <location filename="../curiumstrings.cpp" line="367"/>
         <source>Use KeePass 2 integration using KeePassHttp plugin (default: 0)</source>
         <translation>Użyj zintegrowany KeePass 2 używając wtyczkę KeePass Http (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="368"/>
+        <location filename="../curiumstrings.cpp" line="368"/>
         <source>Use N separate masternodes to anonymize funds  (2-8, default: 2)</source>
         <translation>Użyj N oddzielnych masternodów aby zanonimizować pieniądze (2-8, domyślny: 2)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="369"/>
+        <location filename="../curiumstrings.cpp" line="369"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>Użyj OpenSSL (https) dal połączeń JSON-RPC</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="370"/>
+        <location filename="../curiumstrings.cpp" line="370"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Użyj UPnP aby zmapować używany port (domyślny: 0)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="371"/>
+        <location filename="../curiumstrings.cpp" line="371"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
         <translation>Użyj UPnP aby zmapować używany port (domyślny: 1 kiedy nasłuchuje)</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="372"/>
+        <location filename="../curiumstrings.cpp" line="372"/>
         <source>Use the test network</source>
         <translation>Użyj sieci testowej</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="373"/>
+        <location filename="../curiumstrings.cpp" line="373"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Nazwa użytkownika dla połączeń JSON-RPC </translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="374"/>
+        <location filename="../curiumstrings.cpp" line="374"/>
         <source>Value more than Darksend pool maximum allows.</source>
         <translation>Wartość jest większa niż ta maksymalnie dopuszczalna przez Darksend pool</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="375"/>
+        <location filename="../curiumstrings.cpp" line="375"/>
         <source>Verifying blocks...</source>
         <translation>Weryfikacja bloków...</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="376"/>
+        <location filename="../curiumstrings.cpp" line="376"/>
         <source>Verifying wallet...</source>
         <translation>Weryfikacja portfela...</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="377"/>
+        <location filename="../curiumstrings.cpp" line="377"/>
         <source>Wait for RPC server to start</source>
         <translation>Zaczekaj na start serwera RPC</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="378"/>
+        <location filename="../curiumstrings.cpp" line="378"/>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Plik wallet %s znajduje się poza katalogiem danych %s</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="379"/>
+        <location filename="../curiumstrings.cpp" line="379"/>
         <source>Wallet is locked.</source>
         <translation>Portfel jest zamknięty.</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="380"/>
-        <source>Wallet needed to be rewritten: restart Dash to complete</source>
-        <translation>Portfel musi zostać ponownie zapisany: uruchom Dash ponownie aby dokończyć operacje</translation>
+        <location filename="../curiumstrings.cpp" line="380"/>
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Portfel musi zostać ponownie zapisany: uruchom Curium ponownie aby dokończyć operacje</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="381"/>
+        <location filename="../curiumstrings.cpp" line="381"/>
         <source>Wallet options:</source>
         <translation>Opcje portfela:</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="382"/>
+        <location filename="../curiumstrings.cpp" line="382"/>
         <source>Warning</source>
         <translation>Ostrzeżenie</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="383"/>
+        <location filename="../curiumstrings.cpp" line="383"/>
         <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
         <translation>Ostrzeżenie: Niewłaściwy argument -debugnet zignorowany, użyj -debug=net</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="384"/>
+        <location filename="../curiumstrings.cpp" line="384"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Ostrzeżenie: Wersja nieaktualna, zalecana aktualizacja!</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="385"/>
+        <location filename="../curiumstrings.cpp" line="385"/>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Musisz odnowić bazę danych używając -reindex aby zmienić -txindex</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="386"/>
+        <location filename="../curiumstrings.cpp" line="386"/>
         <source>Zapping all transactions from wallet...</source>
         <translation>Zappowanie wszystkich transakcji z portfela</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="387"/>
+        <location filename="../curiumstrings.cpp" line="387"/>
         <source>on startup</source>
         <translation>podczas uruchomienia</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="388"/>
+        <location filename="../curiumstrings.cpp" line="388"/>
         <source>version</source>
         <translation>wersja</translation>
     </message>
     <message>
-        <location filename="../dashstrings.cpp" line="389"/>
+        <location filename="../curiumstrings.cpp" line="389"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>Plik wallet.dat zepsuty, odzyskiwanie nie powiodło się</translation>
     </message>

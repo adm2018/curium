@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
-// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2014-2015 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,10 +18,10 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(DASH);
-    unitlist.append(mDASH);
-    unitlist.append(uDASH);
-    unitlist.append(duffs);
+    unitlist.append(CRU);
+    unitlist.append(mCRU);
+    unitlist.append(uCRU);
+    unitlist.append(crus);
     return unitlist;
 }
 
@@ -29,10 +29,10 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case DASH:
-    case mDASH:
-    case uDASH:
-    case duffs:
+    case CRU:
+    case mCRU:
+    case uCRU:
+    case crus:
         return true;
     default:
         return false;
@@ -43,10 +43,10 @@ QString BitcoinUnits::id(int unit)
 {
     switch(unit)
     {
-        case DASH: return QString("dash");
-        case mDASH: return QString("mdash");
-        case uDASH: return QString::fromUtf8("udash");
-        case duffs: return QString("duffs");
+        case CRU: return QString("curium");
+        case mCRU: return QString("mcurium");
+        case uCRU: return QString::fromUtf8("ucurium");
+        case crus: return QString("crus");
         default: return QString("???");
     }
 }
@@ -57,10 +57,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("DASH");
-            case mDASH: return QString("mDASH");
-            case uDASH: return QString::fromUtf8("μDASH");
-            case duffs: return QString("duffs");
+            case CRU: return QString("CRU");
+            case mCRU: return QString("mCRU");
+            case uCRU: return QString::fromUtf8("μCRU");
+            case crus: return QString("crus");
             default: return QString("???");
         }
     }
@@ -68,10 +68,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("tDASH");
-            case mDASH: return QString("mtDASH");
-            case uDASH: return QString::fromUtf8("μtDASH");
-            case duffs: return QString("tduffs");
+            case CRU: return QString("tCRU");
+            case mCRU: return QString("mtCRU");
+            case uCRU: return QString::fromUtf8("μtCRU");
+            case crus: return QString("tcrus");
             default: return QString("???");
         }
     }
@@ -83,10 +83,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("Dash");
-            case mDASH: return QString("Milli-Dash (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-Dash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Dash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case CRU: return QString("Curium");
+            case mCRU: return QString("Milli-Curium (1 / 1" THIN_SP_UTF8 "000)");
+            case uCRU: return QString("Micro-Curium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case crus: return QString("Ten Nano-Curium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -94,10 +94,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("TestDashs");
-            case mDASH: return QString("Milli-TestDash (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-TestDash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-TestDash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case CRU: return QString("TestCuriums");
+            case mCRU: return QString("Milli-TestCurium (1 / 1" THIN_SP_UTF8 "000)");
+            case uCRU: return QString("Micro-TestCurium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case crus: return QString("Ten Nano-TestCurium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -107,10 +107,10 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case DASH:  return 100000000;
-    case mDASH: return 100000;
-    case uDASH: return 100;
-    case duffs: return 1;
+    case CRU:  return 100000000;
+    case mCRU: return 100000;
+    case uCRU: return 100;
+    case crus: return 1;
     default:   return 100000000;
     }
 }
@@ -119,10 +119,10 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case DASH: return 8;
-    case mDASH: return 5;
-    case uDASH: return 2;
-    case duffs: return 0;
+    case CRU: return 8;
+    case mCRU: return 5;
+    case uCRU: return 2;
+    case crus: return 0;
     default: return 0;
     }
 }

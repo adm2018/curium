@@ -16,13 +16,13 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Dash"
-            VALUE "FileDescription",    "Darkcoind (OSS daemon/client for Dash)"
+            VALUE "CompanyName",        "Curium"
+            VALUE "FileDescription",    "Darkcoind (OSS daemon/client for Curium)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "dashd"
+            VALUE "InternalName",       "curiumd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "dashd.exe"
+            VALUE "OriginalFilename",   "curiumd.exe"
             VALUE "ProductName",        "Darkcoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

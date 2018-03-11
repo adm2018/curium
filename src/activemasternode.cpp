@@ -105,7 +105,7 @@ void CActiveMasternode::ManageStatus()
                 return;
             }
 
-            /* donations are not supported in dash.conf */
+            /* donations are not supported in curium.conf */
             CScript donationAddress = CScript();
             int donationPercentage = 0;
 
