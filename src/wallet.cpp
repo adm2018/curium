@@ -1797,8 +1797,6 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
 bool CWallet::SelectCoinsDark(CAmount nValueMin, CAmount nValueMax, std::vector<CTxIn>& setCoinsRet, CAmount& nValueRet, int nDarksendRoundsMin, int nDarksendRoundsMax) const
 {
     CCoinControl *coinControl=NULL;
-
-bool CWallet::SelectCoinsDark(CAmount nValueMin, CAm
     setCoinsRet.clear();
     nValueRet = 0;
 
