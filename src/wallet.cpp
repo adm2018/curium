@@ -1723,16 +1723,20 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
     std::random_shuffle(vCoins.rbegin(), vCoins.rend());
 
     //keep track of each denomination that we have
+	bool fFound10000 false;
+    bool fFound1000 false;
     bool fFound100 = false;
     bool fFound10 = false;
     bool fFound1 = false;
     bool fFoundDot1 = false;
 
     //Check to see if any of the denomination are off, in that case mark them as fulfilled
-    if(!(nDenom & (1 << 0))) fFound100 = true;
-    if(!(nDenom & (1 << 1))) fFound10 = true;
-    if(!(nDenom & (1 << 2))) fFound1 = true;
-    if(!(nDenom & (1 << 3))) fFoundDot1 = true;
+	if(!(nDenom & (1 << 0))) fFound10000 true;
+	if(!(nDenom & (1 << 1) fFound1000= true;
+    if(!(nDenom & (1 << 2)) fFound100 = true;
+    if(!(nDenom & (1 << 3)) fFound10 = true;
+    if(!(nDenom & (1 << 4)) fFound1 = true;
+    if(!(nDenom & (1 << 5) fFoundDot1 = true;
 
     BOOST_FOREACH(const COutput& out, vCoins)
     {
