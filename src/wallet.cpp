@@ -1731,8 +1731,8 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
     bool fFoundDot1 = false;
 
     //Check to see if any of the denomination are off, in that case mark them as fulfilled
-	if(!(nDenom & (1 << 0)) fFound10000 true;
-	if(!(nDenom & (1 << 1))fFound1000= true;
+	if(!(nDenom & (1 << 0)) fFound10000 = true;
+	if(!(nDenom & (1 << 1))fFound1000 = true;
     if(!(nDenom & (1 << 2)) fFound100 = true;
     if(!(nDenom & (1 << 3)) fFound10 = true;
     if(!(nDenom & (1 << 4)) fFound1 = true;
