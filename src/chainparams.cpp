@@ -107,7 +107,7 @@ public:
         pchMessageStart[2] = 0xa1;
         pchMessageStart[3] = 0xea;
         vAlertPubKey = ParseHex("048240a8748a80a286b270ba1abc25ced4f2ce5a7847b3610ea3c065131abe3de2a8512ed5ea86320824683fc081835ba019214973e677acd1244f6d0571fc5103");
-        nDefaultPort = 9546;
+        nDefaultPort = 9999;
         bnProofOfWorkLimit = ~uint256(0) >> 20;  // Curium starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nEnforceBlockUpgradeMajority = 750;
