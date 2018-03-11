@@ -269,7 +269,7 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1520026653;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 113992;
+        genesis.nNonce = 0;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 19994;
         assert(hashGenesisBlock == uint256("0x1c39e4202d18fe0b8841e9282837378ae9b5e92711a5e942eb2f4b621c8c6253"));
