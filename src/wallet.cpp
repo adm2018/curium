@@ -1723,8 +1723,8 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
     std::random_shuffle(vCoins.rbegin(), vCoins.rend());
 
     //keep track of each denomination that we have
-	bool fFound10000 false;
-    bool fFound1000 false;
+	bool fFound10000 =false;
+    bool fFound1000 = false;
     bool fFound100 = false;
     bool fFound10 = false;
     bool fFound1 = false;
