@@ -1,8 +1,0 @@
-[main]
-host = https://www.transifex.com
-
-[curium.tx]
-file_filter = src/qt/locale/curium_<lang>.ts
-source_file = src/qt/locale/curium_en.ts
-source_lang = en
-type = QT
