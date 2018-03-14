@@ -1561,11 +1561,11 @@ int64_t GetBlockValue(int nBits, int nHeight, const CAmount& nFees)
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
     int64_t ret = blockValue/1.25; // start at 20%
-}
+
     if(Params().NetworkID() == CBaseChainParams::TESTNET) {
         if(nHeight > 46000)             ret = blockValue / 1.25; //25% - 2014-10-07
         
-
+}
     return ret;
 }
 
