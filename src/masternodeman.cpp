@@ -667,13 +667,13 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
                 if(fDebug) LogPrintf("dseg - Sending Masternode entry - %s \n", mn.addr.ToString().c_str());
                 if(vin == CTxIn()){
                     CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
-                    ss.reserve(10000);
+                    ss.reserve(1000);
                     ss << CMasternodeBroadcast(mn);
                     ss << fRequested;
                     pfrom->PushMessage("mnb", ss);
                 } else if (vin == mn.vin) {
                     CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
-                    ss.reserve(10000);
+                    ss.reserve(1000);
                     ss << CMasternodeBroadcast(mn);
                     ss << fRequested;
                     pfrom->PushMessage("mnb", ss);
