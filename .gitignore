@@ -1,12 +1,18 @@
+*.sublime-project
+*.sublime-workspace
+todo.txt
+reset-files.bash
+
 *.tar.gz
 
 *.exe
-src/curium
-src/curiumd
-src/curium-cli
-src/curium-tx
-src/test/test_curium
-src/qt/test/test_curium-qt
+src/dash
+src/dashd
+src/dash-cli
+src/dash-tx
+src/test/test_dash
+src/qt/test/test_dash-qt
+src/bench/bench_dash
 
 # autoreconf
 Makefile.in
@@ -29,8 +35,8 @@ config.log
 config.status
 configure
 libtool
-src/config/curium-config.h
-src/config/curium-config.h.in
+src/config/dash-config.h
+src/config/dash-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -42,6 +48,7 @@ src/qt/moc_*.cpp
 src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
+libconftest.dylib*
 
 .deps
 .dirstamp
@@ -55,7 +62,7 @@ src/qt/test/moc*.cpp
 *.o
 *.o-*
 *.patch
-.curium
+.dash
 *.a
 *.pb.cc
 *.pb.h
@@ -74,19 +81,16 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-curium-qt
-Curium-Qt.app
+dash-qt
+Dash-Qt.app
 
 # Unit-tests
 Makefile.test
-curium-qt_test
+dash-qt_test
 src/test/buildenv.py
 
 # Resources cpp
 qrc_*.cpp
-
-# Qt creator
-*.pro.user
 
 # Mac specific
 .DS_Store
@@ -94,8 +98,9 @@ build
 
 #lcov
 *.gcno
+*.gcda
 /*.info
-test_curium.coverage/
+test_dash.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -104,12 +109,26 @@ linux-coverage-build
 linux-build
 win32-build
 qa/pull-tester/run-bitcoind-for-test.sh
-qa/pull-tester/tests-config.sh
+qa/pull-tester/tests_config.py
 qa/pull-tester/cache/*
 qa/pull-tester/test.*/*
+qa/tmp
+cache/
+share/BitcoindComparisonTool.jar
 
 !src/leveldb*/Makefile
 
 .cproject
 .project
+.autotools
 /doc/doxygen/
+
+libbitcoinconsensus.pc
+src/qt/dash-qt.bash
+qa/pull-tester/tests-config.sh
+
+#development symlinks
+dash-cli
+dashd
+dash-qt
+make
