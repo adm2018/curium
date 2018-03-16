@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015 The Curium developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +11,7 @@
 #include "masternodeman.h"
 #include "masternode-payments.h"
 #include "darksend-relay.h"
+#include "masternode-sync.h"
 
 class CTxIn;
 class CDarksendPool;
@@ -45,8 +46,6 @@ class CActiveMasternode;
 #define DARKSEND_RELAY_OUT                2
 #define DARKSEND_RELAY_SIG                3
 
-#define MASTERNODE_LIST_SYNCED            999
-
 static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
 static const int64_t DARKSEND_POOL_MAX = (999.99*COIN);
 
@@ -56,11 +55,6 @@ extern std::vector<CDarksendQueue> vecDarksendQueue;
 extern std::string strMasterNodePrivKey;
 extern map<uint256, CDarksendBroadcastTx> mapDarksendBroadcastTxes;
 extern CActiveMasternode activeMasternode;
-
-bool IsSyncingMasternodeAssets();
-
-// get the Darksend chain depth for a given input
-int GetInputDarksendRounds(CTxIn in, int rounds=0);
 
 /** Holds an Darksend input
  */
@@ -251,7 +245,7 @@ public:
 class CDarkSendSigner
 {
 public:
-    /// Is the inputs associated with this public key? (and there is 1000 CURIUM - checking if valid masternode)
+    /// Is the inputs associated with this public key? (and there is 1000 DASH - checking if valid masternode)
     bool IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey);
     /// Set the private/public key values, returns true if successful
     bool SetKey(std::string strSecret, std::string& errorMessage, CKey& key, CPubKey& pubkey);
@@ -265,6 +259,40 @@ public:
  */
 class CDarksendPool
 {
+private:
+    mutable CCriticalSection cs_darksend;
+
+    std::vector<CDarkSendEntry> entries; // Masternode/clients entries
+    CMutableTransaction finalTransaction; // the finalized transaction ready for signing
+
+    int64_t lastTimeChanged; // last time the 'state' changed, in UTC milliseconds
+
+    unsigned int state; // should be one of the POOL_STATUS_XXX values
+    unsigned int entriesCount;
+    unsigned int lastEntryAccepted;
+    unsigned int countEntriesAccepted;
+
+    std::vector<CTxIn> lockedCoins;
+
+    std::string lastMessage;
+    bool unitTest;
+
+    int sessionID;
+
+    int sessionUsers; //N Users have said they'll join
+    bool sessionFoundMasternode; //If we've found a compatible Masternode
+    std::vector<CTransaction> vecSessionCollateral;
+
+    int cachedLastSuccess;
+
+    int minBlockSpacing; //required blocks between mixes
+    CMutableTransaction txCollateral;
+
+    int64_t lastNewBlock;
+
+    //debugging data
+    std::string strAutoDenomResult;
+
 public:
     enum messages {
         ERR_ALREADY_HAVE,
@@ -287,48 +315,16 @@ public:
         ERR_MISSING_TX,
         ERR_VERSION,
         MSG_NOERR,
-        MSG_SUCCESS
+        MSG_SUCCESS,
+        MSG_ENTRIES_ADDED
     };
-
-    std::vector<CDarkSendEntry> myEntries; // clients entries
-    std::vector<CDarkSendEntry> entries; // Masternode entries
-    CMutableTransaction finalTransaction; // the finalized transaction ready for signing
-
-    int64_t lastTimeChanged; // last time the 'state' changed, in UTC milliseconds
-    int64_t lastAutoDenomination; // TODO; not used - Delete?
-
-    unsigned int state; // should be one of the POOL_STATUS_XXX values
-    unsigned int entriesCount;
-    unsigned int lastEntryAccepted;
-    unsigned int countEntriesAccepted;
 
     // where collateral should be made out to
     CScript collateralPubKey;
 
-    std::vector<CTxIn> lockedCoins;
-
-    uint256 masterNodeBlockHash;
-
-    std::string lastMessage;
-    bool completedTransaction;
-    bool unitTest;
     CMasternode* pSubmittedToMasternode;
-
-    int sessionID;
     int sessionDenom; //Users must submit an denom matching this
-    int sessionUsers; //N Users have said they'll join
-    bool sessionFoundMasternode; //If we've found a compatible Masternode
-    std::vector<CTransaction> vecSessionCollateral;
-
-    int cachedLastSuccess;
     int cachedNumBlocks; //used for the overview screen
-    int minBlockSpacing; //required blocks between mixes
-    CMutableTransaction txCollateral;
-
-    int64_t lastNewBlock;
-
-    //debugging data
-    std::string strAutoDenomResult;
 
     CDarksendPool()
     {
@@ -336,10 +332,10 @@ public:
             to behave themselves. If they don't it takes their money. */
 
         cachedLastSuccess = 0;
-        cachedNumBlocks = 0;
+        cachedNumBlocks = std::numeric_limits<int>::max();
         unitTest = false;
         txCollateral = CMutableTransaction();
-        minBlockSpacing = 1;
+        minBlockSpacing = 0;
         lastNewBlock = 0;
 
         SetNull();
@@ -372,13 +368,13 @@ public:
 
     bool SetCollateralAddress(std::string strAddress);
     void Reset();
-    void SetNull(bool clearEverything=false);
+    void SetNull();
 
     void UnlockCoins();
 
     bool IsNull() const
     {
-        return (state == POOL_STATUS_ACCEPTING_ENTRIES && entries.empty() && myEntries.empty());
+        return state == POOL_STATUS_ACCEPTING_ENTRIES && entries.empty();
     }
 
     int GetState() const
@@ -386,13 +382,11 @@ public:
         return state;
     }
 
+    std::string GetStatus();
+
     int GetEntriesCount() const
     {
-        if(fMasterNode){
-            return entries.size();
-        } else {
-            return entriesCount;
-        }
+        return entries.size();
     }
 
     /// Get the time the last entry was accepted (time in UTC milliseconds)
@@ -407,17 +401,11 @@ public:
         return countEntriesAccepted;
     }
 
-    /// Get the client's transaction count
-    int GetMyTransactionCount() const
-    {
-        return myEntries.size();
-    }
-
     // Set the 'state' value, with some logging and capturing when the state changed
     void UpdateState(unsigned int newState)
     {
         if (fMasterNode && (newState == POOL_STATUS_ERROR || newState == POOL_STATUS_SUCCESS)){
-            LogPrintf("CDarksendPool::UpdateState() - Can't set state to ERROR or SUCCESS as a Masternode. \n");
+            LogPrint("darksend", "CDarksendPool::UpdateState() - Can't set state to ERROR or SUCCESS as a Masternode. \n");
             return;
         }
 
@@ -449,7 +437,7 @@ public:
     bool IsCompatibleWithSession(int64_t nAmount, CTransaction txCollateral, int &errorID);
 
     /// Passively run Darksend in the background according to the configuration in settings (only for QT)
-    bool DoAutomaticDenominating(bool fDryRun=false, bool ready=false);
+    bool DoAutomaticDenominating(bool fDryRun=false);
     bool PrepareDarksendDenominate();
 
     /// Check for process in Darksend
@@ -483,7 +471,7 @@ public:
     bool GetLastValidBlockHash(uint256& hash, int mod=1, int nBlockHeight=0);
     /// Process a new block
     void NewBlock();
-    void CompletedTransaction(bool error, std::string lastMessageNew);
+    void CompletedTransaction(bool error, int errorID);
     void ClearLastMessage();
     /// Used for liquidity providers
     bool SendRandomPaymentToSelf();
@@ -493,14 +481,14 @@ public:
     bool CreateDenominated(int64_t nTotalValue);
 
     /// Get the denominations for a list of outputs (returns a bitshifted integer)
-    int GetDenominations(const std::vector<CTxOut>& vout, bool fRandDenom = false);
+    int GetDenominations(const std::vector<CTxOut>& vout, bool fSingleRandomDenom = false);
     int GetDenominations(const std::vector<CTxDSOut>& vout);
 
     void GetDenominationsToString(int nDenom, std::string& strDenom);
 
-    /// Get the denominations for a specific amount of curium.
+    /// Get the denominations for a specific amount of dash.
     int GetDenominationsByAmount(int64_t nAmount, int nDenomTarget=0); // is not used anymore?
-    int GetDenominationsByAmounts(std::vector<int64_t>& vecAmount, bool fRandDenom = false);
+    int GetDenominationsByAmounts(std::vector<int64_t>& vecAmount);
 
     std::string GetMessageByID(int messageID);
 

@@ -60,15 +60,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += curiumd
+  bin_PROGRAMS += dashd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += curium-cli curium-tx
+  bin_PROGRAMS += dash-cli dash-tx
 endif
 
 .PHONY: FORCE
-# curium core #
+# dash core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -108,8 +108,8 @@ BITCOIN_CORE_H = \
   main.h \
   masternode.h \
   masternode-payments.h \
-  masternode-pos.h \
   masternode-budget.h \
+  masternode-sync.h \
   masternodeman.h \
   masternodeconfig.h \
   merkleblock.h \
@@ -170,10 +170,9 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between curiumd and curium-qt
+# server: shared between dashd and dash-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
-  activemasternode.cpp \
   addrman.cpp \
   alert.cpp \
   bloom.cpp \
@@ -203,13 +202,22 @@ libbitcoin_server_a_SOURCES = \
   $(JSON_H) \
   $(BITCOIN_CORE_H)
 
-# wallet: shared between curiumd and curium-qt, but only linked
+# wallet: shared between dashd and dash-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_SOURCES = \
   activemasternode.cpp \
+  darksend.cpp \
+  darksend-relay.cpp \
   db.cpp \
   crypter.cpp \
+  instantx.cpp \
+  masternode.cpp \
+  masternode-budget.cpp \
+  masternode-payments.cpp \
+  masternode-sync.cpp \
+  masternodeconfig.cpp \
+  masternodeman.cpp \
   rpcdump.cpp \
   rpcwallet.cpp \
   wallet.cpp \
@@ -270,23 +278,13 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between curiumd, and curium-qt and non-server tools
+# common: shared between dashd, and dash-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
-  activemasternode.cpp \
   allocators.cpp \
   amount.cpp \
   base58.cpp \
   chainparams.cpp \
-  darksend.cpp \
-  darksend-relay.cpp \
-  masternode.cpp \
-  masternode-budget.cpp \
-  masternode-payments.cpp \
-  masternode-pos.cpp \
-  masternodeman.cpp \
-  masternodeconfig.cpp \
-  instantx.cpp \
   coins.cpp \
   compressor.cpp \
   primitives/block.cpp \
@@ -335,7 +333,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between curium-cli and curium-qt
+# cli: shared between dash-cli and dash-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -345,7 +343,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-curiumd_LDADD = \
+dashd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -356,35 +354,35 @@ curiumd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_WALLET
-curiumd_LDADD += libbitcoin_wallet.a
+dashd_LDADD += libbitcoin_wallet.a
 endif
-curiumd_SOURCES = curiumd.cpp
+dashd_SOURCES = dashd.cpp
 #
 
 if TARGET_WINDOWS
-curiumd_SOURCES += curiumd-res.rc
+dashd_SOURCES += dashd-res.rc
 endif
 
-curiumd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-curiumd_CPPFLAGS = $(BITCOIN_INCLUDES)
-curiumd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+dashd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+dashd_CPPFLAGS = $(BITCOIN_INCLUDES)
+dashd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-# curium-cli binary #
-curium_cli_LDADD = \
+# dash-cli binary #
+dash_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-curium_cli_SOURCES = \
-  curium-cli.cpp
+dash_cli_SOURCES = \
+  dash-cli.cpp
 
-curium_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+dash_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# curium-tx binary #
-curium_tx_LDADD = \
+# dash-tx binary #
+dash_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -393,15 +391,15 @@ curium_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-curium_tx_SOURCES = curium-tx.cpp
-curium_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+dash_tx_SOURCES = dash-tx.cpp
+dash_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-curium_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+dash_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-curium_cli_SOURCES += curium-cli-res.rc
+dash_cli_SOURCES += dash-cli-res.rc
 endif
-curium_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+dash_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

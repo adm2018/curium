@@ -13,9 +13,29 @@
 #include "darksend.h"
 #include "masternode.h"
 
+#define ACTIVE_MASTERNODE_INITIAL                     0 // initial state
+#define ACTIVE_MASTERNODE_SYNC_IN_PROCESS             1
+#define ACTIVE_MASTERNODE_INPUT_TOO_NEW               2
+#define ACTIVE_MASTERNODE_NOT_CAPABLE                 3
+#define ACTIVE_MASTERNODE_STARTED                     4
+
 // Responsible for activating the Masternode and pinging the network
 class CActiveMasternode
 {
+private:
+    // critical section to protect the inner data structures
+    mutable CCriticalSection cs;
+
+    /// Ping Masternode
+    bool SendMasternodePing(std::string& errorMessage);
+
+    /// Create Masternode broadcast, needs to be relayed manually after that
+    bool CreateBroadcast(CTxIn vin, CService service, CKey key, CPubKey pubKey, CKey keyMasternode, CPubKey pubKeyMasternode, std::string &errorMessage, CMasternodeBroadcast &mnb);
+
+    /// Get 1000DRK input that can be used for the Masternode
+    bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey, std::string strTxHash, std::string strOutputIndex);
+    bool GetVinFromOutput(COutput out, CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
+
 public:
 	// Initialized by init.cpp
 	// Keys for the main Masternode
@@ -30,29 +50,21 @@ public:
 
     CActiveMasternode()
     {        
-        status = MASTERNODE_NOT_PROCESSED;
+        status = ACTIVE_MASTERNODE_INITIAL;
     }
 
     /// Manage status of main Masternode
     void ManageStatus(); 
+    std::string GetStatus();
 
-    /// Ping for main Masternode
-    bool Mnping(std::string& errorMessage); 
-    /// Ping for any Masternode
-    bool Mnping(CTxIn vin, CService service, CKey key, CPubKey pubKey, std::string &retErrorMessage); 
-
-    /// Register remote Masternode
-    bool Register(std::string strService, std::string strKey, std::string txHash, std::string strOutputIndex, std::string strDonationAddress, std::string strDonationPercentage, std::string& errorMessage); 
-    /// Register any Masternode
-    bool Register(CTxIn vin, CService service, CKey key, CPubKey pubKey, CKey keyMasternode, CPubKey pubKeyMasternode, CScript donationAddress, int donationPercentage, std::string &retErrorMessage); 
+    /// Create Masternode broadcast, needs to be relayed manually after that
+    bool CreateBroadcast(std::string strService, std::string strKey, std::string strTxHash, std::string strOutputIndex, std::string& errorMessage, CMasternodeBroadcast &mnb, bool fOffline = false);
 
     /// Get 1000DRK input that can be used for the Masternode
     bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
-    bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey, std::string strTxHash, std::string strOutputIndex);
     vector<COutput> SelectCoinsMasternode();
-    bool GetVinFromOutput(COutput out, CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
 
-    /// Enable hot wallet mode (run a Masternode with no funds)
+    /// Enable cold wallet mode (run a Masternode with no funds)
     bool EnableHotColdMasterNode(CTxIn& vin, CService& addr);
 };
 

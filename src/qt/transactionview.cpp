@@ -29,6 +29,7 @@
 #include <QMenu>
 #include <QPoint>
 #include <QScrollBar>
+#include <QSettings>
 #include <QSignalMapper>
 #include <QTableView>
 #include <QUrl>
@@ -38,6 +39,7 @@ TransactionView::TransactionView(QWidget *parent) :
     QWidget(parent), model(0), transactionProxyModel(0),
     transactionView(0)
 {
+    QSettings settings;
     // Build filter row
     setContentsMargins(0,0,0,0);
 
@@ -71,6 +73,7 @@ TransactionView::TransactionView(QWidget *parent) :
     dateWidget->addItem(tr("Last month"), LastMonth);
     dateWidget->addItem(tr("This year"), ThisYear);
     dateWidget->addItem(tr("Range..."), Range);
+    dateWidget->setCurrentIndex(settings.value("transactionDate").toInt());
     hlayout->addWidget(dateWidget);
 
     typeWidget = new QComboBox(this);
@@ -80,8 +83,8 @@ TransactionView::TransactionView(QWidget *parent) :
     typeWidget->setFixedWidth(TYPE_COLUMN_WIDTH);
 #endif
 
-    typeWidget->addItem(tr("Most Common"), TransactionFilterProxy::COMMON_TYPES);
     typeWidget->addItem(tr("All"), TransactionFilterProxy::ALL_TYPES);
+    typeWidget->addItem(tr("Most Common"), TransactionFilterProxy::COMMON_TYPES);
     typeWidget->addItem(tr("Received with"), TransactionFilterProxy::TYPE(TransactionRecord::RecvWithAddress) |
                                         TransactionFilterProxy::TYPE(TransactionRecord::RecvFromOther));
     typeWidget->addItem(tr("Sent to"), TransactionFilterProxy::TYPE(TransactionRecord::SendToAddress) |
@@ -94,6 +97,7 @@ TransactionView::TransactionView(QWidget *parent) :
     typeWidget->addItem(tr("To yourself"), TransactionFilterProxy::TYPE(TransactionRecord::SendToSelf));
     typeWidget->addItem(tr("Mined"), TransactionFilterProxy::TYPE(TransactionRecord::Generated));
     typeWidget->addItem(tr("Other"), TransactionFilterProxy::TYPE(TransactionRecord::Other));
+    typeWidget->setCurrentIndex(settings.value("transactionType").toInt());
 
     hlayout->addWidget(typeWidget);
 
@@ -181,6 +185,7 @@ TransactionView::TransactionView(QWidget *parent) :
 
 void TransactionView::setModel(WalletModel *model)
 {
+    QSettings settings;
     this->model = model;
     if(model)
     {
@@ -236,6 +241,10 @@ void TransactionView::setModel(WalletModel *model)
 
         // Watch-only signal
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyColumn(bool)));
+        
+        // Update transaction list with persisted settings
+        chooseType(settings.value("transactionType").toInt());
+        chooseDate(settings.value("transactionDate").toInt());
     }
 }
 
@@ -271,9 +280,16 @@ void TransactionView::chooseDate(int idx)
                 TransactionFilterProxy::MAX_DATE);
         break;
     case LastMonth:
-        transactionProxyModel->setDateRange(
+        if (current.month() == 1){
+            transactionProxyModel->setDateRange(
+                QDateTime(QDate(current.year()-1, 12, 1)),
+                QDateTime(QDate(current.year(), current.month(), 1)));
+        }
+        else {
+            transactionProxyModel->setDateRange(
                 QDateTime(QDate(current.year(), current.month()-1, 1)),
                 QDateTime(QDate(current.year(), current.month(), 1)));
+        }
         break;
     case ThisYear:
         transactionProxyModel->setDateRange(
@@ -285,6 +301,11 @@ void TransactionView::chooseDate(int idx)
         dateRangeChanged();
         break;
     }
+    // Persist settings
+    if (dateWidget->itemData(idx).toInt() != Range){
+        QSettings settings;
+        settings.setValue("transactionDate", idx);
+    }
 }
 
 void TransactionView::chooseType(int idx)
@@ -293,6 +314,9 @@ void TransactionView::chooseType(int idx)
         return;
     transactionProxyModel->setTypeFilter(
         typeWidget->itemData(idx).toInt());
+    // Persist settings
+    QSettings settings;
+    settings.setValue("transactionType", idx);
 }
 
 void TransactionView::chooseWatchonly(int idx)
@@ -315,7 +339,12 @@ void TransactionView::changedAmount(const QString &amount)
     if(!transactionProxyModel)
         return;
     CAmount amount_parsed = 0;
-    if(BitcoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
+
+    // Replace "," by "." so BitcoinUnits::parse will not fail for users entering "," as decimal separator
+    QString newAmount = amount;
+    newAmount.replace(QString(","), QString("."));
+
+    if(BitcoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), newAmount, &amount_parsed))
     {
         transactionProxyModel->setMinAmount(amount_parsed);
     }
@@ -449,20 +478,18 @@ void TransactionView::showDetails()
 /** Compute sum of all selected transactions */
 void TransactionView::computeSum()
 {
-    QString amountText;
     qint64 amount = 0;
     int nDisplayUnit = model->getOptionsModel()->getDisplayUnit();
     if(!transactionView->selectionModel())
         return;
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
 
-    if(!selection.isEmpty()){
-        foreach (QModelIndex index, selection){
-            amount += index.data(TransactionTableModel::AmountRole).toLongLong();
-        }
-        QString strAmount(BitcoinUnits::formatWithUnit(nDisplayUnit, amount, true));
-        emit trxAmount(strAmount);
+    foreach (QModelIndex index, selection){
+        amount += index.data(TransactionTableModel::AmountRole).toLongLong();
     }
+    QString strAmount(BitcoinUnits::formatWithUnit(nDisplayUnit, amount, true, BitcoinUnits::separatorAlways));
+    if (amount < 0) strAmount = "<span style='color:red;'>" + strAmount + "</span>";
+    emit trxAmount(strAmount);
 }
 
 void TransactionView::openThirdPartyTxUrl(QString url)

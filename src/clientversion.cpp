@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both curiumd and curium-qt, to make it harder for attackers to
+ * for both dashd and dash-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Curium Core");
+const std::string CLIENT_NAME("Dash Core");
 
 /**
  * Client version number
@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("Curium Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "c489574e8a10"
-#define GIT_COMMIT_DATE "Sun, 14 Jun 2015 17:05:51 -0700"
+#define GIT_COMMIT_ID "085fdf69968f"
+#define GIT_COMMIT_DATE "Sun, 5 Feb 2017 10:04:26 +0100"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \

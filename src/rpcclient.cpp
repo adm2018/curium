@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2014-2015 The Curium developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -33,6 +33,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "getnetworkhashps", 0 },
     { "getnetworkhashps", 1 },
     { "sendtoaddress", 1 },
+    { "sendtoaddressix", 1 },
     { "settxfee", 0 },
     { "getreceivedbyaddress", 1 },
     { "getreceivedbyaccount", 1 },
@@ -95,6 +96,9 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "mnbudget", 3 },
     { "mnbudget", 4 },
     { "mnbudget", 6 },
+    { "mnbudget", 8 },
+    { "mnbudgetvoteraw", 1 },
+    { "mnbudgetvoteraw", 4 },
 };
 
 class CRPCConvertTable

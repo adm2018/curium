@@ -1,5 +1,5 @@
 
-// Copyright (c) 2009-2012 The Curium developers
+// Copyright (c) 2009-2012 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef INSTANTX_H
@@ -11,14 +11,19 @@
 #include "util.h"
 #include "base58.h"
 #include "main.h"
+#include "spork.h"
 
 /*
     At 15 signatures, 1/2 of the masternode network can be owned by
     one party without comprimising the security of InstantX
-    (1000/2150.0)**15 = 1.031e-05
+    (1000/2150.0)**10 = 0.00047382219560689856
+    (1000/2900.0)**10 = 2.3769498616783657e-05
+
+    ### getting 5 of 10 signatures w/ 1000 nodes of 2900
+    (1000/2900.0)**5 = 0.004875397277841433
 */
-#define INSTANTX_SIGNATURES_REQUIRED           15
-#define INSTANTX_SIGNATURES_TOTAL              20
+#define INSTANTX_SIGNATURES_REQUIRED           6
+#define INSTANTX_SIGNATURES_TOTAL              10
 
 using namespace std;
 using namespace boost;
@@ -27,7 +32,7 @@ class CConsensusVote;
 class CTransaction;
 class CTransactionLock;
 
-static const int MIN_INSTANTX_PROTO_VERSION = 70066;
+static const int MIN_INSTANTX_PROTO_VERSION = 70103;
 
 extern map<uint256, CTransaction> mapTxLockReq;
 extern map<uint256, CTransaction> mapTxLockReqRejected;
@@ -50,7 +55,7 @@ void ProcessMessageInstantX(CNode* pfrom, std::string& strCommand, CDataStream& 
 void DoConsensusVote(CTransaction& tx, int64_t nBlockHeight);
 
 //process consensus vote message
-bool ProcessConsensusVote(CConsensusVote& ctx);
+bool ProcessConsensusVote(CNode *pnode, CConsensusVote& ctx);
 
 // keep transaction locks in memory for an hour
 void CleanTransactionLocksList();

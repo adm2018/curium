@@ -1,5 +1,5 @@
 
-// Copyright (c) 2014-2015 The Curium developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef MASTERNODE_H
@@ -11,26 +11,15 @@
 #include "util.h"
 #include "base58.h"
 #include "main.h"
-#include "masternode.h"
-#include "masternode-pos.h"
 #include "timedata.h"
 
-#define MASTERNODE_NOT_PROCESSED               0 // initial state
-#define MASTERNODE_IS_CAPABLE                  1
-#define MASTERNODE_NOT_CAPABLE                 2
-#define MASTERNODE_STOPPED                     3
-#define MASTERNODE_INPUT_TOO_NEW               4
-#define MASTERNODE_PORT_NOT_OPEN               6
-#define MASTERNODE_PORT_OPEN                   7
-#define MASTERNODE_SYNC_IN_PROCESS             8
-#define MASTERNODE_REMOTELY_ENABLED            9
-
 #define MASTERNODE_MIN_CONFIRMATIONS           15
-#define MASTERNODE_MIN_MNP_SECONDS             (30*60)
-#define MASTERNODE_MIN_DSEE_SECONDS            (5*60)
-#define MASTERNODE_PING_SECONDS                (15*60)
+#define MASTERNODE_MIN_MNP_SECONDS             (10*60)
+#define MASTERNODE_MIN_MNB_SECONDS             (5*60)
+#define MASTERNODE_PING_SECONDS                (5*60)
 #define MASTERNODE_EXPIRATION_SECONDS          (65*60)
-#define MASTERNODE_REMOVAL_SECONDS             (24*60*60)
+#define MASTERNODE_REMOVAL_SECONDS             (75*60)
+#define MASTERNODE_CHECK_SECONDS               5
 
 using namespace std;
 
@@ -41,8 +30,78 @@ extern map<int64_t, uint256> mapCacheBlockHashes;
 
 bool GetBlockHash(uint256& hash, int nBlockHeight);
 
+
 //
-// The Masternode Class. For managing the Darksend process. It contains the input of the 10000DRK, signature to prove
+// The Masternode Ping Class : Contains a different serialize method for sending pings from masternodes throughout the network
+//
+
+class CMasternodePing
+{
+public:
+
+    CTxIn vin;
+    uint256 blockHash;
+    int64_t sigTime; //mnb message times
+    std::vector<unsigned char> vchSig;
+    //removed stop
+
+    CMasternodePing();
+    CMasternodePing(CTxIn& newVin);
+
+    ADD_SERIALIZE_METHODS;
+
+    template <typename Stream, typename Operation>
+    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
+        READWRITE(vin);
+        READWRITE(blockHash);
+        READWRITE(sigTime);
+        READWRITE(vchSig);
+    }
+
+    bool CheckAndUpdate(int& nDos, bool fRequireEnabled = true, bool fCheckSigTimeOnly = false);
+    bool Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode);
+    bool VerifySignature(CPubKey& pubKeyMasternode, int &nDos);
+    void Relay();
+
+    uint256 GetHash(){
+        CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
+        ss << vin;
+        ss << sigTime;
+        return ss.GetHash();
+    }
+
+    void swap(CMasternodePing& first, CMasternodePing& second) // nothrow
+    {
+        // enable ADL (not necessary in our case, but good practice)
+        using std::swap;
+
+        // by swapping the members of two classes,
+        // the two classes are effectively swapped
+        swap(first.vin, second.vin);
+        swap(first.blockHash, second.blockHash);
+        swap(first.sigTime, second.sigTime);
+        swap(first.vchSig, second.vchSig);
+    }
+
+    CMasternodePing& operator=(CMasternodePing from)
+    {
+        swap(*this, from);
+        return *this;
+    }
+    friend bool operator==(const CMasternodePing& a, const CMasternodePing& b)
+    {
+        return a.vin == b.vin && a.blockHash == b.blockHash;
+    }
+    friend bool operator!=(const CMasternodePing& a, const CMasternodePing& b)
+    {
+        return !(a == b);
+    }
+
+};
+
+
+//
+// The Masternode Class. For managing the Darksend process. It contains the input of the 1000DRK, signature to prove
 // it's the one who own that ip address and code for calculating the payment election.
 //
 class CMasternode
@@ -50,7 +109,7 @@ class CMasternode
 private:
     // critical section to protect the inner data structures
     mutable CCriticalSection cs;
-
+    int64_t lastTimeChecked;
 public:
     enum state {
         MASTERNODE_ENABLED = 1,
@@ -66,26 +125,20 @@ public:
     CPubKey pubkey2;
     std::vector<unsigned char> sig;
     int activeState;
-    int64_t sigTime; //dsee message times
-    int64_t lastMnping;
-    int64_t lastTimeSeen;
+    int64_t sigTime; //mnb message time
     int cacheInputAge;
     int cacheInputAgeBlock;
     bool unitTest;
     bool allowFreeTx;
     int protocolVersion;
     int64_t nLastDsq; //the dsq count from the last dsq broadcast of this node
-    CScript donationAddress;
-    int donationPercentage;
     int nScanningErrorCount;
     int nLastScanningErrorBlockHeight;
-    int64_t nLastPaid;
-    int nVotedTimes;
+    CMasternodePing lastPing;
 
     CMasternode();
     CMasternode(const CMasternode& other);
-    CMasternode(const CMasternodeBroadcast& other);
-    CMasternode(CService newAddr, CTxIn newVin, CPubKey newPubkey, std::vector<unsigned char> newSig, int64_t newSigTime, CPubKey newPubkey2, int protocolVersionIn, CScript newDonationAddress, int newDonationPercentage);
+    CMasternode(const CMasternodeBroadcast& mnb);
 
 
     void swap(CMasternode& first, CMasternode& second) // nothrow
@@ -102,20 +155,15 @@ public:
         swap(first.sig, second.sig);
         swap(first.activeState, second.activeState);
         swap(first.sigTime, second.sigTime);
-        swap(first.lastMnping, second.lastMnping);
-        swap(first.lastTimeSeen, second.lastTimeSeen);
+        swap(first.lastPing, second.lastPing);
         swap(first.cacheInputAge, second.cacheInputAge);
         swap(first.cacheInputAgeBlock, second.cacheInputAgeBlock);
         swap(first.unitTest, second.unitTest);
         swap(first.allowFreeTx, second.allowFreeTx);
         swap(first.protocolVersion, second.protocolVersion);
         swap(first.nLastDsq, second.nLastDsq);
-        swap(first.donationAddress, second.donationAddress);
-        swap(first.donationPercentage, second.donationPercentage);
         swap(first.nScanningErrorCount, second.nScanningErrorCount);
         swap(first.nLastScanningErrorBlockHeight, second.nLastScanningErrorBlockHeight);
-        swap(first.nLastPaid, second.nLastPaid);
-        swap(first.nVotedTimes, second.nVotedTimes);
     }
 
     CMasternode& operator=(CMasternode from)
@@ -146,13 +194,9 @@ public:
             READWRITE(pubkey2);
             READWRITE(sig);
             READWRITE(sigTime);
-            READWRITE(lastTimeSeen);
             READWRITE(protocolVersion);
-            READWRITE(donationAddress);
-            READWRITE(donationPercentage);
-            READWRITE(nLastPaid);
             READWRITE(activeState);
-            READWRITE(lastMnping);
+            READWRITE(lastPing);
             READWRITE(cacheInputAge);
             READWRITE(cacheInputAgeBlock);
             READWRITE(unitTest);
@@ -160,33 +204,11 @@ public:
             READWRITE(nLastDsq);
             READWRITE(nScanningErrorCount);
             READWRITE(nLastScanningErrorBlockHeight);
-            READWRITE(nVotedTimes);
     }
 
-    int64_t SecondsSincePayment()
-    {
-        int64_t sec = (GetAdjustedTime() - nLastPaid);
-        if(sec < 60*60*24*30) return sec; //if it's less than 30 days, give seconds
+    int64_t SecondsSincePayment();
 
-        CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
-        ss << vin;
-        ss << sigTime;
-        uint256 hash =  ss.GetHash();
-
-        memcpy(&sec, &hash, 64);
-        return sec;
-    }
-
-    void UpdateFromNewBroadcast(CMasternodeBroadcast& mnb);
-
-    void UpdateLastSeen(int64_t override=0)
-    {
-        if(override == 0){
-            lastTimeSeen = GetAdjustedTime();
-        } else {
-            lastTimeSeen = override;
-        }
-    }
+    bool UpdateFromNewBroadcast(CMasternodeBroadcast& mnb);
 
     inline uint64_t SliceHash(uint256& hash, int slice)
     {
@@ -195,18 +217,26 @@ public:
         return n;
     }
 
-    void Check();
+    void Check(bool forceCheck = false);
 
-    bool UpdatedWithin(int seconds)
+    bool IsBroadcastedWithin(int seconds)
     {
-        // LogPrintf("UpdatedWithin %d, %d --  %d \n", GetAdjustedTime() , lastTimeSeen, (GetAdjustedTime() - lastTimeSeen) < seconds);
+        return (GetAdjustedTime() - sigTime) < seconds;
+    }
 
-        return (GetAdjustedTime() - lastTimeSeen) < seconds;
+    bool IsPingedWithin(int seconds, int64_t now = -1)
+    {
+        now == -1 ? now = GetAdjustedTime() : now;
+
+        return (lastPing == CMasternodePing())
+                ? false
+                : now - lastPing.sigTime < seconds;
     }
 
     void Disable()
     {
-        lastTimeSeen = 0;
+        sigTime = 0;
+        lastPing = CMasternodePing();
     }
 
     bool IsEnabled()
@@ -226,22 +256,6 @@ public:
         return cacheInputAge+(chainActive.Tip()->nHeight-cacheInputAgeBlock);
     }
 
-    void ApplyScanningError(CMasternodeScanningError& mnse)
-    {
-        if(!mnse.IsValid()) return;
-
-        if(mnse.nBlockHeight == nLastScanningErrorBlockHeight) return;
-        nLastScanningErrorBlockHeight = mnse.nBlockHeight;
-
-        if(mnse.nErrorType == SCANNING_SUCCESS){
-            nScanningErrorCount--;
-            if(nScanningErrorCount < 0) nScanningErrorCount = 0;
-        } else { //all other codes are equally as bad
-            nScanningErrorCount++;
-            if(nScanningErrorCount > MASTERNODE_SCANNING_ERROR_THESHOLD*2) nScanningErrorCount = MASTERNODE_SCANNING_ERROR_THESHOLD*2;
-        }
-    }
-
     std::string Status() {
         std::string strStatus = "ACTIVE";
 
@@ -254,6 +268,8 @@ public:
         return strStatus;
     }
 
+    int64_t GetLastPaid();
+
 };
 
 
@@ -265,13 +281,14 @@ class CMasternodeBroadcast : public CMasternode
 {
 public:
     CMasternodeBroadcast();
-    CMasternodeBroadcast(CService newAddr, CTxIn newVin, CPubKey newPubkey, CPubKey newPubkey2, int protocolVersionIn, CScript newDonationAddress, int newDonationPercentage);
-    CMasternodeBroadcast(const CMasternode& other);
+    CMasternodeBroadcast(CService newAddr, CTxIn newVin, CPubKey newPubkey, CPubKey newPubkey2, int protocolVersionIn);
+    CMasternodeBroadcast(const CMasternode& mn);
 
-    bool CheckAndUpdate(int& nDoS, bool fRequested);
-    bool CheckInputsAndAdd(int& nDos, bool fRequested);
+    bool CheckAndUpdate(int& nDoS);
+    bool CheckInputsAndAdd(int& nDos);
     bool Sign(CKey& keyCollateralAddress);
-    void Relay(bool fRequested);
+    bool VerifySignature();
+    void Relay();
 
     ADD_SERIALIZE_METHODS;
 
@@ -283,13 +300,11 @@ public:
         READWRITE(pubkey2);
         READWRITE(sig);
         READWRITE(sigTime);
-        READWRITE(lastTimeSeen);
         READWRITE(protocolVersion);
-        READWRITE(donationAddress);
-        READWRITE(donationPercentage);
-        READWRITE(nLastPaid);
+        READWRITE(lastPing);
+        READWRITE(nLastDsq);
     }
-    
+
     uint256 GetHash(){
         CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
         ss << sigTime;
@@ -299,43 +314,4 @@ public:
 
 };
 
-
-//
-// The Masternode Ping Class : Contains a different serialize method for sending pings from masternodes throughout the network
-//
-
-class CMasternodePing
-{
-public:
-
-    CTxIn vin;
-    uint256 blockHash;
-    std::vector<unsigned char> vchSig;
-    int64_t sigTime; //dsee message times
-    //removed stop
-
-    CMasternodePing();
-    CMasternodePing(CTxIn& newVin);
-
-    ADD_SERIALIZE_METHODS;
-
-    template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
-        READWRITE(vin);
-        READWRITE(blockHash);
-        READWRITE(sigTime);
-        READWRITE(vchSig);
-    }
-
-    bool CheckAndUpdate(int& nDos);
-    bool Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode);
-    void Relay();    
-
-    uint256 GetHash(){
-        CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
-        ss << vin;
-        ss << sigTime;
-        return ss.GetHash();
-    }
-};
 #endif

@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start Curium after logging in to the system.</string>
+          <string>Automatically start Dash after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Curium on system login</string>
+          <string>&amp;Start Dash on system login</string>
          </property>
         </widget>
        </item>
@@ -131,11 +131,11 @@
         </spacer>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2_Main">
+        <layout class="QHBoxLayout" name="horizontalLayout_4_Main">
          <item>
           <widget class="QLabel" name="label">
            <property name="toolTip">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This setting determines the amount of individual masternodes that an input will be anonymized through. More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</string>
            </property>
            <property name="text">
             <string>Darksend rounds to use</string>
@@ -177,7 +177,7 @@
             <string notr="true"/>
            </property>
            <property name="text">
-            <string>Amount of Curium to keep anonymized</string>
+            <string>Amount of Dash to keep anonymized</string>
            </property>
           </widget>
          </item>
@@ -225,7 +225,7 @@
           <item>
            <widget class="QCheckBox" name="spendZeroConfChange">
             <property name="toolTip">
-             <string>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</string>
+             <string>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</string>
             </property>
             <property name="text">
              <string>&amp;Spend unconfirmed change</string>
@@ -258,7 +258,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the Curium client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the Dash client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -278,7 +278,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the Curium network through a SOCKS5 proxy.</string>
+          <string>Connect to the Dash network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -444,7 +444,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting Curium.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting Dash.</string>
            </property>
           </widget>
          </item>
@@ -466,7 +466,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/curium/</string>
+https://www.transifex.com/projects/p/dash/</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
@@ -521,6 +521,20 @@ https://www.transifex.com/projects/p/curium/</string>
             <string>Choose the default subdivision unit to show in the interface and when sending coins.</string>
            </property>
           </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5_Display">
+         <item>
+          <widget class="QLabel" name="digitsLabel">
+           <property name="text">
+            <string>Decimal digits</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QValueComboBox" name="digits"/>
          </item>
         </layout>
        </item>

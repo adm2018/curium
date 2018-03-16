@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015 The Curium developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,12 +19,6 @@
 using namespace std;
 
 class CMasternodeMan;
-
-// Keep track of all broadcasts I've seen
-extern map<uint256, CMasternodeBroadcast> mapSeenMasternodeBroadcast;
-
-// Keep track of all pings I've seen
-extern map<uint256, CMasternodePing> mapSeenMasternodePing;
 
 extern CMasternodeMan mnodeman;
 void DumpMasternodes();
@@ -49,7 +43,7 @@ public:
 
     CMasternodeDB();
     bool Write(const CMasternodeMan &mnodemanToSave);
-    ReadResult Read(CMasternodeMan& mnodemanToLoad);
+    ReadResult Read(CMasternodeMan& mnodemanToLoad, bool fDryRun = false);
 };
 
 class CMasternodeMan
@@ -57,6 +51,9 @@ class CMasternodeMan
 private:
     // critical section to protect the inner data structures
     mutable CCriticalSection cs;
+
+    // critical section to protect the inner data structures specifically on messaging
+    mutable CCriticalSection cs_process_message;
 
     // map to hold all MNs
     std::vector<CMasternode> vMasternodes;
@@ -68,6 +65,11 @@ private:
     std::map<COutPoint, int64_t> mWeAskedForMasternodeListEntry;
 
 public:
+    // Keep track of all broadcasts I've seen
+    map<uint256, CMasternodeBroadcast> mapSeenMasternodeBroadcast;
+    // Keep track of all pings I've seen
+    map<uint256, CMasternodePing> mapSeenMasternodePing;
+    
     // keep track of dsq count to prevent masternodes from gaming darksend queue
     int64_t nDsqCount;
 
@@ -75,12 +77,15 @@ public:
 
     template <typename Stream, typename Operation>
     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
-            LOCK(cs);
-            READWRITE(vMasternodes);
-            READWRITE(mAskedUsForMasternodeList);
-            READWRITE(mWeAskedForMasternodeList);
-            READWRITE(mWeAskedForMasternodeListEntry);
-            READWRITE(nDsqCount);
+        LOCK(cs);
+        READWRITE(vMasternodes);
+        READWRITE(mAskedUsForMasternodeList);
+        READWRITE(mWeAskedForMasternodeList);
+        READWRITE(mWeAskedForMasternodeListEntry);
+        READWRITE(nDsqCount);
+
+        READWRITE(mapSeenMasternodeBroadcast);
+        READWRITE(mapSeenMasternodePing);
     }
 
     CMasternodeMan();
@@ -89,18 +94,19 @@ public:
     /// Add an entry
     bool Add(CMasternode &mn);
 
+    /// Ask (source) node for mnb
+    void AskForMN(CNode *pnode, CTxIn &vin);
+
     /// Check all Masternodes
     void Check();
 
     /// Check all Masternodes and remove inactive
-    void CheckAndRemove();
+    void CheckAndRemove(bool forceExpiredRemoval = false);
 
     /// Clear Masternode vector
     void Clear();
 
-    int CountEnabled();
-
-    int CountMasternodesAboveProtocol(int protocolVersion);
+    int CountEnabled(int protocolVersion = -1);
 
     void DsegUpdate(CNode* pnode);
 
@@ -110,13 +116,10 @@ public:
     CMasternode* Find(const CPubKey& pubKeyMasternode);
 
     /// Find an entry in the masternode list that is next to be paid
-    CMasternode* GetNextMasternodeInQueueForPayment(int nBlockHeight);
+    CMasternode* GetNextMasternodeInQueueForPayment(int nBlockHeight, bool fFilterSigTime, int& nCount);
 
     /// Find a random entry
-    CMasternode* FindRandom();
-
-    /// Decrement all masternode nVotedTimes, called 1/6 blocks (allowing for 100 votes each day)
-    void DecrementVotedTimes();
+    CMasternode* FindRandomNotInVec(std::vector<CTxIn> &vecToExclude, int protocolVersion = -1);
 
     /// Get the current winner for this block
     CMasternode* GetCurrentMasterNode(int mod=1, int64_t nBlockHeight=0, int minProtocol=0);
@@ -137,6 +140,11 @@ public:
     std::string ToString() const;
 
     void Remove(CTxIn vin);
+
+    /// Update masternode list and maps using provided CMasternodeBroadcast
+    void UpdateMasternodeList(CMasternodeBroadcast mnb);
+    /// Perform complete check and only then update list and maps
+    bool CheckMnbAndUpdateMasternodeList(CMasternodeBroadcast mnb, int& nDos);
 
 };
 
