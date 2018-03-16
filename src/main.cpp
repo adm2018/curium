@@ -1542,7 +1542,16 @@ int64_t GetBlockValue(int nBits, int nHeight, const CAmount& nFees)
     if(nHeight > 4500 || Params().NetworkID() != CBaseChainParams::MAIN) dDiff = ConvertBitsToDouble(nBits);
 
     int64_t nSubsidy = 0;
-    if(nHeight >= 5465) {
+	
+		if(nHeight <= 10) {
+			nSubsidy = 1;
+		}
+		else if(nHeight <= 11)	{
+				nSubsidy = 1100000;
+			
+		}	
+	
+    if(nHeight >= 12) {
         if((nHeight >= 17000 && dDiff > 75) || nHeight >= 24000) { // GPU/ASIC difficulty calc
             // 2222222/(((x+2600)/9)^2)
             nSubsidy = (2222222.0 / (pow((dDiff+2600.0)/9.0,2.0)));
@@ -1586,28 +1595,15 @@ int64_t GetBlockValue(int nBits, int nHeight, const CAmount& nFees)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-    int64_t ret = blockValue/5; // start at 20%
+    int64_t ret = blockValue/1.25; // start at 20%
 
     if(Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if(nHeight > 46000)             ret += blockValue / 20; //25% - 2014-10-07
-        if(nHeight > 46000+((576*1)*1)) ret += blockValue / 20; //30% - 2014-10-08
-        if(nHeight > 46000+((576*1)*2)) ret += blockValue / 20; //35% - 2014-10-09
-        if(nHeight > 46000+((576*1)*3)) ret += blockValue / 20; //40% - 2014-10-10
-        if(nHeight > 46000+((576*1)*4)) ret += blockValue / 20; //45% - 2014-10-11
-        if(nHeight > 46000+((576*1)*5)) ret += blockValue / 20; //50% - 2014-10-12
-        if(nHeight > 46000+((576*1)*6)) ret += blockValue / 20; //55% - 2014-10-13
-        if(nHeight > 46000+((576*1)*7)) ret += blockValue / 20; //60% - 2014-10-14
+        if(nHeight > 10)             ret = blockValue / 1.25; //25% - 2014-10-07
+
     }
 
-    if(nHeight > 158000)               ret += blockValue / 20; // 158000 - 25.0% - 2014-10-24
-    if(nHeight > 158000+((576*30)* 1)) ret += blockValue / 20; // 175280 - 30.0% - 2014-11-25
-    if(nHeight > 158000+((576*30)* 2)) ret += blockValue / 20; // 192560 - 35.0% - 2014-12-26
-    if(nHeight > 158000+((576*30)* 3)) ret += blockValue / 40; // 209840 - 37.5% - 2015-01-26
-    if(nHeight > 158000+((576*30)* 4)) ret += blockValue / 40; // 227120 - 40.0% - 2015-02-27
-    if(nHeight > 158000+((576*30)* 5)) ret += blockValue / 40; // 244400 - 42.5% - 2015-03-30
-    if(nHeight > 158000+((576*30)* 6)) ret += blockValue / 40; // 261680 - 45.0% - 2015-05-01
-    if(nHeight > 158000+((576*30)* 7)) ret += blockValue / 40; // 278960 - 47.5% - 2015-06-01
-    if(nHeight > 158000+((576*30)* 9)) ret += blockValue / 40; // 313520 - 50.0% - 2015-08-03
+    if(nHeight > 10)               ret = blockValue / 1.25; // 158000 - 25.0% - 2014-10-24
+
 
     /* 
         Hard for will activate on block 348080 separating the two networks (v11 and earier and v12)
