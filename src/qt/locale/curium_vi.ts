@@ -761,8 +761,8 @@ Kiểu: %3
         <translation>cao-vừa</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Có thể thay đổi +/- %1 duff(s) cho mỗi đầu vào.</translation>
+        <source>Can vary +/- %1 cru(s) per input.</source>
+        <translation>Có thể thay đổi +/- %1 cru(s) cho mỗi đầu vào.</translation>
     </message>
     <message>
         <source>n/a</source>
@@ -2285,11 +2285,11 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then "per kilobyte" only pays 250 crus in fee,&lt;br /&gt;while "at least" pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Nếu mức phí tuỳ chỉnh được đặt là 1000 duff và giao dịch chỉ có 250 byte, thì "theo kilobyte" chỉ trả 250 duff cho phí,&lt;br /&gt;trong khi "ít nhất" phải trả 1000 duff. Cho các giao dịch lớn hơn 1 kilobyte thì cả hai đều trả theo kilobyte.</translation>
+        <translation>Nếu mức phí tuỳ chỉnh được đặt là 1000 cru và giao dịch chỉ có 250 byte, thì "theo kilobyte" chỉ trả 250 cru cho phí,&lt;br /&gt;trong khi "ít nhất" phải trả 1000 cru. Cho các giao dịch lớn hơn 1 kilobyte thì cả hai đều trả theo kilobyte.</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then "per kilobyte" only pays 250 crus in fee,&lt;br /&gt;while "total at least" pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Nếu phí giao dịch tuỳ chỉnh được đặt là 1000 duff và giao dịch chỉ có 250 bytes, thì "theo kilobyte" chỉ trả 250 duff phí,&lt;br /&gt;trong khi "tổng ít nhất" trả 1000 duff. Với các giao dịch lớn hơn 1 kilobyte thì cả hai đều trả theo kilobyte.</translation>
+        <translation>Nếu phí giao dịch tuỳ chỉnh được đặt là 1000 cru và giao dịch chỉ có 250 bytes, thì "theo kilobyte" chỉ trả 250 cru phí,&lt;br /&gt;trong khi "tổng ít nhất" trả 1000 cru. Với các giao dịch lớn hơn 1 kilobyte thì cả hai đều trả theo kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for curium transactions than the network can process.</source>

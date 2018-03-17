@@ -37,7 +37,7 @@ CActiveMasternode activeMasternode;
 
 /* *** BEGIN DARKSEND MAGIC - CURIUM **********
     Copyright (c) 2014-2015, Curium Developers
-        eduffield - evan@curiumpay.io
+        ecruield - evan@curiumpay.io
         udjinm6   - udjinm6@curiumpay.io
 */
 

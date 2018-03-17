@@ -761,8 +761,8 @@ Adresse : %4
         <translation>moyennement-élevée</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Peut varier de +/- %1 duff(s) par entrée.</translation>
+        <source>Can vary +/- %1 cru(s) per input.</source>
+        <translation>Peut varier de +/- %1 cru(s) par entrée.</translation>
     </message>
     <message>
         <source>n/a</source>

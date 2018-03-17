@@ -761,8 +761,8 @@ Address: %4
         <translation>средно-висок</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Може да варира +/- %1 duff(s) за вход.</translation>
+        <source>Can vary +/- %1 cru(s) per input.</source>
+        <translation>Може да варира +/- %1 cru(s) за вход.</translation>
     </message>
     <message>
         <source>n/a</source>

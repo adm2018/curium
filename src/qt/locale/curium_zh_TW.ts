@@ -757,8 +757,8 @@ Address: %4
         <translation>中高</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>每組輸入可能有 +/- %1 個 duff(s) 的誤差。</translation>
+        <source>Can vary +/- %1 cru(s) per input.</source>
+        <translation>每組輸入可能有 +/- %1 個 cru(s) 的誤差。</translation>
     </message>
     <message>
         <source>n/a</source>

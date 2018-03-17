@@ -958,8 +958,8 @@ Address: %4
     </message>
     <message>
         <location line="+216"/>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Can vary +/- %1 duff(s) per input.</translation>
+        <source>Can vary +/- %1 cru(s) per input.</source>
+        <translation>Can vary +/- %1 cru(s) per input.</translation>
     </message>
     <message>
         <location line="+132"/>

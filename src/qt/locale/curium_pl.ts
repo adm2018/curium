@@ -734,7 +734,7 @@ Adres: %4
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Kopiuj pył (kwota poniżej 5460 duffów)</translation>
+        <translation>Kopiuj pył (kwota poniżej 5460 cruów)</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -761,8 +761,8 @@ Adres: %4
         <translation>średnio wysoki</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Może się różnić około +/- %1 duff(ów) na transację.</translation>
+        <source>Can vary +/- %1 cru(s) per input.</source>
+        <translation>Może się różnić około +/- %1 cru(ów) na transację.</translation>
     </message>
     <message>
         <source>n/a</source>
@@ -2285,11 +2285,11 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then "per kilobyte" only pays 250 crus in fee,&lt;br /&gt;while "at least" pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Jeśli ręcznie ustalona opłata wynosi 1000 Duffów a sama transakcja ma tylko 250 bajtów, to opłata jako "za kilobajt" wynosi tylko 250 duffów. &lt;br/&gt;Dzieje się tak dla każdej transakcji poniżej 1000 duffów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta. </translation>
+        <translation>Jeśli ręcznie ustalona opłata wynosi 1000 cruów a sama transakcja ma tylko 250 bajtów, to opłata jako "za kilobajt" wynosi tylko 250 cruów. &lt;br/&gt;Dzieje się tak dla każdej transakcji poniżej 1000 cruów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta. </translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then "per kilobyte" only pays 250 crus in fee,&lt;br /&gt;while "total at least" pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Jeśli ręcznie ustalona opłata wynosi 1000 Duffów a sama transakcja ma tylko 250 bitów, to opłata jako "za kilobajt" wynosi tylko 250 duffów.&lt;br/&gt; Dzieje się tak dla każdej transakcji poniżej 1000 duffów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta.</translation>
+        <translation>Jeśli ręcznie ustalona opłata wynosi 1000 cruów a sama transakcja ma tylko 250 bitów, to opłata jako "za kilobajt" wynosi tylko 250 cruów.&lt;br/&gt; Dzieje się tak dla każdej transakcji poniżej 1000 cruów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for curium transactions than the network can process.</source>
@@ -2401,7 +2401,7 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>skopiuj drobne (poniżej 5460 duffów)</translation>
+        <translation>skopiuj drobne (poniżej 5460 cruów)</translation>
     </message>
     <message>
         <source>Copy change</source>

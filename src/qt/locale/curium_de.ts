@@ -760,8 +760,8 @@ Adresse: %4</translation>
         <translation>mittel-hoch</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Kann um +/- %1 duff(s) pro Eingabe variieren.</translation>
+        <source>Can vary +/- %1 cru(s) per input.</source>
+        <translation>Kann um +/- %1 cru(s) pro Eingabe variieren.</translation>
     </message>
     <message>
         <source>n/a</source>
