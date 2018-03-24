@@ -2,7 +2,7 @@
 name: "curium-linux-0.12"
 enable_cache: true
 suites:
-- "precise"
+- "trusty"
 architectures:
 - "amd64"
 packages:
@@ -17,8 +17,8 @@ packages:
 - "binutils-gold"
 reference_datetime: "2016-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/curiumpay/curium.git"
-  "dir": "curium"
+- "url": "https://github.com/mrmetech/Curium-Official.git"
+  "dir": "Curium-Official"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -43,7 +43,7 @@ script: |
   for prog in ${FAKETIME_PROGS}; do
     echo '#!/bin/bash' > ${WRAP_DIR}/${prog}
     echo "REAL=\`which -a ${prog} | grep -v ${WRAP_DIR}/${prog} | head -1\`" >> ${WRAP_DIR}/${prog}
-    echo 'export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1' >> ${WRAP_DIR}/${prog}
+    echo 'export LD_LOAD=/usr/lib/faketime/libfaketime.so.1' >> ${WRAP_DIR}/${prog}
     echo "export FAKETIME=\"${REFERENCE_DATETIME}\"" >> ${WRAP_DIR}/${prog}
     echo "\$REAL \$@" >> $WRAP_DIR/${prog}
     chmod +x ${WRAP_DIR}/${prog}
