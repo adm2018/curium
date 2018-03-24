@@ -1,5 +1,5 @@
 ---
-name: "curium-dmg-signer"
+name: "Curium-Official-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -10,7 +10,7 @@ packages:
 reference_datetime: "2016-01-01 00:00:00"
 remotes: []
 files:
-- "curium-osx-unsigned.tar.gz"
+- "Curium-Official-osx-unsigned.tar.gz"
 - "signature.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -28,8 +28,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=curium-osx-unsigned.tar.gz
-  SIGNED=curium-osx-signed.dmg
+  UNSIGNED=Curium-Official-osx-unsigned.tar.gz
+  SIGNED=Curium-Official-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   ./detached-sig-apply.sh ${UNSIGNED} signature.tar.gz
