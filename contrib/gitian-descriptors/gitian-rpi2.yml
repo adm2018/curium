@@ -2,7 +2,7 @@
 name: "curium-raspberry-0.12"
 enable_cache: true
 suites:
-- "precise"
+- "trusty"
 architectures:
 - "amd64"
 packages:
@@ -17,8 +17,8 @@ packages:
 - "binutils-gold"
 reference_datetime: "2016-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/curiumpay/curium.git"
-  "dir": "curium"
+- "url": "https://github.com/mrmetech/Curium-Official.git"
+  "dir": "Curium-Official"
 files:
 - "raspberrypi-tools.tar.gz"
 script: |
