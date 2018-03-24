@@ -149,7 +149,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
         vSeeds.push_back(CDNSSeedData("curium1", "207.246.120.137"));
-        vSeeds.push_back(CDNSSeedData("curium2", "45.32.214.107"));
+        
         vSeeds.push_back(CDNSSeedData("1stdnsseedforcurium", "dnsseed.mrmetech.me"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 28);                    // Curium addresses start with 'X'
@@ -218,7 +218,9 @@ public:
         vSeeds.push_back(CDNSSeedData("curium.qa", "testnet-seed.curium.qa"));
         *///legacy seeders
         vSeeds.push_back(CDNSSeedData("cru-testnet",  "testnet-seed.mrmetech.me"));
-
+        vSeeds.push_back(CDNSSeedData("curium2", "45.32.214.107"));
+	vSeeds.push_back(CDNSSeedData("curium2", "159.65.73.231"));
+	    
         base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet curium addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet curium script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY]     = list_of(239);                    // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
