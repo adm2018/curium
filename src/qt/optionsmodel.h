@@ -1,5 +1,5 @@
-// Copyright (c) 2011-2015 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_OPTIONSMODEL_H
@@ -24,7 +24,7 @@ class OptionsModel : public QAbstractListModel
     Q_OBJECT
 
 public:
-    explicit OptionsModel(QObject *parent = 0, bool resetSettings = false);
+    explicit OptionsModel(QObject *parent = 0);
 
     enum OptionID {
         StartAtStartup,         // bool
@@ -34,9 +34,6 @@ public:
         ProxyUse,               // bool
         ProxyIP,                // QString
         ProxyPort,              // int
-        ProxyUseTor,            // bool
-        ProxyIPTor,             // QString
-        ProxyPortTor,           // int
         DisplayUnit,            // BitcoinUnits::Unit
         ThirdPartyTxUrls,       // QString
         Digits,                 // QString
@@ -46,17 +43,13 @@ public:
         ThreadsScriptVerif,     // int
         DatabaseCache,          // int
         SpendZeroConfChange,    // bool
-        ShowMasternodesTab,     // bool
-        ShowAdvancedPSUI,       // bool
-        LowKeysWarning,         // bool
-        PrivateSendRounds,      // int
-        PrivateSendAmount,      // int
-        PrivateSendMultiSession,// bool
+        DarksendRounds,    // int
+        AnonymizeDarkcoinAmount, //int
         Listen,                 // bool
         OptionIDRowCount,
     };
 
-    void Init(bool resetSettings = false);
+    void Init();
     void Reset();
 
     int rowCount(const QModelIndex & parent = QModelIndex()) const;
@@ -72,7 +65,6 @@ public:
     QString getThirdPartyTxUrls() { return strThirdPartyTxUrls; }
     bool getProxySettings(QNetworkProxy& proxy) const;
     bool getCoinControlFeatures() { return fCoinControlFeatures; }
-    bool getShowAdvancedPSUI() { return fShowAdvancedPSUI; }
     const QString& getOverriddenByCommandLine() { return strOverriddenByCommandLine; }
 
     /* Restart flag helper */
@@ -88,18 +80,16 @@ private:
     int nDisplayUnit;
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
-    bool fShowAdvancedPSUI;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;
 
     /// Add option to list of GUI options overridden through command line/config file
     void addOverriddenOption(const std::string &option);
 
-Q_SIGNALS:
+signals:
     void displayUnitChanged(int unit);
-    void privateSendRoundsChanged();
-    void privateSentAmountChanged();
-    void advancedPSUIChanged(bool);
+    void darksendRoundsChanged(int);
+    void anonymizeDarkcoinAmountChanged(int);
     void coinControlFeaturesChanged(bool);
 };
 

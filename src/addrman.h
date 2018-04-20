@@ -17,23 +17,20 @@
 #include <stdint.h>
 #include <vector>
 
-/**
- * Extended statistics about a CAddress
+/** 
+ * Extended statistics about a CAddress 
  */
 class CAddrInfo : public CAddress
 {
-
-
-public:
-    //! last try whatsoever by us (memory only)
-    int64_t nLastTry;
-
 private:
     //! where knowledge about this address first came from
     CNetAddr source;
 
     //! last successful connection by us
     int64_t nLastSuccess;
+
+    //! last try whatsoever by us:
+    // int64_t CAddress::nLastTry
 
     //! connection attempts since last successful attempt
     int nAttempts;
@@ -107,15 +104,15 @@ public:
 /** Stochastic address manager
  *
  * Design goals:
- *  * Keep the address tables in-memory, and asynchronously dump the entire table to peers.dat.
+ *  * Keep the address tables in-memory, and asynchronously dump the entire to able in peers.dat.
  *  * Make sure no (localized) attacker can fill the entire table with his nodes/addresses.
  *
  * To that end:
  *  * Addresses are organized into buckets.
- *    * Addresses that have not yet been tried go into 1024 "new" buckets.
- *      * Based on the address range (/16 for IPv4) of the source of information, 64 buckets are selected at random.
- *      * The actual bucket is chosen from one of these, based on the range in which the address itself is located.
- *      * One single address can occur in up to 8 different buckets to increase selection chances for addresses that
+ *    * Address that have not yet been tried go into 1024 "new" buckets.
+ *      * Based on the address range (/16 for IPv4) of source of the information, 64 buckets are selected at random
+ *      * The actual bucket is chosen from one of these, based on the range the address itself is located.
+ *      * One single address can occur in up to 8 different buckets, to increase selection chances for addresses that
  *        are seen frequently. The chance for increasing this multiplicity decreases exponentially.
  *      * When adding a new address to a full bucket, a randomly chosen entry (with a bias favoring less recently seen
  *        ones) is removed from it first.
@@ -232,8 +229,9 @@ protected:
     //! Mark an entry as attempted to connect.
     void Attempt_(const CService &addr, int64_t nTime);
 
-    //! Select an address to connect to, if newOnly is set to true, only the new table is selected from.
-    CAddrInfo Select_(bool newOnly);
+    //! Select an address to connect to.
+    //! nUnkBias determines how much to favor new addresses over tried ones (min=0, max=100)
+    CAddress Select_();
 
 #ifdef DEBUG_ADDRMAN
     //! Perform consistency check. Returns an error code or zero.
@@ -267,7 +265,7 @@ public:
      * Notice that vvTried, mapAddr and vVector are never encoded explicitly;
      * they are instead reconstructed from the other information.
      *
-     * vvNew is serialized, but only used if ADDRMAN_UNKNOWN_BUCKET_COUNT didn't change,
+     * vvNew is serialized, but only used if ADDRMAN_UNKOWN_BUCKET_COUNT didn't change,
      * otherwise it is reconstructed as well.
      *
      * This format is more complex, but significantly smaller (at most 1.5 MiB), and supports
@@ -456,11 +454,11 @@ public:
 
     ~CAddrMan()
     {
-        nKey.SetNull();
+        nKey = uint256(0);
     }
 
     //! Return the number of (unique) addresses in all tables.
-    size_t size() const
+    int size()
     {
         return vRandom.size();
     }
@@ -533,14 +531,15 @@ public:
 
     /**
      * Choose an address to connect to.
+     * nUnkBias determines how much "new" entries are favored over "tried" ones (0-100).
      */
-    CAddrInfo Select(bool newOnly = false)
+    CAddress Select()
     {
-        CAddrInfo addrRet;
+        CAddress addrRet;
         {
             LOCK(cs);
             Check();
-            addrRet = Select_(newOnly);
+            addrRet = Select_();
             Check();
         }
         return addrRet;
@@ -569,12 +568,6 @@ public:
             Check();
         }
     }
-    
-    //! Ensure that bucket placement is always the same for testing purposes.
-    void MakeDeterministic(){
-        nKey.SetNull(); //Do not use outside of tests.
-    }
-
 };
 
 #endif // BITCOIN_ADDRMAN_H
