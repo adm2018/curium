@@ -153,8 +153,8 @@ public:
 
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
-        strSporkPubKey = "04549ac134f694c0243f503e8c8a9a986abcd6610049c40b07816809b0d1d06a21b07be27b9bb555931773f62ba6cf35a25fd52f694d4e1106ccd237a7bb899fdd";
-        strMasternodePaymentsPubKey = "04549ac134f694c0243f50abcd8a9a986f5de6610049c40b07816809b0d1d06a21b07be27b9bb555931773f62ba6cf35a25fd52f694d4e1106ccd237a7bb899fdd";
+        strSporkPubKey = "0461c4e3bc33d63a52ffe721e36a0b67f6fdcc9ebd8b4fe6eab1958eff6e55633c76fd9f5aaf6b7eb636c61a74ed50c93a71ac69acd804447e3709c7557a77b218";
+        strMasternodePaymentsPubKey = "0461c4e3bc33d63a52ffe721e36a0b67f6fdcc9ebd8b4fe6eab1958eff6e55633c76fd9f5aaf6b7eb636c61a74ed50c93a71ac69acd804447e3709c7557a77b218";
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
@@ -232,7 +232,9 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("cru-testnet",  "testnet-seed.mrmetech.me"));
-
+        vSeeds.push_back(CDNSSeedData("curium2", "45.32.214.107"));
+	vSeeds.push_back(CDNSSeedData("curium2", "159.65.73.231"));
+	    
         // Testnet Dash addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
         // Testnet Dash script addresses start with '8' or '9'
@@ -251,7 +253,7 @@ public:
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
-        fMineBlocksOnDemand = false;
+        fMineBlocksOnDemand = true;
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 3;
