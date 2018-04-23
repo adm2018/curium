@@ -3809,7 +3809,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     const Consensus::Params& consensusParams = Params().GetConsensus();
     int nHeight = pindexPrev->nHeight + 1;
     // Check proof of work
-    if(Params().NetworkIDString() == CBaseChainParams::MAIN && nHeight <= 68589){
+  /*  if(Params().NetworkIDString() == CBaseChainParams::MAIN && nHeight <= 68589){
         // architecture issues with DGW v1 and v2)
         unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, &block, consensusParams);
         double n1 = ConvertBitsToDouble(block.nBits);
@@ -3822,7 +3822,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
         if (block.nBits != GetNextWorkRequired(pindexPrev, &block, consensusParams))
             return state.DoS(100, error("%s : incorrect proof of work at %d", __func__, nHeight),
                             REJECT_INVALID, "bad-diffbits");
-    }
+    } */
 
     // Check timestamp against prev
     if (block.GetBlockTime() <= pindexPrev->GetMedianTimePast())
