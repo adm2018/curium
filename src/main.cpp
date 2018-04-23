@@ -1746,7 +1746,9 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     if (nPrevHeight <= 4500 && Params().NetworkIDString() == CBaseChainParams::MAIN) {
         /* a bug which caused diff to not be correctly calculated */
         dDiff = (double)0x0000ffff / (double)(nPrevBits & 0x00ffffff);
-    } 
+    } else {
+        dDiff = ConvertBitsToDouble(nPrevBits);
+    }
 	if(nPrevHeight <= 10){
 		nSubsidyBase = 1;
 	}
@@ -1770,11 +1772,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
         else if(nSubsidyBase < 25) nSubsidyBase = 25;
 		
 		
-    } else {
-		nSubsidyBase = (1111.0 / (pow((dDiff+1.0),2.0)));
-        if(nSubsidyBase > 500) nSubsidyBase = 500;
-        else if(nSubsidyBase < 1) nSubsidyBase = 1;
-	}
+    } 
 	
 
     // LogPrintf("height %u diff %4.2f reward %d\n", nPrevHeight, dDiff, nSubsidyBase);
