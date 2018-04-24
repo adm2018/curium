@@ -1936,7 +1936,7 @@ void Misbehaving(NodeId pnode, int howmuch)
 }
 
 void static InvalidChainFound(CBlockIndex* pindexNew)
-{
+{/*
     if (!pindexBestInvalid || pindexNew->nChainWork > pindexBestInvalid->nChainWork)
         //pindexBestInvalid = pindexNew;
 		pindexNew = pindexNew;
@@ -1950,9 +1950,11 @@ void static InvalidChainFound(CBlockIndex* pindexNew)
       tip->GetBlockHash().ToString(), chainActive.Height(), log(tip->nChainWork.getdouble())/log(2.0),
       DateTimeStrFormat("%Y-%m-%d %H:%M:%S", tip->GetBlockTime()));
     CheckForkWarningConditions();
-}
+	*/
+	
+	}
 
-void static InvalidBlockFound(CBlockIndex *pindex, const CValidationState &state) {
+void static InvalidBlockFound(CBlockIndex *pindex, const CValidationState &state) {/*
     int nDoS = 0;
     if (state.IsInvalid(nDoS)) {
         std::map<uint256, NodeId>::iterator it = mapBlockSource.find(pindex->GetBlockHash());
@@ -1969,7 +1971,7 @@ void static InvalidBlockFound(CBlockIndex *pindex, const CValidationState &state
         setDirtyBlockIndex.insert(pindex);
         setBlockIndexCandidates.erase(pindex);
         InvalidChainFound(pindex);
-    }
+    } */
 }
 
 void UpdateCoins(const CTransaction& tx, CValidationState &state, CCoinsViewCache &inputs, CTxUndo &txundo, int nHeight)
