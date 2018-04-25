@@ -3799,7 +3799,7 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Prawo autorskie (c) 2009-%i deweloperzy Bitcoin</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <source>Copyright (C) 2014-%i The qash Core Developers</source>
         <translation>Prawa autorskie (C) 2014-%i deweloperzy Dash</translation>
     </message>
     <message>

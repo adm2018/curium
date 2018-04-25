@@ -3791,7 +3791,7 @@ for example: alertnotify=echo %%s | mail -s "Dash Alert" admin@foo.com
         <translation>Запазени права (C) 2009-%i Bitcoin Core разработчици</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <source>Copyright (C) 2014-%i The qash Core Developers</source>
         <translation>Запазени права (C) 2014-%i Dash Core разработчиците</translation>
     </message>
     <message>

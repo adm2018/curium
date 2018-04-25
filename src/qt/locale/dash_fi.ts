@@ -3807,8 +3807,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "Dash Hälytys" admin@foo.com
         <translation>Copyright (C) 2009-%i Bitcoin Core Kehittäjät</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i Dash Core Kehittäjät</translation>
+        <source>Copyright (C) 2014-%i The qash Core Developers</source>
+        <translation>Copyright (C) 2014-%i qash Core Kehittäjät</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
