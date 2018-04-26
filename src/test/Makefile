@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. dash_test
+	$(MAKE) -C .. curium_test
 clean:
-	$(MAKE) -C .. dash_test_clean
+	$(MAKE) -C .. curium_test_clean
 check:
-	$(MAKE) -C .. dash_test_check
+	$(MAKE) -C .. curium_test_check

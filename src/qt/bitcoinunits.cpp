@@ -19,10 +19,10 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(DASH);
-    unitlist.append(mDASH);
-    unitlist.append(uDASH);
-    unitlist.append(duffs);
+    unitlist.append(CURIUM);
+    unitlist.append(mCURIUM);
+    unitlist.append(uCURIUM);
+    unitlist.append(crus);
     return unitlist;
 }
 
@@ -30,10 +30,10 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case DASH:
-    case mDASH:
-    case uDASH:
-    case duffs:
+    case CURIUM:
+    case mCURIUM:
+    case uCURIUM:
+    case crus:
         return true;
     default:
         return false;
@@ -46,10 +46,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("DASH");
-            case mDASH: return QString("mDASH");
-            case uDASH: return QString::fromUtf8("μDASH");
-            case duffs: return QString("duffs");
+            case CURIUM: return QString("CURIUM");
+            case mCURIUM: return QString("mCURIUM");
+            case uCURIUM: return QString::fromUtf8("μCURIUM");
+            case crus: return QString("crus");
             default: return QString("???");
         }
     }
@@ -57,10 +57,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("tDASH");
-            case mDASH: return QString("mtDASH");
-            case uDASH: return QString::fromUtf8("μtDASH");
-            case duffs: return QString("tduffs");
+            case CURIUM: return QString("tCURIUM");
+            case mCURIUM: return QString("mtCURIUM");
+            case uCURIUM: return QString::fromUtf8("μtCURIUM");
+            case crus: return QString("tcrus");
             default: return QString("???");
         }
     }
@@ -72,10 +72,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("Dash");
-            case mDASH: return QString("Milli-Dash (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-Dash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Dash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case CURIUM: return QString("Curium");
+            case mCURIUM: return QString("Milli-Curium (1 / 1" THIN_SP_UTF8 "000)");
+            case uCURIUM: return QString("Micro-Curium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case crus: return QString("Ten Nano-Curium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -83,10 +83,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("TestDashs");
-            case mDASH: return QString("Milli-TestDash (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-TestDash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-TestDash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case CURIUM: return QString("TestCuriums");
+            case mCURIUM: return QString("Milli-TestCurium (1 / 1" THIN_SP_UTF8 "000)");
+            case uCURIUM: return QString("Micro-TestCurium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case crus: return QString("Ten Nano-TestCurium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -96,10 +96,10 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case DASH:  return 100000000;
-    case mDASH: return 100000;
-    case uDASH: return 100;
-    case duffs: return 1;
+    case CURIUM:  return 100000000;
+    case mCURIUM: return 100000;
+    case uCURIUM: return 100;
+    case crus: return 1;
     default:   return 100000000;
     }
 }
@@ -108,10 +108,10 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case DASH: return 8;
-    case mDASH: return 5;
-    case uDASH: return 2;
-    case duffs: return 0;
+    case CURIUM: return 8;
+    case mCURIUM: return 5;
+    case uCURIUM: return 2;
+    case crus: return 0;
     default: return 0;
     }
 }
