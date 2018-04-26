@@ -219,8 +219,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core
+        <source>Curium</source>
+        <translation>Curium
 </translation>
     </message>
     <message>
@@ -272,8 +272,8 @@
         <translation>Avsluta applikationen</translation>
     </message>
     <message>
-        <source>&amp;About Curium Core</source>
-        <translation>&amp;Om Curium Core</translation>
+        <source>&amp;About Curium</source>
+        <translation>&amp;Om Curium</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -412,8 +412,8 @@
         <translation>&amp;Kommandoradalternativ</translation>
     </message>
     <message>
-        <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
-        <translation>Visa Curium Core-hjälpmeddelandet för att få en lista med möjliga Curium-kommandoradalternativ</translation>
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Visa Curium-hjälpmeddelandet för att få en lista med möjliga Curium-kommandoradalternativ</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -883,8 +883,8 @@ Adress: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core
+        <source>Curium</source>
+        <translation>Curium
 </translation>
     </message>
     <message>
@@ -931,16 +931,16 @@ Adress: %4
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to Curium Core.</source>
-        <translation>Välkommen till Curium Core.</translation>
+        <source>Welcome to Curium.</source>
+        <translation>Välkommen till Curium.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Curium Core will store its data.</source>
-        <translation>Då detta är första gången programmet startas kan du välja var Curium Core ska lagra sin data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>Då detta är första gången programmet startas kan du välja var Curium ska lagra sin data.</translation>
     </message>
     <message>
-        <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Curium Core kommer att laddas ned och lagra en kopia av Curium:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium kommer att laddas ned och lagra en kopia av Curium:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1985,8 +1985,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Curium Core is shutting down...</source>
-        <translation>Curium Core stängs ned...</translation>
+        <source>Curium is shutting down...</source>
+        <translation>Curium stängs ned...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core
+        <source>Curium</source>
+        <translation>Curium
 </translation>
     </message>
     <message>
@@ -2140,8 +2140,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Bitcoin Core-utvecklarna</translation>
     </message>
     <message>
-        <source>The Curium Core developers</source>
-        <translation>Curium Core-utvecklarna</translation>
+        <source>The Curium developers</source>
+        <translation>Curium-utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2662,8 +2662,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Sammanbind till fastställd adress och avlyssna alltid den. Använd [host]:port-notation för IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
-        <translation>Kan inte erhålla ett lås på datakatalog %s. Curium Core körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+        <translation>Kan inte erhålla ett lås på datakatalog %s. Curium körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -2718,8 +2718,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Detta är en förhandsutgiven testkompilering - använd på egen risk - använd inte för utvinning eller handlarapplikationer.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
-        <translation>Det går inte att binda till %s till denna dator. Curium Core körs förmodligen redan.</translation>
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+        <translation>Det går inte att binda till %s till denna dator. Curium körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -2942,8 +2942,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Curium Core is shutting down.</source>
-        <translation>Initialiseringstillståndkontroll misslyckades. Curium Core stängs ned.</translation>
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Initialiseringstillståndkontroll misslyckades. Curium stängs ned.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>

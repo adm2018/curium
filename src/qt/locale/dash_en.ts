@@ -296,8 +296,8 @@
     <message>
         <location filename="../bitcoingui.cpp" line="+108"/>
         <location line="+752"/>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <location line="-743"/>
@@ -361,13 +361,13 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About Curium Core</source>
-        <translation>&amp;About Curium Core</translation>
+        <source>&amp;About Curium</source>
+        <translation>&amp;About Curium</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Curium Core</source>
-        <translation>Show information about Curium Core</translation>
+        <source>Show information about Curium</source>
+        <translation>Show information about Curium</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -572,8 +572,8 @@
     </message>
     <message>
         <location line="+196"/>
-        <source>Curium Core client</source>
-        <translation>Curium Core client</translation>
+        <source>Curium client</source>
+        <translation>Curium client</translation>
     </message>
     <message numerus="yes">
         <location line="+182"/>
@@ -587,8 +587,8 @@
     </message>
     <message>
         <location line="-407"/>
-        <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
-        <translation>Show the Curium Core help message to get a list with possible Curium command-line options</translation>
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Show the Curium help message to get a list with possible Curium command-line options</translation>
     </message>
     <message>
         <location line="+36"/>
@@ -1246,8 +1246,8 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+32"/>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1262,8 +1262,8 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>About Curium Core</source>
-        <translation>About Curium Core</translation>
+        <source>About Curium</source>
+        <translation>About Curium</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -1320,18 +1320,18 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Curium Core.</source>
-        <translation>Welcome to Curium Core.</translation>
+        <source>Welcome to Curium.</source>
+        <translation>Welcome to Curium.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Curium Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where Curium Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Curium will store its data.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1345,8 +1345,8 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+82"/>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3303,8 +3303,8 @@ https://www.transifex.com/projects/p/curium/</translation>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+43"/>
-        <source>Curium Core is shutting down...</source>
-        <translation>Curium Core is shutting down...</translation>
+        <source>Curium is shutting down...</source>
+        <translation>Curium is shutting down...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3498,8 +3498,8 @@ https://www.transifex.com/projects/p/curium/</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3513,8 +3513,8 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>The Curium Core developers</source>
-        <translation>The Curium Core developers</translation>
+        <source>The Curium developers</source>
+        <translation>The Curium developers</translation>
     </message>
     <message>
         <location filename="../networkstyle.cpp" line="+19"/>
@@ -4250,8 +4250,8 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Curium is probably already running.</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -4320,8 +4320,8 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <location line="+20"/>
-        <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Curium Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Curium is probably already running.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4770,8 +4770,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+6"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium Core will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium will not work properly.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -4877,8 +4877,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+6"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Curium Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Curium</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -4967,8 +4967,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Curium Core is shutting down.</source>
-        <translation>Initialization sanity check failed. Curium Core is shutting down.</translation>
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Initialization sanity check failed. Curium is shutting down.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5282,8 +5282,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+9"/>
-        <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart Curium Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Wallet needed to be rewritten: restart Curium to complete</translation>
     </message>
     <message>
         <location line="+5"/>

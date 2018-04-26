@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three Linux startup configurations assume the existence of a "curiumcore" user
+All three Linux startup configurations assume the existence of a "curium" user
 and group.  They must be created before attempting to use these scripts.
 The OS X configuration assumes curiumd will be set up for the current user.
 
@@ -54,23 +54,23 @@ see `contrib/debian/examples/curium.conf`.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              `/usr/bin/curiumd`  
-Configuration file:  `/etc/curiumcore/curium.conf`  
+Configuration file:  `/etc/curium/curium.conf`  
 Data directory:      `/var/lib/curiumd`  
 PID file:            `/var/run/curiumd/curiumd.pid` (OpenRC and Upstart) or `/var/lib/curiumd/curiumd.pid` (systemd)  
 Lock file:           `/var/lock/subsys/curiumd` (CentOS)  
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the curiumcore user and group.  It is advised for security
+should all be owned by the curium user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-curiumcore user and group.  Access to curium-cli and other curiumd rpc clients
+curium user and group.  Access to curium-cli and other curiumd rpc clients
 can then be controlled by group membership.
 
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/curiumd`  
-Configuration file:  `~/Library/Application Support/CuriumCore/curium.conf`  
-Data directory:      `~/Library/Application Support/CuriumCore`
-Lock file:           `~/Library/Application Support/CuriumCore/.lock`
+Configuration file:  `~/Library/Application Support/Curium/curium.conf`  
+Data directory:      `~/Library/Application Support/Curium`
+Lock file:           `~/Library/Application Support/Curium/.lock`
 
 4. Installing Service Configuration
 -----------------------------------
@@ -116,7 +116,7 @@ This Launch Agent will cause curiumd to start whenever the user logs in.
 
 NOTE: This approach is intended for those wanting to run curiumd as the current user.
 You will need to modify org.curium.curiumd.plist if you intend to use it as a
-Launch Daemon with a dedicated curiumcore user.
+Launch Daemon with a dedicated curium user.
 
 5. Auto-respawn
 -----------------------------------

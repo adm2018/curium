@@ -514,13 +514,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\CuriumCore
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\CuriumCore
-    // Mac: ~/Library/Application Support/CuriumCore
-    // Unix: ~/.curiumcore
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Curium
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Curium
+    // Mac: ~/Library/Application Support/Curium
+    // Unix: ~/.curium
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "CuriumCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Curium";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -530,10 +530,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/CuriumCore";
+    return pathRet / "Library/Application Support/Curium";
 #else
     // Unix
-    return pathRet / ".curiumcore";
+    return pathRet / ".curium";
 #endif
 #endif
 }

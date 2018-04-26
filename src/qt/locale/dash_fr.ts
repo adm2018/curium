@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +283,12 @@
         <translation>Quitter l’application</translation>
     </message>
     <message>
-        <source>&amp;About Curium Core</source>
+        <source>&amp;About Curium</source>
         <translation>À propos du noyau Curium</translation>
     </message>
     <message>
-        <source>Show information about Curium Core</source>
-        <translation>Affichez des informations à propos de  Curium Core</translation>
+        <source>Show information about Curium</source>
+        <translation>Affichez des informations à propos de  Curium</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>Options de ligne de &amp;commande</translation>
     </message>
     <message>
-        <source>Curium Core client</source>
-        <translation>Client Curium Core </translation>
+        <source>Curium client</source>
+        <translation>Client Curium </translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Synchronisation des données additionnelles: %p%</translation>
     </message>
     <message>
-        <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
-        <translation>Afficher le message d'aide de Curium Core pour obtenir une liste des options de ligne de commande Bitcoin possibles.</translation>
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Afficher le message d'aide de Curium pour obtenir une liste des options de ligne de commande Bitcoin possibles.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -989,8 +989,8 @@ Adresse : %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>version</source>
@@ -1001,8 +1001,8 @@ Adresse : %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Curium Core</source>
-        <translation>A propos de Curium Core</translation>
+        <source>About Curium</source>
+        <translation>A propos de Curium</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1048,16 +1048,16 @@ Adresse : %4
         <translation>Bienvenue</translation>
     </message>
     <message>
-        <source>Welcome to Curium Core.</source>
-        <translation>Bienvenue à Curium Core</translation>
+        <source>Welcome to Curium.</source>
+        <translation>Bienvenue à Curium</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Curium Core will store its data.</source>
-        <translation>Comme il s'agit du premier lancement du logiciel, vous pouvez choisir l'emplacement où Curium Core sauvegardera ses données.</translation>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>Comme il s'agit du premier lancement du logiciel, vous pouvez choisir l'emplacement où Curium sauvegardera ses données.</translation>
     </message>
     <message>
-        <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Curium Core téléchargera et sauvegardera une copie de la chaîne de blocs Curium. Au moins %1Go de données seront sauvegardées dans ce répertoire, et cette taille augmentera avec le temps. Le portefeuille sera aussi sauvegardé dans ce répertoire.</translation>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium téléchargera et sauvegardera une copie de la chaîne de blocs Curium. Au moins %1Go de données seront sauvegardées dans ce répertoire, et cette taille augmentera avec le temps. Le portefeuille sera aussi sauvegardé dans ce répertoire.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1068,8 +1068,8 @@ Adresse : %4
         <translation>Utiliser un répertoire de données personnalisé :</translation>
     </message>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2586,8 +2586,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Curium Core is shutting down...</source>
-        <translation>Arrêt de Curium Core...</translation>
+        <source>Curium is shutting down...</source>
+        <translation>Arrêt de Curium...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2736,8 +2736,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2748,8 +2748,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Les développeurs Bitcoin Core</translation>
     </message>
     <message>
-        <source>The Curium Core developers</source>
-        <translation>Les développeurs Curium Core</translation>
+        <source>The Curium developers</source>
+        <translation>Les développeurs Curium</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3326,8 +3326,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Se lier à l'adresse donnée et toujours l'écouter. Utilisez la notation [host]:port pour l'IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
-        <translation>Impossible d’obtenir un verrou sur le répertoire de données %s. Curium Core fonctionne probablement déjà.</translation>
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+        <translation>Impossible d’obtenir un verrou sur le répertoire de données %s. Curium fonctionne probablement déjà.</translation>
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3382,8 +3382,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Ceci est une pré-version de test - l'utiliser à vos risques et périls - ne pas l'utiliser pour miner ou pour des applications marchandes</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
-        <translation>Impossible de se lier à %s sur cet ordinateur. Curium Core fonctionne probablement déjà.</translation>
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+        <translation>Impossible de se lier à %s sur cet ordinateur. Curium fonctionne probablement déjà.</translation>
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3746,8 +3746,8 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Attention : -maxtxfee est réglée sur un montant très élevé ! Il s'agit des frais de transaction que vous payerez si vous envoyez une transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
-        <translation>Attention : Veuillez vérifier que la date et l'heure de votre ordinateur sont justes ! Si votre horloge n'est pas à l'heure, Curium Core ne fonctionnera pas correctement.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
+        <translation>Attention : Veuillez vérifier que la date et l'heure de votre ordinateur sont justes ! Si votre horloge n'est pas à l'heure, Curium ne fonctionnera pas correctement.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3832,8 +3832,8 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Erreur de connexion au masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
-        <translation>Erreur au chargement de wallet.dat : le Portefeuille nécessite une nouvelle version de Curium Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+        <translation>Erreur au chargement de wallet.dat : le Portefeuille nécessite une nouvelle version de Curium</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3904,8 +3904,8 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Informations</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Curium Core is shutting down.</source>
-        <translation>Les tests de cohérences lors de l'initialisation ont échoués. Curium Core est en cours de fermeture.</translation>
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Les tests de cohérences lors de l'initialisation ont échoués. Curium est en cours de fermeture.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4156,8 +4156,8 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Utiliser l'UPnP pour mapper le port d'écoute (par défaut : %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
-        <translation>Le portefeuille devait être réécrit : redémarrer Curium Core pour terminer l'opération.</translation>
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Le portefeuille devait être réécrit : redémarrer Curium pour terminer l'opération.</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>

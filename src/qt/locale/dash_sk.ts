@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +283,12 @@
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>&amp;About Curium Core</source>
-        <translation>&amp;O Curium Core</translation>
+        <source>&amp;About Curium</source>
+        <translation>&amp;O Curium</translation>
     </message>
     <message>
-        <source>Show information about Curium Core</source>
-        <translation>Zobraziť informácie o Curium Core</translation>
+        <source>Show information about Curium</source>
+        <translation>Zobraziť informácie o Curium</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>Curium Core client</source>
-        <translation>Curium Core klient</translation>
+        <source>Curium client</source>
+        <translation>Curium klient</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Synchronizujú sa ďalšie dáta: %p%</translation>
     </message>
     <message>
-        <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
-        <translation>Zobraziť Curium Core nápovedu k získaniu zoznamu možností príkazového riadku Curium.</translation>
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Zobraziť Curium nápovedu k získaniu zoznamu možností príkazového riadku Curium.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -988,8 +988,8 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>version</source>
@@ -1000,8 +1000,8 @@ Adresa: %4</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Curium Core</source>
-        <translation>O Curium Core</translation>
+        <source>About Curium</source>
+        <translation>O Curium</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1047,16 +1047,16 @@ Adresa: %4</translation>
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Curium Core.</source>
-        <translation>Vitajte v Curium Core.</translation>
+        <source>Welcome to Curium.</source>
+        <translation>Vitajte v Curium.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Curium Core will store its data.</source>
-        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude Curium Core ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude Curium ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Curium Core stiahne a uloží kópiu reťazca blokov Curium. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium stiahne a uloží kópiu reťazca blokov Curium. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1067,8 +1067,8 @@ Adresa: %4</translation>
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2585,8 +2585,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Curium Core is shutting down...</source>
-        <translation>Curium core sa vypína...</translation>
+        <source>Curium is shutting down...</source>
+        <translation>Curium sa vypína...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2735,8 +2735,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Curium Core</source>
-        <translation>Curium Core</translation>
+        <source>Curium</source>
+        <translation>Curium</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2747,8 +2747,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-        <source>The Curium Core developers</source>
-        <translation>Vývojári Curium Core</translation>
+        <source>The Curium developers</source>
+        <translation>Vývojári Curium</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3325,8 +3325,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
-        <translation>Nedá sa zamknúť dátový adresár %s. Curium Core už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+        <translation>Nedá sa zamknúť dátový adresár %s. Curium už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3381,8 +3381,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Toto je predbežná testovacia zostava - používate na vlastné riziko - nepoužívajte na ťaženie alebo obchodné aplikácie</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
-        <translation>Nedá sa viazať ku %s na tomto počítači. Curium Core už pravdepodobne beží.</translation>
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+        <translation>Nedá sa viazať ku %s na tomto počítači. Curium už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3745,8 +3745,8 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Upozornenie: -maxtxfee je nastavené príliš vysoko! Takto vysoké poplatky by mali byť zaplatené za jednu transakciu.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, Curium Core nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, Curium nebude pracovať správne.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3831,8 +3831,8 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Chyba pripojenia k Masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Curium Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Curium</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3903,8 +3903,8 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Informácia</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Curium Core is shutting down.</source>
-        <translation>Inicializácia kontroly zdravia zlyhala. Curium Core sa vypína.</translation>
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Inicializácia kontroly zdravia zlyhala. Curium sa vypína.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4155,8 +4155,8 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Použiť UPnP pre mapovanie počúvajúceho portu (predvolené: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Curium Core</translation>
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Curium</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>

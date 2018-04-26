@@ -52,7 +52,7 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Curium Core curium-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Curium curium-tx utility version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
               "  curium-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded curium transaction") + "\n" +
               "  curium-tx [options] -create [commands]   " + _("Create hex-encoded curium transaction") + "\n" +

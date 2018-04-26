@@ -36,14 +36,14 @@ Instructions: Homebrew
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. As such, building with Qt5 is recommended.
 
-### Building Curium Core
+### Building Curium
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
         git clone https://github.com/curiumpay/curium.git
         cd curium
 
-2.  Build Curium Core:
+2.  Build Curium:
     This will configure and build the headless curium binaries as well as the gui (if Qt is found).
     You can disable the gui build by passing `--without-gui` to configure.
 
@@ -81,7 +81,7 @@ You can ignore this section if you are building `curiumd` for your own use.
 
 curiumd/curium-cli binaries are not included in the Curium-Qt.app bundle.
 
-If you are building `curiumd` or `Curium Core` for others, your build machine should be set up
+If you are building `curiumd` or `Curium` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -90,7 +90,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see [doc/release-process.md](release-process.md) for how the Curium Core
+Once dependencies are compiled, see [doc/release-process.md](release-process.md) for how the Curium
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
@@ -102,14 +102,14 @@ directory. We have to first create the RPC configuration file, though.
 Run `./curiumd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=curiumrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/CuriumCore/curium.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/CuriumCore/curium.conf"
+    echo -e "rpcuser=curiumrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Curium/curium.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Curium/curium.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/CuriumCore/debug.log
+    tail -f $HOME/Library/Application\ Support/Curium/debug.log
 
 Other commands:
 -------

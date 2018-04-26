@@ -17,7 +17,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Curium"
-            VALUE "FileDescription",    "curium-cli (JSON-RPC client for Curium Core)"
+            VALUE "FileDescription",    "curium-cli (JSON-RPC client for Curium)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "curium-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR

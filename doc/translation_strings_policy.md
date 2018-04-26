@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the Curium Core software.
+This document provides guidelines for internationalization of the Curium software.
 
 How to translate?
 ------------------

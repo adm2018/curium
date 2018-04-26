@@ -1,7 +1,7 @@
-TOR SUPPORT IN CURIUM CORE
+TOR SUPPORT IN CURIUM
 =======================
 
-It is possible to run Curium Core as a Tor hidden service, and connect to such services.
+It is possible to run Curium as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-1. Run Curium Core behind a Tor proxy
+1. Run Curium behind a Tor proxy
 ----------------------------------
 
-The first step is running Curium Core behind a Tor proxy. This will already make all
+The first step is running Curium behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -44,24 +44,24 @@ In a typical situation, this suffices to run behind a Tor proxy:
 	./curiumd -proxy=127.0.0.1:9050
 
 
-2. Run a Curium Core hidden server
+2. Run a Curium hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file):
 
-	HiddenServiceDir /var/lib/tor/curiumcore-service/
+	HiddenServiceDir /var/lib/tor/curium-service/
 	HiddenServicePort 9999 127.0.0.1:9999
 	HiddenServicePort 19999 127.0.0.1:19999
 
 The directory can be different of course, but (both) port numbers should be equal to
 your curiumd's P2P listen port (9999 by default).
 
-	-externalip=X   You can tell Curium Core about its publicly reachable address using
+	-externalip=X   You can tell Curium about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/curiumcore-service/hostname. Onion addresses are given
+	                /var/lib/tor/curium-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -99,7 +99,7 @@ for normal IPv4/IPv6 communication, use:
 	./curiumd -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
 
 
-3. List of known Curium Core Tor relays
+3. List of known Curium Tor relays
 ------------------------------------
 
 * [darkcoinie7ghp67.onion](http://darkcoinie7ghp67.onion/)
@@ -120,14 +120,14 @@ for normal IPv4/IPv6 communication, use:
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-Curium Core has been updated to make use of this.
+Curium has been updated to make use of this.
 
 This means that if Tor is running (and proper authorization is available),
-Curium Core automatically creates a hidden service to listen on, without
+Curium automatically creates a hidden service to listen on, without
 manual configuration. This will positively affect the number of available
 .onion nodes.
 
-This new feature is enabled by default if Curium Core is listening, and
+This new feature is enabled by default if Curium is listening, and
 a connection to Tor can be made. It can be configured with the `-listenonion`,
 `-torcontrol` and `-torpassword` settings. To show verbose debugging
 information, pass `-debug=tor`.

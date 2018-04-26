@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION @CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@
-!define COMPANY "Curium Core project"
+!define COMPANY "Curium project"
 !define URL https://www.curium.org/
 
 # MUI Symbol Definitions
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile @abs_top_srcdir@/curiumcore-${VERSION}-win@WINDOWS_BITS@-setup.exe
+OutFile @abs_top_srcdir@/curium-${VERSION}-win@WINDOWS_BITS@-setup.exe
 !if "@WINDOWS_BITS@" == "64"
-InstallDir $PROGRAMFILES64\CuriumCore
+InstallDir $PROGRAMFILES64\Curium
 !else
-InstallDir $PROGRAMFILES\CuriumCore
+InstallDir $PROGRAMFILES\Curium
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.@CLIENT_VERSION_BUILD@
-VIAddVersionKey ProductName "Curium Core"
+VIAddVersionKey ProductName "Curium"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -106,10 +106,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "curiumcore" "URL Protocol" ""
-    WriteRegStr HKCR "curiumcore" "" "URL:Curium"
-    WriteRegStr HKCR "curiumcore\DefaultIcon" "" $INSTDIR\curium-qt.exe
-    WriteRegStr HKCR "curiumcore\shell\open\command" "" '"$INSTDIR\curium-qt.exe" "%1"'
+    WriteRegStr HKCR "curium" "URL Protocol" ""
+    WriteRegStr HKCR "curium" "" "URL:Curium"
+    WriteRegStr HKCR "curium\DefaultIcon" "" $INSTDIR\curium-qt.exe
+    WriteRegStr HKCR "curium\shell\open\command" "" '"$INSTDIR\curium-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -147,7 +147,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "curiumcore"
+    DeleteRegKey HKCR "curium"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

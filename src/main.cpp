@@ -57,7 +57,7 @@
 using namespace std;
 
 #if defined(NDEBUG)
-# error "Curium Core cannot be compiled without assertions."
+# error "Curium cannot be compiled without assertions."
 #endif
 
 /**

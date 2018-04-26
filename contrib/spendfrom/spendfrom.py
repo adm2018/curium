@@ -33,12 +33,12 @@ def check_json_precision():
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the Curium Core data directory"""
+    """Return the default location of the Curium data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/CuriumCore/")
+        return os.path.expanduser("~/Library/Application Support/Curium/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "CuriumCore")
-    return os.path.expanduser("~/.curiumcore")
+        return os.path.join(os.environ['APPDATA'], "Curium")
+    return os.path.expanduser("~/.curium")
 
 def read_bitcoin_config(dbdir):
     """Read the curium.conf file from dbdir, returns dictionary of settings"""
@@ -63,7 +63,7 @@ def read_bitcoin_config(dbdir):
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a Curium Core JSON-RPC server"""
+    """Connect to a Curium JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:

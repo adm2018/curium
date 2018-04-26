@@ -3,13 +3,13 @@ Description=Curium's distributed currency daemon
 After=network.target
 
 [Service]
-User=curiumcore
-Group=curiumcore
+User=curium
+Group=curium
 
 Type=forking
 PIDFile=/var/lib/curiumd/curiumd.pid
 ExecStart=/usr/bin/curiumd -daemon -pid=/var/lib/curiumd/curiumd.pid \
--conf=/etc/curiumcore/curium.conf -datadir=/var/lib/curiumd -disablewallet
+-conf=/etc/curium/curium.conf -datadir=/var/lib/curiumd -disablewallet
 
 Restart=always
 PrivateTmp=true

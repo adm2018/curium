@@ -1,7 +1,7 @@
 # /etc/conf.d/curiumd: config file for /etc/init.d/curiumd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/curiumcore/curium.conf"
+#BITCOIND_CONFIGFILE="/etc/curium/curium.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
 #BITCOIND_PIDDIR="/var/run/curiumd"
@@ -13,8 +13,8 @@
 #BITCOIND_DATADIR="/var/lib/curiumd"
 
 # User and group to own curiumd process
-#BITCOIND_USER="curiumcore"
-#BITCOIND_GROUP="curiumcore"
+#BITCOIND_USER="curium"
+#BITCOIND_GROUP="curium"
 
 # Path to curiumd executable
 #BITCOIND_BIN="/usr/bin/curiumd"

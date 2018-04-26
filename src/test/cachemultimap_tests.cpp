@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The Curium Core developers
+// Copyright (c) 2014-2017 The Curium developers
 
 #include "cachemultimap.h"
 

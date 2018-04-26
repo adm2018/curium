@@ -1,4 +1,4 @@
-Curium Core staging tree 0.12.1
+Curium staging tree 0.12.1
 ===============================
 
 `master:` [![Build Status](https://travis-ci.org/curiumpay/curium.svg?branch=master)](https://travis-ci.org/curiumpay/curium) `v0.12.0.x:` [![Build Status](https://travis-ci.org/curiumpay/curium.svg?branch=v0.12.0.x)](https://travis-ci.org/curiumpay/curium/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/curiumpay/curium.svg?branch=v0.12.1.x)](https://travis-ci.org/curiumpay/curium/branches)
@@ -12,17 +12,17 @@ What is Curium?
 Curium is an experimental new digital currency that enables anonymous, instant
 payments to anyone, anywhere in the world. Curium uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. Curium Core is the name of the open
+are carried out collectively by the network. Curium is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Curium Core software, see https://www.curium.org/downloads.
+the Curium software, see https://www.curium.org/downloads.
 
 
 License
 -------
 
-Curium Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Curium is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -30,7 +30,7 @@ Development Process
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
 [Tags](https://github.com/curiumpay/curium/tags) are created to indicate new official,
-stable release versions of Curium Core.
+stable release versions of Curium.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -66,7 +66,7 @@ Translations
 ------------
 
 Changes to translations as well as new translations can be submitted to
-[Curium Core's Transifex page](https://www.transifex.com/projects/p/curium/).
+[Curium's Transifex page](https://www.transifex.com/projects/p/curium/).
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
