@@ -3800,7 +3800,7 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"Curium Alert\" admin@foo.com</tra
     </message>
     <message>
         <source>Copyright (C) 2014-%i The Curium Developers</source>
-        <translation>Copyright (C) 2014-%i Die "qash Core"-Entwickler</translation>
+        <translation>Copyright (C) 2014-%i Die "Dash Core"-Entwickler</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>

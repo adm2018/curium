@@ -4837,8 +4837,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2014-%i The qash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The qash Core Developers</translation>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
         <location line="+2"/>

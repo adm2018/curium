@@ -3799,7 +3799,7 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Autorské práva (C) 2009-%i Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The qash Core Developers</source>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
         <translation>Autorské práva (C) 2014-%i Vývojári jadra Curium</translation>
     </message>
     <message>
