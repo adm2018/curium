@@ -3533,8 +3533,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <source>Copyright (C) 2014-%i The Dash Core Developers</source>
         <translation>版權為達世幣核心開發人員自西元 2014 至 %i 年起所有</translation>
     </message>
-	<message>
-	    <source>Copyright (C) 2018-%i The Curium Core Developers</source>
+	        <source>Copyright (C) 2018-%i The Curium Core Developers</source>
         <translation>版權為達世幣核心開發人員自西元 2018 至 %i 年起所有</translation>
     </message>
     <message>
