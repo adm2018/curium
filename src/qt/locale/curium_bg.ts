@@ -3792,7 +3792,11 @@ for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
     </message>
     <message>
         <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Запазени права (C) 2014-%i Curium разработчиците</translation>
+        <translation>Запазени права (C) 2014-%i Dash разработчиците</translation>
+    </message>
+	<message>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>Запазени права (C) 2018-%i Curium разработчиците</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>

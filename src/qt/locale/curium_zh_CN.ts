@@ -3656,6 +3656,10 @@ https://www.transifex.com/projects/p/curium/</translation>
         <source>Copyright (C) 2014-%i The Dash Core Developers</source>
         <translation>版权 (C) 2014-%i The Dash Core Developers</translation>
     </message>
+	<message>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>版权 (C) 2018-%i The Curium Developers</translation>
+    </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>无法解析 -rpcbind 参数 %s 作为网络地址</translation>

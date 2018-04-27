@@ -3803,6 +3803,10 @@ rpcpassword=%s
         <source>Copyright (C) 2014-%i The Dash Core Developers</source>
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
+	<message>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>Copyright (C) 2018-%i The Curium Developers</translation>
+    </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Не могу распознать сетевой адрес в значении %s параметра -rpcbind</translation>
