@@ -1,4 +1,4 @@
-package=native_cruit
+package=native_cdrkit
 $(package)_version=1.1.11
 $(package)_download_path=http://distro.ibiblio.org/fatdog/source/600/c
 $(package)_file_name=cruit-$($(package)_version).tar.bz2
