@@ -488,7 +488,7 @@
            </property>
            <property name="icon">
             <iconset resource="../curium.qrc">
-             <normaloff>:/icons/crublue/remove</normaloff>:/icons/crublue/remove</iconset>
+             <normaloff>:/icons/drkblue/remove</normaloff>:/icons/drkblue/remove</iconset>
            </property>
            <property name="shortcut">
             <string notr="true">Ctrl+L</string>

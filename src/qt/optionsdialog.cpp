@@ -91,7 +91,7 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     
     /* Theme selector */
     ui->theme->addItem(QString("CURIUM-light"), QVariant("light"));
-    ui->theme->addItem(QString("CURIUM-blue"), QVariant("crublue"));
+    ui->theme->addItem(QString("CURIUM-blue"), QVariant("drkblue"));
     ui->theme->addItem(QString("CURIUM-Crownium"), QVariant("crownium"));
     ui->theme->addItem(QString("CURIUM-traditional"), QVariant("trad"));
     
