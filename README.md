@@ -3,8 +3,11 @@ Curium staging tree 0.12.1
 
 `master:` [![Build Status](https://travis-ci.org/curiumpay/curium.svg?branch=master)](https://travis-ci.org/curiumpay/curium) `v0.12.0.x:` [![Build Status](https://travis-ci.org/curiumpay/curium.svg?branch=v0.12.0.x)](https://travis-ci.org/curiumpay/curium/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/curiumpay/curium.svg?branch=v0.12.1.x)](https://travis-ci.org/curiumpay/curium/branches)
 
-https://www.curium.org
+https://curiumofficial.com
 
+Our Forum
+----------
+https://forum.curiumofficial.com
 
 What is Curium?
 ----------------
@@ -16,7 +19,7 @@ are carried out collectively by the network. Curium is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Curium software, see https://www.curium.org/downloads.
+the Curium software, see https://curiumofficial.com.
 
 
 License
@@ -29,7 +32,7 @@ Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/curiumpay/curium/tags) are created to indicate new official,
+[Tags](https://github.com/curiumofficial/curiumofficial/tags) are created to indicate new official,
 stable release versions of Curium.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -62,16 +65,3 @@ code. This is especially important for large or high-risk changes. It is useful
 to add a test plan to the pull request description if testing the changes is
 not straightforward.
 
-Translations
-------------
-
-Changes to translations as well as new translations can be submitted to
-[Curium's Transifex page](https://www.transifex.com/projects/p/curium/).
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
-
-Translators should also follow the [forum](https://www.curium.org/forum/topic/curium-worldwide-collaboration.88/).
