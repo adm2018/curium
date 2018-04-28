@@ -23,8 +23,8 @@ packages:
 - "python"
 reference_datetime: "2017-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/curiumpay/curium.git"
-  "dir": "curium"
+- "url": "https://github.com/curiumofficial/Curium-Official.git"
+  "dir": "Curium-Official"
 files:
 - "MacOSX10.9.sdk.tar.gz"
 script: |
@@ -71,7 +71,7 @@ script: |
   done
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd curium
+  cd Curium-Official
   BASEPREFIX=`pwd`/depends
 
   mkdir -p ${BASEPREFIX}/SDKs
