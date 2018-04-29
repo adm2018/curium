@@ -23,13 +23,13 @@ cache:
 env:
   global:
     - MAKEJOBS=-j5
-    - RUN_TESTS=false
+    - RUN_TESTS=true
     - BOOST_TEST_RANDOM=1$TRAVIS_BUILD_ID
     - CCACHE_SIZE=400M
     - CCACHE_TEMPDIR=/tmp/.ccache-temp
     - CCACHE_COMPRESS=1
     - BASE_OUTDIR=$TRAVIS_BUILD_DIR/out
-    - SDK_URL=https://github.com/curiumofficial/macthingy/releases/download/12/MacOSX10.9.sdk.tar.gz
+    - SDK_URL=https://bitcoincore.org/depends-sources/sdks
     - PYTHON_DEBUG=1
     - WINEDEBUG=fixme-all
 
