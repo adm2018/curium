@@ -2110,14 +2110,14 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 bool found = false;
                 if(nCoinType == ONLY_DENOMINATED) {
                     found = IsDenominatedAmount(pcoin->vout[i].nValue);
-                } else if(nCoinType == ONLY_NOT1000IFMN) {
-                    found = !(fMasterNode && pcoin->vout[i].nValue == 1000*COIN);
-                } else if(nCoinType == ONLY_NONDENOMINATED_NOT1000IFMN) {
+                } else if(nCoinType == ONLY_NOT10000IFMN) {
+                    found = !(fMasterNode && pcoin->vout[i].nValue == 10000*COIN);
+                } else if(nCoinType == ONLY_NONDENOMINATED_NOT10000IFMN) {
                     if (IsCollateralAmount(pcoin->vout[i].nValue)) continue; // do not use collateral amounts
                     found = !IsDenominatedAmount(pcoin->vout[i].nValue);
-                    if(found && fMasterNode) found = pcoin->vout[i].nValue != 1000*COIN; // do not use Hot MN funds
-                } else if(nCoinType == ONLY_1000) {
-                    found = pcoin->vout[i].nValue == 1000*COIN;
+                    if(found && fMasterNode) found = pcoin->vout[i].nValue != 10000*COIN; // do not use Hot MN funds
+                } else if(nCoinType == ONLY_10000) {
+                    found = pcoin->vout[i].nValue == 10000*COIN;
                 } else if(nCoinType == ONLY_PRIVATESEND_COLLATERAL) {
                     found = IsCollateralAmount(pcoin->vout[i].nValue);
                 } else {
@@ -2127,7 +2127,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
 
                 isminetype mine = IsMine(pcoin->vout[i]);
                 if (!(IsSpent(wtxid, i)) && mine != ISMINE_NO &&
-                    (!IsLockedCoin((*it).first, i) || nCoinType == ONLY_1000) &&
+                    (!IsLockedCoin((*it).first, i) || nCoinType == ONLY_10000) &&
                     (pcoin->vout[i].nValue > 0 || fIncludeZeroValue) &&
                     (!coinControl || !coinControl->HasSelected() || coinControl->fAllowOtherInputs || coinControl->IsSelected((*it).first, i)))
                         vCoins.push_back(COutput(pcoin, i, nDepth,
