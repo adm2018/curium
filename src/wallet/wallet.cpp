@@ -2655,7 +2655,7 @@ bool CWallet::SelectCoinsDark(CAmount nValueMin, CAmount nValueMax, std::vector<
         if(out.tx->vout[out.i].nValue < CENT) continue;
         //do not allow collaterals to be selected
         if(IsCollateralAmount(out.tx->vout[out.i].nValue)) continue;
-        if(fMasterNode && out.tx->vout[out.i].nValue == 1000*COIN) continue; //masternode input
+        if(fMasterNode && out.tx->vout[out.i].nValue == 10000*COIN) continue; //masternode input
 
         if(nValueRet + out.tx->vout[out.i].nValue <= nValueMax){
             CTxIn txin = CTxIn(out.tx->GetHash(),out.i);
@@ -3000,9 +3000,9 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
 
                 if (!SelectCoins(nValueToSelect, setCoins, nValueIn, coinControl, nCoinType, fUseInstantSend))
                 {
-                    if (nCoinType == ONLY_NOT1000IFMN) {
+                    if (nCoinType == ONLY_NOT10000IFMN) {
                         strFailReason = _("Unable to locate enough funds for this transaction that are not equal 1000 CURIUM.");
-                    } else if (nCoinType == ONLY_NONDENOMINATED_NOT1000IFMN) {
+                    } else if (nCoinType == ONLY_NONDENOMINATED_NOT10000IFMN) {
                         strFailReason = _("Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 CURIUM.");
                     } else if (nCoinType == ONLY_DENOMINATED) {
                         strFailReason = _("Unable to locate enough PrivateSend denominated funds for this transaction.");
