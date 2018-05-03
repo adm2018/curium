@@ -5788,7 +5788,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             }
 
             LogPrintf("DSTX -- Got Masternode transaction %s\n", hashTx.ToString());
-            mempool.PrioritiseTransaction(hashTx, hashTx.ToString(), 10000, 0.1*COIN);
+            mempool.PrioritiseTransaction(hashTx, hashTx.ToString(), 1000, 0.1*COIN);
             pmn->fAllowMixingTx = false;
         }
 
