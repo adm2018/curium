@@ -234,7 +234,7 @@ void CMasternode::Check(bool fForce)
     // of the network. Postpone their check for MASTERNODE_MIN_MNP_SECONDS seconds.
     // This could be usefull for 12.1 migration, can be removed after it's done.
     static int64_t nTimeStart = GetTime();
-    if(nProtocolVersion < 70204) {
+    if(nProtocolVersion < 70105) {
         if(!masternodeSync.IsMasternodeListSynced()) nTimeStart = GetTime();
         fWaitForPing = GetTime() - nTimeStart < MASTERNODE_MIN_MNP_SECONDS;
     }

@@ -812,7 +812,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         LogPrint("masternode", "MNANNOUNCE -- Masternode announce, masternode=%s\n", mnb.vin.prevout.ToStringShort());
 
         // backward compatibility patch
-        if(pfrom->nVersion < 70204) {
+        if(pfrom->nVersion < 70105) {
             int64_t nLastDsqDummy;
             vRecv >> nLastDsqDummy;
         }
