@@ -18,11 +18,11 @@ Darkcoin Core:
   public keys only, old scripts remain valid and usable!)
 - Changed testnet address versions to start with `x` or `y` (instead of `m` or
   `n`, this affects public keys only, old wallets remain valid and usable!)
-- Defined BIP32 (HD) address versions to start with `drkp`/`drkv` (`DRKP`/`DRKV`
+- Defined BIP32 (HD) address versions to start with `crup`/`cruv` (`CRUP`/`CRUV`
   for testnet)
 - Adapted BIP44 coin type `5` for Darkcoin (0x80000005) as defined in SLIP-0044
-- Added new units: `duffs` (1 / 100.000.000 DRK)
-- Added units for testnet: tDRK, mtDRK, utDRK, tduffs
+- Added new units: `crus` (1 / 100.000.000 CRU)
+- Added units for testnet: tCRU, mtCRU, utCRU, tcrus
 - Added new DNS seed from masternode.io
 - Fixed wallet locking after sending coins
 - Add `-regtest` mode, similar to testnet but private with instant block
@@ -45,9 +45,9 @@ Masternodes:
 
 Darksend:
 
-- Reduced lower darksend limit to 1.5 DRK
+- Reduced lower darksend limit to 1.5 CRU
 - Fixed progress bar calculation for low amounts
-- Improved support for adding DRK after anon has completed
+- Improved support for adding CRU after anon has completed
 - Added denomination information to Overview tab
 - Added more detailed Darksend status information to Overview tab
 - Added Darksend high precision matching engine
@@ -100,13 +100,13 @@ Command-line options:
 - New option: -nospendzeroconfchange to never spend unconfirmed change outputs
 - New option: -zapwallettxes to rebuild the wallet's transaction information
 - Rename option '-tor' to '-onion' to better reflect what it does
-- Add '-disablewallet' mode to let dashd run entirely without wallet (when
+- Add '-disablewallet' mode to let curiumd run entirely without wallet (when
   built with wallet)
 - Update default '-rpcsslciphers' to include TLSv1.2
 - make '-logtimestamps' default on and rework help-message
 - RPC client option: '-rpcwait', to wait for server start
 - Remove '-logtodebugger'
-- Allow `-noserver` with dashd
+- Allow `-noserver` with curiumd
 - Make -proxy set all network types, avoiding a connect leak.
 
 
@@ -137,7 +137,7 @@ Protocol and network code:
 - Prevent socket leak in ThreadSocketHandler and correct some proxy related
   socket leaks
 - Use pnode->nLastRecv as sync score (was the wrong way around)
-- Drop the fee required to relay a transaction to 0.01mDRK per kilobyte
+- Drop the fee required to relay a transaction to 0.01mCRU per kilobyte
 - Send tx relay flag with version
 - New 'reject' P2P message (BIP 0061, see
   https://gist.github.com/gavinandresen/7079034 for draft)

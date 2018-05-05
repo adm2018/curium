@@ -1,9 +1,11 @@
 Sample configuration files for:
 
-SystemD: dashd.service
-Upstart: dashd.conf
-OpenRC:  dashd.openrc
-         dashd.openrcconf
+SystemD: curiumd.service
+Upstart: curiumd.conf
+OpenRC:  curiumd.openrc
+         curiumd.openrcconf
+CentOS:  curiumd.init
+OS X:    org.curium.curiumd.plist
 
 have been made available to assist packagers in creating node packages here.
 
