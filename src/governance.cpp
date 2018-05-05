@@ -331,6 +331,7 @@ bool CGovernanceManager::AddGovernanceObject(CGovernanceObject& govobj, CNode* p
     }
 
     LogPrint("gobject", "CGovernanceManager::AddGovernanceObject -- Adding object: hash = %s, type = %d\n", nHash.ToString(), govobj.GetObjectType()); 
+
     if(govobj.nObjectType == GOVERNANCE_OBJECT_WATCHDOG) {
         // If it's a watchdog, make sure it fits required time bounds
         if((govobj.GetCreationTime() < GetAdjustedTime() - GOVERNANCE_WATCHDOG_EXPIRATION_TIME ||
@@ -350,7 +351,6 @@ bool CGovernanceManager::AddGovernanceObject(CGovernanceObject& govobj, CNode* p
         }
     }
 
-	
     // INSERT INTO OUR GOVERNANCE OBJECT MEMORY
     mapObjects.insert(std::make_pair(nHash, govobj));
 
@@ -369,7 +369,7 @@ bool CGovernanceManager::AddGovernanceObject(CGovernanceObject& govobj, CNode* p
         break;
     case GOVERNANCE_OBJECT_WATCHDOG:
         mapWatchdogObjects[nHash] = govobj.GetCreationTime() + GOVERNANCE_WATCHDOG_EXPIRATION_TIME;
-        LogPrint("gobject", "CGovernanceManager::AddGovernanceObject -- Added watchdog to map: hash = %s\n", nHash.ToString()); 
+        LogPrint("gobject", "CGovernanceManager::AddGovernanceObject -- Added watchdog to map: hash = %s\n", nHash.ToString());
         break;
     default:
         break;
@@ -379,6 +379,7 @@ bool CGovernanceManager::AddGovernanceObject(CGovernanceObject& govobj, CNode* p
 
     return true;
 }
+
 bool CGovernanceManager::UpdateCurrentWatchdog(CGovernanceObject& watchdogNew)
 {
     bool fAccept = false;
@@ -493,6 +494,7 @@ void CGovernanceManager::UpdateCachesAndClean()
             // UPDATE SENTINEL SIGNALING VARIABLES
             pObj->UpdateSentinelVariables();
         }
+
         if(pObj->IsSetCachedDelete() && (nHash == nHashWatchdogCurrent)) {
             nHashWatchdogCurrent = uint256();
         }
@@ -523,6 +525,8 @@ void CGovernanceManager::UpdateCachesAndClean()
                 }
             }
             if(pObj->nObjectType == GOVERNANCE_OBJECT_WATCHDOG) {
+                mapWatchdogObjects.erase(it->first);
+            }
             mapObjects.erase(it++);
         } else {
             ++it;
@@ -594,7 +598,7 @@ std::vector<CGovernanceVote> CGovernanceManager::GetCurrentVotes(const uint256& 
             int64_t nCreationTime = ((it3->second).nCreationTime);
 
             CGovernanceVote vote = CGovernanceVote(mnCollateralOutpoint, nParentHash, (vote_signal_enum_t)signal, (vote_outcome_enum_t)outcome);
-            vote.SetTime(nCreationTime)
+            vote.SetTime(nCreationTime);
 
             vecResult.push_back(vote);
         }
@@ -755,7 +759,7 @@ void CGovernanceManager::Sync(CNode* pfrom, const uint256& nProp, const CBloomFi
 
                 if(govobj.IsSetCachedDelete() || govobj.IsSetExpired()) {
                     LogPrintf("CGovernanceManager::Sync -- not syncing deleted/expired govobj: %s, peer=%d\n",
-                                strHash, pfrom->id);
+                              strHash, pfrom->id);
                     continue;
                 }
 
@@ -1127,7 +1131,7 @@ int CGovernanceManager::RequestGovernanceObjectVotes(const std::vector<CNode*>& 
             // they stay connected for a short period of time and it's possible that we won't get everything we should.
             // Only use outbound connections - inbound connection could be a "masternode" connection
             // initialted from another node, so skip it too.
-            if(pnode->fMasternode || (fMasterNode && pnode->fInbound)) continue;		
+            if(pnode->fMasternode || (fMasterNode && pnode->fInbound)) continue;
             // only use up to date peers
             if(pnode->nVersion < MIN_GOVERNANCE_PEER_PROTO_VERSION) continue;
             // stop early to prevent setAskFor overflow
@@ -1150,9 +1154,8 @@ int CGovernanceManager::RequestGovernanceObjectVotes(const std::vector<CNode*>& 
         }
         if(!fAsked) i--;
     }
-    LogPrint("governance", "CGovernanceManager::RequestGovernanceObjectVotes -- end: vpGovObjsTriggersTmp %d vpGovObjsTmp %d mapAskedRecently %d\n",
+    LogPrint("gobject", "CGovernanceManager::RequestGovernanceObjectVotes -- end: vpGovObjsTriggersTmp %d vpGovObjsTmp %d mapAskedRecently %d\n",
                 vpGovObjsTriggersTmp.size(), vpGovObjsTmp.size(), mapAskedRecently.size());
-				
 
     return int(vpGovObjsTriggersTmp.size() + vpGovObjsTmp.size());
 }
