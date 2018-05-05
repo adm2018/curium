@@ -312,7 +312,6 @@ uint256 CGovernanceObject::GetHash() const
 
 /**
    Return the actual object from the strData JSON structure.
-
    Returns an empty object on error.
  */
 UniValue CGovernanceObject::GetJSONObject()
@@ -480,7 +479,6 @@ bool CGovernanceObject::IsValidLocally(std::string& strError, bool& fMissingMast
 
     /*
         TODO
-
         - There might be an issue with multisig in the coinbase on mainnet, we will add support for it in a future release.
         - Post 12.2+ (test multisig coinbase transaction)
     */

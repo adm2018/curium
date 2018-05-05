@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2014-2017 The Curium Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -428,10 +428,8 @@ void CDarksendPool::InitDenominations()
 {
     vecPrivateSendDenominations.clear();
     /* Denominations
-
         A note about convertability. Within mixing pools, each denomination
         is convertable to another.
-
         For example:
         1CRU+1000 == (.1CRU+100)*10
         10CRU+10000 == (1CRU+1000)*10
@@ -742,9 +740,7 @@ void CDarksendPool::ChargeFees()
 /*
     Charge the collateral randomly.
     Mixing is completely free, to pay miners we randomly pay the collateral of users.
-
     Collateral Fee Charges:
-
     Being that mixing has "no fees" we need to have some kind of cost associated
     with using it to stop abuse. Otherwise it could serve as an attack vector and
     allow endless transaction that would bloat Curium and make it unusable. To
@@ -1543,9 +1539,22 @@ bool CDarksendPool::DoAutomaticDenominating(bool fDryRun)
 
             vecMasternodesUsed.push_back(dsq.vin);
 
+            CNode* pnodeFound = NULL;
+            {
+                LOCK(cs_vNodes);
+                pnodeFound = FindNode(pmn->addr);
+                if(pnodeFound) {
+                    if(pnodeFound->fDisconnect) {
+                        continue;
+                    } else {
+                        pnodeFound->AddRef();
+                    }
+                }
+            }
+
             LogPrintf("CDarksendPool::DoAutomaticDenominating -- attempt to connect to masternode from queue, addr=%s\n", pmn->addr.ToString());
             // connect to Masternode and submit the queue request
-            CNode* pnode = ConnectNode((CAddress)pmn->addr, NULL, true);
+            CNode* pnode = (pnodeFound && pnodeFound->fMasternode) ? pnodeFound : ConnectNode((CAddress)pmn->addr, NULL, true);
             if(pnode) {
                 pSubmittedToMasternode = pmn;
                 nSessionDenom = dsq.nDenom;
@@ -1556,6 +1565,9 @@ bool CDarksendPool::DoAutomaticDenominating(bool fDryRun)
                 strAutoDenomResult = _("Mixing in progress...");
                 SetState(POOL_STATE_QUEUE);
                 nTimeLastSuccessfulStep = GetTimeMillis();
+                if(pnodeFound) {
+                    pnodeFound->Release();
+                }
                 return true;
             } else {
                 LogPrintf("CDarksendPool::DoAutomaticDenominating -- can't connect, addr=%s\n", pmn->addr.ToString());
@@ -1589,8 +1601,22 @@ bool CDarksendPool::DoAutomaticDenominating(bool fDryRun)
             continue;
         }
 
+        CNode* pnodeFound = NULL;
+        {
+            LOCK(cs_vNodes);
+            pnodeFound = FindNode(pmn->addr);
+            if(pnodeFound) {
+                if(pnodeFound->fDisconnect) {
+                    nTries++;
+                    continue;
+                } else {
+                    pnodeFound->AddRef();
+                }
+            }
+        }
+
         LogPrintf("CDarksendPool::DoAutomaticDenominating -- attempt %d connection to Masternode %s\n", nTries, pmn->addr.ToString());
-        CNode* pnode = ConnectNode((CAddress)pmn->addr, NULL, true);
+        CNode* pnode = (pnodeFound && pnodeFound->fMasternode) ? pnodeFound : ConnectNode((CAddress)pmn->addr, NULL, true);
         if(pnode) {
             LogPrintf("CDarksendPool::DoAutomaticDenominating -- connected, addr=%s\n", pmn->addr.ToString());
             pSubmittedToMasternode = pmn;
@@ -1608,6 +1634,9 @@ bool CDarksendPool::DoAutomaticDenominating(bool fDryRun)
             strAutoDenomResult = _("Mixing in progress...");
             SetState(POOL_STATE_QUEUE);
             nTimeLastSuccessfulStep = GetTimeMillis();
+            if(pnodeFound) {
+                pnodeFound->Release();
+            }
             return true;
         } else {
             LogPrintf("CDarksendPool::DoAutomaticDenominating -- can't connect, addr=%s\n", pmn->addr.ToString());
@@ -1672,7 +1701,6 @@ bool CDarksendPool::PrepareDenominate(int nMinRounds, int nMaxRounds, std::strin
 
     /*
         Select the coins we'll use
-
         if nMinRounds >= 0 it means only denominated inputs are going in and coming out
     */
     bool fSelected = pwalletMain->SelectCoinsByDenominations(nSessionDenom, vecPrivateSendDenominations.back(), PRIVATESEND_POOL_MAX, vecTxIn, vCoins, nValueIn, nMinRounds, nMaxRounds);
@@ -2497,6 +2525,7 @@ void ThreadCheckDarkSendPool()
             if(fMasterNode && (nTick % (60 * 5) == 0)) {
                 mnodeman.DoFullVerificationStep();
             }
+
             darkSendPool.CheckTimeout();
             darkSendPool.CheckForCompleteQueue();
 
