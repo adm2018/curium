@@ -215,18 +215,18 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1456790400; // March 1st, 2016
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1493596800; // May 1st, 2017
 
-        pchMessageStart[0] = 0x1b;
-        pchMessageStart[1] = 0x12;
-        pchMessageStart[2] = 0xaa;
-        pchMessageStart[3] = 0xee;
+        pchMessageStart[0] = 0xcc;
+        pchMessageStart[1] = 0xb5;
+        pchMessageStart[2] = 0xe9;
+        pchMessageStart[3] = 0xfe;
         vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
         nDefaultPort = 19999;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1520026653UL, 1200555UL, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1520026653, 0, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000049acfc15e46e990e890ed8263afa5b8ba9f106bfc277070a93117139be8"));
+        assert(consensus.hashGenesisBlock == uint256S("0x1c39e4202d18fe0b8841e9282837378ae9b5e92711a5e942eb2f4b621c8c6253"));
         assert(genesis.hashMerkleRoot == uint256S("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
         vFixedSeeds.clear();
@@ -263,7 +263,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (    0, uint256S("0x0000049acfc15e46e990e890ed8263afa5b8ba9f106bfc277070a93117139be8")),
+            (    0, uint256S("0x1c39e4202d18fe0b8841e9282837378ae9b5e92711a5e942eb2f4b621c8c6253")),
 
            // 1483076495, // * UNIX timestamp of last checkpoint block
            // 168590,     // * total number of transactions between genesis and last checkpoint
@@ -315,17 +315,17 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 999999999999ULL;
 
-        pchMessageStart[0] = 0xcc;
-        pchMessageStart[1] = 0xb5;
-        pchMessageStart[2] = 0xe9;
-        pchMessageStart[3] = 0xfe;
+        pchMessageStart[0] = 0x1b;
+        pchMessageStart[1] = 0x12;
+        pchMessageStart[2] = 0xaa;
+        pchMessageStart[3] = 0xee;
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nDefaultPort = 19994;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1520026653, 0, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1520026653UL, 1200555UL, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x1c39e4202d18fe0b8841e9282837378ae9b5e92711a5e942eb2f4b621c8c6253"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000049acfc15e46e990e890ed8263afa5b8ba9f106bfc277070a93117139be8"));
         assert(genesis.hashMerkleRoot == uint256S("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
@@ -341,7 +341,7 @@ public:
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x1c39e4202d18fe0b8841e9282837378ae9b5e92711a5e942eb2f4b621c8c6253")),
+            ( 0, uint256S("0x0000049acfc15e46e990e890ed8263afa5b8ba9f106bfc277070a93117139be8")),
             0,
             0,
             0
