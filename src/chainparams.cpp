@@ -215,18 +215,18 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1456790400; // March 1st, 2016
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1493596800; // May 1st, 2017
 
-        pchMessageStart[0] = 0x1b;
-        pchMessageStart[1] = 0x12;
-        pchMessageStart[2] = 0xaa;
-        pchMessageStart[3] = 0xee;
+        pchMessageStart[0] = 0xab;
+        pchMessageStart[1] = 0xf2;
+        pchMessageStart[2] = 0xde;
+        pchMessageStart[3] = 0xbe;
         vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
         nDefaultPort = 19999;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1520026653UL, 1200555UL, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1525626624UL, 2223930UL, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000049acfc15e46e990e890ed8263afa5b8ba9f106bfc277070a93117139be8"));
+        assert(consensus.hashGenesisBlock == uint256S("00000cfb27e59a3c2e9e2785de21c6113cbe29b0a7d83de2651856e08dc5ac5c"));
         assert(genesis.hashMerkleRoot == uint256S("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
         vFixedSeeds.clear();
