@@ -226,7 +226,7 @@ public:
 
         genesis = CreateGenesisBlock(1525626624UL, 2223930UL, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("00000cfb27e59a3c2e9e2785de21c6113cbe29b0a7d83de2651856e08dc5ac5c"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000cfb27e59a3c2e9e2785de21c6113cbe29b0a7d83de2651856e08dc5ac5c"));
         assert(genesis.hashMerkleRoot == uint256S("0x22f17ff105937d2914cfff2d213006a9327b8aff76ef59e3cbbe0293e453342e"));
 
         vFixedSeeds.clear();
@@ -263,7 +263,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (    0, uint256S("0x0000049acfc15e46e990e890ed8263afa5b8ba9f106bfc277070a93117139be8")),
+            (    0, uint256S(0x00000cfb27e59a3c2e9e2785de21c6113cbe29b0a7d83de2651856e08dc5ac5c)),
 
            // 1483076495, // * UNIX timestamp of last checkpoint block
            // 168590,     // * total number of transactions between genesis and last checkpoint
