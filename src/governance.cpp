@@ -20,7 +20,7 @@ std::map<uint256, int64_t> mapAskedForGovernanceObject;
 
 int nSubmittedFinalBudget;
 
-const std::string CGovernanceManager::SERIALIZATION_VERSION_STRING = "CGovernanceManager-Version-11";
+const std::string CGovernanceManager::SERIALIZATION_VERSION_STRING = "CGovernanceManager-Version-10";
 
 CGovernanceManager::CGovernanceManager()
     : pCurrentBlockIndex(NULL),
@@ -389,11 +389,9 @@ bool CGovernanceManager::UpdateCurrentWatchdog(CGovernanceObject& watchdogNew)
     int64_t nExpirationDelay = GOVERNANCE_WATCHDOG_EXPIRATION_TIME / 2;
     int64_t nNow = GetTime();
 
-    if(nHashWatchdogCurrent == uint256() ||                                             // no known current OR
-       ((nNow - watchdogNew.GetCreationTime() < nExpirationDelay) &&                    // (new one is NOT expired AND
-        ((nNow - nTimeWatchdogCurrent > nExpirationDelay) || (nHashNew > nHashCurrent)))//  (current is expired OR
-                                                                                        //   its hash is lower))
-    ) {
+    if((nHashWatchdogCurrent == uint256()) ||
+       (((nNow - nTimeWatchdogCurrent) > nExpirationDelay) && (nNow - watchdogNew.GetCreationTime() < nExpirationDelay)) ||
+       (nHashNew > nHashCurrent)) {
         LOCK(cs);
         object_m_it it = mapObjects.find(nHashWatchdogCurrent);
         if(it != mapObjects.end()) {
@@ -591,10 +589,10 @@ std::vector<CGovernanceVote> CGovernanceManager::GetCurrentVotes(const uint256& 
         for (vote_instance_m_it it3 = voteRecord.mapInstances.begin(); it3 != voteRecord.mapInstances.end(); ++it3) {
             int signal = (it3->first);
             int outcome = ((it3->second).eOutcome);
-            int64_t nCreationTime = ((it3->second).nCreationTime);
+            int64_t nTime = ((it3->second).nTime);
 
             CGovernanceVote vote = CGovernanceVote(mnCollateralOutpoint, nParentHash, (vote_signal_enum_t)signal, (vote_outcome_enum_t)outcome);
-            vote.SetTime(nCreationTime)
+            vote.SetTime(nTime);
 
             vecResult.push_back(vote);
         }
