@@ -345,8 +345,6 @@ public:
 
     bool HaveVoteForHash(uint256 nHash);
 
-    int GetVoteCount() const;
-
     bool SerializeObjectForHash(uint256 nHash, CDataStream& ss);
 
     bool SerializeVoteForHash(uint256 nHash, CDataStream& ss);
@@ -378,8 +376,8 @@ public:
 
     void InitOnLoad();
 
-    int RequestGovernanceObjectVotes(CNode* pnode);
-    int RequestGovernanceObjectVotes(const std::vector<CNode*>& vNodesCopy);
+    void RequestGovernanceObjectVotes(CNode* pnode);
+    void RequestGovernanceObjectVotes(const std::vector<CNode*>& vNodesCopy);
 
 private:
     void RequestGovernanceObject(CNode* pfrom, const uint256& nHash, bool fUseFilter = false);
