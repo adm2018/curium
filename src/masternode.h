@@ -367,7 +367,7 @@ public:
         //
         // REMOVE AFTER MIGRATION TO 12.1
         //
-        if(nProtocolVersion < 70201) {
+        if(nProtocolVersion < 70106) {
             ss << sigTime;
             ss << pubKeyCollateralAddress;
         } else {

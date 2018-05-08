@@ -819,7 +819,7 @@ void CMasternodePayments::Sync(CNode* pnode, int nCountNeeded)
 
     if(!pCurrentBlockIndex) return;
 
-    if(pnode->nVersion < 70202) {
+    if(pnode->nVersion < 70106) {
         // Old nodes can only sync via heavy method
         int nLimit = GetStorageLimit();
         if(nCountNeeded > nLimit) nCountNeeded = nLimit;
@@ -851,7 +851,7 @@ void CMasternodePayments::Sync(CNode* pnode, int nCountNeeded)
 void CMasternodePayments::RequestLowDataPaymentBlocks(CNode* pnode)
 {
     // Old nodes can't process this
-    if(pnode->nVersion < 70202) return;
+    if(pnode->nVersion < 70106) return;
     if(!pCurrentBlockIndex) return;
 
     LOCK2(cs_main, cs_mapMasternodeBlocks);

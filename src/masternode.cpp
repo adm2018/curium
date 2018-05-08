@@ -717,7 +717,7 @@ bool CMasternodeBroadcast::CheckSignature(int& nDos)
     //
     // REMOVE AFTER MIGRATION TO 12.1
     //
-    if(nProtocolVersion < 70201) {
+    if(nProtocolVersion < 70106) {
         std::string vchPubkeyCollateralAddress(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
         std::string vchPubkeyMasternode(pubKeyMasternode.begin(), pubKeyMasternode.end());
         strMessage = addr.ToString(false) + boost::lexical_cast<std::string>(sigTime) +
