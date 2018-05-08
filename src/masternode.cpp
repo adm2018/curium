@@ -324,7 +324,6 @@ masternode_info_t CMasternode::GetInfo()
     info.nTimeLastPaid = nTimeLastPaid;
     info.nTimeLastWatchdogVote = nTimeLastWatchdogVote;
     info.nActiveState = nActiveState;
-	info.nTimeLastPing = lastPing.sigTime;
     info.nProtocolVersion = nProtocolVersion;
     info.fInfoValid = true;
     return info;
