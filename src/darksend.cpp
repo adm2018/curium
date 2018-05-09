@@ -64,7 +64,7 @@ void CDarksendPool::ProcessMessage(CNode* pfrom, std::string& strCommand, CDataS
 
 {
 
-    if(fLiteMode) return; // ignore all Dash related functionality
+    if(fLiteMode) return; // ignore all Curium related functionality
 
     if(!masternodeSync.IsBlockchainSynced()) return;
 
@@ -4916,7 +4916,7 @@ void ThreadCheckDarkSendPool()
 
 {
 
-    if(fLiteMode) return; // disable all Dash specific functionality
+    if(fLiteMode) return; // disable all Curium specific functionality
 
 
 
@@ -4930,7 +4930,7 @@ void ThreadCheckDarkSendPool()
 
     // Make this thread recognisable as the PrivateSend thread
 
-    RenameThread("dash-privatesend");
+    RenameThread("curium-privatesend");
 
 
 
