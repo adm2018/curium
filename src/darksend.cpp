@@ -4504,7 +4504,7 @@ bool CDarkSendSigner::IsVinAssociatedWithPubkey(const CTxIn& txin, const CPubKey
 
         BOOST_FOREACH(CTxOut out, tx.vout)
 
-            if(out.nValue == 1000*COIN && out.scriptPubKey == payee) return true;
+            if(out.nValue == 10000*COIN && out.scriptPubKey == payee) return true;
 
     }
 
