@@ -1,11 +1,15 @@
-// Copyright (c) 2012-2015 The Bitcoin Core developers
+// Copyright (c) 2012-2013 The Bitcoin Core developers
+// Copyright (c) 2017 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "random.h"
 #include "scheduler.h"
-
-#include "test/test_curium.h"
+#if defined(HAVE_CONFIG_H)
+#include "config/pivx-config.h"
+#else
+#define HAVE_WORKING_BOOST_SLEEP_FOR
+#endif
 
 #include <boost/bind.hpp>
 #include <boost/random/mersenne_twister.hpp>

@@ -1,19 +1,24 @@
-// Copyright (c) 2011-2015 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Copyright (c) 2014-2016 The Dash developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_COINCONTROL_H
 #define BITCOIN_COINCONTROL_H
 
 #include "primitives/transaction.h"
+#include "script/standard.h"
 
 /** Coin Control Features. */
 class CCoinControl
 {
 public:
     CTxDestination destChange;
-    bool fUsePrivateSend;
-    bool fUseInstantSend;
+    bool useObfuScation;
+    bool useSwiftTX;
+    bool fSplitBlock;
+    int nSplitBlock;
     //! If false, allows unselected inputs, but requires all selected inputs be used
     bool fAllowOtherInputs;
     //! Includes watch only addresses which match the ISMINE_WATCH_SOLVABLE criteria
@@ -29,12 +34,14 @@ public:
     void SetNull()
     {
         destChange = CNoDestination();
-        fAllowOtherInputs = false;
-        fAllowWatchOnly = false;
         setSelected.clear();
-        fUseInstantSend = false;
-        fUsePrivateSend = true;
+        useSwiftTX = false;
+        useObfuScation = false;
+        fAllowOtherInputs = false;
+        fAllowWatchOnly = true;
         nMinimumTotalFee = 0;
+        fSplitBlock = false;
+        nSplitBlock = 1;
     }
 
     bool HasSelected() const
@@ -63,9 +70,20 @@ public:
         setSelected.clear();
     }
 
-    void ListSelected(std::vector<COutPoint>& vOutpoints) const
+    void ListSelected(std::vector<COutPoint>& vOutpoints)
     {
         vOutpoints.assign(setSelected.begin(), setSelected.end());
+    }
+
+    unsigned int QuantitySelected()
+    {
+        return setSelected.size();
+    }
+
+    void SetSelection(std::set<COutPoint> setSelected)
+    {
+        this->setSelected.clear();
+        this->setSelected = setSelected;
     }
 
 private:

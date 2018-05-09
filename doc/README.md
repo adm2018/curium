@@ -1,64 +1,63 @@
-Curium 0.12.1
+PIVX Core
 =====================
 
-This is the official reference wallet for Curium digital currency and comprises the backbone of the Curium peer-to-peer network. You can [download Curium](https://www.curium.org/downloads/) or [build it yourself](#building) using the guides below.
+Setup
+---------------------
+[PIVX Core](http://pivx.org/wallet) is the original PIVX client and it builds the backbone of the network. However, it downloads and stores the entire history of PIVX transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Curium on your native platform.
+The following are some helpful notes on how to run PIVX on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/bitcoin-qt` (GUI) or
-- `bin/bitcoind` (headless)
+- bin/32/pivx-qt (GUI, 32-bit) or bin/32/pivxd (headless, 32-bit)
+- bin/64/pivx-qt (GUI, 64-bit) or bin/64/pivxd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run curium-qt.exe.
+Unpack the files into a directory, and then run pivx-qt.exe.
 
-### OS X
+### OSX
 
-Drag Curium-Qt to your applications folder, and then run Curium-Qt.
+Drag PIVX-Qt to your applications folder, and then run PIVX-Qt.
 
 ### Need Help?
 
-* See the [Curium documentation](https://curiumpay.atlassian.net/wiki/display/DOC)
+* See the documentation at the [PIVX Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [#curiumpay](http://webchat.freenode.net?channels=curiumpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=curiumpay).
-* Ask for help on the [CuriumTalk](https://curiumtalk.org/) forums.
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [PIVX Forum](http://forum.pivx.org/).
+* Join our Discord server [Discord Server](https://discord.pivx.org)
+* Join one of our Slack groups [PIVX Slack Groups](https://pivx.org/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
-The following are developer notes on how to build Curium on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build PIVX on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
-- [OS X Build Notes](build-osx.md)
+- [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
-- [Windows Build Notes](build-windows.md)
-- [OpenBSD Build Notes](build-openbsd.md)
 - [Gitian Building Guide](gitian-building.md)
 
 Development
 ---------------------
-The Curium repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Pivx repo's [root README](https://github.com/PIVX-Project/PIVX/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- Source Code Documentation ***TODO***
+- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/) ***TODO***
 - [Translation Process](translation_process.md)
-- [Translation Strings Policy](translation_strings_policy.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
-- [Shared Libraries](shared-libraries.md)
-- [BIPS](bips.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [CuriumTalk](https://curiumtalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#curiumpay](http://webchat.freenode.net/?channels=curiumpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=curiumpay).
+
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [PIVX](http://forum.pivx.org/) forum.
+* Join the [PIVX-Dev](https://pivx-dev.slack.com/) Slack group ([Sign-Up](https://pivx-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
@@ -68,6 +67,6 @@ The Curium repo's [root README](/README.md) contains relevant information on the
 
 License
 ---------------------
-Distributed under the [MIT software license](http://www.opensource.org/licenses/mit-license.php).
+Distributed under the [MIT/X11 software license](http://www.opensource.org/licenses/mit-license.php).
 This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.

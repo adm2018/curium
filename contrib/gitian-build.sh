@@ -1,4 +1,3 @@
-#!/bin/bash
 # Copyright (c) 2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +6,7 @@
 sign=false
 verify=false
 build=false
+setupenv=false
 
 # Systems to build
 linux=true
@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/curiumofficial/curium
+url=https://github.com/pivx-project/pivx
 proc=2
 mem=2000
 lxc=true
@@ -28,10 +28,10 @@ signProg="gpg --detach-sign"
 commitFiles=true
 
 # Help Message
-read -r -d '' usage <<- EOF
+read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the curium, gitian-builder, gitian.sigs, and curium-detached-sigs.
+Run this script from the directory containing the pivx, gitian-builder, gitian.sigs, and pivx-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/curiumofficial/curium
+-u|--url	Specify the URL of the repository. Default is https://github.com/pivx-project/pivx
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -111,7 +111,7 @@ while :; do
 		fi
 		shift
 	    else
-		printf 'Error: "--os" requires an argument containing an l (for linux), w (for windows), x (for Mac OSX), or a (for aarch64)\n'
+		echo 'Error: "--os" requires an argument containing an l (for linux), w (for windows), x (for Mac OSX), or a (for aarch64)\n'
 		exit 1
 	    fi
 	    ;;
@@ -189,14 +189,14 @@ then
 fi
 
 # Check for OSX SDK
-if [[ ! -e "gitian-builder/inputs/MacOSX10.9.sdk.tar.gz" && $osx == true ]]
+if [[ ! -e "gitian-builder/inputs/MacOSX10.11.sdk.tar.gz" && $osx == true ]]
 then
     echo "Cannot build for OSX, SDK does not exist. Will build for other OSes"
     osx=false
 fi
 
 # Get signer
-if [[ -n "$1" ]]
+if [[ -n"$1" ]]
 then
     SIGNER=$1
     shift
@@ -231,16 +231,16 @@ if [[ $commit = false ]]
 then
 	COMMIT="v${VERSION}"
 fi
-echo "${COMMIT}"
+echo ${COMMIT}
 
 # Setup build environment
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/phoreproject/gitian.sigs.git
-    git clone https://github.com/phoreproject/phore-detached-sigs.git
+    git clone https://github.com/pivx-project/gitian.sigs.git
+    git clone https://github.com/pivx-project/pivx-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    pushd ./gitian-builder || exit
+    pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
     then
         sudo apt-get install lxc
@@ -248,30 +248,30 @@ then
     else
         bin/make-base-vm --suite trusty --arch amd64
     fi
-    popd || exit
+    popd
 fi
 
 # Set up build
-pushd ./curium || exit
+pushd ./pivx
 git fetch
-git checkout "${COMMIT}"
-popd || exit
+git checkout ${COMMIT}
+popd
 
 # Build
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p "./curium-binaries/${VERSION}"
+	mkdir -p ./pivx-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
 	echo "Building Dependencies"
 	echo ""
-	pushd ./gitian-builder || exit
+	pushd ./gitian-builder
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../curium/depends download SOURCES_PATH="$(pwd)/cache/common"
+	make -C ../pivx/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit curium=${COMMIT} --url curium=${url} ../curium/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../curium/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/curium-*.tar.gz build/out/src/curium-*.tar.gz ../curium-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/pivx-*.tar.gz build/out/src/pivx-*.tar.gz ../pivx-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -289,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit curium=${COMMIT} --url curium=${url} ../curium/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../curium/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/curium-*-win-unsigned.tar.gz inputs/curium-win-unsigned.tar.gz
-	    mv build/out/curium-*.zip build/out/curium-*.exe ../curium-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/pivx-*-win-unsigned.tar.gz inputs/pivx-win-unsigned.tar.gz
+	    mv build/out/pivx-*.zip build/out/pivx-*.exe ../pivx-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -300,10 +300,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit curium=${COMMIT} --url curium=${url} ../curium/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../curium/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/curium-*-osx-unsigned.tar.gz inputs/curium-osx-unsigned.tar.gz
-	    mv build/out/curium-*.tar.gz build/out/curium-*.dmg ../curium-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/pivx-*-osx-unsigned.tar.gz inputs/pivx-osx-unsigned.tar.gz
+	    mv build/out/pivx-*.tar.gz build/out/pivx-*.dmg ../pivx-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -311,11 +311,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit curium=${COMMIT} --url curium=${url} ../curium/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../curium/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/curium-*.tar.gz build/out/src/curium-*.tar.gz ../curium-binaries/${VERSION}
-	fi
-	popd || exit
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/pivx-*.tar.gz build/out/src/pivx-*.tar.gz ../pivx-binaries/${VERSION}
+	popd
 
         if [[ $commitFiles = true ]]
         then
@@ -323,13 +322,13 @@ then
             echo ""
             echo "Committing ${VERSION} Unsigned Sigs"
             echo ""
-            pushd gitian.sigs || exit
+            pushd gitian.sigs
             git add ${VERSION}-linux/${SIGNER}
             git add ${VERSION}-aarch64/${SIGNER}
             git add ${VERSION}-win-unsigned/${SIGNER}
             git add ${VERSION}-osx-unsigned/${SIGNER}
             git commit -a -m "Add ${VERSION} unsigned sigs for ${SIGNER}"
-            popd || exit
+            popd
         fi
 fi
 
@@ -337,54 +336,54 @@ fi
 if [[ $verify = true ]]
 then
 	# Linux
-	pushd ./gitian-builder || exit
+	pushd ./gitian-builder
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../curium/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../pivx/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../curium/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../pivx/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../curium/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../pivx/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../curium/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../pivx/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../curium/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../curium/contrib/gitian-descriptors/gitian-osx-signer.yml
-	popd || exit
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
+	popd
 fi
 
 # Sign binaries
 if [[ $sign = true ]]
 then
 
-        pushd ./gitian-builder || exit
+        pushd ./gitian-builder
 	# Sign Windows
 	if [[ $windows = true ]]
 	then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../curium/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../curium/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/curium-*win64-setup.exe ../curium-binaries/${VERSION}
-	    mv build/out/curium-*win32-setup.exe ../curium-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../pivx/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/pivx-*win64-setup.exe ../pivx-binaries/${VERSION}
+	    mv build/out/pivx-*win32-setup.exe ../pivx-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -392,22 +391,22 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../curium/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../curium/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/curium-osx-signed.dmg ../curium-binaries/${VERSION}/curium-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/pivx-osx-signed.dmg ../pivx-binaries/${VERSION}/pivx-${VERSION}-osx.dmg
 	fi
-	popd || exit
+	popd
 
         if [[ $commitFiles = true ]]
         then
             # Commit Sigs
-            pushd gitian.sigs || exit
+            pushd gitian.sigs
             echo ""
             echo "Committing ${VERSION} Signed Sigs"
             echo ""
             git add ${VERSION}-win-signed/${SIGNER}
             git add ${VERSION}-osx-signed/${SIGNER}
             git commit -a -m "Add ${VERSION} signed binary sigs for ${SIGNER}"
-            popd || exit
+            popd
         fi
 fi

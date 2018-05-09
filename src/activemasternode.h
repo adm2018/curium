@@ -1,78 +1,72 @@
-// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2014-2016 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef ACTIVEMASTERNODE_H
 #define ACTIVEMASTERNODE_H
 
-#include "net.h"
+#include "init.h"
 #include "key.h"
-#include "wallet/wallet.h"
+#include "masternode.h"
+#include "net.h"
+#include "obfuscation.h"
+#include "sync.h"
+#include "wallet.h"
 
-class CActiveMasternode;
-
-static const int ACTIVE_MASTERNODE_INITIAL          = 0; // initial state
-static const int ACTIVE_MASTERNODE_SYNC_IN_PROCESS  = 1;
-static const int ACTIVE_MASTERNODE_INPUT_TOO_NEW    = 2;
-static const int ACTIVE_MASTERNODE_NOT_CAPABLE      = 3;
-static const int ACTIVE_MASTERNODE_STARTED          = 4;
-
-extern CActiveMasternode activeMasternode;
+#define ACTIVE_MASTERNODE_INITIAL 0 // initial state
+#define ACTIVE_MASTERNODE_SYNC_IN_PROCESS 1
+#define ACTIVE_MASTERNODE_INPUT_TOO_NEW 2
+#define ACTIVE_MASTERNODE_NOT_CAPABLE 3
+#define ACTIVE_MASTERNODE_STARTED 4
 
 // Responsible for activating the Masternode and pinging the network
 class CActiveMasternode
 {
-public:
-    enum masternode_type_enum_t {
-        MASTERNODE_UNKNOWN = 0,
-        MASTERNODE_REMOTE  = 1,
-        MASTERNODE_LOCAL   = 2
-    };
-
 private:
     // critical section to protect the inner data structures
     mutable CCriticalSection cs;
 
-    masternode_type_enum_t eType;
-
-    bool fPingerEnabled;
-
     /// Ping Masternode
-    bool SendMasternodePing();
+    bool SendMasternodePing(std::string& errorMessage);
+
+    /// Create Masternode broadcast, needs to be relayed manually after that
+    bool CreateBroadcast(CTxIn vin, CService service, CKey key, CPubKey pubKey, CKey keyMasternode, CPubKey pubKeyMasternode, std::string& errorMessage, CMasternodeBroadcast &mnb);
+
+    /// Get 10000 PIV input that can be used for the Masternode
+    bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey, std::string strTxHash, std::string strOutputIndex);
+    bool GetVinFromOutput(COutput out, CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
 
 public:
-    // Keys for the active Masternode
+    // Initialized by init.cpp
+    // Keys for the main Masternode
     CPubKey pubKeyMasternode;
-    CKey keyMasternode;
 
     // Initialized while registering Masternode
     CTxIn vin;
     CService service;
 
-    int nState; // should be one of ACTIVE_MASTERNODE_XXXX
-    std::string strNotCapableReason;
+    int status;
+    std::string notCapableReason;
 
     CActiveMasternode()
-        : eType(MASTERNODE_UNKNOWN),
-          fPingerEnabled(false),
-          pubKeyMasternode(),
-          keyMasternode(),
-          vin(),
-          service(),
-          nState(ACTIVE_MASTERNODE_INITIAL)
-    {}
+    {
+        status = ACTIVE_MASTERNODE_INITIAL;
+    }
 
-    /// Manage state of active Masternode
-    void ManageState();
+    /// Manage status of main Masternode
+    void ManageStatus();
+    std::string GetStatus();
 
-    std::string GetStateString() const;
-    std::string GetStatus() const;
-    std::string GetTypeString() const;
+    /// Create Masternode broadcast, needs to be relayed manually after that
+    bool CreateBroadcast(std::string strService, std::string strKey, std::string strTxHash, std::string strOutputIndex, std::string& errorMessage, CMasternodeBroadcast &mnb, bool fOffline = false);
 
-private:
-    void ManageStateInitial();
-    void ManageStateRemote();
-    void ManageStateLocal();
+    /// Get 10000 PIV input that can be used for the Masternode
+    bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
+    vector<COutput> SelectCoinsMasternode();
+
+    /// Enable cold wallet mode (run a Masternode with no funds)
+    bool EnableHotColdMasterNode(CTxIn& vin, CService& addr);
 };
 
 #endif

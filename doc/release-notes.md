@@ -1,115 +1,63 @@
-Curium version 0.12.1 is now available from:
+(note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-  <https://www.curium.org/downloads/>
+PIVX Core version *version* is now available from:  <https://github.com/pivx-project/pivx/releases>
+
+This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
+
+Please report bugs using the issue tracker at github: <https://github.com/pivx-project/pivx/issues>
 
 
+Mandatory Update
+==============
 
 
-Older releases
---------------
+How to Upgrade
+==============
 
-Curium was previously known as Darkcoin.
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/PIVX-Qt (on Mac) or pivxd/pivx-qt (on Linux).
 
-Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
-which was first released on Jan/18/2014.
 
-### Downgrade to a version < 0.12.0
+Compatibility
+==============
 
-Because release 0.12.0 and later will obfuscate the chainstate on every
-fresh sync or reindex, the chainstate is not backwards-compatible with
-pre-0.12 versions of Bitcoin Core or other software.
+PIVX Core is extensively tested on multiple operating systems using the Linux kernel, macOS 10.8+, and Windows 7 and later.
 
-If you want to downgrade after you have done a reindex with 0.12.0 or later,
-you will need to reindex when you first start Bitcoin Core version 0.11 or
-earlier.
+Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support), No attempt is made to prevent installing or running the software on Windows XP, you can still do so at your own risk but be aware that there are known instabilities and issues. Please do not report issues about Windows XP to the issue tracker.
 
-Notable changes
-===============
+PIVX Core should also work on most other Unix-like systems but is not frequently tested on them.
 
-Example item
----------------------------------------
+### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
 
-Example text.
+**Currently there are issues with the 3.x gitian release on MacOS version 10.13 (High Sierra), no reports of issues on older versions of MacOS.**
 
-0.12.1 Change log
-=================
+ 
+Notable Changes
+==============
 
-Detailed release notes follow. This overview includes changes that affect
-behavior, not code moves, refactors and string updates. For convenience in locating
-the code changes and accompanying discussion, both the pull request and
-git merge commit are mentioned.
 
-### RPC and REST
+*version* Change log
+==============
 
-Asm script outputs replacements for OP_NOP2 and OP_NOP3
--------------------------------------------------------
+Detailed release notes follow. This overview includes changes that affect behavior, not code moves, refactors and string updates. For convenience in locating the code changes and accompanying discussion, both the pull request and git merge commit are mentioned.
 
-OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP 
-65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki)
+### Core Features
 
-OP_NOP3 has been renamed to OP_CHECKSEQUENCEVERIFY by [BIP 
-112](https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki)
-
-The following outputs are affected by this change:
-- RPC `getrawtransaction` (in verbose mode)
-- RPC `decoderawtransaction`
-- RPC `decodescript`
-- REST `/rest/tx/` (JSON format)
-- REST `/rest/block/` (JSON format when including extended tx details)
-- `bitcoin-tx -json`
-
-### ZMQ
-
-Each ZMQ notification now contains an up-counting sequence number that allows
-listeners to detect lost notifications.
-The sequence number is always the last element in a multi-part ZMQ notification and
-therefore backward compatible.
-Each message type has its own counter.
-(https://github.com/bitcoin/bitcoin/pull/7762)
-
-### Configuration and command-line options
-
-### Block and transaction handling
-
-### P2P protocol and network code
-
-### Validation
-
-### Build system
-
-### Wallet
+### Build System
+ 
+### P2P Protocol and Network Code
 
 ### GUI
+ 
+### RPC/REST
 
-### Tests and QA
-
+### Wallet
+ 
 ### Miscellaneous
-
-Credits
-=======
+ 
+ 
+## Credits
 
 Thanks to everyone who directly contributed to this release:
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
-
-Darkcoin tree 0.9.x was the open source implementation of masternodes based on
-the 0.8.x tree and was first released on Mar/13/2014.
-
-Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
-which was released open source on Sep/25/2014.
-
-Curium tree 0.11.x was a fork of Bitcoin Core tree 0.9, Darkcoin was rebranded
-to Curium.
-
-Curium tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
-
-These release are considered obsolete. Old changelogs can be found here:
-
-- [v0.12.0](release-notes/curium/release-notes-0.12.0.md) released ???/??/2015
-- [v0.11.2](release-notes/curium/release-notes-0.11.2.md) released Mar/25/2015
-- [v0.11.1](release-notes/curium/release-notes-0.11.1.md) released Feb/10/2015
-- [v0.11.0](release-notes/curium/release-notes-0.11.0.md) released Jan/15/2015
-- [v0.10.x](release-notes/curium/release-notes-0.10.0.md) released Sep/25/2014
-- [v0.9.x](release-notes/curium/release-notes-0.9.0.md) released Mar/13/2014
-
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/pivx-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
