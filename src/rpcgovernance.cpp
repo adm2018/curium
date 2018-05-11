@@ -1800,9 +1800,9 @@ UniValue getsuperblockbudget(const UniValue& params, bool fHelp)
 
             "\nExamples:\n"
 
-            + HelpExampleCli("getsuperblockbudget", "1000")
+            + HelpExampleCli("getsuperblockbudget", "10000")
 
-            + HelpExampleRpc("getsuperblockbudget", "1000")
+            + HelpExampleRpc("getsuperblockbudget", "10000")
 
         );
 

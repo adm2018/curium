@@ -20,7 +20,7 @@ class CGovernanceTriggerManager;
 class CSuperblockManager;
 
 static const int TRIGGER_UNKNOWN            = -1;
-static const int TRIGGER_SUPERBLOCK         = 1000;
+static const int TRIGGER_SUPERBLOCK         = 10000;
 
 typedef boost::shared_ptr<CSuperblock> CSuperblock_sptr;
 

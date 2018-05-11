@@ -3634,7 +3634,7 @@ bool CDarksendPool::MakeCollateralAmounts(const CompactTallyItem& tallyItem)
 
     bool fSuccess = pwalletMain->CreateTransaction(vecSend, wtx, reservekeyChange,
 
-            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT1000IFMN);
+            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT10000IFMN);
 
     if(!fSuccess) {
 
@@ -3642,17 +3642,17 @@ bool CDarksendPool::MakeCollateralAmounts(const CompactTallyItem& tallyItem)
 
         // MN-like funds should not be touched in any case and we can't mix denominated without collaterals anyway
 
-        LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NONDENOMINATED_NOT1000IFMN Error: %s\n", strFail);
+        LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NONDENOMINATED_NOT10000IFMN Error: %s\n", strFail);
 
         CCoinControl *coinControlNull = NULL;
 
         fSuccess = pwalletMain->CreateTransaction(vecSend, wtx, reservekeyChange,
 
-                nFeeRet, nChangePosRet, strFail, coinControlNull, true, ONLY_NOT1000IFMN);
+                nFeeRet, nChangePosRet, strFail, coinControlNull, true, ONLY_NOT10000IFMN);
 
         if(!fSuccess) {
 
-            LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NOT1000IFMN Error: %s\n", strFail);
+            LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NOT10000IFMN Error: %s\n", strFail);
 
             reservekeyCollateral.ReturnKey();
 
@@ -3930,7 +3930,7 @@ bool CDarksendPool::CreateDenominated(const CompactTallyItem& tallyItem, bool fC
 
     bool fSuccess = pwalletMain->CreateTransaction(vecSend, wtx, reservekeyChange,
 
-            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT1000IFMN);
+            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT10000IFMN);
 
     if(!fSuccess) {
 
