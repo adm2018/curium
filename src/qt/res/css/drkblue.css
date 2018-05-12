@@ -69,11 +69,19 @@ background-color:#ff0000;
 
 QLabel { /* Base Text Size & Color */
 font-size:12px;
+<<<<<<< HEAD
 color:#ff0000;
 }
 
 .QCheckBox { /* Checkbox Labels */
 color:#ff0000;
+=======
+color:#ffffff;
+}
+
+.QCheckBox { /* Checkbox Labels */
+color:#ffffff;
+>>>>>>> e05378b07d4e2f86799396c5fd1b0bfa76425026
 background-color:transparent;
 }
 
