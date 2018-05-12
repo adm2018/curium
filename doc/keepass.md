@@ -33,13 +33,13 @@ Sample initialization flow from _curium-qt_ console (this needs to be done only 
  - Start _curium-qt_
  - Open console
  - Type "_keepass init_" in curium-qt console
- - Keepass pops up and asks for an association id, fill that in, for example, "_mydrkwallet_"
- - You should get a response like this "_Association successful. Id: mydrkwalletcurium - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
+ - Keepass pops up and asks for an association id, fill that in, for example, "_mycruwallet_"
+ - You should get a response like this "_Association successful. Id: mycruwalletcurium - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
  - Edit _curium.conf_ and fill in these values
 ```
 keepass=1
 keepasskey=AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=
-keepassid=mydrkwallet
+keepassid=mycruwallet
 keepassname=testwallet
 ```
  - Restart _curium-qt_

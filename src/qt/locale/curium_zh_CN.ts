@@ -231,7 +231,11 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
+=======
+        <source>Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -283,11 +287,19 @@
         <translation>退出程序</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>&amp;关于达世币核心</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
+=======
+        <source>&amp;About Curium</source>
+        <translation>&amp;关于达世币核心</translation>
+    </message>
+    <message>
+        <source>Show information about Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>显示关于达世币核心信息</translation>
     </message>
     <message>
@@ -451,12 +463,17 @@
         <translation>&amp;命令行 选项</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core client</source>
+=======
+        <source>Curium client</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心客户端</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
         <translation><numerusform>已处理了%n个区块的交易记录.</numerusform></translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
@@ -464,6 +481,15 @@
     </message>
     <message>
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
+=======
+    </message>
+    <message>
+        <source>Synchronizing additional data: %p%</source>
+        <translation>正在同步附加数据:%p%</translation>
+    </message>
+    <message>
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+>>>>>>> dev-1.12.1.0
         <translation>打开达世币核心帮助信息取得可使用的命令行列表</translation>
     </message>
     <message>
@@ -989,7 +1015,11 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
+=======
+        <source>Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -1001,7 +1031,11 @@ Address: %4
         <translation>(%1 位)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>About Curium Core</source>
+=======
+        <source>About Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>关于 达世币核心</translation>
     </message>
     <message>
@@ -1049,6 +1083,7 @@ Address: %4
         <translation>欢迎</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>欢迎来到达世币核心。</translation>
     </message>
@@ -1058,6 +1093,17 @@ Address: %4
     </message>
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+=======
+        <source>Welcome to Curium.</source>
+        <translation>欢迎来到达世币核心。</translation>
+    </message>
+    <message>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>此次为第一次程序启动，你可以选择储存达世币核心数据的路径。</translation>
+    </message>
+    <message>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心将会下载并存储达世币数据链。至少有%1GB的数据会保存到此路径下，并且随着时间增长。钱包文件也将存储到此路径下。</translation>
     </message>
     <message>
@@ -1069,7 +1115,11 @@ Address: %4
         <translation>使用自定义的数据目录：</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
+=======
+        <source>Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -1895,6 +1945,7 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>Ping Time</source>
         <translation>Ping 时间</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>&amp;Wallet Repair</source>
@@ -2013,6 +2064,126 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>未知</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>&amp;Wallet Repair</source>
+        <translation>&amp;钱包修复</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>抢救钱包</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain files</source>
+        <translation>重新扫描区块链文件</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>恢复交易 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>恢复交易 2</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>升级钱包版本</translation>
+    </message>
+    <message>
+        <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
+        <translation>下面的按钮将重新启动钱包并使用命令行选项进行修复,解决损坏或丢失的区块链文件/超时的交易问题.</translation>
+    </message>
+    <message>
+        <source>-salvagewallet: Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>-salvagewallet: 尝试从已损坏的钱包文件中找回私钥.</translation>
+    </message>
+    <message>
+        <source>-rescan: Rescan the block chain for missing wallet transactions.</source>
+        <translation>-rescan: 对丢失的钱包交易重新扫描数据块链.</translation>
+    </message>
+    <message>
+        <source>-zapwallettxes=1: Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
+        <translation>-zapwallettxes=1: 从区块链恢复交易 (保留交易描述信息,例如:账户拥有者).</translation>
+    </message>
+    <message>
+        <source>-zapwallettxes=2: Recover transactions from blockchain (drop meta-data).</source>
+        <translation>-zapwallettxes=2: 从区块链恢复交易 (删除交易描述信息).</translation>
+    </message>
+    <message>
+        <source>-upgradewallet: Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
+        <translation>-upgradewallet: 在启动时升级钱包到最新格式.(注:这并不是钱包软件本身的更新!)</translation>
+    </message>
+    <message>
+        <source>Wallet repair options.</source>
+        <translation>钱包修复选项.</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>重建区块链的索引</translation>
+    </message>
+    <message>
+        <source>-reindex: Rebuild block chain index from current blk000??.dat files.</source>
+        <translation>-reindex: 从现在的blk000??.dat文件重新建立数据块链索引.</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>输入：</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>输出：</translation>
+    </message>
+    <message>
+        <source>Welcome to the Curium RPC console.</source>
+        <translation>欢迎来到达世币RPC控制台。</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>使用上下方向键浏览历史,  &lt;b&gt;Ctrl-L&lt;/b&gt;清除屏幕。</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>使用 &lt;b&gt;help&lt;/b&gt; 命令显示帮助信息。</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 字节</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>via %1</source>
+        <translation>经由 %1</translation>
+    </message>
+    <message>
+        <source>never</source>
+        <translation>永不</translation>
+    </message>
+    <message>
+        <source>Inbound</source>
+        <translation>导入</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <translation>导出</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>未知</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Fetching...</source>
         <translation>正在读取中...</translation>
     </message>
@@ -2435,12 +2606,21 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>are added as transaction fee</source>
         <translation>作为交易费被添加</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
         <translation>总额 = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
+        <translation>总额 = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Confirm send coins</source>
         <translation>确认发送货币</translation>
     </message>
@@ -2579,7 +2759,11 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
+=======
+        <source>Curium is shutting down...</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心正在关闭...</translation>
     </message>
     <message>
@@ -2729,7 +2913,11 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
+=======
+        <source>Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -2741,7 +2929,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Bitcoin Core 的开发者</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Curium Core developers</source>
+=======
+        <source>The Curium developers</source>
+>>>>>>> dev-1.12.1.0
         <translation>达世币核心开发人员</translation>
     </message>
     <message>
@@ -3307,7 +3499,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>与提供地址绑定，持续监听。使用[host]:标记IPv6端口</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
+=======
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+>>>>>>> dev-1.12.1.0
         <translation>不能获得锁定的数据目录 %s. 达世币核心可能已经在运行。</translation>
     </message>
     <message>
@@ -3339,7 +3535,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>即时支付功能需要6步确认，您可以稍后重试。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
+=======
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+>>>>>>> dev-1.12.1.0
         <translation>无法绑定%s此计算机. 达世币核心应该已经在运行中了.</translation>
     </message>
     <message>
@@ -3603,7 +3803,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>警告: -maxtxfee 设定的金额过高! 这是一次交易就要支付的手续费.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
+=======
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
+>>>>>>> dev-1.12.1.0
         <translation>警告: 请检查电脑日期和时间是否正确！达世币核心没办法在时钟不准的情况下正常运作。</translation>
     </message>
     <message>
@@ -3653,6 +3857,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>版权(C) 2009-%i The Bitcoin Core Developers</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>版权 (C) 2014-%i The Curium Core Developers</translation>
     </message>
@@ -3661,6 +3866,20 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>无法解析 -rpcbind 参数 %s 作为网络地址</translation>
     </message>
     <message>
+=======
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>版权 (C) 2014-%i The Dash Core Developers</translation>
+    </message>
+	<message>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>版权 (C) 2018-%i The Curium Developers</translation>
+    </message>
+    <message>
+        <source>Could not parse -rpcbind value %s as network address</source>
+        <translation>无法解析 -rpcbind 参数 %s 作为网络地址</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Darksend is idle.</source>
         <translation>匿名化处于空闲状态</translation>
     </message>
@@ -3685,7 +3904,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>连接到主节点时发生错误.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>读取钱包文件错误: 需要较为新版本的达世币核心来读取钱包</translation>
     </message>
     <message>
@@ -3742,7 +3965,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>信息</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Initialization sanity check failed. Curium Core is shutting down.</source>
+=======
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+>>>>>>> dev-1.12.1.0
         <translation>初始化检查失败。达世币核心正在关闭。</translation>
     </message>
     <message>
@@ -3938,7 +4165,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>断开的作弊节点临界值(默认: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
+=======
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+>>>>>>> dev-1.12.1.0
         <translation>錢包需要重寫: 請重新啓動達世幣核心來完成
 钱包需要重写: 请重新启动达世币核心来完成</translation>
     </message>
@@ -4141,12 +4372,21 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>This help message</source>
         <translation>此帮助信息</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>This is experimental software.</source>
         <translation>这是一款实验软件.</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>这是一款实验软件.</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>This is intended for regression testing tools and app development.</source>
         <translation>这被用来作为回归测试工具和app的开发。</translation>
     </message>

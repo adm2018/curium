@@ -231,8 +231,13 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +288,21 @@
         <translation>Quitter l’application</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>À propos du noyau Curium</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
         <translation>Affichez des informations à propos de  Curium Core</translation>
+=======
+        <source>&amp;About Curium</source>
+        <translation>À propos du noyau Curium</translation>
+    </message>
+    <message>
+        <source>Show information about Curium</source>
+        <translation>Affichez des informations à propos de  Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,12 +465,18 @@
         <translation>Options de ligne de &amp;commande</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Client Curium Core </translation>
+=======
+        <source>Curium client</source>
+        <translation>Client Curium </translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
         <translation><numerusform> Traités %n blocs de l'historique des transactions.</numerusform><numerusform> Traités %n blocs de l'historique des transactions.</numerusform></translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
@@ -465,6 +485,16 @@
     <message>
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Afficher le message d'aide de Curium Core pour obtenir une liste des options de ligne de commande Bitcoin possibles.</translation>
+=======
+    </message>
+    <message>
+        <source>Synchronizing additional data: %p%</source>
+        <translation>Synchronisation des données additionnelles: %p%</translation>
+    </message>
+    <message>
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Afficher le message d'aide de Curium pour obtenir une liste des options de ligne de commande Bitcoin possibles.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>&amp;File</source>
@@ -667,12 +697,21 @@ Adresse : %4
     <message>
         <source>Received with address</source>
         <translation>Reçu avec adresse</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>DS Rounds</source>
         <translation>Cycles DS</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>DS Rounds</source>
+        <translation>Cycles DS</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -989,8 +1028,13 @@ Adresse : %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>version</source>
@@ -1001,8 +1045,13 @@ Adresse : %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>About Curium Core</source>
         <translation>A propos de Curium Core</translation>
+=======
+        <source>About Curium</source>
+        <translation>A propos de Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Command-line options</source>
@@ -1048,6 +1097,7 @@ Adresse : %4
         <translation>Bienvenue</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Bienvenue à Curium Core</translation>
     </message>
@@ -1058,6 +1108,18 @@ Adresse : %4
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Curium Core téléchargera et sauvegardera une copie de la chaîne de blocs Curium. Au moins %1Go de données seront sauvegardées dans ce répertoire, et cette taille augmentera avec le temps. Le portefeuille sera aussi sauvegardé dans ce répertoire.</translation>
+=======
+        <source>Welcome to Curium.</source>
+        <translation>Bienvenue à Curium</translation>
+    </message>
+    <message>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>Comme il s'agit du premier lancement du logiciel, vous pouvez choisir l'emplacement où Curium sauvegardera ses données.</translation>
+    </message>
+    <message>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium téléchargera et sauvegardera une copie de la chaîne de blocs Curium. Au moins %1Go de données seront sauvegardées dans ce répertoire, et cette taille augmentera avec le temps. Le portefeuille sera aussi sauvegardé dans ce répertoire.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1068,8 +1130,13 @@ Adresse : %4
         <translation>Utiliser un répertoire de données personnalisé :</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2586,8 +2653,13 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
         <translation>Arrêt de Curium Core...</translation>
+=======
+        <source>Curium is shutting down...</source>
+        <translation>Arrêt de Curium...</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2736,8 +2808,13 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Version %1</source>
@@ -2748,8 +2825,13 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Les développeurs Bitcoin Core</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Curium Core developers</source>
         <translation>Les développeurs Curium Core</translation>
+=======
+        <source>The Curium developers</source>
+        <translation>Les développeurs Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>[testnet]</source>
@@ -3324,12 +3406,21 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Se lier à l'adresse donnée et toujours l'écouter. Utilisez la notation [host]:port pour l'IPv6</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
         <translation>Impossible d’obtenir un verrou sur le répertoire de données %s. Curium Core fonctionne probablement déjà.</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+        <translation>Impossible d’obtenir un verrou sur le répertoire de données %s. Curium fonctionne probablement déjà.</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
         <translation>Darksend utilise les montants dénominés exacts pour envoyer des fonds, vous pourriez simplement avoir besoin d'anonymiser plus de pièces.</translation>
     </message>
@@ -3382,8 +3473,13 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Ceci est une pré-version de test - l'utiliser à vos risques et périls - ne pas l'utiliser pour miner ou pour des applications marchandes</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
         <translation>Impossible de se lier à %s sur cet ordinateur. Curium Core fonctionne probablement déjà.</translation>
+=======
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+        <translation>Impossible de se lier à %s sur cet ordinateur. Curium fonctionne probablement déjà.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3746,8 +3842,13 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Attention : -maxtxfee est réglée sur un montant très élevé ! Il s'agit des frais de transaction que vous payerez si vous envoyez une transaction.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
         <translation>Attention : Veuillez vérifier que la date et l'heure de votre ordinateur sont justes ! Si votre horloge n'est pas à l'heure, Curium Core ne fonctionnera pas correctement.</translation>
+=======
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
+        <translation>Attention : Veuillez vérifier que la date et l'heure de votre ordinateur sont justes ! Si votre horloge n'est pas à l'heure, Curium ne fonctionnera pas correctement.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3800,8 +3901,17 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>Copyright (C) 2014-%i The Curium Core Developers</translation>
+=======
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
+    </message>
+	<message>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>Copyright (C) 2018-%i The Curium Developers</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3832,8 +3942,13 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Erreur de connexion au masternode.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
         <translation>Erreur au chargement de wallet.dat : le Portefeuille nécessite une nouvelle version de Curium Core</translation>
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+        <translation>Erreur au chargement de wallet.dat : le Portefeuille nécessite une nouvelle version de Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3904,8 +4019,13 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Informations</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Initialization sanity check failed. Curium Core is shutting down.</source>
         <translation>Les tests de cohérences lors de l'initialisation ont échoués. Curium Core est en cours de fermeture.</translation>
+=======
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Les tests de cohérences lors de l'initialisation ont échoués. Curium est en cours de fermeture.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4106,6 +4226,7 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
     <message>
         <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
         <translation>Envoyé au masternode, en attente d'entrées supplémentaires ( %u / %d ) %s</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
@@ -4364,6 +4485,266 @@ Pour exemple: alertnotify=echo %%s | mail -s "Alerte Curium" admin@foo.com
         <translation>Définir la clé privée du masternode</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Soumis au masternode, dans la file d'attente %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>La synchronisation a échouée</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>La synchronisation est terminée</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Synchronisation des budgets...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Synchronisation des masternodes vainqueurs...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronisation des masternodes...</translation>
+    </message>
+    <message>
+        <source>Synchronizing sporks...</source>
+        <translation>Synchronisation des sporks...</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>Ceci n'est pas un masternode.</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Seuil de déconnexion des pairs présentant un mauvais comportement (par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Use KeePass 2 integration using KeePassHttp plugin (default: %u)</source>
+        <translation>Utiliser l'intégration KeePass 2 en utilisant le greffon KeePassHttp (par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
+        <translation>Utiliser N masternodes différents pour anonymiser les fonds (2-8, par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Utiliser l'UPnP pour mapper le port d'écoute (par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Le portefeuille devait être réécrit : redémarrer Curium pour terminer l'opération.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Attention : l'argument obsolète -benchmark a été ignoré, utiliser -debug=bench</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Attention : l'argument obsolète -debugnet a été ignoré, utiliser -debug=net</translation>
+    </message>
+    <message>
+        <source>Will retry...</source>
+        <translation>Va réessayer ...</translation>
+    </message>
+    <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>masternodeprivkey invalide. Veuillez vous référer à la documentation.</translation>
+    </message>
+    <message>
+        <source>(must be 9999 for mainnet)</source>
+        <translation>(doit être 9999 pour mainnet)</translation>
+    </message>
+    <message>
+        <source>Can't find random Masternode.</source>
+        <translation>Masternode aléatoire introuvable.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>Ne peux pas mélanger pendant la synchronisation.</translation>
+    </message>
+    <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>Impossible d'analyser masternode.conf</translation>
+    </message>
+    <message>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>Masque de réseau inconnu spécifié sur -whitelist : « %s »</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Port non valide détecté dans masternode.conf</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Clé privée invalide.</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>Script invalide détecté.</translation>
+    </message>
+    <message>
+        <source>KeePassHttp id for the established association</source>
+        <translation>Id KeePassHttp pour l'association établie</translation>
+    </message>
+    <message>
+        <source>KeePassHttp key for AES encrypted communication with KeePass</source>
+        <translation>Clé KeePassHttp pour la communication chiffrée AES avec KeePass</translation>
+    </message>
+    <message>
+        <source>Keep N CURIUM anonymized (default: %u)</source>
+        <translation>Maintenir N curium anonymisé en permanence (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Garder au plus &lt;n&gt; transactions sans connexion en mémoire (par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Last Darksend was too recent.</source>
+        <translation>Le dernier Darksend est trop récent.</translation>
+    </message>
+    <message>
+        <source>Line: %d</source>
+        <translation>Ligne: %d</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Chargement des adresses...</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Chargement de l’index des blocs...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Chargement du portefeuille... (%3.2f %%)</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Chargement du portefeuille...</translation>
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>Options Masternode :</translation>
+    </message>
+    <message>
+        <source>Masternode queue is full.</source>
+        <translation>La file d'attente du masternode est pleine.</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Masternode :</translation>
+    </message>
+    <message>
+        <source>Missing input transaction information.</source>
+        <translation>Informations de transaction entrante manquantes.</translation>
+    </message>
+    <message>
+        <source>No funds detected in need of denominating.</source>
+        <translation>Aucuns fonds détectés nécessitant une dénomination.</translation>
+    </message>
+    <message>
+        <source>No matching denominations found for mixing.</source>
+        <translation>Pas de dénominations équivalentes trouvées pour le mélange.</translation>
+    </message>
+    <message>
+        <source>Node relay options:</source>
+        <translation>Options de noeud de relais:</translation>
+    </message>
+    <message>
+        <source>Non-standard public key detected.</source>
+        <translation>Clé publique non standard détectée.</translation>
+    </message>
+    <message>
+        <source>Not compatible with existing transactions.</source>
+        <translation>Non compatible avec les transactions existantes.</translation>
+    </message>
+    <message>
+        <source>Not enough file descriptors available.</source>
+        <translation>Pas assez de descripteurs de fichiers de disponibles.</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Options :</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>Mot de passe pour les connexions JSON-RPC</translation>
+    </message>
+    <message>
+        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Options RPC SSL : (voir le wiki Bitcoin pour les instructions de configuration de SSL)</translation>
+    </message>
+    <message>
+        <source>RPC server options:</source>
+        <translation>Options du serveur RPC :</translation>
+    </message>
+    <message>
+        <source>RPC support for HTTP persistent connections (default: %d)</source>
+        <translation>Support RPC pour connections HTTP persistantes  (par défaut : %d)</translation>
+    </message>
+    <message>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>Abandonner aléatoirement 1 message du réseau sur &lt;n&gt;</translation>
+    </message>
+    <message>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>Tester aléatoirement 1 message du réseau sur &lt;n&gt;</translation>
+    </message>
+    <message>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation>Reconstruire l'index de la chaîne de blocs à partir des fichiers blk000??.dat courants</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Recevoir et afficher les alertes réseau P2P (par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Relayer et miner les transactions de support de données (par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Relayer les multisig non-P2SH (par défaut : %u)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>Réanalyser la chaîne de blocs pour les transactions de portefeuille manquantes</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Nouvelle analyse...</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Fonctionner en arrière-plan en tant que démon et accepter les commandes</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Session incomplète!</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>Session expirée.</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
+        <translation>Définir la taille du cache de la base de données en mégaoctets (%d to %d, default: %d)</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>Définir la taille minimale de bloc en octets (par défaut : %d)</translation>
+    </message>
+    <message>
+        <source>Set the masternode private key</source>
+        <translation>Définir la clé privée du masternode</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Montrer toutes les options de débogage (utilisation : --help --help-debug)</translation>
     </message>

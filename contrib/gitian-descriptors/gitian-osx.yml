@@ -5,15 +5,22 @@ suites:
 - "trusty"
 architectures:
 - "amd64"
+<<<<<<< HEAD
 packages:
 - "ca-certificates"
+=======
+packages: 
+>>>>>>> dev-1.12.1.0
 - "curl"
 - "g++"
 - "git-core"
 - "pkg-config"
 - "autoconf"
+<<<<<<< HEAD
 - "librsvg2-bin"
 - "libtiff-tools"
+=======
+>>>>>>> dev-1.12.1.0
 - "libtool"
 - "automake"
 - "faketime"
@@ -23,6 +30,7 @@ packages:
 - "libcap-dev"
 - "libz-dev"
 - "libbz2-dev"
+<<<<<<< HEAD
 - "python"
 - "python-dev"
 - "python-setuptools"
@@ -32,6 +40,16 @@ remotes:
   "dir": "Curium-Official"
 files:
 - "MacOSX10.11.sdk.tar.gz"
+=======
+- "ca-certificates"
+- "python"
+reference_datetime: "2018-01-01 00:00:00"
+remotes:
+- "url": "https://github.com/curiumofficial/curium.git"
+  "dir": "curium"
+files:
+- "MacOSX10.9.sdk.tar.gz"
+>>>>>>> dev-1.12.1.0
 script: |
   WRAP_DIR=$HOME/wrapped
   HOSTS="x86_64-apple-darwin11"
@@ -58,7 +76,11 @@ script: |
     echo '#!/bin/bash' > ${WRAP_DIR}/${prog}
     echo "REAL=\`which -a ${prog} | grep -v ${WRAP_DIR}/${prog} | head -1\`" >> ${WRAP_DIR}/${prog}
     echo 'export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1' >> ${WRAP_DIR}/${prog}
+<<<<<<< HEAD
     echo "export FAKETIME=\"$1\"" >> ${WRAP_DIR}/${prog}
+=======
+    echo "export FAKETIME=\"${REFERENCE_DATETIME}\"" >> ${WRAP_DIR}/${prog}
+>>>>>>> dev-1.12.1.0
     echo "\$REAL \$@" >> $WRAP_DIR/${prog}
     chmod +x ${WRAP_DIR}/${prog}
   done
@@ -70,7 +92,11 @@ script: |
         echo '#!/bin/bash' > ${WRAP_DIR}/${i}-${prog}
         echo "REAL=\`which -a ${i}-${prog} | grep -v ${WRAP_DIR}/${i}-${prog} | head -1\`" >> ${WRAP_DIR}/${i}-${prog}
         echo 'export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1' >> ${WRAP_DIR}/${i}-${prog}
+<<<<<<< HEAD
         echo "export FAKETIME=\"$1\"" >> ${WRAP_DIR}/${i}-${prog}
+=======
+        echo "export FAKETIME=\"${REFERENCE_DATETIME}\"" >> ${WRAP_DIR}/${i}-${prog}
+>>>>>>> dev-1.12.1.0
         echo "\$REAL \$@" >> $WRAP_DIR/${i}-${prog}
         chmod +x ${WRAP_DIR}/${i}-${prog}
     done
@@ -87,7 +113,11 @@ script: |
   BASEPREFIX=`pwd`/depends
 
   mkdir -p ${BASEPREFIX}/SDKs
+<<<<<<< HEAD
   tar -C ${BASEPREFIX}/SDKs -xf ${BUILD_DIR}/MacOSX10.11.sdk.tar.gz
+=======
+  tar -C ${BASEPREFIX}/SDKs -xf ${BUILD_DIR}/MacOSX10.9.sdk.tar.gz
+>>>>>>> dev-1.12.1.0
 
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -144,7 +174,11 @@ script: |
     popd
 
     make deploy
+<<<<<<< HEAD
     ${WRAP_DIR}/dmg dmg "${OSX_VOLNAME}.dmg" ${OUTDIR}/${DISTNAME}-osx-unsigned.dmg
+=======
+    ${WRAP_DIR}/dmg dmg Curium-Core.dmg ${OUTDIR}/${DISTNAME}-osx-unsigned.dmg
+>>>>>>> dev-1.12.1.0
 
     cd installed
     find . -name "lib*.la" -delete

@@ -10,7 +10,7 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-1. Run curium behind a Tor proxy
+1. Run Curium behind a Tor proxy
 ----------------------------------
 
 The first step is running Curium behind a Tor proxy. This will already make all
@@ -44,7 +44,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 	./curiumd -proxy=127.0.0.1:9050
 
 
-2. Run a curium hidden server
+2. Run a Curium hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -58,11 +58,11 @@ config file):
 The directory can be different of course, but (both) port numbers should be equal to
 your curiumd's P2P listen port (9999 by default).
 
-	-externalip=X   You can tell curium about its publicly reachable address using
+	-externalip=X   You can tell Curium about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
 	                /var/lib/tor/curium-service/hostname. Onion addresses are given
-	                preference for your node to advertize itself with, for connections
+	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
 
@@ -80,9 +80,14 @@ In a typical situation, where you're only reachable via Tor, this should suffice
 
 	./curiumd -proxy=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -listen
 
-(obviously, replace the Onion address with your own). If you don't care too much
-about hiding your node, and want to be reachable on IPv4 as well, additionally
-specify:
+(obviously, replace the Onion address with your own). It should be noted that you still
+listen on all devices and another node could establish a clearnet connection, when knowing
+your address. To mitigate this, additionally bind the address of your Tor proxy:
+
+	./curiumd ... -bind=127.0.0.1
+
+If you don't care too much about hiding your node, and want to be reachable on IPv4
+as well, use `discover` instead:
 
 	./curiumd ... -discover
 
@@ -94,13 +99,35 @@ for normal IPv4/IPv6 communication, use:
 	./curiumd -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
 
 
-3. List of known curium Tor relays
+3. List of known Curium Tor relays
 ------------------------------------
 
-* [curiumie7ghp67.onion](http://curiumie7ghp67.onion/)
-* [drktalkwaybgxnoq.onion](http://drktalkwaybgxnoq.onion/)
-* [drkcoinooditvool.onion](http://drkcoinooditvool.onion/)
+* [darkcoinie7ghp67.onion](http://darkcoinie7ghp67.onion/)
+* [crutalkwaybgxnoq.onion](http://crutalkwaybgxnoq.onion/)
+* [crucoinooditvool.onion](http://crucoinooditvool.onion/)
 * [darkcoxbtzggpmcc.onion](http://darkcoxbtzggpmcc.onion/)
 * [ssapp53tmftyjmjb.onion](http://ssapp53tmftyjmjb.onion/)
 * [j2dfl3cwxyxpbc7s.onion](http://j2dfl3cwxyxpbc7s.onion/)
 * [vf6d2mxpuhh2cbxt.onion](http://vf6d2mxpuhh2cbxt.onion/)
+* [rj24sicr6i4vsnkv.onion](http://rj24sicr6i4vsnkv.onion/)
+* [wrwx2dy7jyh32o53.onion](http://wrwx2dy7jyh32o53.onion/)
+* [f5ekot4ajkbe23gt.onion](http://f5ekot4ajkbe23gt.onion/)
+* [dshtord4mqvgzqev.onion](http://dshtord4mqvgzqev.onion/)
+
+
+4. Automatically listen on Tor
+--------------------------------
+
+Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
+API, to create and destroy 'ephemeral' hidden services programmatically.
+Curium has been updated to make use of this.
+
+This means that if Tor is running (and proper authorization is available),
+Curium automatically creates a hidden service to listen on, without
+manual configuration. This will positively affect the number of available
+.onion nodes.
+
+This new feature is enabled by default if Curium is listening, and
+a connection to Tor can be made. It can be configured with the `-listenonion`,
+`-torcontrol` and `-torpassword` settings. To show verbose debugging
+information, pass `-debug=tor`.

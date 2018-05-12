@@ -296,8 +296,13 @@
     <message>
         <location filename="../bitcoingui.cpp" line="+108"/>
         <location line="+752"/>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="-743"/>
@@ -361,6 +366,7 @@
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>&amp;About Curium Core</translation>
     </message>
@@ -368,6 +374,15 @@
         <location line="+1"/>
         <source>Show information about Curium Core</source>
         <translation>Show information about Curium Core</translation>
+=======
+        <source>&amp;About Curium</source>
+        <translation>&amp;About Curium</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show information about Curium</source>
+        <translation>Show information about Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+3"/>
@@ -504,6 +519,7 @@
         <location line="+1"/>
         <source>Show peers info</source>
         <translation>Show peers info</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <location line="+1"/>
@@ -512,6 +528,16 @@
     </message>
     <message>
         <location line="+1"/>
+=======
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet &amp;Repair</source>
+        <translation>Wallet &amp;Repair</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> dev-1.12.1.0
         <source>Show wallet repair options</source>
         <translation>Show wallet repair options</translation>
     </message>
@@ -529,6 +555,7 @@
         <location line="+1"/>
         <source>Show Automatic &amp;Backups</source>
         <translation>Show Automatic &amp;Backups</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <location line="+1"/>
@@ -536,6 +563,15 @@
         <translation>Show automatically created wallet backups</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show automatically created wallet backups</source>
+        <translation>Show automatically created wallet backups</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <location line="+2"/>
         <source>&amp;Sending addresses...</source>
         <translation>&amp;Sending addresses...</translation>
@@ -572,8 +608,13 @@
     </message>
     <message>
         <location line="+196"/>
+<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Curium Core client</translation>
+=======
+        <source>Curium client</source>
+        <translation>Curium client</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <location line="+182"/>
@@ -587,8 +628,13 @@
     </message>
     <message>
         <location line="-407"/>
+<<<<<<< HEAD
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Show the Curium Core help message to get a list with possible Curium command-line options</translation>
+=======
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Show the Curium help message to get a list with possible Curium command-line options</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+36"/>
@@ -1246,8 +1292,13 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+32"/>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+0"/>
@@ -1262,8 +1313,13 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
+<<<<<<< HEAD
         <source>About Curium Core</source>
         <translation>About Curium Core</translation>
+=======
+        <source>About Curium</source>
+        <translation>About Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+19"/>
@@ -1320,6 +1376,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
+<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Welcome to Curium Core.</translation>
     </message>
@@ -1332,6 +1389,20 @@ Address: %4
         <location line="+10"/>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+=======
+        <source>Welcome to Curium.</source>
+        <translation>Welcome to Curium.</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Curium will store its data.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+10"/>
@@ -1345,8 +1416,13 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+82"/>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+1"/>
@@ -3303,8 +3379,13 @@ https://www.transifex.com/projects/p/curium/</translation>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+43"/>
+<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
         <translation>Curium Core is shutting down...</translation>
+=======
+        <source>Curium is shutting down...</source>
+        <translation>Curium is shutting down...</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+1"/>
@@ -3498,8 +3579,13 @@ https://www.transifex.com/projects/p/curium/</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+1"/>
@@ -3513,8 +3599,13 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>The Curium Core developers</source>
         <translation>The Curium Core developers</translation>
+=======
+        <source>The Curium developers</source>
+        <translation>The Curium developers</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location filename="../networkstyle.cpp" line="+19"/>
@@ -4250,8 +4341,13 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <location line="+10"/>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
         <translation>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</translation>
+=======
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Curium is probably already running.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+12"/>
@@ -4320,8 +4416,13 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <location line="+20"/>
+<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
         <translation>Unable to bind to %s on this computer. Curium Core is probably already running.</translation>
+=======
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Curium is probably already running.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+2"/>
@@ -4770,8 +4871,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+6"/>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
         <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium Core will not work properly.</translation>
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Curium will not work properly.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <location line="+16"/>
@@ -4837,6 +4943,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>Copyright (C) 2014-%i The Curium Core Developers</translation>
     </message>
@@ -5521,6 +5628,697 @@ for example: alertnotify=echo %%s | mail -s &quot;Curium Alert&quot; admin@foo.c
         <translation>Session not complete!</translation>
     </message>
     <message>
+=======
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>Copyright (C) 2018-%i The Curium Developers</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Could not parse -rpcbind value %s as network address</source>
+        <translation>Could not parse -rpcbind value %s as network address</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Darksend is idle.</source>
+        <translation>Darksend is idle.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Darksend request complete:</source>
+        <translation>Darksend request complete:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Darksend request incomplete:</source>
+        <translation>Darksend request incomplete:</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>Disable safemode, override a real safe mode event (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
+        <translation>Enable the client to act as a masternode (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error connecting to Masternode.</source>
+        <translation>Error connecting to Masternode.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Curium</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>Error: A fatal internal error occured, see debug.log for details</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Can&apos;t select current denominated inputs</source>
+        <translation>Error: Can&apos;t select current denominated inputs</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Error: Unsupported argument -tor found, use -onion.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Fee (in CURIUM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in CURIUM/kB) to add to transactions you send (default: %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Finalizing transaction.</source>
+        <translation>Finalizing transaction.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Force safe mode (default: %u)</source>
+        <translation>Force safe mode (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>Found enough users, signing ( waiting %s )</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Found enough users, signing ...</source>
+        <translation>Found enough users, signing ...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Generate coins (default: %u)</source>
+        <translation>Generate coins (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>How many blocks to check at startup (default: %u, 0 = all)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Importing...</source>
+        <translation>Importing...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation>Imports blocks from external blk000??.dat file</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Include IP addresses in debug output (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Incompatible mode.</source>
+        <translation>Incompatible mode.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Incompatible version.</source>
+        <translation>Incompatible version.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>Incorrect or no genesis block found. Wrong datadir for network?</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Information</source>
+        <translation>Information</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Initialization sanity check failed. Curium is shutting down.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Input is not valid.</source>
+        <translation>Input is not valid.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>InstantX options:</source>
+        <translation>InstantX options:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Insufficient funds.</source>
+        <translation>Insufficient funds.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -onion address: &apos;%s&apos;</source>
+        <translation>Invalid -onion address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation>Invalid -proxy address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</source>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Last successful Darksend action was too recent.</source>
+        <translation>Last successful Darksend action was too recent.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
+        <translation>Limit size of signature cache to &lt;n&gt; entries (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Loading budget cache...</source>
+        <translation>Loading budget cache...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading masternode cache...</source>
+        <translation>Loading masternode cache...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading masternode payment cache...</source>
+        <translation>Loading masternode payment cache...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Lock is already in place.</source>
+        <translation>Lock is already in place.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Lock masternodes from masternode configuration file (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Maintain at most &lt;n&gt; connections to peers (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Mixing in progress...</source>
+        <translation>Mixing in progress...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Need to specify a port with -whitebind: &apos;%s&apos;</source>
+        <translation>Need to specify a port with -whitebind: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No Masternodes detected.</source>
+        <translation>No Masternodes detected.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No compatible Masternode found.</source>
+        <translation>No compatible Masternode found.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Not in the Masternode list.</source>
+        <translation>Not in the Masternode list.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Number of automatic wallet backups (default: 10)</source>
+        <translation>Number of automatic wallet backups (default: 10)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
+        <translation>Only accept block chain matching built-in checkpoints (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>Prepend debug output with timestamp (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>Run a thread to flush wallet periodically (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Send trace/debug info to debug.log file (default: %u)</source>
+        <translation>Send trace/debug info to debug.log file (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Send transactions as zero-fee transactions if possible (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Server certificate file (default: %s)</source>
+        <translation>Server certificate file (default: %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Server private key (default: %s)</source>
+        <translation>Server private key (default: %s)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Set external address:port to get to this masternode (example: %s)</source>
+        <translation>Set external address:port to get to this masternode (example: %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Set key pool size to &lt;n&gt; (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Set minimum block size in bytes (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Set the number of threads to service RPC calls (default: %d)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Signing timed out.</source>
+        <translation>Signing timed out.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Specify configuration file (default: %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Specify connection timeout in milliseconds (minimum: 1, default: %d)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Specify masternode configuration file (default: %s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Specify pid file (default: %s)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Spend unconfirmed change when sending transactions (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stop running after importing blocks from disk (default: %u)</source>
+        <translation>Stop running after importing blocks from disk (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Submitted following entries to masternode: %u / %d</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Submitted to masternode, waiting for more entries ( %u / %d ) %s</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Submitted to masternode, waiting in queue %s</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronization failed</source>
+        <translation>Synchronization failed</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronization finished</source>
+        <translation>Synchronization finished</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Synchronizing budgets...</source>
+        <translation>Synchronizing budgets...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Synchronizing masternode winners...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronizing masternodes...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronizing sporks...</source>
+        <translation>Synchronizing sporks...</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>This is not a Masternode.</source>
+        <translation>This is not a Masternode.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Threshold for disconnecting misbehaving peers (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Use KeePass 2 integration using KeePassHttp plugin (default: %u)</source>
+        <translation>Use KeePass 2 integration using KeePassHttp plugin (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
+        <translation>Use N separate masternodes to anonymize funds  (2-8, default: %u)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Use UPnP to map the listening port (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Wallet needed to be rewritten: restart Curium to complete</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Warning: Unsupported argument -debugnet ignored, use -debug=net.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Will retry...</source>
+        <translation>Will retry...</translation>
+    </message>
+    <message>
+        <location line="-136"/>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Invalid masternodeprivkey. Please see documenation.</translation>
+    </message>
+    <message>
+        <location line="-88"/>
+        <source>(must be 9999 for mainnet)</source>
+        <translation>(must be 9999 for mainnet)</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Can&apos;t find random Masternode.</source>
+        <translation>Can&apos;t find random Masternode.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Can&apos;t mix while sync in progress.</source>
+        <translation>Can&apos;t mix while sync in progress.</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Could not parse masternode.conf</source>
+        <translation>Could not parse masternode.conf</translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Invalid netmask specified in -whitelist: &apos;%s&apos;</source>
+        <translation>Invalid netmask specified in -whitelist: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Invalid port detected in masternode.conf</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid private key.</source>
+        <translation>Invalid private key.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid script detected.</source>
+        <translation>Invalid script detected.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>KeePassHttp id for the established association</source>
+        <translation>KeePassHttp id for the established association</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>KeePassHttp key for AES encrypted communication with KeePass</source>
+        <translation>KeePassHttp key for AES encrypted communication with KeePass</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Keep N CURIUM anonymized (default: %u)</source>
+        <translation>Keep N CURIUM anonymized (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Last Darksend was too recent.</source>
+        <translation>Last Darksend was too recent.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Line: %d</source>
+        <translation>Line: %d</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Loading addresses...</source>
+        <translation>Loading addresses...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading block index...</source>
+        <translation>Loading block index...</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Loading wallet... (%3.2f %%)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading wallet...</source>
+        <translation>Loading wallet...</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Masternode options:</source>
+        <translation>Masternode options:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Masternode queue is full.</source>
+        <translation>Masternode queue is full.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Missing input transaction information.</source>
+        <translation>Missing input transaction information.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>No funds detected in need of denominating.</source>
+        <translation>No funds detected in need of denominating.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No matching denominations found for mixing.</source>
+        <translation>No matching denominations found for mixing.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Node relay options:</source>
+        <translation>Node relay options:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Non-standard public key detected.</source>
+        <translation>Non-standard public key detected.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Not compatible with existing transactions.</source>
+        <translation>Not compatible with existing transactions.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Not enough file descriptors available.</source>
+        <translation>Not enough file descriptors available.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Options:</source>
+        <translation>Options:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation>Password for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>RPC server options:</source>
+        <translation>RPC server options:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>RPC support for HTTP persistent connections (default: %d)</source>
+        <translation>RPC support for HTTP persistent connections (default: %d)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>Randomly drop 1 of every &lt;n&gt; network messages</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>Randomly fuzz 1 of every &lt;n&gt; network messages</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation>Rebuild block chain index from current blk000??.dat files</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Receive and display P2P network alerts (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Relay and mine data carrier transactions (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Relay non-P2SH multisig (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>Rescan the block chain for missing wallet transactions</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rescanning...</source>
+        <translation>Rescanning...</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Run in the background as a daemon and accept commands</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Session not complete!</source>
+        <translation>Session not complete!</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <location line="+1"/>
         <source>Session timed out.</source>
         <translation>Session timed out.</translation>

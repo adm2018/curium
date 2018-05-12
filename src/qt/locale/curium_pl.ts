@@ -231,8 +231,13 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +288,21 @@
         <translation>Zamknij program</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>&amp;O Curium Core</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
         <translation>Pokaż informacje o Curium Core</translation>
+=======
+        <source>&amp;About Curium</source>
+        <translation>&amp;O Curium</translation>
+    </message>
+    <message>
+        <source>Show information about Curium</source>
+        <translation>Pokaż informacje o Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +465,13 @@
         <translation>&amp;Opcje konsoli</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Klient Curium Core</translation>
+=======
+        <source>Curium client</source>
+        <translation>Klient Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +482,13 @@
         <translation>Synchronizuję dodatkowe dane: %p%</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Pokaż wiadomość pomocy Curium Core aby otrzymać listę z dostępnymi opcjami linii komend.</translation>
+=======
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Pokaż wiadomość pomocy Curium aby otrzymać listę z dostępnymi opcjami linii komend.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>&amp;File</source>
@@ -989,8 +1013,13 @@ Adres: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>version</source>
@@ -1001,8 +1030,13 @@ Adres: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>About Curium Core</source>
         <translation>Informacje o Curium Core</translation>
+=======
+        <source>About Curium</source>
+        <translation>Informacje o Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Command-line options</source>
@@ -1048,6 +1082,7 @@ Adres: %4
         <translation>Witaj</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Witaj w Curium Core</translation>
     </message>
@@ -1058,6 +1093,18 @@ Adres: %4
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Curium Core ściągnie i przechowa  kopię blockchain na twoim dysku. Co najmniej %1GB danych zostanie zapisanych w tym katalogu, a wraz z upływem czasu blockchain będzie stopniowo wymagał coraz więcej miejsca. Twój portfel również zostanie zapisany w tym katalogu.</translation>
+=======
+        <source>Welcome to Curium.</source>
+        <translation>Witaj w Curium</translation>
+    </message>
+    <message>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>Ponieważ uruchomiłeś ten program po raz pierwszy, możesz wybrać gdzie Curium będzie przechowywał dane.</translation>
+    </message>
+    <message>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium ściągnie i przechowa  kopię blockchain na twoim dysku. Co najmniej %1GB danych zostanie zapisanych w tym katalogu, a wraz z upływem czasu blockchain będzie stopniowo wymagał coraz więcej miejsca. Twój portfel również zostanie zapisany w tym katalogu.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1068,8 +1115,13 @@ Adres: %4
         <translation>Użyj wybranego folderu dla danych</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1264,7 +1316,7 @@ Adres: %4
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
 https://www.transifex.com/projects/p/curium/</source>
-        <translation>Curium Core nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
+        <translation>Curium nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
 https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
@@ -2285,11 +2337,19 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then "per kilobyte" only pays 250 crus in fee,&lt;br /&gt;while "at least" pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+<<<<<<< HEAD
         <translation>Jeśli ręcznie ustalona opłata wynosi 1000 cruów a sama transakcja ma tylko 250 bajtów, to opłata jako "za kilobajt" wynosi tylko 250 cruów. &lt;br/&gt;Dzieje się tak dla każdej transakcji poniżej 1000 cruów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta. </translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then "per kilobyte" only pays 250 crus in fee,&lt;br /&gt;while "total at least" pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation>Jeśli ręcznie ustalona opłata wynosi 1000 cruów a sama transakcja ma tylko 250 bitów, to opłata jako "za kilobajt" wynosi tylko 250 cruów.&lt;br/&gt; Dzieje się tak dla każdej transakcji poniżej 1000 cruów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta.</translation>
+=======
+        <translation>Jeśli ręcznie ustalona opłata wynosi 1000 Duffów a sama transakcja ma tylko 250 bajtów, to opłata jako "za kilobajt" wynosi tylko 250 cruów. &lt;br/&gt;Dzieje się tak dla każdej transakcji poniżej 1000 cruów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta. </translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 crus and the transaction is only 250 bytes, then "per kilobyte" only pays 250 crus in fee,&lt;br /&gt;while "total at least" pays 1000 crus. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Jeśli ręcznie ustalona opłata wynosi 1000 Duffów a sama transakcja ma tylko 250 bitów, to opłata jako "za kilobajt" wynosi tylko 250 cruów.&lt;br/&gt; Dzieje się tak dla każdej transakcji poniżej 1000 cruów. W przypadku transakcji większych niż jedn kilobajt opłata jest naliczana od kilobajta.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for curium transactions than the network can process.</source>
@@ -2586,8 +2646,13 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
         <translation>Trwa zamykanie Curium Core</translation>
+=======
+        <source>Curium is shutting down...</source>
+        <translation>Trwa zamykanie Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2736,8 +2801,13 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Version %1</source>
@@ -2748,8 +2818,13 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Deweloperzy Bitcoin Core</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Curium Core developers</source>
         <translation>Deweloperzy Curium Core</translation>
+=======
+        <source>The Curium developers</source>
+        <translation>Deweloperzy Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>[testnet]</source>
@@ -3326,7 +3401,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Związany z danym adresem oraz zawsze prowadzący na nim nasłuch.  Użyj [host]:oznaczenie dla IPv6</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
+=======
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+>>>>>>> dev-1.12.1.0
         <translation>Nie można zablokować katalogu danych %s. Prawdopodobnie Curium jest już uruchomiony. </translation>
     </message>
     <message>
@@ -3382,7 +3461,11 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Ta wersja nie jest jeszcze gotowa na oficjalne wydanie - używaj jej na własne ryzyko - nie używaj tej wersji do kopania monet lub do świadczenia usług komercyjnych.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
+=======
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+>>>>>>> dev-1.12.1.0
         <translation>Niezdolny do związania z %s na tym komputerze. Prawdopodobnie Curium jest już uruchomiony. </translation>
     </message>
     <message>
@@ -3745,7 +3828,11 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Uwaga: -maxtxfee jest bardzo wysoka! Tak duże opłaty mogą być uiszczone przy wysłaniu jednej transakcji.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
+=======
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
+>>>>>>> dev-1.12.1.0
         <translation>Uwaga: Proszę sprawdzić czy data i czas na twoim komputerze są poprawne! Jeśli twój zegar nie pokazuje prawidłowej godziny to Curium może nie działać poprawidłowo.</translation>
     </message>
     <message>
@@ -3799,8 +3886,17 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Prawo autorskie (c) 2009-%i deweloperzy Bitcoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>Prawa autorskie (C) 2014-%i deweloperzy Curium</translation>
+=======
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Prawa autorskie (C) 2014-%i deweloperzy Dash</translation>
+    </message>
+	<message>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>Prawa autorskie (C) 2018-%i deweloperzy Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3831,7 +3927,11 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Błąd w połączeniu z Masternodem.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+>>>>>>> dev-1.12.1.0
         <translation>Błą wczytywania wallet.dat: Portfel wymaga nowszej wersji Curium</translation>
     </message>
     <message>
@@ -3903,8 +4003,13 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Informacja</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Initialization sanity check failed. Curium Core is shutting down.</source>
         <translation>Inicjalizacja kontroli poprawności nie powiodła się. Trwa zamykanie Curium Core</translation>
+=======
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Inicjalizacja kontroli poprawności nie powiodła się. Trwa zamykanie Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4101,6 +4206,7 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     <message>
         <source>Submitted following entries to masternode: %u / %d</source>
         <translation>Następujące wpisy zostały przesłane do masternoda: %u / %d</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
@@ -4131,6 +4237,38 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Synchronizuję masternody...</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Zapisano do masternoda, czekam na więcej wejść ( %u / %d ) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Przesłano do masterdnoda, czekaj na swoją kolej %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Synchronizacja nie powiodła się</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Synchronizacja zakończona</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Synchronizuję budżet...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Synchronizuję zwycięskie masternody...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronizuję masternody...</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Synchronizing sporks...</source>
         <translation>Synchronizuję sporki...</translation>
     </message>
@@ -4155,8 +4293,13 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Użyj UPnP aby zmapować port nasłuchu (domyślnie: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
         <translation>Portfel potrzebuje być przepisany: uruchom ponownie Curium Core aby zakończyć.</translation>
+=======
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Portfel potrzebuje być przepisany: uruchom ponownie Curium aby zakończyć.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>

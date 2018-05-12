@@ -231,8 +231,13 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +288,21 @@
         <translation>Sulje ohjelma</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>Tietoja &amp;Curium Core:sta</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
         <translation>Näytä tietoja Curium Core:sta</translation>
+=======
+        <source>&amp;About Curium</source>
+        <translation>Tietoja &amp;Curium:sta</translation>
+    </message>
+    <message>
+        <source>Show information about Curium</source>
+        <translation>Näytä tietoja Curium:sta</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +465,13 @@
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Curium Core asiakasohjelma</translation>
+=======
+        <source>Curium client</source>
+        <translation>Curium asiakasohjelma</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +482,13 @@
         <translation>Synkronoidaan lisätietoja: %p%</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Näytä Curium Core ohjelista komentorivin valinnoista</translation>
+=======
+        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <translation>Näytä Curium ohjelista komentorivin valinnoista</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>&amp;File</source>
@@ -989,8 +1013,13 @@ Osoite: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>version</source>
@@ -1001,8 +1030,13 @@ Osoite: %4
         <translation>(%1-bittinen)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>About Curium Core</source>
         <translation>Tietoja Curium Core:sta</translation>
+=======
+        <source>About Curium</source>
+        <translation>Tietoja Curium:sta</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Command-line options</source>
@@ -1048,6 +1082,7 @@ Osoite: %4
         <translation>Tervetuloa</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Curium Core - Tervetuloa.</translation>
     </message>
@@ -1059,6 +1094,19 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Curium Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
+=======
+        <source>Welcome to Curium.</source>
+        <translation>Curium - Tervetuloa.</translation>
+    </message>
+    <message>
+        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
+        <translation>Koska tämä on ensimmäinen kerta kun ohjelma käynnistetään, voit valita minne Curium tallettaa datansa.
+Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd levyltä, ohjaa talletettava data eri levyasemalle turvalliseen paikkaan.</translation>
+    </message>
+    <message>
+        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Curium lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1069,8 +1117,13 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
         <translation>Määritä oma hakemisto:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1932,6 +1985,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>Painikkeet käynnistävät lompakon korjauksen komentorivin valintoja käyttäen.
 Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/vanhentuneet tapahtumat.</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>-salvagewallet: Attempt to recover private keys from a corrupt wallet.dat.</source>
@@ -2025,6 +2079,101 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Tuntematon</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>-salvagewallet: Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>-salvagewallet: Yrittää pelastaa yksityiset avaimet viallisesta lompakkotiedostosta.</translation>
+    </message>
+    <message>
+        <source>-rescan: Rescan the block chain for missing wallet transactions.</source>
+        <translation>-rescan: Skannaa uudelleen puuttuvat tapahtumat lohkoketjusta.</translation>
+    </message>
+    <message>
+        <source>-zapwallettxes=1: Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
+        <translation>-zapwallettxes=1: Palauta tapahtumat lohkoketjusta
+ (pidä meta-data, esim. tilin omistaja).</translation>
+    </message>
+    <message>
+        <source>-zapwallettxes=2: Recover transactions from blockchain (drop meta-data).</source>
+        <translation>-zapwallettxes=2: Palauta tapahtumat lohkoketjusta
+ (poista meta-data).</translation>
+    </message>
+    <message>
+        <source>-upgradewallet: Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
+        <translation>-upgradewallet: Päivitä lompakko viimeisimpään formaattiin
+ (Huom: tämä EI päivitä varsinaista lompakko-ohjelmistoa!).</translation>
+    </message>
+    <message>
+        <source>Wallet repair options.</source>
+        <translation>Lompakon korjausvalinnat</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Rakenna indeksi uudelleen</translation>
+    </message>
+    <message>
+        <source>-reindex: Rebuild block chain index from current blk000??.dat files.</source>
+        <translation>-reindex: Rakenna uudelleen lohkoketjun indeksi nykyisistä blk000??.dat tiedostoista.</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>Sisään:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Ulos:</translation>
+    </message>
+    <message>
+        <source>Welcome to the Curium RPC console.</source>
+        <translation>Tervetuloa Curium RPC konsoliin.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Ylös- ja alas-nuolet selaavat historiaa ja &lt;b&gt;Ctrl-L&lt;/b&gt; tyhjentää ruudun.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Kirjoita &lt;b&gt;help&lt;/b&gt; nähdäksesi käytettävissä olevat komennot.</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>via %1</source>
+        <translation>kautta %1</translation>
+    </message>
+    <message>
+        <source>never</source>
+        <translation>ei koskaan</translation>
+    </message>
+    <message>
+        <source>Inbound</source>
+        <translation>Saapuva</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <translation>Lähtevä</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Tuntematon</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Fetching...</source>
         <translation>Haetaan...</translation>
     </message>
@@ -2591,8 +2740,13 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 <context>
     <name>ShutdownWindow</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
         <translation>Curium Core sulkeutuu...</translation>
+=======
+        <source>Curium is shutting down...</source>
+        <translation>Curium sulkeutuu...</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2741,8 +2895,13 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
+=======
+        <source>Curium</source>
+        <translation>Curium</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Version %1</source>
@@ -2753,8 +2912,13 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Bitcoin Core kehittäjät</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Curium Core developers</source>
         <translation>Curium Core kehittäjät</translation>
+=======
+        <source>The Curium developers</source>
+        <translation>Curium kehittäjät</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>[testnet]</source>
@@ -3329,12 +3493,21 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:port merkintätapaa IPv6:lle.</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
         <translation>Ei voida lukita data hakemistoa %s. Curium Core on luultavasti jo käynnissä.</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
+        <translation>Ei voida lukita data hakemistoa %s. Curium on luultavasti jo käynnissä.</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
         <translation>Darksend käyttää tarkalleen denominoituja syötteitä lähettäessään varoja, saatat tarvita anonymisoida lisää varoja.</translation>
     </message>
@@ -3387,8 +3560,13 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Tämä on esi-julkaistu testiversio - Käytä omalla vastuulla - Älä käytä louhimiseen tai kauppasovelluksiin.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
         <translation>Ei voida yhdistää %s tässä tietokoneessa. Curium Core on luultavasti jo käynnissä.</translation>
+=======
+        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
+        <translation>Ei voida yhdistää %s tässä tietokoneessa. Curium on luultavasti jo käynnissä.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3581,6 +3759,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
         <translation>Jos &lt;kategoria&gt; ei ole toimitettu, tulosta kaikki debuggaustieto.</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -3871,6 +4050,302 @@ esimerkiksi: alertnotify=echo %%s | mail -s "Curium Hälytys" admin@foo.com
         <translation>Löytyi tarpeeksi käyttäjiä, kirjaudutaan ( odotetaan %s )</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = pidä tx meta data esim. tilin omistaja ja maksupyyntö tiedot, 2 = poista tx meta data)</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>Salli JSON-RPC yhteydet määritetystä lähteestä. Pätee &lt;ip&gt; yksittäiseen IP:n (esim. 1.2.3.4), verkko/verkkomaski (esim. 1.2.3.4/255.255.255.0) tai verkko/CIDR (esim. 1.2.3.4/24). Tämä asetus voidaan määrittää useita kertoja.</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
+        <translation>Virhe asetettaessa RPC osoitetta %s portissa %u kuuntelemaan: %s</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Kytkeydy annettuun osoitteeseen ja merkitse siihen kytkeytyvät peers:it luotettaviksi. Käytä [host]:port merkintätapaa IPv6:lle.</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Kytkeydy annettuun osoitteeseen kuunnellaksesi JSON-RPC yhteyksiä. Käytä [host]:port merkintätapaa IPv6:lle. Tämä asetus voidaan määrittää useita kertoja  (oletus: kytkeydy kaikkiin rajapintoihin)</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>Vaihda automaattisesti viimeistellyn budjetin äänestyskäyttäytyminen. mode=auto: Äänestä vain tarkkaan viimeisteltyä budjettia joka täsmää itse tekemääni budjettiin. (string, oletus: auto)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>Rajoita jatkuvasti yhtäaikaiset ilmaiset siirtotapahtumat &lt;n&gt;*1000 tavuun per minuutti (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Luo uudet tiedostot järjestelmän oletus oikeuksilla, paitsi umask 077 (voimassa vain käytöstä poistettujen lompakon toimintojen kanssa)</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Poista kaikki lompakon siirtotapahtumat ja palauta vain nuo osat lohkoketjusta -rescan valinnan avulla käynnistyksessä</translation>
+    </message>
+    <message>
+        <source>Disable all Curium specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
+        <translation>Kytke pois käytöstä kaikki Curium:in erityistoiminnot (Masternodet, Darksend, InstantX, Budjetointi) (0-1, oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>Levitetään MIT ohjelmistolisenssin alaisuudessa. Tarkemmat tiedot löytyvät tiedostosta COPYING tai osoitteesta &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
+    </message>
+    <message>
+        <source>Enable instantx, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Ota instantx käyttöön, näytä lukittujen siirtojen vahvistukset (bool, oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Enable use of automated darksend for funds stored in this wallet (0-1, default: %u)</source>
+        <translation>Ota käyttöön automaattinen Darksend rahavaroille tässä lompakossa  (0-1, oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Virhe: Ei tuettu argumentti -socks. SOCKS version asettaminen ei ole enää mahdollista, vain SOCKS5 proxyt ovat tuettuja.</translation>
+    </message>
+    <message>
+        <source>Fees (in CURIUM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Siirtomaksut (CURIUM/Kb) jotka ovat pienempiä kuin tämä, tulkitaan nollamaksuksi välityksessä (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in CURIUM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Siirtomaksut (CURIUM/Kb) jotka ovat pienempiä kuin tämä, tulkitaan nollamaksuksi siirtotapahtuman luonnissa (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>Aja tietokannan tapahtumat muistivarannosta kovalevylogiin joka &lt;n&gt; megatavu (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>Löytyi vahvistamattomia syötteitä, odotetaan että ne vahvistetaan.</translation>
+    </message>
+    <message>
+        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
+        <translation>Kuinka vaativa lohkon vahvistus -checkblocks on (0-4, oletus: %u)</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>Jos paytxfee ei ole asetettu, sisällytä tarpeeksi siirtomaksua jotta siirtotapahtuman vahvistus alkaa keskimäärin lohkon aikana (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Virheellinen määrä -maxtxfee=&lt;amount&gt;: '%s' (oltava vähintään minimi välitysmaksun verran %s:sta välttääksesi jumissa olevia siirtotapahtumia)</translation>
+    </message>
+    <message>
+        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
+        <translation>Kirjaa siirtotapahtuman prioriteetti ja siirtomaksu per kB kun louhitaan lohkoja (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Ylläpidä täyttä siirtotapahtumien indeksiä, jota käyttää getrawtransaction rpc kutsu (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>Maksimi koko datalle datan kuljetustapahtumissa jotka välitämme ja louhimme (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
+        <translation>Yksittäisen siirtotapahtuman maksimi siirtomaksu, jos tämä asetetaan liian matalaksi, se voi keskeyttää isot siirtotapahtumat (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Sekuntien määrä, kuinka kauan estetään huonosti käyttäytyviä peers:ejä uudelleen kytkeytymästä (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>Tulosta debuggaustieto (oletus: %u, tarjottava &lt;category&gt; on valinnainen)</translation>
+    </message>
+    <message>
+        <source>Provide liquidity to Darksend by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
+        <translation>Tarjoa Darksend:ille likviditeettiä jatkuvaa kolikoiden sekoitusta varten (0-100, oletus: %u, 1=usein, isot maksukulut, 100=harvoin, pienet maksukulut)</translation>
+    </message>
+    <message>
+        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
+        <translation>Vaadi korkea prioriteetti välitettäville ilmaisille tai matalan siirtomaksun siirtotapahtumille (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
+        <translation>Lähetä jäljitys/debug tiedot konsoliin debug.log tiedoston sijaan (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>Aseta prosessorin ytimien määrä louhintaan, jos päällä (-1 = kaikki ytimet, oletus: %d)</translation>
+    </message>
+    <message>
+        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
+        <translation>Näytä N vahvistusta onnistuneesti lukitulle siirtotapahtumalle (0-9999, oletus: %u)</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin &lt;https://www.openssl.org/&gt; sekä Eric Youngin kehittämän salausohjelmiston ja Thomas Bernardin kehittämän UPnP ohjelmiston.
+
+Käännös päivitetty: 1.9.2015 by AjM.</translation>
+    </message>
+    <message>
+        <source>To use curiumd, or the -server option to curium-qt, you must set an rpcpassword in the configuration file:
+%s
+It is recommended you use the following random password:
+rpcuser=curiumrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
+</source>
+        <translation>Käyttääksesi curiumd:ia tai -server valintaa curium-qt:lle, sinun tulee asettaa rpc salasana asetustiedostossa:
+%s
+Suositellaan että käytät allaolevaa satunnaista salasanaa:
+rpcuser=curiumrpc
+rpcpassword=%s
+(sinun ei tarvitse muistaa tätä salasanaa)
+Käyttäjätunnus ja salasana on oltava ERILAISET.
+Jos tiedostoa ei ole, luo se vain omistajan-luku-oikeudella.
+Suositellaan asetettavaksi alertnotify jotta saat tietoa ongelmista,
+esimerkiksi: alertnotify=echo %%s | mail -s "Curium Hälytys" admin@foo.com
+</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 CURIUM.</source>
+        <translation>Ei tarpeeksi varoja tälle siirtotapahtumalle, joka ei ole 1000 CURIUM.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Käytä erillistä SOCKS5 proxya tavoittaaksesi peers:it Tor piilotetun palvelun kautta (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>Varoitus: -maxtxfee on asetettu erittäin korkeaksi! Näin isot siirtomaksut voitaisiin maksaa yhdessä siirtotapahtumassa.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
+        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat oikein! Curium ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
+    </message>
+    <message>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Merkitse solmut luotettaviksi jotka kytkeytyvät annetusta verkkomaskista tai IP osoitteesta. Voidaan määrittää useita kertoja.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Luotettaviksi merkittyjä peers:ejä ei voida DoS estää, ja niiden siirtotapahtumat välitetään aina, vaikka ne olisvatkin jo muistivarannossa, käyttökelpoinen esim. yhdyskäytävään</translation>
+    </message>
+    <message>
+        <source>(9999 could be used only on mainnet)</source>
+        <translation>(9999 voidaan käyttää vain pääverkossa)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(oletus: %s)</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:
+</source>
+        <translation>&lt;category&gt; voi olla:
+</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>Hyväksy julkiset REST pyynnöt (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: %s)</source>
+        <translation>Hyväksyttävät salaukset (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>Tiedustele aina peers osoitteita DNS hakua käyttäen (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Ei voida selvittää -whitebind osoitetta: '%s'</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Yhdistä SOCKS5 proxyn kautta</translation>
+    </message>
+    <message>
+        <source>Connect to KeePassHttp on port &lt;port&gt; (default: %u)</source>
+        <translation>Yhdistä KeePassHttp porttiin &lt;port&gt; (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i Bitcoin Core Kehittäjät</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i Dash Core Kehittäjät</translation>
+    </message>
+	<message>
+        <source>Copyright (C) 2018-%i The Curium Developers</source>
+        <translation>Copyright (C) 2018-%i Curium Kehittäjät</translation>
+    </message>
+    <message>
+        <source>Could not parse -rpcbind value %s as network address</source>
+        <translation>Ei voida jäsentää -rpcbind arvoa %s verkko-osoitteena</translation>
+    </message>
+    <message>
+        <source>Darksend is idle.</source>
+        <translation>Darksend odottaa.</translation>
+    </message>
+    <message>
+        <source>Darksend request complete:</source>
+        <translation>Darksend pyyntö valmis:</translation>
+    </message>
+    <message>
+        <source>Darksend request incomplete:</source>
+        <translation>Darksend pyyntö kesken:</translation>
+    </message>
+    <message>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>Poista turvatila käytöstä, ohita todellinen turvatila tapahtuma (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
+        <translation>Aktivoi asiakasohjelman käyttö masternode:na (0-1, oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Virhe masternode:en kytkeytymisessä.</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
+        <translation>Virhe ladattaessa wallet.dat: Lompakko vaatii uudemman version Curium:sta</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>Virhe: Vakava sisäinen virhe, katso debug.log saadaksesi lisätietoja</translation>
+    </message>
+    <message>
+        <source>Error: Can't select current denominated inputs</source>
+        <translation>Virhe: Ei voida valita nykyisiä denominoituja syötteitä</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Virhe: Ei tuettu argumentti -tor löytyi, käytä -onion.</translation>
+    </message>
+    <message>
+        <source>Fee (in CURIUM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Lisättävä siirtomaksu (CURIUM/Kb) siirtotapahtumaan jonka lähetät (oletus: %s)</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>Viimeistellään siirtotapahtuma.</translation>
+    </message>
+    <message>
+        <source>Force safe mode (default: %u)</source>
+        <translation>Pakota turvatila (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>Löytyi tarpeeksi käyttäjiä, kirjaudutaan ( odotetaan %s )</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Found enough users, signing ...</source>
         <translation>Löytyi tarpeeksi käyttäjiä, kirjaudutaan ...</translation>
     </message>
@@ -3911,8 +4386,13 @@ esimerkiksi: alertnotify=echo %%s | mail -s "Curium Hälytys" admin@foo.com
         <translation>Tietoa</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Initialization sanity check failed. Curium Core is shutting down.</source>
         <translation>Alkuperäisyyden tarkistus epäonnistui. Curium Core sulkeutuu.</translation>
+=======
+        <source>Initialization sanity check failed. Curium is shutting down.</source>
+        <translation>Alkuperäisyyden tarkistus epäonnistui. Curium sulkeutuu.</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4163,8 +4643,13 @@ esimerkiksi: alertnotify=echo %%s | mail -s "Curium Hälytys" admin@foo.com
         <translation>Käytä UPnP:tä kuunneltavan portin kartoitukseen (oletus: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
         <translation>Lompakko on kirjoitettava uudelleen: käynnistä Curium Core uudestaan viimeistelyä varten</translation>
+=======
+        <source>Wallet needed to be rewritten: restart Curium to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä Curium uudestaan viimeistelyä varten</translation>
+>>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
@@ -4217,6 +4702,7 @@ esimerkiksi: alertnotify=echo %%s | mail -s "Curium Hälytys" admin@foo.com
     <message>
         <source>KeePassHttp id for the established association</source>
         <translation>KeePassHttp tunnus (id) yhdistymiseen</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>KeePassHttp key for AES encrypted communication with KeePass</source>
@@ -4239,6 +4725,30 @@ esimerkiksi: alertnotify=echo %%s | mail -s "Curium Hälytys" admin@foo.com
         <translation>Rivi: %d</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>KeePassHttp key for AES encrypted communication with KeePass</source>
+        <translation>KeePassHttp avain AES salattuun viestintään</translation>
+    </message>
+    <message>
+        <source>Keep N CURIUM anonymized (default: %u)</source>
+        <translation>Pidä N CURIUM anonymisoituna (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Pidä enintään &lt;n&gt; ei yhdistettyä siirtotapahtumaa muistissa (oletus: %u)</translation>
+    </message>
+    <message>
+        <source>Last Darksend was too recent.</source>
+        <translation>Viimeisin Darksend oli liian äskettäin.</translation>
+    </message>
+    <message>
+        <source>Line: %d</source>
+        <translation>Rivi: %d</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Loading addresses...</source>
         <translation>Ladataan osoitteita...</translation>
     </message>
@@ -4253,24 +4763,42 @@ esimerkiksi: alertnotify=echo %%s | mail -s "Curium Hälytys" admin@foo.com
     <message>
         <source>Loading wallet...</source>
         <translation>Ladataan lompakkoa...</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Masternode options:</source>
         <translation>Masternode valinnat:</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>Masternode valinnat:</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>Masternode queue is full.</source>
         <translation>Masternode jono on täysi.</translation>
     </message>
     <message>
         <source>Masternode:</source>
         <translation>Masternode:</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Missing input transaction information.</source>
         <translation>Puuttuva siirtotapahtuman tieto.</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Missing input transaction information.</source>
+        <translation>Puuttuva siirtotapahtuman tieto.</translation>
+    </message>
+    <message>
+>>>>>>> dev-1.12.1.0
         <source>No funds detected in need of denominating.</source>
         <translation>Denominointia tarvitsevia varoja ei löydy.</translation>
     </message>

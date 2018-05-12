@@ -17,13 +17,21 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Curium"
+<<<<<<< HEAD
             VALUE "FileDescription",    "Curiumd (OSS daemon/client for Curium)"
+=======
+            VALUE "FileDescription",    "curiumd (Curium node with a JSON-RPC server)"
+>>>>>>> dev-1.12.1.0
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "curiumd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
-            VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
+            VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "curiumd.exe"
+<<<<<<< HEAD
             VALUE "ProductName",        "Curiumd"
+=======
+            VALUE "ProductName",        "curiumd"
+>>>>>>> dev-1.12.1.0
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

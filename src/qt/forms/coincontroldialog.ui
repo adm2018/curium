@@ -477,7 +477,11 @@
      </column>
      <column>
       <property name="text">
+<<<<<<< HEAD
        <string>DS Rounds</string>
+=======
+       <string>PS Rounds</string>
+>>>>>>> dev-1.12.1.0
       </property>
      </column>
      <column>

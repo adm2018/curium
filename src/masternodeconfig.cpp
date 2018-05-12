@@ -1,9 +1,16 @@
 
-#include "net.h"
+#include "netbase.h"
 #include "masternodeconfig.h"
 #include "util.h"
+<<<<<<< HEAD
 #include "ui_interface.h"
 #include <base58.h>
+=======
+#include "chainparams.h"
+
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
+>>>>>>> dev-1.12.1.0
 
 CMasternodeConfig masternodeConfig;
 
@@ -53,6 +60,7 @@ bool CMasternodeConfig::read(std::string& strErr) {
             }
         }
 
+<<<<<<< HEAD
         if(Params().NetworkID() == CBaseChainParams::MAIN) {
             if(CService(ip).GetPort() != 9999) {
                 strErr = _("Invalid port detected in masternode.conf") + "\n" +
@@ -65,6 +73,31 @@ bool CMasternodeConfig::read(std::string& strErr) {
             strErr = _("Invalid port detected in masternode.conf") + "\n" +
                     strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
                     _("(9999 could be used only on mainnet)");
+=======
+        int port = 0;
+        std::string hostname = "";
+        SplitHostPort(ip, port, hostname);
+        if(port == 0 || hostname == "") {
+            strErr = _("Failed to parse host:port string") + "\n"+
+                    strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"";
+            streamConfig.close();
+            return false;
+        }
+        int mainnetDefaultPort = Params(CBaseChainParams::MAIN).GetDefaultPort();
+        if(Params().NetworkIDString() == CBaseChainParams::MAIN) {
+            if(port != mainnetDefaultPort) {
+                strErr = _("Invalid port detected in masternode.conf") + "\n" +
+                        strprintf(_("Port: %d"), port) + "\n" +
+                        strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
+                        strprintf(_("(must be %d for mainnet)"), mainnetDefaultPort);
+                streamConfig.close();
+                return false;
+            }
+        } else if(port == mainnetDefaultPort) {
+            strErr = _("Invalid port detected in masternode.conf") + "\n" +
+                    strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
+                    strprintf(_("(%d could be used only on mainnet)"), mainnetDefaultPort);
+>>>>>>> dev-1.12.1.0
             streamConfig.close();
             return false;
         }
