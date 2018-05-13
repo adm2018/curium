@@ -261,7 +261,7 @@ enum {
     NODE_GETUTXO = (1 << 1),
     // NODE_BLOOM means the node is capable and willing to handle bloom-filtered connections.
     // Curium nodes used to support this by default, without advertising this bit,
-    // but no longer do as of protocol version 70106 (= NO_BLOOM_VERSION)
+    // but no longer do as of protocol version 70109 (= NO_BLOOM_VERSION)
     NODE_BLOOM = (1 << 2),
 
     // Bits 24-31 are reserved for temporary experiments. Just pick a bit that
