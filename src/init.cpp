@@ -2850,7 +2850,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
         bool linked = false;
 
-        for (unsigned int i = 1; i < 10000; i++) {
+        for (unsigned int i = 1; i < 1000; i++) {
 
             boost::filesystem::path source = GetDataDir() / strprintf("blk%04u.dat", i);
 

@@ -266,7 +266,7 @@ struct masternode_info_t
 
 //
 
-// The Masternode Class. For managing the Darksend process. It contains the input of the 10000CRU, signature to prove
+// The Masternode Class. For managing the Darksend process. It contains the input of the 1000CRU, signature to prove
 
 // it's the one who own that ip address and code for calculating the payment election.
 

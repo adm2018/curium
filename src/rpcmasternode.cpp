@@ -742,7 +742,7 @@ UniValue masternode(const UniValue& params, bool fHelp)
 
         std::vector<COutput> vPossibleCoins;
 
-        pwalletMain->AvailableCoins(vPossibleCoins, true, NULL, false, ONLY_10000);
+        pwalletMain->AvailableCoins(vPossibleCoins, true, NULL, false, ONLY_1000);
 
 
 

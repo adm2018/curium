@@ -1280,9 +1280,9 @@ bool CMasternodeBroadcast::CheckOutpoint(int& nDos)
 
         }
 
-        if(coins.vout[vin.prevout.n].nValue != 10000 * COIN) {
+        if(coins.vout[vin.prevout.n].nValue != 1000 * COIN) {
 
-            LogPrint("masternode", "CMasternodeBroadcast::CheckOutpoint -- Masternode UTXO should have 10000 CURIUM, masternode=%s\n", vin.prevout.ToStringShort());
+            LogPrint("masternode", "CMasternodeBroadcast::CheckOutpoint -- Masternode UTXO should have 1000 CURIUM, masternode=%s\n", vin.prevout.ToStringShort());
 
             return false;
 
@@ -1328,7 +1328,7 @@ bool CMasternodeBroadcast::CheckOutpoint(int& nDos)
 
     // verify that sig time is legit in past
 
-    // should be at least not earlier than block when 10000 CURIUM tx got nMasternodeMinimumConfirmations
+    // should be at least not earlier than block when 1000 CURIUM tx got nMasternodeMinimumConfirmations
 
     uint256 hashBlock = uint256();
 
