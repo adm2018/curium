@@ -4260,7 +4260,7 @@ void RelayTransaction(const CTransaction& tx)
 
     CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
 
-    ss.reserve(10000);
+    ss.reserve(1000);
 
     uint256 hash = tx.GetHash();
 

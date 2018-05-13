@@ -1344,7 +1344,7 @@ bool CMasternodeBroadcast::CheckOutpoint(int& nDos)
 
         if (mi != mapBlockIndex.end() && (*mi).second) {
 
-            CBlockIndex* pMNIndex = (*mi).second; // block for 10000 CURIUM tx -> 1 confirmation
+            CBlockIndex* pMNIndex = (*mi).second; // block for 1000 CURIUM tx -> 1 confirmation
 
             CBlockIndex* pConfIndex = chainActive[pMNIndex->nHeight + Params().GetConsensus().nMasternodeMinimumConfirmations - 1]; // block where tx got nMasternodeMinimumConfirmations
 
