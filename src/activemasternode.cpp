@@ -420,9 +420,9 @@ void CActiveMasternode::ManageStateInitial()
 
 
 
-    if(pwalletMain->GetBalance() < 10000*COIN) {
+    if(pwalletMain->GetBalance() < 1000*COIN) {
 
-        LogPrintf("CActiveMasternode::ManageStateInitial -- %s: Wallet balance is < 10000 CURIUM\n", GetStateString());
+        LogPrintf("CActiveMasternode::ManageStateInitial -- %s: Wallet balance is < 1000 CURIUM\n", GetStateString());
 
         return;
 

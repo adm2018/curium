@@ -1160,7 +1160,7 @@ void CDarksendPool::CheckPool()
 
     // reset if we're here for 10 seconds
 
-    if((nState == POOL_STATE_ERROR || nState == POOL_STATE_SUCCESS) && GetTimeMillis() - nTimeLastSuccessfulStep >= 10000) {
+    if((nState == POOL_STATE_ERROR || nState == POOL_STATE_SUCCESS) && GetTimeMillis() - nTimeLastSuccessfulStep >= 1000) {
 
         LogPrint("privatesend", "CDarksendPool::CheckPool -- timeout, RESETTING\n");
 
@@ -1624,7 +1624,7 @@ void CDarksendPool::CheckTimeout()
 
 
 
-    int nLagTime = fMasterNode ? 0 : 10000; // if we're the client, give the server a few extra seconds before resetting.
+    int nLagTime = fMasterNode ? 0 : 1000; // if we're the client, give the server a few extra seconds before resetting.
 
     int nTimeout = (nState == POOL_STATE_SIGNING) ? PRIVATESEND_SIGNING_TIMEOUT : PRIVATESEND_QUEUE_TIMEOUT;
 
@@ -3634,7 +3634,7 @@ bool CDarksendPool::MakeCollateralAmounts(const CompactTallyItem& tallyItem)
 
     bool fSuccess = pwalletMain->CreateTransaction(vecSend, wtx, reservekeyChange,
 
-            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT10000IFMN);
+            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT1000IFMN);
 
     if(!fSuccess) {
 
@@ -3642,17 +3642,17 @@ bool CDarksendPool::MakeCollateralAmounts(const CompactTallyItem& tallyItem)
 
         // MN-like funds should not be touched in any case and we can't mix denominated without collaterals anyway
 
-        LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NONDENOMINATED_NOT10000IFMN Error: %s\n", strFail);
+        LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NONDENOMINATED_NOT1000IFMN Error: %s\n", strFail);
 
         CCoinControl *coinControlNull = NULL;
 
         fSuccess = pwalletMain->CreateTransaction(vecSend, wtx, reservekeyChange,
 
-                nFeeRet, nChangePosRet, strFail, coinControlNull, true, ONLY_NOT10000IFMN);
+                nFeeRet, nChangePosRet, strFail, coinControlNull, true, ONLY_NOT1000IFMN);
 
         if(!fSuccess) {
 
-            LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NOT10000IFMN Error: %s\n", strFail);
+            LogPrintf("CDarksendPool::MakeCollateralAmounts -- ONLY_NOT1000IFMN Error: %s\n", strFail);
 
             reservekeyCollateral.ReturnKey();
 
@@ -3930,7 +3930,7 @@ bool CDarksendPool::CreateDenominated(const CompactTallyItem& tallyItem, bool fC
 
     bool fSuccess = pwalletMain->CreateTransaction(vecSend, wtx, reservekeyChange,
 
-            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT10000IFMN);
+            nFeeRet, nChangePosRet, strFail, &coinControl, true, ONLY_NONDENOMINATED_NOT1000IFMN);
 
     if(!fSuccess) {
 
@@ -4504,7 +4504,7 @@ bool CDarkSendSigner::IsVinAssociatedWithPubkey(const CTxIn& txin, const CPubKey
 
         BOOST_FOREACH(CTxOut out, tx.vout)
 
-            if(out.nValue == 10000*COIN && out.scriptPubKey == payee) return true;
+            if(out.nValue == 1000*COIN && out.scriptPubKey == payee) return true;
 
     }
 
