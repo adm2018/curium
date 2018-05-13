@@ -1640,7 +1640,7 @@ void CMasternodePayments::Sync(CNode* pnode, int nCountNeeded)
 
 
 
-    if(pnode->nVersion < 70202) {
+    if(pnode->nVersion < 70105) {
 
         // Old nodes can only sync via heavy method
 
@@ -1704,7 +1704,7 @@ void CMasternodePayments::RequestLowDataPaymentBlocks(CNode* pnode)
 
     // Old nodes can't process this
 
-    if(pnode->nVersion < 70202) return;
+    if(pnode->nVersion < 70105) return;
 
     if(!pCurrentBlockIndex) return;
 

@@ -312,7 +312,7 @@ void CDarksendPool::ProcessMessage(CNode* pfrom, std::string& strCommand, CDataS
 
         if(nMsgMessageID < MSG_POOL_MIN || nMsgMessageID > MSG_POOL_MAX) {
             LogPrint("privatesend", "DSSTATUSUPDATE -- nMsgMessageID is out of bounds: %d\n", nMsgMessageID);
-            if(pfrom->nVersion < 70203) nMsgMessageID = MSG_NOERR;
+            if(pfrom->nVersion < 70105) nMsgMessageID = MSG_NOERR;
             return;
         }
 

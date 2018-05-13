@@ -736,7 +736,7 @@ public:
 
         //
 
-        if(nProtocolVersion < 70201) {
+        if(nProtocolVersion < 70105) {
 
             ss << sigTime;
 

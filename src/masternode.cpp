@@ -470,7 +470,7 @@ void CMasternode::Check(bool fForce)
 
     static int64_t nTimeStart = GetTime();
 
-    if(nProtocolVersion < 70204) {
+    if(nProtocolVersion < 70105) {
 
         if(!masternodeSync.IsMasternodeListSynced()) nTimeStart = GetTime();
 
@@ -1436,7 +1436,7 @@ bool CMasternodeBroadcast::CheckSignature(int& nDos)
 
     //
 
-    if(nProtocolVersion < 70201) {
+    if(nProtocolVersion < 70105) {
 
         std::string vchPubkeyCollateralAddress(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
 

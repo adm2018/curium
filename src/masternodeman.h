@@ -200,7 +200,7 @@ private:
 
 
 
-    static const int MIN_POSE_PROTO_VERSION     = 70203;
+    static const int MIN_POSE_PROTO_VERSION     = 70104;
 
     static const int MAX_POSE_RANK              = 10;
 
