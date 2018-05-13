@@ -454,6 +454,36 @@ void CMasternode::Check(bool fForce)
 
 
 
+    //
+
+    // REMOVE AFTER MIGRATION TO 12.1
+
+    //
+
+    // Old nodes don't send pings on dseg, so they could switch to one of the expired states
+
+    // if we were offline for too long even if they are actually enabled for the rest
+
+    // of the network. Postpone their check for MASTERNODE_MIN_MNP_SECONDS seconds.
+
+    // This could be usefull for 12.1 migration, can be removed after it's done.
+
+    static int64_t nTimeStart = GetTime();
+
+    if(nProtocolVersion < 70204) {
+
+        if(!masternodeSync.IsMasternodeListSynced()) nTimeStart = GetTime();
+
+        fWaitForPing = GetTime() - nTimeStart < MASTERNODE_MIN_MNP_SECONDS;
+
+    }
+
+    //
+
+    // END REMOVE
+
+    //
+
 
 
     if(fWaitForPing && !fOurMasternode) {
@@ -1399,16 +1429,112 @@ bool CMasternodeBroadcast::CheckSignature(int& nDos)
     nDos = 0;
 
 
-    strMessage = addr.ToString(false) + boost::lexical_cast<std::string>(sigTime) +
-                    pubKeyCollateralAddress.GetID().ToString() + pubKeyMasternode.GetID().ToString() +
-                    boost::lexical_cast<std::string>(nProtocolVersion);
 
-    LogPrint("masternode", "CMasternodeBroadcast::CheckSignature -- strMessage: %s  pubKeyCollateralAddress address: %s  sig: %s\n", strMessage, CBitcoinAddress(pubKeyCollateralAddress.GetID()).ToString(), EncodeBase64(&vchSig[0], vchSig.size()));
+    //
 
-    if(!darkSendSigner.VerifyMessage(pubKeyCollateralAddress, vchSig, strMessage, strError)){
-        LogPrintf("CMasternodeBroadcast::CheckSignature -- Got bad Masternode announce signature, error: %s\n", strError);
-        nDos = 100;
-        return false;
+    // REMOVE AFTER MIGRATION TO 12.1
+
+    //
+
+    if(nProtocolVersion < 70201) {
+
+        std::string vchPubkeyCollateralAddress(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
+
+        std::string vchPubkeyMasternode(pubKeyMasternode.begin(), pubKeyMasternode.end());
+
+        strMessage = addr.ToString(false) + boost::lexical_cast<std::string>(sigTime) +
+
+                        vchPubkeyCollateralAddress + vchPubkeyMasternode + boost::lexical_cast<std::string>(nProtocolVersion);
+
+
+
+        LogPrint("masternode", "CMasternodeBroadcast::CheckSignature -- sanitized strMessage: %s  pubKeyCollateralAddress address: %s  sig: %s\n",
+
+            SanitizeString(strMessage), CBitcoinAddress(pubKeyCollateralAddress.GetID()).ToString(),
+
+            EncodeBase64(&vchSig[0], vchSig.size()));
+
+
+
+        if(!darkSendSigner.VerifyMessage(pubKeyCollateralAddress, vchSig, strMessage, strError)) {
+
+            if(addr.ToString() != addr.ToString(false)) {
+
+                // maybe it's wrong format, try again with the old one
+
+                strMessage = addr.ToString() + boost::lexical_cast<std::string>(sigTime) +
+
+                                vchPubkeyCollateralAddress + vchPubkeyMasternode + boost::lexical_cast<std::string>(nProtocolVersion);
+
+
+
+                LogPrint("masternode", "CMasternodeBroadcast::CheckSignature -- second try, sanitized strMessage: %s  pubKeyCollateralAddress address: %s  sig: %s\n",
+
+                    SanitizeString(strMessage), CBitcoinAddress(pubKeyCollateralAddress.GetID()).ToString(),
+
+                    EncodeBase64(&vchSig[0], vchSig.size()));
+
+
+
+                if(!darkSendSigner.VerifyMessage(pubKeyCollateralAddress, vchSig, strMessage, strError)) {
+
+                    // didn't work either
+
+                    LogPrintf("CMasternodeBroadcast::CheckSignature -- Got bad Masternode announce signature, second try, sanitized error: %s\n",
+
+                        SanitizeString(strError));
+
+                    // don't ban for old masternodes, their sigs could be broken because of the bug
+
+                    return false;
+
+                }
+
+            } else {
+
+                // nope, sig is actually wrong
+
+                LogPrintf("CMasternodeBroadcast::CheckSignature -- Got bad Masternode announce signature, sanitized error: %s\n",
+
+                    SanitizeString(strError));
+
+                // don't ban for old masternodes, their sigs could be broken because of the bug
+
+                return false;
+
+            }
+
+        }
+
+    } else {
+
+    //
+
+    // END REMOVE
+
+    //
+
+        strMessage = addr.ToString(false) + boost::lexical_cast<std::string>(sigTime) +
+
+                        pubKeyCollateralAddress.GetID().ToString() + pubKeyMasternode.GetID().ToString() +
+
+                        boost::lexical_cast<std::string>(nProtocolVersion);
+
+
+
+        LogPrint("masternode", "CMasternodeBroadcast::CheckSignature -- strMessage: %s  pubKeyCollateralAddress address: %s  sig: %s\n", strMessage, CBitcoinAddress(pubKeyCollateralAddress.GetID()).ToString(), EncodeBase64(&vchSig[0], vchSig.size()));
+
+
+
+        if(!darkSendSigner.VerifyMessage(pubKeyCollateralAddress, vchSig, strMessage, strError)){
+
+            LogPrintf("CMasternodeBroadcast::CheckSignature -- Got bad Masternode announce signature, error: %s\n", strError);
+
+            nDos = 100;
+
+            return false;
+
+        }
 
     }
 
