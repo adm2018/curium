@@ -2,11 +2,7 @@
 ====================
 
 
-<<<<<<< HEAD
 Curium Core version 0.12.0 is now available from:
-=======
-Curium version 0.12.0 is now available from:
->>>>>>> dev-1.12.1.0
 
   https://curiumpay.io/downloads
 
@@ -32,7 +28,7 @@ Downgrade warning
 
 Because release 0.12.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.12 versions of Curium or other software:
+backwards-compatible with pre-0.12 versions of Curium Core or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or

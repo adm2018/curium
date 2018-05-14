@@ -1,4 +1,4 @@
-Curium 0.12.1
+Curium Core 0.12.0
 =====================
 
 Intro
@@ -13,11 +13,11 @@ Setup
 -----
 Unpack the files into a directory and run curium-qt.exe.
 
-Curium is the original Curium client and it builds the backbone of the network.
+Curium Core is the original Curium client and it builds the backbone of the network.
 However, it downloads and stores the entire history of Curium transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
 See the curium wiki at:
-  https://curiumpay.atlassian.net/wiki/
+  https://en.bitcoin.it/wiki/Main_Page ***TODO***
 for more help and information.

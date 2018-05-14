@@ -231,13 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Wallet</source>
@@ -288,21 +283,12 @@
         <translation>Ukončiť program</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>&amp;O Curium Core</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
         <translation>Zobraziť informácie o Curium Core</translation>
-=======
-        <source>&amp;About Curium</source>
-        <translation>&amp;O Curium</translation>
-    </message>
-    <message>
-        <source>Show information about Curium</source>
-        <translation>Zobraziť informácie o Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -465,13 +451,8 @@
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Curium Core klient</translation>
-=======
-        <source>Curium client</source>
-        <translation>Curium klient</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -482,13 +463,8 @@
         <translation>Synchronizujú sa ďalšie dáta: %p%</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Zobraziť Curium Core nápovedu k získaniu zoznamu možností príkazového riadku Curium.</translation>
-=======
-        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
-        <translation>Zobraziť Curium nápovedu k získaniu zoznamu možností príkazového riadku Curium.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>&amp;File</source>
@@ -1012,13 +988,8 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>version</source>
@@ -1029,13 +1000,8 @@ Adresa: %4</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>About Curium Core</source>
         <translation>O Curium Core</translation>
-=======
-        <source>About Curium</source>
-        <translation>O Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Command-line options</source>
@@ -1081,7 +1047,6 @@ Adresa: %4</translation>
         <translation>Vitajte</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Vitajte v Curium Core.</translation>
     </message>
@@ -1092,18 +1057,6 @@ Adresa: %4</translation>
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Curium Core stiahne a uloží kópiu reťazca blokov Curium. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
-=======
-        <source>Welcome to Curium.</source>
-        <translation>Vitajte v Curium.</translation>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
-        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude Curium ukladať svoje dáta.</translation>
-    </message>
-    <message>
-        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Curium stiahne a uloží kópiu reťazca blokov Curium. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1114,13 +1067,8 @@ Adresa: %4</translation>
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2489,21 +2437,12 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>are added as transaction fee</source>
         <translation>pridané ako transakčný poplatok</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
         <translation>Celková suma = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Celková suma = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>Confirm send coins</source>
         <translation>Potvrdiť odoslanie bitcoins</translation>
     </message>
@@ -2646,13 +2585,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
         <translation>Curium core sa vypína...</translation>
-=======
-        <source>Curium is shutting down...</source>
-        <translation>Curium sa vypína...</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2801,13 +2735,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Version %1</source>
@@ -2818,13 +2747,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>The Curium Core developers</source>
         <translation>Vývojári Curium Core</translation>
-=======
-        <source>The Curium developers</source>
-        <translation>Vývojári Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>[testnet]</source>
@@ -3401,13 +3325,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
         <translation>Nedá sa zamknúť dátový adresár %s. Curium Core už pravdepodobne beží.</translation>
-=======
-        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
-        <translation>Nedá sa zamknúť dátový adresár %s. Curium už pravdepodobne beží.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3462,13 +3381,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Toto je predbežná testovacia zostava - používate na vlastné riziko - nepoužívajte na ťaženie alebo obchodné aplikácie</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
         <translation>Nedá sa viazať ku %s na tomto počítači. Curium Core už pravdepodobne beží.</translation>
-=======
-        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
-        <translation>Nedá sa viazať ku %s na tomto počítači. Curium už pravdepodobne beží.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3613,7 +3527,6 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>Error loading block database</source>
         <translation>Chyba pri načítaní databázy blokov</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -3866,260 +3779,6 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Prijateľné šifry (predvolené: %s)</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation>Chyba pri načítaní wallet.dat</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka je poškodená</translation>
-    </message>
-    <message>
-        <source>Error opening block database</source>
-        <translation>Chyba pri otváraní databázy blokov</translation>
-    </message>
-    <message>
-        <source>Error reading from database, shutting down.</source>
-        <translation>Chyba pri načítaní z databázy, ukončuje sa.</translation>
-    </message>
-    <message>
-        <source>Error recovering public key.</source>
-        <translation>Chyba pri obnovovaní verejného kľúča.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Chyba</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Chyba: Nedostatok miesta na disku!</translation>
-    </message>
-    <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Chyba: Peňaženka je zamknutá, transakcia sa nedá vytvoriť!</translation>
-    </message>
-    <message>
-        <source>Error: You already have pending entries in the Darksend pool</source>
-        <translation>Chyba: Už máte čakajúce položky vo fronte Darksend</translation>
-    </message>
-    <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Nepodarilo sa počúvať žiadnom porte. Použite -listen=0 ak to chcete.</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Načítanie bloku zlyhalo</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>If &lt;category&gt; is not supplied, output all debugging information.</translation>
-    </message>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = zachovať metaúdaje tx napr. vlastníka účtu a informácie o platobných príkazoch, 2 = zahodiť metaúdaje tx)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Povoliť JSON-RPC pripojenia zo zadaného zdroja. Pre &lt;ip&gt; sú platné jednoduché IP (napr. 1.2.3.4), sieť/netmask (napr. 1.2.3.4/255.255.255.0) alebo sieť/CIDR (napr. 1.2.3.4/24). Táto možnosť môže byť zadaná niekoľko krát</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>Pri nastavovaní RPC adresy %s na porte %u pre počúvanie došlo k chybe: %s</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Spojiť s danou adresou a povolenými partnerskými zariadeniami ktoré sa tam pripájajú. Použite zápis [host]:port pre IPv6</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Spojiť s danou adresou pre počúvanie JSON-RPC spojení. Použite zápis [host]:port pre IPv6. Táto možnosť môže byt zadaná niekoľko krát (predvolené: spojiť so všetkými rozhraniami)</translation>
-    </message>
-    <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Zmeniť vlastnosť hlasovania automaticky dokončených rozpočtov. mód=auto: Hlasovať iba pre konkrétny dokončený rozpočet, ktorý sa zhoduje mojím vygenerovaným rozpočtom. (reťazec, predvolené: auto)</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>Nepretržite vyhodnocuj a limituj transakcie bez poplatku na &lt;n&gt;*1000 bajtov za minútu (predvolené:%u)</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Vytvoriť nové súbory z predvolenými systémovými právami, namiesto umask 077 (funguje iba z vypnutou funkcionalitou peňaženky)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Vymazať všetky transakcie z peňaženky a pri spustení znova získať z reťazca blokov iba tie získané pomocou -rescan</translation>
-    </message>
-    <message>
-        <source>Disable all Curium specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
-        <translation>Vypnúť všetky funkcie špecifické pre Curium (Masternode, Darksend, InstantX, Rozpočty) (0-1, predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Distribuované pod softvérovou licenciou MIT, viď sprievodný súbor COPYING alebo &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
-    </message>
-    <message>
-        <source>Enable instantx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Zapnúť InstantX, ukázať potvrdenia pre zamknuté transakcie (bool, predvolené: %s)</translation>
-    </message>
-    <message>
-        <source>Enable use of automated darksend for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Povoliť používanie automatického darksend pre zdroje uložené v tejto peňaženke (0-1, predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Chyba: Nájdený nepodporovaný argument -socks. Nastavenie SOCKS verzie nie je už možné, podporované sú už iba proxy SOCKS5.</translation>
-    </message>
-    <message>
-        <source>Fees (in CURIUM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Poplatky (v CURIUM za Kb) menšie ako toto, sú považované za nulový poplatok pre prenos (predvolené: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in CURIUM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Poplatky (v CURIUM za Kb) menšie ako toto, sú považované za nulový transakčný poplatok (predvolené: %s)</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Vyprázdniť databázovú aktivitu s pamäte do diskového logu každých &lt;n&gt; megabajtov (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Nájdené nepotvrdené denominované výstupy, pre pokračovanie sa čaká kým sa nepotvrdia.</translation>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>Ako dôkladné je -checkblocks overenie blokov (0-4, predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Ak nie je nastavené paytxfee, pridať dostatočný poplatok aby sa transakcia začala potvrdzovať priemerne v rámci bloku (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Neplatná suma pre -maxtxfee=&lt;amount&gt;: '%s' (aby sa transakcia nezasekla, minimálny prenosový poplatok musí byť aspoň %s)</translation>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>Zaznamenať prioritu transakcií a poplatok za kB pri ťažbe blokov (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Udržiavať kompletný transakčný index, využíva getrawtransaction rpc volanie (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Maximálna veľkosť dát v transakciách nosných dát, ktoré prenášame a ťažíme (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Celkové maximum poplatkov pre použitie jednej transakcie peňaženky. Príliš malá hodnota môže prerušiť veľké transakcie (predvolené: %s)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Počet sekúnd, počas ktorých nepripájať zle správajúce sa uzle (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Výstupné ladiace informácie (predvolené: %u, dodanie &lt;category&gt; je voliteľné)</translation>
-    </message>
-    <message>
-        <source>Provide liquidity to Darksend by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Poskytnúť likviditu pre Darksend nepravidelným miešaním mincí na kontinuálnej báze (0-100, predvolené: %u, 1=veľmi často, vysoké poplatky, 100=veľmi zriedkavo, malé poplatky)</translation>
-    </message>
-    <message>
-        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
-        <translation>Vyžaduje sa vysoká priorita pre prenos poplatku alebo transakcie s malým poplatkom (predvolené:%u)</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>Poslať sledovacie/ladiace informácie konzole namiesto debug.log súboru (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Nastaviť počet vlákien pre generáciu mincí (-1 = všetky jadrá, predvolené: %d)</translation>
-    </message>
-    <message>
-        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Ukázať N potvrdení pre úspešne zamknutú transakciu (0-9999, predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Tento produkt obsahuje softvér vyvinutý projektom OpenSSL pre použitie sady nástrojov OpenSSL &lt;https://www.openssl.org/&gt; a kryptografického softvéru napísaného Eric Young a UPnP softvér napísaný Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>To use curiumd, or the -server option to curium-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=curiumrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
-</source>
-        <translation>Pre použitie možnosti -server pre curium-qt, musíte nastaviť rpcpassword v konfiguračnom súbore:
-%s
-Doporučuje sa použiť nasledovné náhodné heslo:
-rpcuser=curiumrpc
-rpcpassword=%s
-(toto heslo si nemusíte pamätať)
-Používateľské meno a heslo NEMÔŽU byť rovnaké.
-Ak súbor neexistuje, vytvoriť na nastaviť práva tak aby ho mohol čítať iba vlastník.
-Tiež sa doporučuje nastaviť alertnotify, aby ste boli upozornený na problém,
-napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 CURIUM.</source>
-        <translation>Nenašiel sa dostatok prostriedkov pre túto transakciu, ktorú nie sú rovné 1000 CURIUM.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Použiť samostatný SOCKS5 proxy server na dosiahnutie počítačov cez skryté služby Tor (predvolené: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Upozornenie: -maxtxfee je nastavené príliš vysoko! Takto vysoké poplatky by mali byť zaplatené za jednu transakciu.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, Curium nebude pracovať správne.</translation>
-    </message>
-    <message>
-        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Uzle na zoznam povolených, ktoré sa pripájajú z danej netmask alebo IP adresy. Môže byť zadané viac krát.</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Uzle na zoznam povolených nemôžu byť DoS zakázané a ich transakcie vždy postúpené ďalej, aj v prípade, ak sú už pamäťovej fronte. Užitočné napr. pre brány</translation>
-    </message>
-    <message>
-        <source>(9999 could be used only on mainnet)</source>
-        <translation>(9999 nemôže byť použité pre hlavnú sieť)</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(predvolené: %s)</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:
-</source>
-        <translation>&lt;category&gt; môže byť:
-</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Akceptovať verejné REST žiadosti (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Prijateľné šifry (predvolené: %s)</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Vždy sa dotazovať adresy partnerských uzlov cez vyhľadávanie DNS (predvolené: %u)</translation>
     </message>
@@ -4140,7 +3799,6 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Autorské práva (C) 2009-%i Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>Autorské práva (C) 2014-%i Vývojári jadra Curium</translation>
     </message>
@@ -4189,67 +3847,12 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Chyba: nájdený nepodporovaný argument -tor, použite -onion.</translation>
     </message>
     <message>
-=======
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Autorské práva (C) 2014-%i Vývojári jadra Dash</translation>
-    </message>
-	<message>
-        <source>Copyright (C) 2018-%i The Curium Developers</source>
-        <translation>Autorské práva (C) 2018-%i Vývojári jadra Curium</translation>
-    </message>
-    <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Nedá sa analyzovať -rpcbind hodnota %s ako sieťová adresa</translation>
-    </message>
-    <message>
-        <source>Darksend is idle.</source>
-        <translation>Darksend je nečinný.</translation>
-    </message>
-    <message>
-        <source>Darksend request complete:</source>
-        <translation>Darksend požiadavok dokončený:</translation>
-    </message>
-    <message>
-        <source>Darksend request incomplete:</source>
-        <translation>Darksend požiadavok nedokončený:</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Vypnúť núdzový režim, prepísať skutočnú udalosť núdzového režimu (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Povoliť klientovi aby vystupoval ako masternode (0-1, predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Chyba pripojenia k Masternode.</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Curium</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Chyba: Nastala fatálna interná chyba. Pre podrobnosti pozrite debug.log</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Chyba: Nedajú sa vybrať súčasné denominované vstupy </translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Chyba: nájdený nepodporovaný argument -tor, použite -onion.</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>Fee (in CURIUM/kB) to add to transactions you send (default: %s)</source>
         <translation>Pridať poplatok (v CURIUM za kB) do transakcií ktoré posielate (predvolené: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
         <translation>Dokončuje sa transakcia.</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4268,26 +3871,6 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Generovať mince (predvolené: %u)</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>Vynútiť núdzový režim (predvolené: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Nájdený dostatok používateľov, pospisuje sa ( čakanie %s )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Nájdený dostatok používateľov, pospisuje sa ...</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: %u)</source>
-        <translation>Generovať mince (predvolené: %u)</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Koľko blokov overiť pri spustení (predvolené: %u, 0 = všetky)</translation>
     </message>
@@ -4320,13 +3903,8 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Informácia</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Initialization sanity check failed. Curium Core is shutting down.</source>
         <translation>Inicializácia kontroly zdravia zlyhala. Curium Core sa vypína.</translation>
-=======
-        <source>Initialization sanity check failed. Curium is shutting down.</source>
-        <translation>Inicializácia kontroly zdravia zlyhala. Curium sa vypína.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4577,13 +4155,8 @@ napríklad: alertnotify=echo %%s | mail -s "Curium Upozornenie" admin@foo.com
         <translation>Použiť UPnP pre mapovanie počúvajúceho portu (predvolené: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
         <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Curium Core</translation>
-=======
-        <source>Wallet needed to be rewritten: restart Curium to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>

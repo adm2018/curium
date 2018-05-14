@@ -6,20 +6,11 @@ architectures:
 - "amd64"
 packages:
 - "faketime"
-<<<<<<< HEAD
 remotes:
 - "url": "https://github.com/Curium-Officialproject/Curium-Official-detached-sigs.git"
   "dir": "signature"
 files:
 - "Curium-Official-osx-unsigned.tar.gz"
-=======
-reference_datetime: "2017-01-01 00:00:00"
-remotes:
-- "url": "https://github.com/curiumpay/curium-detached-sigs.git"
-  "dir": "signature"
-files:
-- "curium-osx-unsigned.tar.gz"
->>>>>>> dev-1.12.1.0
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -40,12 +31,7 @@ script: |
   SIGNED=Curium-Official-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
-<<<<<<< HEAD
   OSX_VOLNAME="$(cat osx_volname)"
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx
   ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Curium-Official-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
-=======
-  ./detached-sig-apply.sh ${UNSIGNED} signature/osx
-  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Curium-Core" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
->>>>>>> dev-1.12.1.0
   ${WRAP_DIR}/dmg dmg uncompressed.dmg ${OUTDIR}/${SIGNED}

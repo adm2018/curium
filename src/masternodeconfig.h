@@ -1,10 +1,16 @@
 
-// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2014-2015 The Curium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef SRC_MASTERNODECONFIG_H_
 #define SRC_MASTERNODECONFIG_H_
+
+#include <string>
+#include <vector>
+
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 class CMasternodeConfig;
 extern CMasternodeConfig masternodeConfig;
@@ -86,15 +92,11 @@ public:
     }
 
     int getCount() {
-<<<<<<< HEAD
         int c = -1;
         BOOST_FOREACH(CMasternodeEntry e, entries) {
             if(e.getAlias() != "") c++;
         }
         return c;
-=======
-        return (int)entries.size();
->>>>>>> dev-1.12.1.0
     }
 
 private:

@@ -18,12 +18,6 @@ if test -z $with_qt_bindir; then
 fi
 if test -z $with_protoc_bindir; then
   with_protoc_bindir=$depends_prefix/native/bin
-<<<<<<< HEAD
-=======
-fi
-if test -z $with_comparison_tool; then
-  with_comparison_tool=$depends_prefix/native/share/BitcoindComparisonTool_jar/BitcoindComparisonTool.jar
->>>>>>> dev-1.12.1.0
 fi
 
 
@@ -69,11 +63,6 @@ LDFLAGS="-L$depends_prefix/lib $LDFLAGS"
 CC="@CC@"
 CXX="@CXX@"
 OBJC="${CC}"
-<<<<<<< HEAD
-=======
-OBJCXX="${CXX}"
-CCACHE=$prefix/native/bin/ccache
->>>>>>> dev-1.12.1.0
 CCACHE=$depends_prefix/native/bin/ccache
 PYTHONPATH=$depends_prefix/native/lib/python/dist-packages:$PYTHONPATH
 

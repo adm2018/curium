@@ -617,7 +617,7 @@
         <x>0</x>
         <y>0</y>
         <width>830</width>
-        <height>69</height>
+        <height>68</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -771,6 +771,16 @@
                 </property>
                </widget>
               </item>
+              <item>
+               <widget class="QPushButton" name="buttonMinimizeFee">
+                <property name="toolTip">
+                 <string>collapse fee-settings</string>
+                </property>
+                <property name="text">
+                 <string>Minimize</string>
+                </property>
+               </widget>
+              </item>
              </layout>
             </item>
             <item>
@@ -800,16 +810,6 @@
              </size>
             </property>
            </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="buttonMinimizeFee">
-            <property name="toolTip">
-             <string>collapse fee-settings</string>
-            </property>
-            <property name="text">
-             <string>Hide</string>
-            </property>
-           </widget>
           </item>
          </layout>
         </item>
@@ -1257,6 +1257,10 @@
        <property name="text">
         <string>S&amp;end</string>
        </property>
+       <property name="icon">
+        <iconset resource="../curium.qrc">
+         <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -1279,6 +1283,10 @@
        <property name="text">
         <string>Clear &amp;All</string>
        </property>
+       <property name="icon">
+        <iconset resource="../curium.qrc">
+         <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -1291,6 +1299,10 @@
        </property>
        <property name="text">
         <string>Add &amp;Recipient</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../curium.qrc">
+         <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -1316,7 +1328,7 @@
         <number>3</number>
        </property>
        <item>
-        <widget class="QCheckBox" name="checkUsePrivateSend">
+        <widget class="QCheckBox" name="checkUseDarksend">
          <property name="minimumSize">
           <size>
            <width>95</width>
@@ -1324,7 +1336,7 @@
           </size>
          </property>
          <property name="text">
-          <string>PrivateSend</string>
+          <string>Darksend</string>
          </property>
          <property name="checked">
           <bool>false</bool>
@@ -1332,7 +1344,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkUseInstantSend">
+        <widget class="QCheckBox" name="checkInstantX">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -1343,7 +1355,7 @@
           </size>
          </property>
          <property name="text">
-          <string>InstantSend</string>
+          <string>InstantX</string>
          </property>
         </widget>
        </item>

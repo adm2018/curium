@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The CRU developers
 // Distributed under the MIT/X11 software license, see the accompanying
-=======
-// Copyright (c) 2011-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The Dash Core developers
-// Distributed under the MIT software license, see the accompanying
->>>>>>> dev-1.12.1.0
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "bitcoinunits.h"
@@ -25,9 +19,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(CURIUM);
-    unitlist.append(mCURIUM);
-    unitlist.append(uCURIUM);
+    unitlist.append(CRU);
+    unitlist.append(mCRU);
+    unitlist.append(uCRU);
     unitlist.append(crus);
     return unitlist;
 }
@@ -36,9 +30,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case CURIUM:
-    case mCURIUM:
-    case uCURIUM:
+    case CRU:
+    case mCRU:
+    case uCRU:
     case crus:
         return true;
     default:
@@ -46,7 +40,6 @@ bool BitcoinUnits::valid(int unit)
     }
 }
 
-<<<<<<< HEAD
 QString BitcoinUnits::id(int unit)
 {
     switch(unit)
@@ -59,17 +52,15 @@ QString BitcoinUnits::id(int unit)
     }
 }
 
-=======
->>>>>>> dev-1.12.1.0
 QString BitcoinUnits::name(int unit)
 {
-    if(Params().NetworkIDString() == CBaseChainParams::MAIN)
+    if(Params().NetworkID() == CBaseChainParams::MAIN)
     {
         switch(unit)
         {
-            case CURIUM: return QString("CURIUM");
-            case mCURIUM: return QString("mCURIUM");
-            case uCURIUM: return QString::fromUtf8("μCURIUM");
+            case CRU: return QString("CRU");
+            case mCRU: return QString("mCRU");
+            case uCRU: return QString::fromUtf8("μCRU");
             case crus: return QString("crus");
             default: return QString("???");
         }
@@ -78,9 +69,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case CURIUM: return QString("tCURIUM");
-            case mCURIUM: return QString("mtCURIUM");
-            case uCURIUM: return QString::fromUtf8("μtCURIUM");
+            case CRU: return QString("tCRU");
+            case mCRU: return QString("mtCRU");
+            case uCRU: return QString::fromUtf8("μtCRU");
             case crus: return QString("tcrus");
             default: return QString("???");
         }
@@ -89,21 +80,14 @@ QString BitcoinUnits::name(int unit)
 
 QString BitcoinUnits::description(int unit)
 {
-    if(Params().NetworkIDString() == CBaseChainParams::MAIN)
+    if(Params().NetworkID() == CBaseChainParams::MAIN)
     {
         switch(unit)
         {
-<<<<<<< HEAD
             case CRU: return QString("CRU");
             case mCRU: return QString("Milli-CRU (1 / 1" THIN_SP_UTF8 "000)");
             case uCRU: return QString("Micro-CRU (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case crus: return QString("Ten Nano-CRU (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-=======
-            case CURIUM: return QString("Curium");
-            case mCURIUM: return QString("Milli-Curium (1 / 1" THIN_SP_UTF8 "000)");
-            case uCURIUM: return QString("Micro-Curium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case crus: return QString("Ten Nano-Curium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
->>>>>>> dev-1.12.1.0
             default: return QString("???");
         }
     }
@@ -111,17 +95,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-<<<<<<< HEAD
             case CRU: return QString("TestCRUs");
             case mCRU: return QString("Milli-TestCRU (1 / 1" THIN_SP_UTF8 "000)");
             case uCRU: return QString("Micro-TestCRU (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case crus: return QString("Ten Nano-TestCRU (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-=======
-            case CURIUM: return QString("TestCuriums");
-            case mCURIUM: return QString("Milli-TestCurium (1 / 1" THIN_SP_UTF8 "000)");
-            case uCURIUM: return QString("Micro-TestCurium (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case crus: return QString("Ten Nano-TestCurium (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
->>>>>>> dev-1.12.1.0
             default: return QString("???");
         }
     }
@@ -131,9 +108,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case CURIUM:  return 100000000;
-    case mCURIUM: return 100000;
-    case uCURIUM: return 100;
+    case CRU:  return 100000000;
+    case mCRU: return 100000;
+    case uCRU: return 100;
     case crus: return 1;
     default:   return 100000000;
     }
@@ -143,9 +120,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case CURIUM: return 8;
-    case mCURIUM: return 5;
-    case uCURIUM: return 2;
+    case CRU: return 8;
+    case mCRU: return 5;
+    case uCRU: return 2;
     case crus: return 0;
     default: return 0;
     }
@@ -185,6 +162,13 @@ QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, Separator
     return quotient_str + QString(".") + remainder_str;
 }
 
+
+// TODO: Review all remaining calls to BitcoinUnits::formatWithUnit to
+// TODO: determine whether the output is used in a plain text context
+// TODO: or an HTML context (and replace with
+// TODO: BtcoinUnits::formatHtmlWithUnit in the latter case). Hopefully
+// TODO: there aren't instances where the result could be used in
+// TODO: either context.
 
 // NOTE: Using formatWithUnit in an HTML context risks wrapping
 // quantities at the thousands separator. More subtly, it also results

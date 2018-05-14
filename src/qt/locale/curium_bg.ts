@@ -231,11 +231,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>Curium Ядро</translation>
     </message>
     <message>
@@ -287,21 +283,12 @@
         <translation>Изход от приложението</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>&amp;За Curium ядрото</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
         <translation>Покаци информация за Curium Core</translation>
-=======
-        <source>&amp;About Curium</source>
-        <translation>&amp;За Curium ядрото</translation>
-    </message>
-    <message>
-        <source>Show information about Curium</source>
-        <translation>Покаци информация за Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -464,31 +451,19 @@
         <translation>&amp;Опции на командния ред</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Curium Core клиент</translation>
-=======
-        <source>Curium client</source>
-        <translation>Curium клиент</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
         <translation><numerusform>Обработени %n блока от историята на транзакциите.</numerusform><numerusform>Обработени %n блока от историята на транзакциите.</numerusform></translation>
-<<<<<<< HEAD
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>Синхронизиране на допълнителни данни: %p%</translation>
-=======
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Синхронизиране на допълнителни данни: %p%</translation>
     </message>
     <message>
-        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
+        <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Покажи съобщението за помощ на Curium ядрото за да получиш списък на възможните опции за командния ред</translation>
     </message>
     <message>
@@ -692,21 +667,12 @@ Address: %4
     <message>
         <source>Received with address</source>
         <translation>Получени с адрес</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>DS Rounds</source>
         <translation>DS цикли</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>DS Rounds</source>
-        <translation>DS цикли</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>Date</source>
         <translation>Дата</translation>
     </message>
@@ -1023,11 +989,7 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>Curium ядро</translation>
     </message>
     <message>
@@ -1039,11 +1001,7 @@ Address: %4
         <translation>(%1-битов)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>About Curium Core</source>
-=======
-        <source>About Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>За Curium ядрото</translation>
     </message>
     <message>
@@ -1090,7 +1048,6 @@ Address: %4
         <translation>Добре дошли</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Добре дошли в ядрото на Curium.</translation>
     </message>
@@ -1100,17 +1057,6 @@ Address: %4
     </message>
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-=======
-        <source>Welcome to Curium.</source>
-        <translation>Добре дошли в ядрото на Curium.</translation>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
-        <translation>Тъй като програмата се стартира за първи път вие може да изберете къде Curium да съхранява своята информация.</translation>
-    </message>
-    <message>
-        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
->>>>>>> dev-1.12.1.0
         <translation>Curium ще свали и съхрани копие на Curium регистъра на блокове. Информацията ще заеме поне %1ГБ  пространство и ще нараства с времето. В тази папка ще бъде съхранен и портфейла. </translation>
     </message>
     <message>
@@ -1122,11 +1068,7 @@ Address: %4
         <translation>Определете папка по ваш избор:</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>Curium ядро</translation>
     </message>
     <message>
@@ -2644,11 +2586,7 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
-=======
-        <source>Curium is shutting down...</source>
->>>>>>> dev-1.12.1.0
         <translation>Curium ядрото се изключва...</translation>
     </message>
     <message>
@@ -2798,11 +2736,7 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>Curium Ядро</translation>
     </message>
     <message>
@@ -2814,11 +2748,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Водещи Bitcoin разработчици</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>The Curium Core developers</source>
-=======
-        <source>The Curium developers</source>
->>>>>>> dev-1.12.1.0
         <translation>Водещи Curium разработчици</translation>
     </message>
     <message>
@@ -3396,11 +3326,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Свързва се с посочения адрес и винаги слуша за него. Използвайте [хост]:порт за изписване при IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
-=======
-        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
->>>>>>> dev-1.12.1.0
         <translation>Не може да се заключи дата директорията %s. Curium ядрото вече работи.</translation>
     </message>
     <message>
@@ -3456,11 +3382,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Това е предварителна тест версия - използвайте я на ваша отговорност - не използвайте за копане или за търговски приложения.</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
-=======
-        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
->>>>>>> dev-1.12.1.0
         <translation>Не може да се свърже с %s на този компютър. Curium ядрото най-вероятно вече работи.</translation>
     </message>
     <message>
@@ -3815,13 +3737,8 @@ for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
         <translation>Внимание: -maxtxfee  е с много голяма зададена стойност! Това е транзакционната такса, която ще платите ако направите единична транзакция.</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
         <translation>Внимание: Моля проверете дали датата и часът на вашият компютър са верни! Ако часовникът ви не е сверен, Curium Core няма да работи правилно.</translation>
-=======
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
-        <translation>Внимание: Моля проверете дали датата и часът на вашият компютър са верни! Ако часовникът ви не е сверен, Curium няма да работи правилно.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3874,7 +3791,6 @@ for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
         <translation>Запазени права (C) 2009-%i Bitcoin Core разработчици</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>Запазени права (C) 2014-%i Curium Core разработчиците</translation>
     </message>
@@ -4143,280 +4059,6 @@ for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
         <translation>Задай брой заявки обслужващи процеса RPC повикванията (по подразбиране:  %d)</translation>
     </message>
     <message>
-=======
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Запазени права (C) 2014-%i Dash разработчиците</translation>
-    </message>
-	<message>
-        <source>Copyright (C) 2018-%i The Curium Developers</source>
-        <translation>Запазени права (C) 2018-%i Curium разработчиците</translation>
-    </message>
-    <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Не успя да се анализира -rpcbind стойност %s като мрежов адрес</translation>
-    </message>
-    <message>
-        <source>Darksend is idle.</source>
-        <translation>Darksend бездейства.</translation>
-    </message>
-    <message>
-        <source>Darksend request complete:</source>
-        <translation>Darksend заявката е завършена:</translation>
-    </message>
-    <message>
-        <source>Darksend request incomplete:</source>
-        <translation>Darksend заявката незавършена:</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Деактивирай безопасен режим, замени събитието за истинския безопасен режим (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Активиране на клиента да работи като masternode (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Грешка при свързване с Masternode.</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
-        <translation>Грешка при зареждане на wallet.dat: портфейлът изисква по-нова версия на Curium</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Грешка: Възникна сериозна вътрешна грешка, виж debug.log за подробности</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Грешка: Не можете да изберете настоящите деноминирани входове</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Грешка:Открит е неподдържан аргумент -tor, моля използвай -onion.</translation>
-    </message>
-    <message>
-        <source>Fee (in CURIUM/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такси (в CURIUM/Kb) добавена към направената транзакция(по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Приключване на транзакцията.</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>Принудителен безопасен режим (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Открити са достатъчно потребители, подписване ( изчаква %s )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Открити са достатъчно потребители, подписва...</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: %u)</source>
-        <translation>Генериране на монети (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Колко блока да проверява при стартиране (по подразбиране:  %u, 0 = всички)</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>Внасяне...</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Внасяне на блокове от външен blk000??.dat файл</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Прикрепва IP адреси към debug записа (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Incompatible mode.</source>
-        <translation>Несъвместим режим.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Несъвместима версия.</translation>
-    </message>
-    <message>
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Намерен е неправилен или не създаден блок. Грешна data директория за мрежата?</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Информация</translation>
-    </message>
-    <message>
-        <source>Initialization sanity check failed. Curium is shutting down.</source>
-        <translation>Инициализационната проверка не успешна. Curium ядрото се изключва.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Въвеждането е невалидно.</translation>
-    </message>
-    <message>
-        <source>InstantX options:</source>
-        <translation>InstantX опции:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>Недостатъчно средства.</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Невалиден -onion адрес: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Невалиден -proxy address: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна сума за -maxtxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна сума за -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна сума за -mintxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Невалидна сума за -paytxfee=&lt;amount&gt;: '%s' (трябва да бъде най-малко %s)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна сума за -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Last successful Darksend action was too recent.</source>
-        <translation>Последното успешно Darksend действие беше твърде скоро.</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>Ограничение на размера на кеша за подпис до &lt;n&gt; реда (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Очаквай JSON-RPC входящи връзки на &lt;port&gt; (по подразбиране:%u или за тестовата мрежа: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Слушане за входящи връзки на &lt;port&gt; (по подразбиране:%u или за тестовата мрежа: %u)</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Зареждане на бюджетния кеш...</translation>
-    </message>
-    <message>
-        <source>Loading masternode cache...</source>
-        <translation>Зареждане на masternode кеш...</translation>
-    </message>
-    <message>
-        <source>Loading masternode payment cache...</source>
-        <translation>Зараждане на masternode кеш за плащане</translation>
-    </message>
-    <message>
-        <source>Lock is already in place.</source>
-        <translation>Заключването е вече налично.</translation>
-    </message>
-    <message>
-        <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>Заключване на masternodes от конфигурационния файл(по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Поддържай най-много &lt;n&gt; връзки към пиърите (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимален размер на буфера при получаване, &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимален размер на буфера при изпращане, &lt;n&gt;*1000 байта (по подразбиране:  %u)</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>В процес на смесване...</translation>
-    </message>
-    <message>
-        <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Нужно е определяне на порта с -whitebind: '%s'</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>Не са открити Masternodes.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Не e намерен съвместим Masternode.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Не е в Мasternode списъка.</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>Брой на автоматичните резервни копия (по подразбиране: 10)</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
-        <translation>Приема само блок регистъра съвпадащ с вградените контролни точки (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Свързване само към точки от мрежата &lt;net&gt; (IPv4, IPv6 или onion)</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Прикрепва справката за грешки към времевия запис(по подразбиране:  %u)</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>Стартирай нишка за почистване на портфейла периодично (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to debug.log file (default: %u)</source>
-        <translation>Изпрати информацията за грешки към  файла debug.log (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Изпрати с нулева такса за транзакция ако е възможно (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Сертификационен файл на сървъра (По подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Частен ключ за сървъра (по подразбиране %s)</translation>
-    </message>
-    <message>
-        <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>Задаване на външен address:port на този masternode (пример: %s)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Задайте максимален брой на генерираните ключове до &lt;n&gt; (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Задайте минимален размер на блок-а в байтове (подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Задай брой заявки обслужващи процеса RPC повикванията (по подразбиране:  %d)</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
         <translation>Определете флага DB_PRIVATE в средата база от данни на портфейла (по подразбиране: %u)</translation>
     </message>
@@ -4455,7 +4097,6 @@ for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
     <message>
         <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
         <translation>Изпратено към masternode, чака за още записи ( %u / %d ) %s</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
@@ -4750,302 +4391,6 @@ for example: alertnotify=echo %%s | mail -s "Curium Alert" admin@foo.com
         <translation>Това помощно съобщение</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Изпратено към Мастернода, чака в опашката %s</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Синхронизацията е неуспешна</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Синхронизацията е завършена</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Синхронизиране на бюджетите ...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternode winners...</source>
-        <translation>Синхронизиране на masternode победителите ...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternodes...</source>
-        <translation>Синхронизиране на masternodes ...</translation>
-    </message>
-    <message>
-        <source>Synchronizing sporks...</source>
-        <translation>Синхронизиране на sporks...</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Това не е Masternode.</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Праг на прекъсване на връзката при непорядъчно държащи се пиъри (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use KeePass 2 integration using KeePassHttp plugin (default: %u)</source>
-        <translation>Използвай KeePass 2 интеграция чрез плъгина KeePassHttp (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
-        <translation>Използвай N отделни Masternode за анонимизиране на средствата (2-8, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Използвай UPnP за определяне на порта за слушане (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Curium to complete</source>
-        <translation>Портфейлът трябва да бъде презаписан: рестартирайте Curium за да завършите</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Внимание: Неподдържан аргумен -benchmark е игнориран, използвайте -debug=bench.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Внимание: Аргументът -debugnet е невалиден, използвайте -debug=net .</translation>
-    </message>
-    <message>
-        <source>Will retry...</source>
-        <translation>Ще опита отново...</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeprivkey. Please see documenation.</source>
-        <translation>Невалиден частен ключ на Masternode. Моля вижте документацията.</translation>
-    </message>
-    <message>
-        <source>(must be 9999 for mainnet)</source>
-        <translation>(трябва да е 9999 за основната мрежа)</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Не можете да намери случаен Masternode.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Не може да се смесват, докато се синхронизира.</translation>
-    </message>
-    <message>
-        <source>Could not parse masternode.conf</source>
-        <translation>Несъвместимост в masternode.conf</translation>
-    </message>
-    <message>
-        <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Невалидна мрежова маска в -whitelist: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>Открит е невалиден порт в masternode.conf</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Невалиден личен ключ.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Открит е невалиден скрипт.</translation>
-    </message>
-    <message>
-        <source>KeePassHttp id for the established association</source>
-        <translation>KeePassHttp id за осъществяване на връзка</translation>
-    </message>
-    <message>
-        <source>KeePassHttp key for AES encrypted communication with KeePass</source>
-        <translation>KeePassHttp ключ за  AES криптирана връзка с KeePass</translation>
-    </message>
-    <message>
-        <source>Keep N CURIUM anonymized (default: %u)</source>
-        <translation>Поддържай N Curium анонимизирани (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Пази поне &lt;n&gt; неосъществени транзакции в паметта (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Last Darksend was too recent.</source>
-        <translation>Последния Derksend беше твърде скоро.</translation>
-    </message>
-    <message>
-        <source>Line: %d</source>
-        <translation>Линия: %d</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>Зареждане на адреси...</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>Зареждане на блок индекса...</translation>
-    </message>
-    <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Зареждане на портфейла... (%3.2f %%)</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Зареждане на портфейла...</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>Masternode опции:</translation>
-    </message>
-    <message>
-        <source>Masternode queue is full.</source>
-        <translation>Опашката с задачи на Masternode е пълна.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Missing input transaction information.</source>
-        <translation>Липсва входяща информация за транзакцията.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Не са открити суми нуждаещи се от деноминиране.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Няма съвпадащи деноминации за миксирането.</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>Сменящи опции на node:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Засечен е нестандартен публичен ключ.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Несъвместим със съществуващите транзакции.</translation>
-    </message>
-    <message>
-        <source>Not enough file descriptors available.</source>
-        <translation>Няма достатъчно налични файлови описания.</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Опции:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Парола за  JSON-RPC връзките</translation>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL опции: (виж Bitcoin Wiki за  SSL инструкции за настройка)</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>Опции на RPC сървъра:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>RPC поддръжка за HTTP постоянни връзки (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Произволно спира 1 от всеки &lt;n&gt; мрежови съобщения</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Произволно проверява 1 на всеки &lt;n&gt; мрежови съобщения</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Възстановяване индекса на блок регистъра от настоящия blk000??.dat файл</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Получаване и показване на P2P мрежови известия (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Смени и изкопай носещите данни транзакции (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Смяна на не-P2SH многоподписани (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Повторно сканиране на регистъра на блокове за липсващи транзакции от портфейла</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>Повторно сканиране...</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Стартира във фонов режим като демон и приема команди</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Незавършена сесия!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>Сесията е изтекла.</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Определи размера на кеша на базата от данни в мегабайти (%d до %d, по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Определи максималния размер на блока в байтове (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Set the masternode private key</source>
-        <translation>Задаване на личен ключ на Masternode</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Покажи всички опции за откриване на грешки  (синтаксис: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Свий debug.log файла при стартиране на клиента (по подразбиране: 1, когато няма -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Подписването неуспешно.</translation>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>Подписването на транзакцията се провали</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Определете директория за данните</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Посочете файла с портфейла (в папката с данни)</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Въведете Ваш публичен адрес</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Изчаква синхронизация ...</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>Това помощно съобщение</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>This is experimental software.</source>
         <translation>Това е експериментален софтуер.</translation>
     </message>

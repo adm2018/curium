@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 name: "curium-rpi2-1.2"
 enable_cache: true
 suites:
@@ -8,15 +7,6 @@ architectures:
 - "amd64"
 packages:
 - "curl"
-=======
-name: "curium-raspberry-0.12"
-enable_cache: true
-suites:
-- "precise"
-architectures:
-- "amd64"
-packages:
->>>>>>> dev-1.12.1.0
 - "g++-multilib"
 - "git-core"
 - "pkg-config"
@@ -26,19 +16,12 @@ packages:
 - "faketime"
 - "bsdmainutils"
 - "binutils-gold"
-<<<<<<< HEAD
 - "ca-certificates"
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
 - "url": "https://github.com/mrmetech/Curium-Official.git"
   "dir": "Curium-Official"
-=======
-reference_datetime: "2017-01-01 00:00:00"
-remotes:
-- "url": "https://github.com/curiumofficial/curium.git"
-  "dir": "curium"
->>>>>>> dev-1.12.1.0
 files:
 - "raspberrypi-tools.tar.gz"
 script: |
@@ -47,11 +30,7 @@ script: |
   CONFIGFLAGS="--enable-upnp-default --enable-glibc-back-compat"
   FAKETIME_HOST_PROGS=""
   FAKETIME_PROGS="date ar ranlib nm strip"
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> dev-1.12.1.0
   tar --warning=no-timestamp -xzf raspberrypi-tools.tar.gz
   export TOOLCHAIN_BIN=$(pwd)/raspberrypi-tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
   export PATH=$PATH:$TOOLCHAIN_BIN
@@ -91,11 +70,7 @@ script: |
   done
   export PATH=${WRAP_DIR}:${PATH}
 
-<<<<<<< HEAD
   cd Curium-Official
-=======
-  cd curium
->>>>>>> dev-1.12.1.0
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -106,21 +81,13 @@ script: |
   ./autogen.sh
   ./configure --prefix=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`
   make NO_QT=1 dist
-<<<<<<< HEAD
   SOURCEDIST=`echo Curium-Official-*.tar.gz`
-=======
-  SOURCEDIST=`echo curium-*.tar.gz`
->>>>>>> dev-1.12.1.0
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-<<<<<<< HEAD
   find Curium-Official-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
-=======
-  find curium-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
->>>>>>> dev-1.12.1.0
   popd
 
   ORIGPATH="$PATH"
@@ -134,13 +101,8 @@ script: |
     tar --strip-components=1 -xf ../$SOURCEDIST
 
     ./configure --prefix=${BASEPREFIX}/${i} --bindir=${INSTALLPATH}/bin --includedir=${INSTALLPATH}/include --libdir=${INSTALLPATH}/lib --disable-ccache --disable-maintainer-mode --disable-dependency-tracking ${CONFIGFLAGS}
-<<<<<<< HEAD
     make ${MAKEOPTS}
     make install-strip
-=======
-    make ${MAKEOPTS} NO_QT=1
-    make NO_QT=1 install-strip
->>>>>>> dev-1.12.1.0
     cd installed
     find . -name "lib*.la" -delete
     find . -name "lib*.a" -delete

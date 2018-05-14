@@ -12,7 +12,6 @@ src/curium-cli
 src/curium-tx
 src/test/test_curium
 src/qt/test/test_curium-qt
-src/bench/bench_curium
 
 # autoreconf
 Makefile.in
@@ -48,7 +47,6 @@ src/qt/moc_*.cpp
 src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
-libconftest.dylib*
 
 .deps
 .dirstamp
@@ -92,13 +90,15 @@ src/test/buildenv.py
 # Resources cpp
 qrc_*.cpp
 
+# Qt creator
+*.pro.user
+
 # Mac specific
 .DS_Store
 build
 
 #lcov
 *.gcno
-*.gcda
 /*.info
 test_curium.coverage/
 total.coverage/
@@ -109,26 +109,12 @@ linux-coverage-build
 linux-build
 win32-build
 qa/pull-tester/run-bitcoind-for-test.sh
-qa/pull-tester/tests_config.py
+qa/pull-tester/tests-config.sh
 qa/pull-tester/cache/*
 qa/pull-tester/test.*/*
-qa/tmp
-cache/
-share/BitcoindComparisonTool.jar
 
 !src/leveldb*/Makefile
 
 .cproject
 .project
-.autotools
 /doc/doxygen/
-
-libbitcoinconsensus.pc
-src/qt/curium-qt.bash
-qa/pull-tester/tests-config.sh
-
-#development symlinks
-curium-cli
-curiumd
-curium-qt
-make

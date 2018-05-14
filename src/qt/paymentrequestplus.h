@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2015 The Bitcoin developers
+// Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,13 +9,9 @@
 
 #include "base58.h"
 
-#include <openssl/x509.h>
-
 #include <QByteArray>
 #include <QList>
 #include <QString>
-
-static const bool DEFAULT_SELFSIGNED_ROOTCERTS = false;
 
 //
 // Wraps dumb protocol buffer paymentRequest
@@ -31,6 +27,7 @@ public:
     bool SerializeToString(std::string* output) const;
 
     bool IsInitialized() const;
+    QString getPKIType() const;
     // Returns true if merchant's identity is authenticated, and
     // returns human-readable merchant identity in merchant
     bool getMerchant(X509_STORE* certStore, QString& merchant) const;

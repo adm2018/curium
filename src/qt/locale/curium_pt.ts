@@ -231,13 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Wallet</source>
@@ -288,21 +283,12 @@
         <translation>Sair da aplicação</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>&amp;Acerca do Curium Core</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
         <translation>Mostra informação acerca do Curium Core</translation>
-=======
-        <source>&amp;About Curium</source>
-        <translation>&amp;Acerca do Curium</translation>
-    </message>
-    <message>
-        <source>Show information about Curium</source>
-        <translation>Mostra informação acerca do Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -465,26 +451,16 @@
         <translation>Opções de linha de &amp;comandos</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Cliente Curium Core</translation>
-=======
-        <source>Curium client</source>
-        <translation>Cliente Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
         <translation><numerusform>%n bloco do histórico de transacções processado.</numerusform><numerusform>%n blocos do histórico de transacções processados.</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Mostra a mensagem de ajuda do Curium Core para obter a lista com as possíveis opções de linha de comandos</translation>
-=======
-        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
-        <translation>Mostra a mensagem de ajuda do Curium para obter a lista com as possíveis opções de linha de comandos</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>&amp;File</source>
@@ -885,11 +861,11 @@ Endereço: %4
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 1000 CURIUM</source>
-        <translation>Usar 2 masternodes distintos para misturar os fundos até 1000CRU</translation>
+        <translation>Usar 2 masternodes distintos para misturar os fundos até 1000DRK</translation>
     </message>
     <message>
         <source>Use 8 separate masternodes to mix funds up to 1000 CURIUM</source>
-        <translation>Usar 8 masternodes distintos para misturar os fundos até 1000CRU</translation>
+        <translation>Usar 8 masternodes distintos para misturar os fundos até 1000DRK</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1009,13 +985,8 @@ Endereço: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>version</source>
@@ -1026,13 +997,8 @@ Endereço: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>About Curium Core</source>
         <translation>Acerca do Curium Core</translation>
-=======
-        <source>About Curium</source>
-        <translation>Acerca do Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Command-line options</source>
@@ -1078,7 +1044,6 @@ Endereço: %4
         <translation>Bem-vindo</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Bem-vindo ao Curium Core.</translation>
     </message>
@@ -1089,18 +1054,6 @@ Endereço: %4
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>O cliente Curium Core irá descarregar e guardar uma copia da cadeia de blocos Curium. Pelo menos %1GB de dados serão guardados nesta pasta e irá aumentar com o tempo. A carteira também ficará guardada nesta pasta.</translation>
-=======
-        <source>Welcome to Curium.</source>
-        <translation>Bem-vindo ao Curium.</translation>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
-        <translation>Como esta é a primeira vez que o programa é executado, pode escolher onde o cliente Curium irá guardar os seus dados.</translation>
-    </message>
-    <message>
-        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>O cliente Curium irá descarregar e guardar uma copia da cadeia de blocos Curium. Pelo menos %1GB de dados serão guardados nesta pasta e irá aumentar com o tempo. A carteira também ficará guardada nesta pasta.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1111,13 +1064,8 @@ Endereço: %4
         <translation>Usar uma pasta de dados personalizada</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2622,13 +2570,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
         <translation>O Curium Core está a desligar...</translation>
-=======
-        <source>Curium is shutting down...</source>
-        <translation>O Curium está a desligar...</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2777,13 +2720,8 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Version %1</source>
@@ -2794,13 +2732,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Os programadores Bitcoin Core</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>The Curium Core developers</source>
         <translation>Os programadores Curium Core</translation>
-=======
-        <source>The Curium developers</source>
-        <translation>Os programadores Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>[testnet]</source>
@@ -3377,13 +3310,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Vincular a um determinado endereço e ouvir sempre aí. Use a notação [endereço]:porta para IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
         <translation>Não foi possível obter acesso exclusivo à pasta de dados %s. Possivelmente o Curium Core já se encontra em execução.</translation>
-=======
-        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
-        <translation>Não foi possível obter acesso exclusivo à pasta de dados %s. Possivelmente o Curium já se encontra em execução.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3438,13 +3366,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Esta é uma compilação prévia de teste - use por sua conta e risco - não use para minar nem em aplicações comerciais</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
         <translation>Não foi possível vincular a %s neste computador. Provavelmente o Curium Core já está a ser executado.</translation>
-=======
-        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
-        <translation>Não foi possível vincular a %s neste computador. Provavelmente o Curium já está a ser executado.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3452,11 +3375,7 @@ https://www.transifex.com/projects/p/curium/</translation>
     </message>
     <message>
         <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 CURIUM.</source>
-<<<<<<< HEAD
         <translation>Não foi possível localizar fundos Darksend não denominados suficientes para esta transacção que não sejam igual a 1000DRK.</translation>
-=======
-        <translation>Não foi possível localizar fundos Darksend não denominados suficientes para esta transacção que não sejam igual a 1000CRU.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3701,7 +3620,6 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>Provide liquidity to Darksend by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
         <translation>Providenciar liquidez para o Darksend misturando moedas continuamente com baixa frequência (0-100, omissão: %u, 1=muito frequente taxas elevadas, 100=pouco frequente, taxas reduzidas)</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
@@ -3766,72 +3684,6 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Incapaz de resolver -whitebind address: '%s'</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>Enviar informação de execução/depuração para a consola em vez de enviar para o ficheiro debug.log (omissão: %u)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Definir o limite de processadores quando a geração está activa (-1 = todos, omissão: %d)</translation>
-    </message>
-    <message>
-        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Mostrar N confirmações para uma transacção bloqueada com sucesso (0-9999, omissão: %u)</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no OpenSSL Toolkit &lt;https://www.openssl.org/&gt;, software criptográfico escrito por Eric Young e software UPnP escrito por Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 CURIUM.</source>
-        <translation>Não foi possível localizar fundos suficientes para esta transacção que não sejam igual a 1000CRU.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Usar um proxy SOCKS5 diferente para ligar aos nós através dos serviços escondidos Tor (omissão: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Aviso: -maxtxfee é demasiado alta! Taxas deste tamanho podem ser pagas em apenas uma transacção.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
-        <translation>Aviso: Por favor verifique que a data e a hora do computador está correcta! Se o relógio estiver errado o Curium não vai funcionar correctamente.</translation>
-    </message>
-    <message>
-        <source>(9999 could be used only on mainnet)</source>
-        <translation>(9999 apenas pode ser usado para mainnet)</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(default: %s)</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:
-</source>
-        <translation>&lt;category&gt; pode ser:
-</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Aceitar REST requests (default: %u) públicos</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Cifras aceitáveis (default: %s)</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Perguntar sempre por endereços de pares via DNS lookup (default: %u)</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Incapaz de resolver -whitebind address: '%s'</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>Connect through SOCKS5 proxy</source>
         <translation>Conectar através de SOCKS5 proxy</translation>
     </message>
@@ -3844,17 +3696,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>Copyright (C) 2014-%i Curium Core Developers</translation>
-=======
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i Dash Core Developers</translation>
-    </message>
-	<message>
-        <source>Copyright (C) 2018-%i The Curium Developers</source>
-        <translation>Copyright (C) 2018-%i Curium Developers</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3885,13 +3728,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Erro conectando ao Masternode</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
         <translation>Erro carregando wallet.dat Carteira precisa de nova versão do Curium Core</translation>
-=======
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
-        <translation>Erro carregando wallet.dat Carteira precisa de nova versão do Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3962,13 +3800,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Informação</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Initialization sanity check failed. Curium Core is shutting down.</source>
         <translation>A verificação de consistência no arranque falhou. O Curium Core está a encerrar.</translation>
-=======
-        <source>Initialization sanity check failed. Curium is shutting down.</source>
-        <translation>A verificação de consistência no arranque falhou. O Curium está a encerrar.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4211,13 +4044,8 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Utilize UPNP para mapear porta de escuta (default: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
         <translation>Carteira necessita de ser re-escrita: reinicie Curium Core para completar</translation>
-=======
-        <source>Wallet needed to be rewritten: restart Curium to complete</source>
-        <translation>Carteira necessita de ser re-escrita: reinicie Curium para completar</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
@@ -4434,7 +4262,6 @@ https://www.transifex.com/projects/p/curium/</translation>
     <message>
         <source>Signing failed.</source>
         <translation>A assinatura falhou.</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -4461,34 +4288,6 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>Este é um software experimental.</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>A assinatura da transacção falhou</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Especificar a pasta de dados</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Especificar o ficheiro da carteira (dentro da pasta de dados)</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Especificar o seu endereço público</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>Esta mensagem de ajuda</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>Este é um software experimental.</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>This is intended for regression testing tools and app development.</source>
         <translation>Esta opção destina-se a ferramentas de testes de regressão e desenvolvimento de aplicativos.</translation>
     </message>

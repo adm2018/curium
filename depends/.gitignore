@@ -7,9 +7,6 @@ x86_64*
 i686*
 mips*
 arm*
-<<<<<<< HEAD
 aarch64*
 !patches/**
 !Makefile
-=======
->>>>>>> dev-1.12.1.0

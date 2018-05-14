@@ -231,11 +231,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -287,19 +283,11 @@
         <translation>結束應用程式</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>關於達世幣核心(&amp;A)</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
-=======
-        <source>&amp;About Curium</source>
-        <translation>關於達世幣核心(&amp;A)</translation>
-    </message>
-    <message>
-        <source>Show information about Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>顯示達世幣核心的相關資訊</translation>
     </message>
     <message>
@@ -463,11 +451,7 @@
         <translation>命令列選項(&amp;C)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core client</source>
-=======
-        <source>Curium client</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心客戶端軟體</translation>
     </message>
     <message numerus="yes">
@@ -479,11 +463,7 @@
         <translation>正在同步額外的數據: %p%</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
-=======
-        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
->>>>>>> dev-1.12.1.0
         <translation>顯示達世幣核心的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
@@ -1005,11 +985,7 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -1021,11 +997,7 @@ Address: %4
         <translation>(%1 位元)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>About Curium Core</source>
-=======
-        <source>About Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>關於達世幣核心</translation>
     </message>
     <message>
@@ -1072,7 +1044,6 @@ Address: %4
         <translation>歡迎</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>歡迎使用達世幣核心</translation>
     </message>
@@ -1082,17 +1053,6 @@ Address: %4
     </message>
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-=======
-        <source>Welcome to Curium.</source>
-        <translation>歡迎使用達世幣核心</translation>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
-        <translation>因為這是程式第一次啓動，你可以選擇達世幣核心儲存資料的地方。</translation>
-    </message>
-    <message>
-        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心會下載並儲存一份達世幣區塊鏈的副本。至少有 %1GB 的資料會儲存到這個目錄中，並且還會持續增長。另外錢包資料也會儲存在這個目錄。</translation>
     </message>
     <message>
@@ -1104,11 +1064,7 @@ Address: %4
         <translation>使用自定的資料目錄:</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -2578,11 +2534,7 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
-=======
-        <source>Curium is shutting down...</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心正在關閉中...</translation>
     </message>
     <message>
@@ -2732,11 +2684,7 @@ https://www.transifex.com/projects/p/curium/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
-=======
-        <source>Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心</translation>
     </message>
     <message>
@@ -2748,11 +2696,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>位元幣核心開發人員</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>The Curium Core developers</source>
-=======
-        <source>The Curium developers</source>
->>>>>>> dev-1.12.1.0
         <translation>達世幣核心開發人員</translation>
     </message>
     <message>
@@ -3314,11 +3258,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>這是個還沒發表的測試版本 - 使用請自負風險 - 請不要用來開採或商業應用</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
-=======
-        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
->>>>>>> dev-1.12.1.0
         <translation>沒辦法繫結在這台電腦上的 %s 。達世幣核心可能已經在執行了。</translation>
     </message>
     <message>
@@ -3562,11 +3502,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>警告: -maxtxfee 設定了很高的金額！這可是一次交易就有可能付出的最高手續費。</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium Core will not work properly.</source>
-=======
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Curium will not work properly.</source>
->>>>>>> dev-1.12.1.0
         <translation>警告: 請檢查電腦日期和時間是否正確！達世幣核心沒辦法在時鐘不準的情況下正常運作。</translation>
     </message>
     <message>
@@ -3594,19 +3530,9 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>版權為位元幣核心開發人員自西元 2009 至 %i 年起所有</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Copyright (C) 2014-%i The Curium Core Developers</source>
         <translation>版權為達世幣核心開發人員自西元 2014 至 %i 年起所有</translation>
     </message>
-=======
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>版權為達世幣核心開發人員自西元 2014 至 %i 年起所有</translation>
-    </message>
-	<message>
-	    <source>Copyright (C) 2018-%i The Curium Core Developers</source>
-        <translation>版權為達世幣核心開發人員自西元 2018 至 %i 年起所有</translation>
-    </message>
->>>>>>> dev-1.12.1.0
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>沒辦法解析 -rpcbind 參數值 %s 為網路位址</translation>
@@ -3628,11 +3554,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>連接到主節點時發生錯誤。</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
-=======
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
->>>>>>> dev-1.12.1.0
         <translation>載入 wallet.dat 檔案時發生錯誤: 這個錢包需要新版的達世幣核心</translation>
     </message>
     <message>
@@ -3816,11 +3738,7 @@ https://www.transifex.com/projects/p/curium/</translation>
         <translation>與異常的節點斷線的臨界值 (預設: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Wallet needed to be rewritten: restart Curium Core to complete</source>
-=======
-        <source>Wallet needed to be rewritten: restart Curium to complete</source>
->>>>>>> dev-1.12.1.0
         <translation>錢包需要重寫: 請重新啓動達世幣核心來完成</translation>
     </message>
     <message>

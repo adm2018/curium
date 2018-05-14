@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2014 The Bitcoin Core developers
+// Copyright (c) 2012-2014 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,7 +13,7 @@
  * for both curiumd and curium-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Curium");
+const std::string CLIENT_NAME("Curium Core");
 
 /**
  * Client version number
@@ -45,13 +45,8 @@ const std::string CLIENT_NAME("Curium");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-<<<<<<< HEAD
 #define GIT_COMMIT_ID "085fdf69968f"
 #define GIT_COMMIT_DATE "Sun, 5 Feb 2017 10:04:26 +0100"
-=======
-#define GIT_COMMIT_ID "56971f8da1e0"
-#define GIT_COMMIT_DATE "Mon, 6 Feb 2017 01:29:23 +0400"
->>>>>>> dev-1.12.1.0
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \

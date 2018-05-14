@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The CRU developers
 // Distributed under the MIT/X11 software license, see the accompanying
-=======
-// Copyright (c) 2011-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The Dash Core developers
-// Distributed under the MIT software license, see the accompanying
->>>>>>> dev-1.12.1.0
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_BITCOINUNITS_H
@@ -63,9 +57,9 @@ public:
      */
     enum Unit
     {
-        CURIUM,
-        mCURIUM,
-        uCURIUM,
+        CRU,
+        mCRU,
+        uCRU,
         crus
     };
 
@@ -84,6 +78,8 @@ public:
     static QList<Unit> availableUnits();
     //! Is unit ID valid?
     static bool valid(int unit);
+    //! Identifier, e.g. for image names
+    static QString id(int unit);
     //! Short name
     static QString name(int unit);
     //! Longer description
@@ -97,7 +93,6 @@ public:
     static QString simpleFormat(int unit, const CAmount& amount, bool plussign=false, SeparatorStyle separators=separatorStandard);
     //! Format as string (with unit)
     static QString formatWithUnit(int unit, const CAmount& amount, bool plussign=false, SeparatorStyle separators=separatorStandard);
-    //! Format as HTML string (with unit)
     static QString formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign=false, SeparatorStyle separators=separatorStandard);
     //! Format as string (with unit) but floor value up to "digits" settings
     static QString floorWithUnit(int unit, const CAmount& amount, bool plussign=false, SeparatorStyle separators=separatorStandard);

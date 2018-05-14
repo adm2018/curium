@@ -7,7 +7,6 @@ architectures:
 - "amd64"
 packages:
 - "curl"
-<<<<<<< HEAD
 - "g++-aarch64-linux-gnu"
 - "g++-4.8-aarch64-linux-gnu"
 - "gcc-4.8-aarch64-linux-gnu"
@@ -19,9 +18,6 @@ packages:
 - "g++-4.8-multilib"
 - "gcc-4.8-multilib"
 - "binutils-gold"
-=======
-- "g++-multilib"
->>>>>>> dev-1.12.1.0
 - "git-core"
 - "pkg-config"
 - "autoconf"
@@ -29,37 +25,20 @@ packages:
 - "automake"
 - "faketime"
 - "bsdmainutils"
-<<<<<<< HEAD
 - "ca-certificates"
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
 - "url": "https://github.com/mrmetech/Curium-Official.git"
   "dir": "Curium-Official"
-=======
-- "binutils-gold"
-- "ca-certificates"
-- "python"
-reference_datetime: "2017-01-01 00:00:00"
-remotes:
-- "url": "https://github.com/curiumofficial/curium.git"
-  "dir": "curium"
->>>>>>> dev-1.12.1.0
 files: []
 script: |
 
   WRAP_DIR=$HOME/wrapped
-<<<<<<< HEAD
   HOSTS="i686-pc-linux-gnu x86_64-linux-gnu arm-linux-gnueabihf"
   CONFIGFLAGS="--enable-glibc-back-compat --enable-reduce-exports --disable-bench --disable-gui-tests"
   FAKETIME_HOST_PROGS=""
   FAKETIME_PROGS="date ar ranlib nm"
-=======
-  HOSTS="i686-pc-linux-gnu x86_64-unknown-linux-gnu"
-  CONFIGFLAGS="--enable-glibc-back-compat --enable-reduce-exports --disable-bench --disable-gui-tests LDFLAGS=-static-libstdc++"
-  FAKETIME_HOST_PROGS=""
-  FAKETIME_PROGS="date ar ranlib nm strip objcopy"
->>>>>>> dev-1.12.1.0
   HOST_CFLAGS="-O2 -g"
   HOST_CXXFLAGS="-O2 -g"
   HOST_LDFLAGS=-static-libstdc++
@@ -81,11 +60,7 @@ script: |
     echo '#!/bin/bash' > ${WRAP_DIR}/${prog}
     echo "REAL=\`which -a ${prog} | grep -v ${WRAP_DIR}/${prog} | head -1\`" >> ${WRAP_DIR}/${prog}
     echo 'export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1' >> ${WRAP_DIR}/${prog}
-<<<<<<< HEAD
     echo "export FAKETIME=\"$1\"" >> ${WRAP_DIR}/${prog}
-=======
-    echo "export FAKETIME=\"${REFERENCE_DATETIME}\"" >> ${WRAP_DIR}/${prog}
->>>>>>> dev-1.12.1.0
     echo "\$REAL \$@" >> $WRAP_DIR/${prog}
     chmod +x ${WRAP_DIR}/${prog}
   done
@@ -97,11 +72,7 @@ script: |
         echo '#!/bin/bash' > ${WRAP_DIR}/${i}-${prog}
         echo "REAL=\`which -a ${i}-${prog} | grep -v ${WRAP_DIR}/${i}-${prog} | head -1\`" >> ${WRAP_DIR}/${i}-${prog}
         echo 'export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1' >> ${WRAP_DIR}/${i}-${prog}
-<<<<<<< HEAD
         echo "export FAKETIME=\"$1\"" >> ${WRAP_DIR}/${i}-${prog}
-=======
-        echo "export FAKETIME=\"${REFERENCE_DATETIME}\"" >> ${WRAP_DIR}/${i}-${prog}
->>>>>>> dev-1.12.1.0
         echo "\$REAL \$@" >> $WRAP_DIR/${i}-${prog}
         chmod +x ${WRAP_DIR}/${i}-${prog}
     done
@@ -186,24 +157,14 @@ script: |
 
     CONFIG_SITE=${BASEPREFIX}/${i}/share/config.site ./configure --prefix=/ --disable-ccache --disable-maintainer-mode --disable-dependency-tracking ${CONFIGFLAGS} CFLAGS="${HOST_CFLAGS}" CXXFLAGS="${HOST_CXXFLAGS}" LDFLAGS="${HOST_LDFLAGS}"
     make ${MAKEOPTS}
-<<<<<<< HEAD
 
-=======
-    make ${MAKEOPTS} -C src check-security
-    make ${MAKEOPTS} -C src check-symbols
->>>>>>> dev-1.12.1.0
     make install DESTDIR=${INSTALLPATH}
     cd installed
     find . -name "lib*.la" -delete
     find . -name "lib*.a" -delete
     rm -rf ${DISTNAME}/lib/pkgconfig
-<<<<<<< HEAD
     find ${DISTNAME}/bin -type f -executable -exec ../contrib/devtools/split-debug.sh {} {} {}.dbg \;
     # find ${DISTNAME}/lib -type f -exec ../contrib/devtools/split-debug.sh {} {} {}.dbg \;
-=======
-    find ${DISTNAME}/bin -type f -executable -exec objcopy --only-keep-debug {} {}.dbg \; -exec strip -s {} \; -exec objcopy --add-gnu-debuglink={}.dbg {} \;
-    find ${DISTNAME}/lib -type f -exec objcopy --only-keep-debug {} {}.dbg \; -exec strip -s {} \; -exec objcopy --add-gnu-debuglink={}.dbg {} \;
->>>>>>> dev-1.12.1.0
     find ${DISTNAME} -not -name "*.dbg" | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}.tar.gz
     find ${DISTNAME} -name "*.dbg" | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}-debug.tar.gz
     cd ../../
@@ -212,11 +173,3 @@ script: |
   mkdir -p $OUTDIR/src
   mkdir -p $OUTDIR/src
   mv $SOURCEDIST $OUTDIR/src
-<<<<<<< HEAD
-=======
-  mv ${OUTDIR}/${DISTNAME}-x86_64-*-debug.tar.gz ${OUTDIR}/${DISTNAME}-linux64-debug.tar.gz
-  mv ${OUTDIR}/${DISTNAME}-i686-*-debug.tar.gz ${OUTDIR}/${DISTNAME}-linux32-debug.tar.gz
-  mv ${OUTDIR}/${DISTNAME}-x86_64-*.tar.gz ${OUTDIR}/${DISTNAME}-linux64.tar.gz
-  mv ${OUTDIR}/${DISTNAME}-i686-*.tar.gz ${OUTDIR}/${DISTNAME}-linux32.tar.gz
-
->>>>>>> dev-1.12.1.0

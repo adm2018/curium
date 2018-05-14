@@ -7,7 +7,7 @@ Use the autogen script to prepare the build environment.
     make
 
 Precompiled binaries are available at github, see
-https://github.com/curiumpay/curium-binaries
+https://github.com/curiumproject/curium-binaries
 
 Always verify the signatures and checksums.
 

@@ -231,13 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Wallet</source>
@@ -288,21 +283,12 @@
         <translation>Chiudi applicazione</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>&amp;About Curium Core</source>
         <translation>&amp;Su Curium Core</translation>
     </message>
     <message>
         <source>Show information about Curium Core</source>
         <translation>Mostra la informazione su Curium Core</translation>
-=======
-        <source>&amp;About Curium</source>
-        <translation>&amp;Su Curium</translation>
-    </message>
-    <message>
-        <source>Show information about Curium</source>
-        <translation>Mostra la informazione su Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -457,26 +443,16 @@
         <translation>Opzioni riga di &amp;comando</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core client</source>
         <translation>Cliente Curium Core</translation>
-=======
-        <source>Curium client</source>
-        <translation>Cliente Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
         <translation><numerusform>Processato %n blocco della cronologia transazioni.</numerusform><numerusform>Processati %n blocchi della cronologia transazioni.</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Show the Curium Core help message to get a list with possible Curium command-line options</source>
         <translation>Mostra il messaggio di aiuto di Curium Core per ottenere una lista con le possibili opzioni di linea di comando di Curium</translation>
-=======
-        <source>Show the Curium help message to get a list with possible Curium command-line options</source>
-        <translation>Mostra il messaggio di aiuto di Curium per ottenere una lista con le possibili opzioni di linea di comando di Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>&amp;File</source>
@@ -870,15 +846,15 @@ Indirizzo: %4
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 CURIUM to anonymize 1000 CURIUM</source>
-        <translation>Questa opzione è la più veloce e ti costerà ~0.025CRU circa per anonimizzare 1000CRU</translation>
+        <translation>Questa opzione è la più veloce e ti costerà ~0.025DRK circa per anonimizzare 1000DRK</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 CURIUM to anonymize 1000 CURIUM</source>
-        <translation>Questa opzione è moderatamente veloce e costerà 0.05CRU circa per anonimizzare 1000CRU</translation>
+        <translation>Questa opzione è moderatamente veloce e costerà 0.05DRK circa per anonimizzare 1000DRK</translation>
     </message>
     <message>
         <source>0.1 CURIUM per 1000 CURIUM you anonymize.</source>
-        <translation>0.1CRU ogni 1000CRU anonimizzati.</translation>
+        <translation>0.1DRK ogni 1000DRK anonimizzati.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -982,26 +958,16 @@ Indirizzo: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>version</source>
         <translation>versione</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>About Curium Core</source>
         <translation>Su Curium Core</translation>
-=======
-        <source>About Curium</source>
-        <translation>Su Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Command-line options</source>
@@ -1047,7 +1013,6 @@ Indirizzo: %4
         <translation>Benvenuto</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Welcome to Curium Core.</source>
         <translation>Benvenuto in Curium Core</translation>
     </message>
@@ -1058,18 +1023,6 @@ Indirizzo: %4
     <message>
         <source>Curium Core will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Curium Core scaricherà e salverà una copia della blocco catena. Almeno %1GB di dati sarà immagazzinato in questa cartella e aumenterà col tempo. Anche il portafoglio sarà conservato in questa cartella.</translation>
-=======
-        <source>Welcome to Curium.</source>
-        <translation>Benvenuto in Curium</translation>
-    </message>
-    <message>
-        <source>As this is the first time the program is launched, you can choose where Curium will store its data.</source>
-        <translation>Essendo la prima volta nella quale il programma viene lanciato, puoi scegliere dove Curium memorizzerà i propri dati.</translation>
-    </message>
-    <message>
-        <source>Curium will download and store a copy of the Curium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Curium scaricherà e salverà una copia della blocco catena. Almeno %1GB di dati sarà immagazzinato in questa cartella e aumenterà col tempo. Anche il portafoglio sarà conservato in questa cartella.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1080,13 +1033,8 @@ Indirizzo: %4
         <translation>Usa una cartella dati personalizzata:</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1140,11 +1088,7 @@ Indirizzo: %4
     </message>
     <message>
         <source>Automatically start Curium after logging in to the system.</source>
-<<<<<<< HEAD
         <translation>Esegui automaticamente Curium Core all'avvio del sistema.</translation>
-=======
-        <translation>Esegui automaticamente Curium all'avvio del sistema.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>&amp;Start Curium on system login</source>
@@ -2484,13 +2428,8 @@ Più URL vengono separati da una barra verticale |.</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core is shutting down...</source>
         <translation>Curium Core si sta chiudendo...</translation>
-=======
-        <source>Curium is shutting down...</source>
-        <translation>Curium si sta chiudendo...</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2639,13 +2578,8 @@ Più URL vengono separati da una barra verticale |.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-<<<<<<< HEAD
         <source>Curium Core</source>
         <translation>Curium Core</translation>
-=======
-        <source>Curium</source>
-        <translation>Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Version %1</source>
@@ -2656,13 +2590,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Gli sviluppatori di Bitcoin Core</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>The Curium Core developers</source>
         <translation>Gli sviluppatori di Curium Core</translation>
-=======
-        <source>The Curium developers</source>
-        <translation>Gli sviluppatori di Curium</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>[testnet]</source>
@@ -3233,21 +3162,12 @@ Più URL vengono separati da una barra verticale |.</translation>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Associa all'indirizzo indicato e resta permanentemente in ascolto su questo. Usa la notazione [host]:porta per l'IPv6</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Curium Core is probably already running.</source>
         <translation>Impossibile ottenere un blocco sulla data directory %s. Curium Core è probabilmente già in esecuzione.</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. Curium is probably already running.</source>
-        <translation>Impossibile ottenere un blocco sulla data directory %s. Curium è probabilmente già in esecuzione.</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
         <translation>Darksend utilizza esatto denominato importo a inviare fondi, si potrebbe semplicemente bisogno di anonimizzare alcuni più monete.</translation>
     </message>
@@ -3300,13 +3220,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Questa versione è una compilazione pre-rilascio - usala a tuo rischio - non utilizzarla per la generazione o per applicazioni di commercio</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Curium Core is probably already running.</source>
         <translation>Incapace di legare al %s su questo computer. Curium Core è probabilmente già funzionato.</translation>
-=======
-        <source>Unable to bind to %s on this computer. Curium is probably already running.</source>
-        <translation>Incapace di legare al %s su questo computer. Curium è probabilmente già funzionato.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3553,13 +3468,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Errore di connessione al Masternode</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Curium Core</source>
         <translation>Errore caricando il wallet.dat: il Pertafoglio ha bisogno di una versione di Curium Core piú recente.</translation>
-=======
-        <source>Error loading wallet.dat: Wallet requires newer version of Curium</source>
-        <translation>Errore caricando il wallet.dat: il Pertafoglio ha bisogno di una versione di Curium piú recente.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3598,13 +3508,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Informazioni</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Initialization sanity check failed. Curium Core is shutting down.</source>
         <translation>Controllo di inizializzazione sanity fallito. Curium Core verrà chiuso.</translation>
-=======
-        <source>Initialization sanity check failed. Curium is shutting down.</source>
-        <translation>Controllo di inizializzazione sanity fallito. Curium verrà chiuso.</translation>
->>>>>>> dev-1.12.1.0
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -3621,7 +3526,6 @@ Più URL vengono separati da una barra verticale |.</translation>
     <message>
         <source>Invalid -onion address: '%s'</source>
         <translation>Indirizzo -onion non valido: '%s'</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Invalid -proxy address: '%s'</source>
@@ -3648,34 +3552,6 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Mixing in corso...</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Indirizzo -proxy non valido: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Importo non valido per -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Importo non valido per -mintxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Importo non valido per -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>Blocca i masternodes  nel file di configurazione del masternode (default: %u)</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mixing in corso...</translation>
-    </message>
-    <message>
->>>>>>> dev-1.12.1.0
         <source>No Masternodes detected.</source>
         <translation>Nessun Masternode trovato.</translation>
     </message>
